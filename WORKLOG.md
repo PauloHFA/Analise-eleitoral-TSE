@@ -70,3 +70,15 @@ O PDF foi reorganizado em perguntas, evidências, interpretação, metodologia e
 Os pacotes `resultados-2026-v1` permanecem como snapshot original, incluindo seu PDF anterior. A edição explicativa é disponibilizada separadamente em `pdf-revisado-v2`. A validação dos pacotes confere seus conteúdos independentemente de revisões editoriais na pasta de trabalho; `--workspace` permite comparar também o snapshot com essa pasta.
 
 Validação da edição explicativa: 79 páginas, sendo 17 antes dos anexos; 15 marcadores; 100 fichas estatísticas; 41 métricas consolidadas; seis imagens com proporções preservadas. Os 76 testes passaram e a demonstração completa também gerou HTML/PDF. Houve inspeção visual de páginas renderizadas e conferência automatizada de sumário, texto, margens e contagens. Os 578 artefatos do inventário de preservação mantiveram seus hashes, e os três pacotes originais foram novamente conferidos por conteúdo e SHA256.
+
+## Primeira rodada incremental — 03/11/2026
+
+O roteiro das cinco frentes foi publicado em `e4b7222`, seguido das implementações de estabilidade (`6ff5db4`) e cobertura (`fa0392a`). As duas foram executadas sobre os arquivos locais, em subpastas separadas, com conferência de hashes de entrada e validação independente.
+
+A referência de 30 pares foi reproduzida nas 28 UFs. O universo comum às configurações de 15/30/50 contém 428.521 seções; as 50 elegíveis do exterior não dispõem de 50 outros pares. Nesse universo, as triagens contêm 83.983, 63.796 e 59.045 seções. Os primeiros 100 de 15/30 compartilham oito casos; 30/50 compartilham 18. Isso expressa sensibilidade da ordem, não eliminação automática dos demais alertas.
+
+A cobertura fecha 499.248 unidades: 428.571 elegíveis, 595 comparáveis pequenas e 70.082 não comparáveis. Foram calculados perfis do primeiro turno, cobertura municipal/UF e qualidade de cada medida, sem assumir seleção aleatória. Os detalhes e limites constam em `docs/RESULTADOS_INCREMENTAIS.md`.
+
+Os CSV/Parquet novos foram lidos com esquema e aspas explícitos, preservando a distinção entre strings vazias e ausências, e comparados por contagem e dois checksums agregados de linhas. Pares, universo comum, ranking e fechamento dos grupos também foram auditados. As frentes 3–5 continuam pendentes conforme o roteiro; nenhuma explicação causal ou auditoria de RDV foi anunciada como realizada.
+
+A rodada terminou com 92 testes aprovados. A validação geral passou incluindo as tabelas novas e manteve o PDF de 79 páginas. A correção da leitura estrita e os validadores foram publicados em `7428437`. Os pacotes incrementais preservam os arquivos por SHA256 e são distribuídos separadamente das releases anteriores.

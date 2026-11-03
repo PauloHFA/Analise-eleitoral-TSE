@@ -4,6 +4,8 @@ Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos
 
 As próximas implementações estão organizadas no [roteiro de etapas e commits](docs/PROXIMAS_ETAPAS.md), com critérios de conclusão, fontes e pendências de cada frente.
 
+**Primeira rodada implementada:** [estabilidade dos pares e perfil das exclusões](docs/RESULTADOS_INCREMENTAIS.md). A referência de 30 pares foi reproduzida, mas o topo do ranking depende da configuração; esses resultados complementares devem acompanhar a interpretação das prioridades originais.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário
@@ -409,7 +411,7 @@ O mapa permite alternar turno, filtrar UF/viradas, mudar escala, ampliar, arrast
 
 **Validação vigente:**
 
-Validação final registrada: **76 passed in 48.78s**. HTML: **297 referências de links/imagens inventariadas**, com os destinos locais verificados. PDF: **79 páginas**, estrutura e fonte Unicode incorporada verificadas. **65 pares CSV/Parquet** conferidos por quantidade de linhas. JSONs lidos em modo estrito; fichas, fontes e controles verificados.
+Validação final registrada: **92 passed in 15.33s**. HTML: **297 referências de links/imagens inventariadas**, com os destinos locais verificados. PDF: **79 páginas**, estrutura e fonte Unicode incorporada verificadas. **76 pares CSV/Parquet** conferidos por quantidade de linhas. JSONs lidos em modo estrito; fichas, fontes e controles verificados.
 
 Resultados completos: [validação da entrega](outputs/logs/validacao-entrega.log), [testes](outputs/logs/testes-documentacao.log), [coerência da síntese](outputs/logs/validacao-sintese.log) e [preservação SHA256](outputs/logs/preservacao-documentacao-conferencia.log). A contagem de links inclui referências repetidas e externas; URLs externas não foram testadas por rede nesta revisão. O validador confere correspondência analítica e provas documentais dos casos dirigidos; igualdade de contagens CSV/Parquet, isoladamente, não é igualdade de conteúdo de todas as células.
 

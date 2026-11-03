@@ -1,0 +1,48 @@
+campo,definicao
+year,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+uf,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+municipality,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+zone,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+section,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+municipality_name_1,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+absolute_flag,"Critério de 10 pp ou passagem a zero, preservado da referência."
+max_change_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+any_zero,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+k,Quantidade de pares desta configuração.
+available,Há pares suficientes para esta configuração na UF.
+peer_count,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+peer_ids,"Lista dos pares auditáveis; 15 é prefixo de 30, e 50 preserva os 30 publicados."
+status,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+peer_scope,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+median_delta_turnout_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_delta_turnout_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+z_delta_turnout_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+median_delta_blank_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_delta_blank_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+z_delta_blank_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+median_delta_null_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_delta_null_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+z_delta_null_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+median_delta_share_13_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_delta_share_13_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+z_delta_share_13_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+median_delta_share_22_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_delta_share_22_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+z_delta_share_22_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+robust_max,Máximo escore informativo entre os indicadores; ausente com MAD insuficiente.
+robust_flag,"Escore >3,5; ausente quando faltam pares, falso para MAD inconclusivo sem escore."
+statistical_alert,"União do critério absoluto e robusto, somente na configuração disponível."
+driver_metric,Indicador com maior escore robusto disponível; não é causa política da mudança.
+driver_change_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+driver_median_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+driver_mad_pp,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+numerator_1,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+numerator_2,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+denominator_1,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+denominator_2,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+one_unit_pp_1,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+one_unit_pp_2,"Identificação territorial ou medida por configuração; sufixos _1/_2 indicam turno. Mudanças, medianas e MAD em pp; numeradores e denominadores são quantidades publicadas."
+mad_below_one_unit,"MAD do indicador de maior afastamento abaixo de max(100/denominador_1,100/denominador_2); diagnóstico de escala, sem novo alerta."
+uninformative_metrics,Quantidade de indicadores sem escore informativo nesta configuração.
+common_universe,Pares suficientes em todas as configurações solicitadas.
+rank_common,Prioridade entre alertas somente no universo comum; ausente fora dele ou sem alerta.

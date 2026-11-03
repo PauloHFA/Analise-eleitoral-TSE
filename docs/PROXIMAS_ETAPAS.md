@@ -7,8 +7,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | Ordem | Frente | Entrega | Estado inicial |
 | --- | --- | --- | --- |
 | 0 | Roteiro e preservação | Este documento, critérios de aceitação e convenções | Documentado |
-| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Executado; conferência final pendente |
-| 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Comando implementado e testado; execução nacional pendente |
+| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Implementado, executado nacionalmente e validado |
+| 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Planejado; explicação oficial pode exigir documentos adicionais |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
 | 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
@@ -47,7 +47,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 
 **Commits previstos:** implementação/testes do comando; execução nacional e síntese conferida. Uma alteração do algoritmo original além da parametrização exige justificativa e comparação própria.
 
-**Incremento implementado:** `eleicoes estabilidade --output outputs/2026 --pares 15 30 50`. O comando escreve em `outputs/2026/estabilidade/` e recusa sobrescrever uma pasta já preenchida; `--dest` permite uma execução independente. Há testes de referência reproduzida, conjuntos aninhados, pares insuficientes, MAD, listas vazias e preservação das entradas. A execução sobre os dados nacionais ainda precisa ser conferida para encerrar a frente.
+**Incremento implementado:** `eleicoes estabilidade --output outputs/2026 --pares 15 30 50`. O comando escreve em `outputs/2026/estabilidade/` e recusa sobrescrever uma pasta já preenchida; `--dest` permite uma execução independente. Há testes de referência reproduzida, conjuntos aninhados, pares insuficientes, MAD, listas vazias e preservação das entradas. A execução nacional foi conferida; resultados e limites constam da síntese incremental vinculada ao final deste roteiro.
 
 ## 2. Cobertura e perfil das unidades excluídas
 
@@ -112,3 +112,14 @@ O [TSE descreve possibilidades de auditoria](https://www.tse.jus.br/eleicoes/urn
 ## Registro de cada entrega
 
 Em cada frente, acrescentar: commit(s), comando executado, parâmetros, testes, arquivos produzidos, resultados, limitações, pendências e próxima decisão. Atualizar o estado na tabela somente com base nesses registros. A referência atual continua verificável enquanto os novos estudos são produzidos.
+
+### Primeira rodada concluída
+
+- Roteiro: `e4b7222`.
+- Implementação de estabilidade: `6ff5db4`.
+- Implementação de cobertura: `fa0392a`.
+- Leitores e validação independente: `7428437`.
+- Execução nacional e conferências: [resultados incrementais](RESULTADOS_INCREMENTAIS.md).
+- Estabilidade: referência de 30 reproduzida nas 28 UFs; universo comum de 428.521 seções; sensibilidade relevante do topo dos rankings.
+- Cobertura: 499.248 unidades fechadas em três grupos; perfis, cobertura municipal/UF e ausências explicitados.
+- Próxima frente de trabalho: dossiê de categorias/versões, preservando a distinção entre compensação aritmética e explicação documental confirmada.

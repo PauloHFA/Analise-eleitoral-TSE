@@ -1,0 +1,198 @@
+{
+  "tag": "estabilidade-cobertura-v1",
+  "release": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/estabilidade-cobertura-v1",
+  "extraction": "Extrair na raiz do clone; preserva outputs/2026/estabilidade e outputs/2026/cobertura.",
+  "baseline": "As referências e releases anteriores permanecem preservadas.",
+  "analysis_commits": {
+    "estabilidade": "6ff5db4",
+    "cobertura": "fa0392a"
+  },
+  "assets": [
+    {
+      "name": "estabilidade.zip",
+      "bytes": 656451152,
+      "sha256": "823671d048c19f408825b4b8c20a1afe79120290f74a8336723129ab0ee78811",
+      "files": [
+        {
+          "path": "DATA_LICENSE.md",
+          "bytes": 3994,
+          "sha256": "bf1311c1e00b681ded9a00ddcd37ad9d51ca211da590a213cb66610809cb9924"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "210e5a0fbe1ea94996a10027f5cf6473058492cc9d826689f588168edeece82d"
+        },
+        {
+          "path": "outputs/2026/estabilidade/comparacao.csv",
+          "bytes": 58743662,
+          "sha256": "9bea56d3767ae0cb925eae008ac9b2a37324ce3efa4bdba08152227b16b5d249"
+        },
+        {
+          "path": "outputs/2026/estabilidade/comparacao.parquet",
+          "bytes": 12343498,
+          "sha256": "925ecc12089d00d4d0eb294e52d43c112d119e1cc2d0ce83d154d1e5876154d9"
+        },
+        {
+          "path": "outputs/2026/estabilidade/dicionario.csv",
+          "bytes": 7958,
+          "sha256": "155ae9dc9ecf85ee07f47c8b2c711841e3cd623ae478575b2151e9ba36a980e3"
+        },
+        {
+          "path": "outputs/2026/estabilidade/estado_execucao.json",
+          "bytes": 597,
+          "sha256": "b241c9dd4d1f6ceb77d86fd0f9393dc114d1208cf5260a989ee51a555a6ca92d"
+        },
+        {
+          "path": "outputs/2026/estabilidade/rankings.csv",
+          "bytes": 21352505,
+          "sha256": "379324b0b1aae5723021c5b30cb65cf46bfa2ce4f35a3572f76f70516ebaf104"
+        },
+        {
+          "path": "outputs/2026/estabilidade/rankings.parquet",
+          "bytes": 6130937,
+          "sha256": "718cd145115352b86fcd00c2928026133d665208b61a91662e579522d0ece864"
+        },
+        {
+          "path": "outputs/2026/estabilidade/relatorio.html",
+          "bytes": 7773,
+          "sha256": "0e8e953d81c54190abadc98e90386df22bbafc85893a88eb9465c66e860c1cda"
+        },
+        {
+          "path": "outputs/2026/estabilidade/resumo.json",
+          "bytes": 8238,
+          "sha256": "586187c803cb6cdb097403b2746df8a622623b1da7e53c8defb47bcc6845335c"
+        },
+        {
+          "path": "outputs/2026/estabilidade/top100.csv",
+          "bytes": 29472,
+          "sha256": "4ca3606530240557a933b29adf39132e2b60e14a64507a983e00ca7f8f0bc4b9"
+        },
+        {
+          "path": "outputs/2026/estabilidade/top100.parquet",
+          "bytes": 10639,
+          "sha256": "1cb0cc1e6e4c23c0f48e21c3bb810a7717e88ca6bc9ebf0f83a40f9c86834cf2"
+        },
+        {
+          "path": "outputs/2026/estabilidade/variantes.csv",
+          "bytes": 1360468957,
+          "sha256": "48892e7048453552ab2bed5e6fb01fa7df1bca800186d44e45b8afeff89d1bf9"
+        },
+        {
+          "path": "outputs/2026/estabilidade/variantes.parquet",
+          "bytes": 280032188,
+          "sha256": "db07d5e746525129dc0e0af4b408d4c66c855c8d5813024d6ada3358bd03c40b"
+        }
+      ],
+      "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/estabilidade-cobertura-v1/estabilidade.zip"
+    },
+    {
+      "name": "cobertura.zip",
+      "bytes": 7213728,
+      "sha256": "70fd2b276272cc9dcbea38a7db23789c4c5385874d1d1c31e078945e5c4a92bb",
+      "files": [
+        {
+          "path": "DATA_LICENSE.md",
+          "bytes": 3994,
+          "sha256": "bf1311c1e00b681ded9a00ddcd37ad9d51ca211da590a213cb66610809cb9924"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "210e5a0fbe1ea94996a10027f5cf6473058492cc9d826689f588168edeece82d"
+        },
+        {
+          "path": "outputs/2026/cobertura/dicionario.csv",
+          "bytes": 1074,
+          "sha256": "a63b62d791f1f09afac4fa58d5aecda7218047240251fbfd3c4094124a6b68e8"
+        },
+        {
+          "path": "outputs/2026/cobertura/diferencas.csv",
+          "bytes": 43021,
+          "sha256": "cb06fac11cd8abe481d757e09443f343a6ae62d941e8b31909ccec30e92b4149"
+        },
+        {
+          "path": "outputs/2026/cobertura/diferencas.parquet",
+          "bytes": 9592,
+          "sha256": "1cd621f3a1013efc0462f663f8d154bedfff1d81bde38edc28024e8c247638fb"
+        },
+        {
+          "path": "outputs/2026/cobertura/distribuicao_geografica.csv",
+          "bytes": 3875,
+          "sha256": "11f57d3c6a26b6fa0b5bf5d3d9f4c375ffa429b731c0d671389d4de67352361f"
+        },
+        {
+          "path": "outputs/2026/cobertura/distribuicao_geografica.parquet",
+          "bytes": 2085,
+          "sha256": "3f2e1639231a0c45175329294f041f04bcefe353048eeebed6d219e81c286e32"
+        },
+        {
+          "path": "outputs/2026/cobertura/estado_execucao.json",
+          "bytes": 548,
+          "sha256": "58a45f53548e33a86c657548b0530bdcaa2a66d3b35d6d92564c2dce4c123337"
+        },
+        {
+          "path": "outputs/2026/cobertura/faixas.csv",
+          "bytes": 222,
+          "sha256": "1be6fc9746573fecab5d5d9d269ff0c19b235f68b58160f8bc48ad435e554dda"
+        },
+        {
+          "path": "outputs/2026/cobertura/faixas.parquet",
+          "bytes": 975,
+          "sha256": "9282c1e12a3bda500d5b44928da3a04d62e2ec74561bd48fe34419ada128e4aa"
+        },
+        {
+          "path": "outputs/2026/cobertura/municipios.csv",
+          "bytes": 637000,
+          "sha256": "1d6192888c2f6e53f49611ef5bf8493b51e6020d479e62c6e3ef42370a04b130"
+        },
+        {
+          "path": "outputs/2026/cobertura/municipios.parquet",
+          "bytes": 247478,
+          "sha256": "ecc0f7cae8e5ec46ca7d48b9e23c1a864ef85833e3bfb9447448786c6052fddb"
+        },
+        {
+          "path": "outputs/2026/cobertura/perfis.csv",
+          "bytes": 64664,
+          "sha256": "5b78568dda12910e8784ba64257bd05e874f3335f302cee80c392399729b937c"
+        },
+        {
+          "path": "outputs/2026/cobertura/perfis.parquet",
+          "bytes": 15344,
+          "sha256": "a556ff7174ea1138e414ff90cd25c0d7a3f3b148a53708d4415ae35720c7483b"
+        },
+        {
+          "path": "outputs/2026/cobertura/relatorio.html",
+          "bytes": 25607,
+          "sha256": "00f421604b9a8f151b5b588cf9d4647fa9b5e92815d764bc9139bd1a5ef7d727"
+        },
+        {
+          "path": "outputs/2026/cobertura/resumo.json",
+          "bytes": 28841,
+          "sha256": "e764ca94e83c57bfdfb840375d44541aac1fa5ca6942ad1914a06648bb7d6c5e"
+        },
+        {
+          "path": "outputs/2026/cobertura/resumo_uf.csv",
+          "bytes": 2038,
+          "sha256": "e78c9cd5c0e7717f008f3ab6fdd8e4353b32305517ee5da3a34dac325cefb0d4"
+        },
+        {
+          "path": "outputs/2026/cobertura/resumo_uf.parquet",
+          "bytes": 2595,
+          "sha256": "fd937d4a235b23392446f70c0d03c1e59de509182127fe104940a78fdc07ad23"
+        },
+        {
+          "path": "outputs/2026/cobertura/unidades.csv",
+          "bytes": 29211261,
+          "sha256": "b4cad86d374d2a4e985ed9bd5ee645d299570f09815720a06cd9050f05c96ca4"
+        },
+        {
+          "path": "outputs/2026/cobertura/unidades.parquet",
+          "bytes": 3168252,
+          "sha256": "465e1b99fc576e6bad302bbd83aa622896b34395afe478353f15fbf3161e36bf"
+        }
+      ],
+      "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/estabilidade-cobertura-v1/cobertura.zip"
+    }
+  ]
+}

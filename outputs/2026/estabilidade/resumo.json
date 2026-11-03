@@ -1,0 +1,370 @@
+{
+  "status": "concluído",
+  "generated": "2026-11-03T14:36:42.704668-03:00",
+  "sizes": [
+    15,
+    30,
+    50
+  ],
+  "eligible_units": 428571,
+  "common_units": 428521,
+  "configurations": [
+    {
+      "k": 15,
+      "units": 428571,
+      "available": 428571,
+      "alerts": 83997,
+      "common_units": 428521,
+      "common_alerts": 83983,
+      "alert_small_mad": 17398
+    },
+    {
+      "k": 30,
+      "units": 428571,
+      "available": 428571,
+      "alerts": 63809,
+      "common_units": 428521,
+      "common_alerts": 63796,
+      "alert_small_mad": 5450
+    },
+    {
+      "k": 50,
+      "units": 428571,
+      "available": 428521,
+      "alerts": 59045,
+      "common_units": 428521,
+      "common_alerts": 59045,
+      "alert_small_mad": 3361
+    }
+  ],
+  "regional": [
+    {
+      "k": 15,
+      "is_exterior": false,
+      "units": 428521,
+      "available": 428521,
+      "common_units": 428521,
+      "common_alerts": 83983
+    },
+    {
+      "k": 15,
+      "is_exterior": true,
+      "units": 50,
+      "available": 50,
+      "common_units": 0,
+      "common_alerts": 0
+    },
+    {
+      "k": 30,
+      "is_exterior": false,
+      "units": 428521,
+      "available": 428521,
+      "common_units": 428521,
+      "common_alerts": 63796
+    },
+    {
+      "k": 30,
+      "is_exterior": true,
+      "units": 50,
+      "available": 50,
+      "common_units": 0,
+      "common_alerts": 0
+    },
+    {
+      "k": 50,
+      "is_exterior": false,
+      "units": 428521,
+      "available": 428521,
+      "common_units": 428521,
+      "common_alerts": 59045
+    },
+    {
+      "k": 50,
+      "is_exterior": true,
+      "units": 50,
+      "available": 0,
+      "common_units": 0,
+      "common_alerts": 0
+    }
+  ],
+  "overlaps": [
+    {
+      "left": 15,
+      "right": 30,
+      "requested": 25,
+      "left_size": 25,
+      "right_size": 25,
+      "intersection": 2,
+      "union": 48,
+      "jaccard": 0.041666666666666664,
+      "retention_left": 0.08
+    },
+    {
+      "left": 15,
+      "right": 30,
+      "requested": 50,
+      "left_size": 50,
+      "right_size": 50,
+      "intersection": 4,
+      "union": 96,
+      "jaccard": 0.041666666666666664,
+      "retention_left": 0.08
+    },
+    {
+      "left": 15,
+      "right": 30,
+      "requested": 100,
+      "left_size": 100,
+      "right_size": 100,
+      "intersection": 8,
+      "union": 192,
+      "jaccard": 0.041666666666666664,
+      "retention_left": 0.08
+    },
+    {
+      "left": 15,
+      "right": 50,
+      "requested": 25,
+      "left_size": 25,
+      "right_size": 25,
+      "intersection": 0,
+      "union": 50,
+      "jaccard": 0.0,
+      "retention_left": 0.0
+    },
+    {
+      "left": 15,
+      "right": 50,
+      "requested": 50,
+      "left_size": 50,
+      "right_size": 50,
+      "intersection": 2,
+      "union": 98,
+      "jaccard": 0.02040816326530612,
+      "retention_left": 0.04
+    },
+    {
+      "left": 15,
+      "right": 50,
+      "requested": 100,
+      "left_size": 100,
+      "right_size": 100,
+      "intersection": 6,
+      "union": 194,
+      "jaccard": 0.030927835051546393,
+      "retention_left": 0.06
+    },
+    {
+      "left": 30,
+      "right": 50,
+      "requested": 25,
+      "left_size": 25,
+      "right_size": 25,
+      "intersection": 2,
+      "union": 48,
+      "jaccard": 0.041666666666666664,
+      "retention_left": 0.08
+    },
+    {
+      "left": 30,
+      "right": 50,
+      "requested": 50,
+      "left_size": 50,
+      "right_size": 50,
+      "intersection": 9,
+      "union": 91,
+      "jaccard": 0.0989010989010989,
+      "retention_left": 0.18
+    },
+    {
+      "left": 30,
+      "right": 50,
+      "requested": 100,
+      "left_size": 100,
+      "right_size": 100,
+      "intersection": 18,
+      "union": 182,
+      "jaccard": 0.0989010989010989,
+      "retention_left": 0.18
+    }
+  ],
+  "triage_stability": [
+    {
+      "alert_configurations": 0,
+      "units": 339256
+    },
+    {
+      "alert_configurations": 1,
+      "units": 27277
+    },
+    {
+      "alert_configurations": 2,
+      "units": 6417
+    },
+    {
+      "alert_configurations": 3,
+      "units": 55571
+    }
+  ],
+  "baseline_checks": [
+    {
+      "uf": "AC",
+      "sections": 1819,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "AL",
+      "sections": 6233,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "AM",
+      "sections": 6593,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "AP",
+      "sections": 1655,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "BA",
+      "sections": 29574,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "CE",
+      "sections": 20128,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "DF",
+      "sections": 4871,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "ES",
+      "sections": 8642,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "GO",
+      "sections": 13648,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "MA",
+      "sections": 15476,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "MG",
+      "sections": 44534,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "MS",
+      "sections": 6316,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "MT",
+      "sections": 6868,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "PA",
+      "sections": 18259,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "PB",
+      "sections": 9428,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "PE",
+      "sections": 18842,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "PI",
+      "sections": 8503,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "PR",
+      "sections": 23926,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "RJ",
+      "sections": 31804,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "RN",
+      "sections": 6367,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "RO",
+      "sections": 4103,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "RR",
+      "sections": 1251,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "RS",
+      "sections": 24354,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "SC",
+      "sections": 15081,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "SE",
+      "sections": 4588,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "SP",
+      "sections": 91737,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "TO",
+      "sections": 3921,
+      "baseline_reproduced": true
+    },
+    {
+      "uf": "ZZ",
+      "sections": 50,
+      "baseline_reproduced": true
+    }
+  ],
+  "method": "Pares aninhados: prefixo dos 30 publicados e extensão por vizinhos do primeiro turno, com prioridade municipal e complemento na UF.",
+  "ties": "A ordem publicada ancora os desempates; a extensão usa entrada em ordem geográfica e as versões registradas do algoritmo/bibliotecas.",
+  "mad_diagnostic": "MAD comparado a max(100/denominador_1,100/denominador_2): escala de uma unidade no numerador com denominadores fixos; não é teste probabilístico nem novo critério de alerta.",
+  "input_hashes": {
+    "indicadores_secoes.parquet": "ccd20d20d95dd6d172ac8e62637ec8e3bc73833c26ab0ab7a3ad87ab1ec488ef",
+    "candidatos.parquet": "56b3c88538f2a117bf05b5756d39d9c626e1db384f18c60b09c74192b8f7b5f1",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c"
+  },
+  "code_hashes": {
+    "stability.py": "0f20a3aad45a0fc1434df3a26278efddda813caf520595a1fd3c9fa5a351b42e",
+    "analysis.py": "c284b893cb4ebb90394272b8c14fa2e848fd267da938eeee296b79ad23c2a43d"
+  },
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "duckdb": "2.0.0"
+  }
+}

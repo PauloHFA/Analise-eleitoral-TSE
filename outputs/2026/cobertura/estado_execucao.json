@@ -1,0 +1,15 @@
+{
+  "status": "concluído",
+  "started": "2026-11-03T14:39:13.781626-03:00",
+  "input_hashes": {
+    "indicadores_secoes.parquet": "ccd20d20d95dd6d172ac8e62637ec8e3bc73833c26ab0ab7a3ad87ab1ec488ef",
+    "candidatos.parquet": "56b3c88538f2a117bf05b5756d39d9c626e1db384f18c60b09c74192b8f7b5f1",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c"
+  },
+  "thresholds": [
+    50.0,
+    80.0,
+    95.0
+  ]
+}

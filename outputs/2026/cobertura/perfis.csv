@@ -1,0 +1,631 @@
+level,scope,analysis_group,metric,unit,units,used,missing,nonfinite,out_of_range,q25,median,q75
+uf,BA,eligible,Nulos/comparecentes,%,29574,29574,0,0,0,2.42914979757085,3.5398230088495577,4.838709677419355
+uf,PA,eligible,Nulos/comparecentes,%,18259,18259,0,0,0,1.9011406844106464,2.7906976744186047,3.8062283737024223
+uf,MG,eligible,Nulos/comparecentes,%,44534,44534,0,0,0,2.0792748917748916,3.007518796992481,4.081632653061225
+uf,MA,eligible,Nulos/comparecentes,%,15476,15476,0,0,0,1.4184397163120568,2.242152466367713,3.344792430779177
+uf,PE,eligible,Nulos/comparecentes,%,18842,18842,0,0,0,2.413793103448276,3.322259136212625,4.363636363636364
+uf,RS,eligible,Nulos/comparecentes,%,24354,24354,0,0,0,1.171875,1.8433179723502304,2.6717557251908395
+uf,ES,eligible,Nulos/comparecentes,%,8642,8642,0,0,0,1.6129032258064515,2.4,3.289473684210526
+uf,AC,eligible,Nulos/comparecentes,%,1819,1819,0,0,0,1.7316017316017316,2.6785714285714284,3.723404255319149
+uf,DF,eligible,Nulos/comparecentes,%,4871,4871,0,0,0,1.2448132780082988,1.8450184501845017,2.549395554400104
+uf,PB,eligible,Nulos/comparecentes,%,9428,9428,0,0,0,3.1818181818181817,4.3478260869565215,5.725611191445002
+uf,GO,eligible,Nulos/comparecentes,%,13648,13648,0,0,0,1.6129032258064515,2.3728813559322033,3.257328990228013
+uf,ZZ,eligible,Nulos/comparecentes,%,50,50,0,0,0,0.8180894308943091,1.3637490701710886,2.567795875931381
+region,Brasil,eligible,Nulos/comparecentes,%,428521,428521,0,0,0,1.7937219730941705,2.769230769230769,3.934426229508197
+uf,BA,eligible,Taxa de comparecimento,%,29574,29574,0,0,0,77.45098039215686,80.5,83.38192419825073
+uf,PA,eligible,Taxa de comparecimento,%,18259,18259,0,0,0,78.02923602219377,81.37254901960785,84.48844884488449
+uf,MG,eligible,Taxa de comparecimento,%,44534,44534,0,0,0,73.6,77.68115942028986,81.32183908045977
+uf,MA,eligible,Taxa de comparecimento,%,15476,15476,0,0,0,77.02593370069098,80.67226890756302,83.98692810457517
+uf,PE,eligible,Taxa de comparecimento,%,18842,18842,0,0,0,78.9873417721519,82.39999999999999,85.23316062176166
+uf,RS,eligible,Taxa de comparecimento,%,24354,24354,0,0,0,75.1497005988024,78.98550724637681,82.84789644012946
+uf,ES,eligible,Taxa de comparecimento,%,8642,8642,0,0,0,75.56179775280899,78.96253602305475,82.0754716981132
+uf,AC,eligible,Taxa de comparecimento,%,1819,1819,0,0,0,76.76610846179437,79.76190476190477,82.4121082781085
+uf,DF,eligible,Taxa de comparecimento,%,4871,4871,0,0,0,78.71287128712872,81.09452736318407,83.21162046908316
+uf,PB,eligible,Taxa de comparecimento,%,9428,9428,0,0,0,79.93421052631578,82.86944813339235,85.54968241060243
+uf,GO,eligible,Taxa de comparecimento,%,13648,13648,0,0,0,75.56023720349563,78.59713860296498,81.2379498714653
+uf,ZZ,eligible,Taxa de comparecimento,%,50,50,0,0,0,33.7507871536524,45.89710316400137,54.13122775800712
+region,Brasil,eligible,Taxa de comparecimento,%,428521,428521,0,0,0,75.88235294117646,79.65616045845272,83.04093567251462
+uf,BA,eligible,Participação do candidato 22,%,29574,29574,0,0,0,19.812050937554766,26.578073089701,34.24524279089601
+uf,PA,eligible,Participação do candidato 22,%,18259,18259,0,0,0,32.55423755267676,43.944636678200695,55.091206475937014
+uf,MG,eligible,Participação do candidato 22,%,44534,44534,0,0,0,40.74074074074074,48.333333333333336,55.078125
+uf,MA,eligible,Participação do candidato 22,%,15476,15476,0,0,0,20.19704433497537,29.19254658385093,38.24747094571025
+uf,PE,eligible,Participação do candidato 22,%,18842,18842,0,0,0,22.330906148867314,31.191185580695596,37.828639365267094
+uf,RS,eligible,Participação do candidato 22,%,24354,24354,0,0,0,46.454598760261355,55.938697318007655,65.07790616246498
+uf,ES,eligible,Participação do candidato 22,%,8642,8642,0,0,0,47.98424022214344,54.69593206410081,61.78010471204188
+uf,AC,eligible,Participação do candidato 22,%,1819,1819,0,0,0,60.792951541850215,65.4054054054054,70.29138513513513
+uf,DF,eligible,Participação do candidato 22,%,4871,4871,0,0,0,48.903104195075,52.41635687732342,55.75539568345324
+uf,PB,eligible,Participação do candidato 22,%,9428,9428,0,0,0,22.626911516993097,30.434782608695656,41.17647058823529
+uf,GO,eligible,Participação do candidato 22,%,13648,13648,0,0,0,47.601476014760145,53.16678552326617,58.852297647527905
+uf,ZZ,eligible,Participação do candidato 22,%,50,50,0,0,0,25.611164198120722,37.09051724137931,57.41525423728814
+region,Brasil,eligible,Participação do candidato 22,%,428521,428521,0,0,0,35.39823008849557,48.319327731092436,58.767772511848335
+uf,BA,eligible,Participação do candidato 13,%,29574,29574,0,0,0,59.92811787899736,67.77251184834124,75.66539923954373
+uf,PA,eligible,Participação do candidato 13,%,18259,18259,0,0,0,38.89782065023223,49.142857142857146,62.745098039215684
+uf,MG,eligible,Participação do candidato 13,%,44534,44534,0,0,0,35.96550982360533,42.71356783919598,51.231527093596064
+uf,MA,eligible,Participação do candidato 13,%,15476,15476,0,0,0,55.55555555555556,65.70048309178745,76.06837606837607
+uf,PE,eligible,Participação do candidato 13,%,18842,18842,0,0,0,56.02094240837696,63.286713286713294,72.94520547945206
+uf,RS,eligible,Participação do candidato 13,%,24354,24354,0,0,0,26.373626373626376,35.43082114735658,44.69958804636224
+uf,ES,eligible,Participação do candidato 13,%,8642,8642,0,0,0,30.935251798561154,37.58395312147847,44.33846082349661
+uf,AC,eligible,Participação do candidato 13,%,1819,1819,0,0,0,23.20714285714286,27.027027027027028,31.77130119439731
+uf,DF,eligible,Participação do candidato 13,%,4871,4871,0,0,0,33.80206273889548,36.96682464454976,40.460221506420154
+uf,PB,eligible,Participação do candidato 13,%,9428,9428,0,0,0,51.95349343394035,64.58333333333334,73.07692307692307
+uf,GO,eligible,Participação do candidato 13,%,13648,13648,0,0,0,25.75107296137339,30.808249007301143,36.44444444444444
+uf,ZZ,eligible,Participação do candidato 13,%,50,50,0,0,0,30.686621071236456,49.13793103448276,62.94959473150963
+region,Brasil,eligible,Participação do candidato 13,%,428521,428521,0,0,0,32.20338983050847,42.63565891472868,57.676348547717836
+uf,BA,eligible,Brancos/comparecentes,%,29574,29574,0,0,0,0.9345794392523363,1.5723270440251573,2.3255813953488373
+uf,PA,eligible,Brancos/comparecentes,%,18259,18259,0,0,0,0.4016064257028112,0.8888888888888888,1.5060240963855422
+uf,MG,eligible,Brancos/comparecentes,%,44534,44534,0,0,0,1.2422360248447204,2.0,2.877697841726619
+uf,MA,eligible,Brancos/comparecentes,%,15476,15476,0,0,0,0.4464285714285714,0.9615384615384616,1.5706806282722512
+uf,PE,eligible,Brancos/comparecentes,%,18842,18842,0,0,0,1.1363636363636365,1.7605633802816902,2.4734982332155475
+uf,RS,eligible,Brancos/comparecentes,%,24354,24354,0,0,0,1.3071895424836601,2.083333333333333,3.0395136778115504
+uf,ES,eligible,Brancos/comparecentes,%,8642,8642,0,0,0,1.1406844106463878,1.7699115044247788,2.5
+uf,AC,eligible,Brancos/comparecentes,%,1819,1819,0,0,0,0.4987562189054726,1.0,1.5873015873015872
+uf,DF,eligible,Brancos/comparecentes,%,4871,4871,0,0,0,0.8658008658008658,1.3745704467353952,1.968503937007874
+uf,PB,eligible,Brancos/comparecentes,%,9428,9428,0,0,0,1.1753216911764706,1.8315018315018317,2.6490066225165565
+uf,GO,eligible,Brancos/comparecentes,%,13648,13648,0,0,0,0.5747126436781609,1.0582010582010581,1.639344262295082
+uf,ZZ,eligible,Brancos/comparecentes,%,50,50,0,0,0,0.0,1.0714285714285714,2.2664835164835164
+region,Brasil,eligible,Brancos/comparecentes,%,428521,428521,0,0,0,0.9900990099009901,1.694915254237288,2.5547445255474455
+uf,BA,eligible,Comparecimento,comparecentes,29574,29574,0,0,0,214.0,258.0,296.0
+uf,PA,eligible,Comparecimento,comparecentes,18259,18259,0,0,0,211.0,253.0,281.0
+uf,MG,eligible,Comparecimento,comparecentes,44534,44534,0,0,0,209.0,248.0,278.0
+uf,MA,eligible,Comparecimento,comparecentes,15476,15476,0,0,0,190.0,231.0,271.0
+uf,PE,eligible,Comparecimento,comparecentes,18842,18842,0,0,0,246.0,285.0,313.0
+uf,RS,eligible,Comparecimento,comparecentes,24354,24354,0,0,0,212.0,252.0,281.0
+uf,ES,eligible,Comparecimento,comparecentes,8642,8642,0,0,0,214.0,243.0,267.0
+uf,AC,eligible,Comparecimento,comparecentes,1819,1819,0,0,0,189.0,217.0,246.0
+uf,DF,eligible,Comparecimento,comparecentes,4871,4871,0,0,0,237.0,265.0,290.0
+uf,PB,eligible,Comparecimento,comparecentes,9428,9428,0,0,0,221.0,253.0,280.0
+uf,GO,eligible,Comparecimento,comparecentes,13648,13648,0,0,0,227.0,258.0,283.0
+uf,ZZ,eligible,Comparecimento,comparecentes,50,50,0,0,0,84.0,134.5,197.0
+region,Brasil,eligible,Comparecimento,comparecentes,428521,428521,0,0,0,219.0,256.0,285.0
+uf,BA,eligible,Eleitorado apto,eleitores,29574,29574,0,0,0,266.0,322.0,373.0
+uf,PA,eligible,Eleitorado apto,eleitores,18259,18259,0,0,0,265.0,317.0,348.0
+uf,MG,eligible,Eleitorado apto,eleitores,44534,44534,0,0,0,275.0,321.0,357.0
+uf,MA,eligible,Eleitorado apto,eleitores,15476,15476,0,0,0,239.0,291.0,336.0
+uf,PE,eligible,Eleitorado apto,eleitores,18842,18842,0,0,0,301.0,352.0,386.0
+uf,RS,eligible,Eleitorado apto,eleitores,24354,24354,0,0,0,271.0,323.0,358.0
+uf,ES,eligible,Eleitorado apto,eleitores,8642,8642,0,0,0,275.0,312.0,340.0
+uf,AC,eligible,Eleitorado apto,eleitores,1819,1819,0,0,0,239.0,274.0,310.0
+uf,DF,eligible,Eleitorado apto,eleitores,4871,4871,0,0,0,293.0,331.0,361.5
+uf,PB,eligible,Eleitorado apto,eleitores,9428,9428,0,0,0,270.0,311.0,338.0
+uf,GO,eligible,Eleitorado apto,eleitores,13648,13648,0,0,0,294.0,331.0,362.0
+uf,ZZ,eligible,Eleitorado apto,eleitores,50,50,0,0,0,259.25,377.0,397.75
+region,Brasil,eligible,Eleitorado apto,eleitores,428521,428521,0,0,0,279.0,325.0,360.0
+uf,BA,comparable_small,Nulos/comparecentes,%,49,49,0,0,0,0.0,2.2222222222222223,4.3478260869565215
+uf,PA,comparable_small,Nulos/comparecentes,%,82,82,0,0,0,0.0,2.000800320128051,3.9215686274509802
+uf,MG,comparable_small,Nulos/comparecentes,%,97,97,0,0,0,0.0,2.7027027027027026,6.0
+uf,MA,comparable_small,Nulos/comparecentes,%,48,48,0,0,0,0.0,2.272727272727273,4.020408163265306
+uf,PE,comparable_small,Nulos/comparecentes,%,7,7,0,0,0,1.0416666666666665,2.272727272727273,3.4693877551020407
+uf,RS,comparable_small,Nulos/comparecentes,%,48,48,0,0,0,0.0,0.0,2.721471471471472
+uf,ES,comparable_small,Nulos/comparecentes,%,9,9,0,0,0,0.0,0.0,0.0
+uf,AC,comparable_small,Nulos/comparecentes,%,0,0,0,0,0,,,
+uf,DF,comparable_small,Nulos/comparecentes,%,4,4,0,0,0,0.0,1.4705882352941175,4.478609625668449
+uf,PB,comparable_small,Nulos/comparecentes,%,6,6,0,0,0,5.870445344129554,8.391608391608392,10.308441558441558
+uf,GO,comparable_small,Nulos/comparecentes,%,11,11,0,0,0,0.0,0.0,2.270408163265306
+uf,ZZ,comparable_small,Nulos/comparecentes,%,27,27,0,0,0,0.0,0.0,0.0
+region,Brasil,comparable_small,Nulos/comparecentes,%,568,568,0,0,0,0.0,2.083333333333333,4.166666666666666
+uf,BA,comparable_small,Taxa de comparecimento,%,49,49,0,0,0,74.50980392156863,79.03225806451613,87.5
+uf,PA,comparable_small,Taxa de comparecimento,%,82,82,0,0,0,71.65653495440729,82.55434782608695,87.01690821256038
+uf,MG,comparable_small,Taxa de comparecimento,%,97,97,0,0,0,65.625,73.33333333333333,84.61538461538461
+uf,MA,comparable_small,Taxa de comparecimento,%,48,48,0,0,0,73.25050709939148,78.1534090909091,85.12794948487868
+uf,PE,comparable_small,Taxa de comparecimento,%,7,7,0,0,0,84.78818998716302,88.0,89.93558776167473
+uf,RS,comparable_small,Taxa de comparecimento,%,48,48,0,0,0,65.18640350877195,72.92716445258819,81.3115763546798
+uf,ES,comparable_small,Taxa de comparecimento,%,9,9,0,0,0,59.09090909090909,69.6969696969697,81.25
+uf,AC,comparable_small,Taxa de comparecimento,%,0,0,0,0,0,,,
+uf,DF,comparable_small,Taxa de comparecimento,%,4,4,0,0,0,85.92657342657341,87.77641277641277,89.26031294452348
+uf,PB,comparable_small,Taxa de comparecimento,%,6,6,0,0,0,79.58064516129032,90.99462365591397,93.63095238095238
+uf,GO,comparable_small,Taxa de comparecimento,%,11,11,0,0,0,66.88492063492063,74.4186046511628,76.98305084745763
+uf,ZZ,comparable_small,Taxa de comparecimento,%,27,27,0,0,0,32.68384663733501,40.243902439024396,47.55538579067991
+region,Brasil,comparable_small,Taxa de comparecimento,%,568,568,0,0,0,70.58823529411765,79.06976744186046,86.66666666666667
+uf,BA,comparable_small,Participação do candidato 22,%,49,49,0,0,0,9.090909090909092,17.5,24.324324324324326
+uf,PA,comparable_small,Participação do candidato 22,%,82,82,0,0,0,17.699579831932773,33.33333333333333,52.53338570306363
+uf,MG,comparable_small,Participação do candidato 22,%,97,97,0,0,0,16.666666666666664,34.146341463414636,46.15384615384615
+uf,MA,comparable_small,Participação do candidato 22,%,48,48,0,0,0,7.9941860465116275,14.751552795031056,24.73989595838335
+uf,PE,comparable_small,Participação do candidato 22,%,7,7,0,0,0,31.22109158186864,39.02439024390244,41.59090909090909
+uf,RS,comparable_small,Participação do candidato 22,%,48,48,0,0,0,34.49612403100775,49.473392461197335,60.52740863787375
+uf,ES,comparable_small,Participação do candidato 22,%,9,9,0,0,0,15.384615384615385,41.86046511627907,52.94117647058824
+uf,AC,comparable_small,Participação do candidato 22,%,0,0,0,0,0,,,
+uf,DF,comparable_small,Participação do candidato 22,%,4,4,0,0,0,20.909090909090907,28.78787878787879,43.0622009569378
+uf,PB,comparable_small,Participação do candidato 22,%,6,6,0,0,0,9.25,14.333333333333332,22.02380952380952
+uf,GO,comparable_small,Participação do candidato 22,%,11,11,0,0,0,18.070652173913043,34.375,42.82473057288712
+uf,ZZ,comparable_small,Participação do candidato 22,%,27,27,0,0,0,17.88563829787234,44.0,58.65817091454272
+region,Brasil,comparable_small,Participação do candidato 22,%,568,568,0,0,0,15.384615384615385,31.818181818181817,47.05882352941176
+uf,BA,comparable_small,Participação do candidato 13,%,49,49,0,0,0,70.45454545454545,79.54545454545455,87.5
+uf,PA,comparable_small,Participação do candidato 13,%,82,82,0,0,0,42.30496453900709,58.358662613981764,79.07681940700809
+uf,MG,comparable_small,Participação do candidato 13,%,97,97,0,0,0,44.44444444444444,58.536585365853654,75.75757575757575
+uf,MA,comparable_small,Participação do candidato 13,%,48,48,0,0,0,67.98245614035088,79.80072463768116,87.68382352941177
+uf,PE,comparable_small,Participação do candidato 13,%,7,7,0,0,0,53.964646464646464,57.446808510638306,61.87698833510074
+uf,RS,comparable_small,Participação do candidato 13,%,48,48,0,0,0,32.0,44.67849223946785,58.139534883720934
+uf,ES,comparable_small,Participação do candidato 13,%,9,9,0,0,0,47.05882352941176,52.63157894736842,74.35897435897436
+uf,AC,comparable_small,Participação do candidato 13,%,0,0,0,0,0,,,
+uf,DF,comparable_small,Participação do candidato 13,%,4,4,0,0,0,41.985645933014354,56.060606060606055,69.16666666666666
+uf,PB,comparable_small,Participação do candidato 13,%,6,6,0,0,0,73.75478927203065,80.88888888888889,89.75
+uf,GO,comparable_small,Participação do candidato 13,%,11,11,0,0,0,48.40425531914894,53.48837209302325,67.62545899632802
+uf,ZZ,comparable_small,Participação do candidato 13,%,27,27,0,0,0,34.63268365817092,45.94594594594595,66.80743243243244
+region,Brasil,comparable_small,Participação do candidato 13,%,568,568,0,0,0,44.44444444444444,63.1578947368421,79.4451871657754
+uf,BA,comparable_small,Brancos/comparecentes,%,49,49,0,0,0,0.0,0.0,2.5
+uf,PA,comparable_small,Brancos/comparecentes,%,82,82,0,0,0,0.0,0.0,1.827485380116959
+uf,MG,comparable_small,Brancos/comparecentes,%,97,97,0,0,0,0.0,2.1739130434782608,3.571428571428571
+uf,MA,comparable_small,Brancos/comparecentes,%,48,48,0,0,0,0.0,0.0,2.163926499032882
+uf,PE,comparable_small,Brancos/comparecentes,%,7,7,0,0,0,0.0,0.0,1.1363636363636365
+uf,RS,comparable_small,Brancos/comparecentes,%,48,48,0,0,0,0.0,2.6671408250355615,6.382978723404255
+uf,ES,comparable_small,Brancos/comparecentes,%,9,9,0,0,0,0.0,0.0,2.272727272727273
+uf,AC,comparable_small,Brancos/comparecentes,%,0,0,0,0,0,,,
+uf,DF,comparable_small,Brancos/comparecentes,%,4,4,0,0,0,0.0,0.0,0.0
+uf,PB,comparable_small,Brancos/comparecentes,%,6,6,0,0,0,0.0,1.5151515151515151,3.4361471861471857
+uf,GO,comparable_small,Brancos/comparecentes,%,11,11,0,0,0,0.0,0.0,0.0
+uf,ZZ,comparable_small,Brancos/comparecentes,%,27,27,0,0,0,0.0,0.0,1.9897557131599684
+region,Brasil,comparable_small,Brancos/comparecentes,%,568,568,0,0,0,0.0,0.0,2.857142857142857
+uf,BA,comparable_small,Comparecimento,comparecentes,49,49,0,0,0,38.0,43.0,47.0
+uf,PA,comparable_small,Comparecimento,comparecentes,82,82,0,0,0,36.25,43.0,49.75
+uf,MG,comparable_small,Comparecimento,comparecentes,97,97,0,0,0,37.0,43.0,46.0
+uf,MA,comparable_small,Comparecimento,comparecentes,48,48,0,0,0,39.0,45.5,50.0
+uf,PE,comparable_small,Comparecimento,comparecentes,7,7,0,0,0,38.0,44.0,47.0
+uf,RS,comparable_small,Comparecimento,comparecentes,48,48,0,0,0,29.5,41.5,46.0
+uf,ES,comparable_small,Comparecimento,comparecentes,9,9,0,0,0,26.0,38.0,44.0
+uf,AC,comparable_small,Comparecimento,comparecentes,0,0,0,0,0,,,
+uf,DF,comparable_small,Comparecimento,comparecentes,4,4,0,0,0,21.25,27.5,33.25
+uf,PB,comparable_small,Comparecimento,comparecentes,6,6,0,0,0,19.75,25.0,28.0
+uf,GO,comparable_small,Comparecimento,comparecentes,11,11,0,0,0,21.5,40.0,46.5
+uf,ZZ,comparable_small,Comparecimento,comparecentes,27,27,0,0,0,17.5,31.0,39.0
+region,Brasil,comparable_small,Comparecimento,comparecentes,568,568,0,0,0,34.0,42.0,47.0
+uf,BA,comparable_small,Eleitorado apto,eleitores,49,49,0,0,0,49.0,52.0,59.0
+uf,PA,comparable_small,Eleitorado apto,eleitores,82,82,0,0,0,45.0,54.0,63.75
+uf,MG,comparable_small,Eleitorado apto,eleitores,97,97,0,0,0,49.0,55.0,64.0
+uf,MA,comparable_small,Eleitorado apto,eleitores,48,48,0,0,0,48.5,55.0,61.5
+uf,PE,comparable_small,Eleitorado apto,eleitores,7,7,0,0,0,43.5,50.0,52.0
+uf,RS,comparable_small,Eleitorado apto,eleitores,48,48,0,0,0,43.0,57.0,61.25
+uf,ES,comparable_small,Eleitorado apto,eleitores,9,9,0,0,0,44.0,56.0,62.0
+uf,AC,comparable_small,Eleitorado apto,eleitores,0,0,0,0,0,,,
+uf,DF,comparable_small,Eleitorado apto,eleitores,4,4,0,0,0,25.0,31.5,37.25
+uf,PB,comparable_small,Eleitorado apto,eleitores,6,6,0,0,0,24.25,27.0,30.5
+uf,GO,comparable_small,Eleitorado apto,eleitores,11,11,0,0,0,30.0,56.0,61.0
+uf,ZZ,comparable_small,Eleitorado apto,eleitores,27,27,0,0,0,46.0,69.0,90.0
+region,Brasil,comparable_small,Eleitorado apto,eleitores,568,568,0,0,0,42.75,53.0,60.25
+uf,BA,not_comparable,Nulos/comparecentes,%,5853,5853,0,0,0,2.214022140221402,3.2653061224489797,4.477611940298507
+uf,PA,not_comparable,Nulos/comparecentes,%,2486,2486,0,0,0,1.759788938912065,2.631578947368421,3.584229390681003
+uf,MG,not_comparable,Nulos/comparecentes,%,7431,7431,0,0,0,1.6816822882999354,2.5906735751295336,3.6164394419784403
+uf,MA,not_comparable,Nulos/comparecentes,%,2569,2569,0,0,0,1.3986013986013985,2.2026431718061676,3.286384976525822
+uf,PE,not_comparable,Nulos/comparecentes,%,2569,2569,0,0,0,1.9607843137254901,2.8391167192429023,3.8461538461538463
+uf,RS,not_comparable,Nulos/comparecentes,%,3145,3145,0,0,0,0.9803921568627451,1.5544041450777202,2.2950819672131146
+uf,ES,not_comparable,Nulos/comparecentes,%,1193,1193,0,0,0,1.1952191235059761,2.0,2.952029520295203
+uf,AC,not_comparable,Nulos/comparecentes,%,451,451,0,0,0,1.495332327128403,2.312138728323699,3.35431243627158
+uf,DF,not_comparable,Nulos/comparecentes,%,2094,2094,0,0,0,0.8620689655172413,1.4142609507300488,2.022391545512933
+uf,PB,not_comparable,Nulos/comparecentes,%,1278,1278,0,0,0,2.368732851085059,3.4949766390814423,4.954606309095473
+uf,GO,not_comparable,Nulos/comparecentes,%,2027,2027,0,0,0,1.3100436681222707,2.027027027027027,2.8662420382165608
+uf,ZZ,not_comparable,Nulos/comparecentes,%,1274,1232,42,0,0,0.7092198581560284,1.282051282051282,2.0266015549701217
+region,Brasil,not_comparable,Nulos/comparecentes,%,68808,68808,0,0,0,1.4981273408239701,2.380952380952381,3.481012658227848
+uf,BA,not_comparable,Taxa de comparecimento,%,5853,5853,0,0,0,77.22095671981776,80.22922636103151,83.12020460358056
+uf,PA,not_comparable,Taxa de comparecimento,%,2486,2486,0,0,0,77.91900528493588,81.34845855029342,84.36641483516483
+uf,MG,not_comparable,Taxa de comparecimento,%,7431,7431,0,0,0,73.58898962672546,77.81456953642383,81.40646543374469
+uf,MA,not_comparable,Taxa de comparecimento,%,2569,2569,0,0,0,77.19298245614034,80.43478260869566,83.48909657320873
+uf,PE,not_comparable,Taxa de comparecimento,%,2569,2569,0,0,0,79.48717948717949,82.64248704663213,85.29411764705883
+uf,RS,not_comparable,Taxa de comparecimento,%,3145,3145,0,0,0,75.1918158567775,78.93258426966293,82.3943661971831
+uf,ES,not_comparable,Taxa de comparecimento,%,1193,1193,0,0,0,75.85227272727273,79.72602739726027,82.9608938547486
+uf,AC,not_comparable,Taxa de comparecimento,%,451,451,0,0,0,77.74337805297557,80.3921568627451,83.01870663494279
+uf,DF,not_comparable,Taxa de comparecimento,%,2094,2094,0,0,0,79.75920730830097,82.03909083241967,84.22792327398216
+uf,PB,not_comparable,Taxa de comparecimento,%,1278,1278,0,0,0,80.12521898391464,83.24723738516842,85.93574224902129
+uf,GO,not_comparable,Taxa de comparecimento,%,2027,2027,0,0,0,75.6849457881568,78.91373801916933,81.70291485425729
+uf,ZZ,not_comparable,Taxa de comparecimento,%,1274,1274,0,0,0,27.389948479772602,36.58765070055393,45.92220828105395
+region,Brasil,not_comparable,Taxa de comparecimento,%,68808,68808,0,0,0,76.19047619047619,80.0,83.24324324324324
+uf,BA,not_comparable,Participação do candidato 22,%,5853,5853,0,0,0,22.372881355932204,29.71887550200803,38.52140077821012
+uf,PA,not_comparable,Participação do candidato 22,%,2486,2486,0,0,0,38.8663967611336,47.16364983592675,57.26741173858338
+uf,MG,not_comparable,Participação do candidato 22,%,7431,7431,0,0,0,42.23563842837615,49.39759036144578,56.064985111227884
+uf,MA,not_comparable,Participação do candidato 22,%,2569,2569,0,0,0,18.705035971223023,29.24187725631769,39.91596638655462
+uf,PE,not_comparable,Participação do candidato 22,%,2569,2569,0,0,0,25.0,33.94833948339483,40.16064257028113
+uf,RS,not_comparable,Participação do candidato 22,%,3145,3145,0,0,0,44.44444444444444,54.26008968609865,63.87096774193548
+uf,ES,not_comparable,Participação do candidato 22,%,1193,1193,0,0,0,49.67948717948718,55.98705501618123,62.17391304347826
+uf,AC,not_comparable,Participação do candidato 22,%,451,451,0,0,0,59.341330763140675,64.61538461538461,70.26055705300988
+uf,DF,not_comparable,Participação do candidato 22,%,2094,2094,0,0,0,45.48736462093863,50.177307194145094,54.258897051808034
+uf,PB,not_comparable,Participação do candidato 22,%,1278,1278,0,0,0,24.70056697377746,36.11111111111111,46.41022483374969
+uf,GO,not_comparable,Participação do candidato 22,%,2027,2027,0,0,0,49.08480746895381,55.017301038062286,60.66421568627451
+uf,ZZ,not_comparable,Participação do candidato 22,%,1274,1232,42,0,0,30.208665179993623,41.89829072990453,63.50524475524475
+region,Brasil,not_comparable,Participação do candidato 22,%,68808,68808,0,0,0,35.46269231640723,47.84112909008341,57.986111111111114
+uf,BA,not_comparable,Participação do candidato 13,%,5853,5853,0,0,0,55.36332179930796,64.54545454545455,72.89719626168224
+uf,PA,not_comparable,Participação do candidato 13,%,2486,2486,0,0,0,36.986301369863014,45.327479829140955,55.1901851371816
+uf,MG,not_comparable,Participação do candidato 13,%,7431,7431,0,0,0,34.660222745382114,41.10169491525424,49.148920759090245
+uf,MA,not_comparable,Participação do candidato 13,%,2569,2569,0,0,0,53.52697095435685,65.31365313653137,77.77777777777779
+uf,PE,not_comparable,Participação do candidato 13,%,2569,2569,0,0,0,53.289473684210535,60.13513513513513,70.44334975369459
+uf,RS,not_comparable,Participação do candidato 13,%,3145,3145,0,0,0,27.169811320754718,36.36363636363637,45.8955223880597
+uf,ES,not_comparable,Participação do candidato 13,%,1193,1193,0,0,0,29.87551867219917,35.573122529644266,42.083333333333336
+uf,AC,not_comparable,Participação do candidato 13,%,451,451,0,0,0,23.410292288557216,27.77777777777778,32.127158115261594
+uf,DF,not_comparable,Participação do candidato 13,%,2094,2094,0,0,0,35.11723986976388,39.04745979585309,43.79925593272575
+uf,PB,not_comparable,Participação do candidato 13,%,1278,1278,0,0,0,46.03174603174603,57.26884226884226,70.76165717130372
+uf,GO,not_comparable,Participação do candidato 13,%,2027,2027,0,0,0,24.43557969784417,29.491525423728817,35.2381574364333
+uf,ZZ,not_comparable,Participação do candidato 13,%,1274,1232,42,0,0,27.737925251014257,49.14847963503508,60.84591767782119
+region,Brasil,not_comparable,Participação do candidato 13,%,68808,68808,0,0,0,32.432432432432435,42.68774703557312,57.24445639371126
+uf,BA,not_comparable,Brancos/comparecentes,%,5853,5853,0,0,0,0.8108108108108109,1.3636363636363635,2.0491803278688523
+uf,PA,not_comparable,Brancos/comparecentes,%,2486,2486,0,0,0,0.42194092827004215,0.9309547883865377,1.483679525222552
+uf,MG,not_comparable,Brancos/comparecentes,%,7431,7431,0,0,0,0.966183574879227,1.6129032258064515,2.423193876481074
+uf,MA,not_comparable,Brancos/comparecentes,%,2569,2569,0,0,0,0.40650406504065045,0.8849557522123894,1.4285714285714286
+uf,PE,not_comparable,Brancos/comparecentes,%,2569,2569,0,0,0,0.9569377990430622,1.5673981191222568,2.2058823529411766
+uf,RS,not_comparable,Brancos/comparecentes,%,3145,3145,0,0,0,1.0101010101010102,1.65016501650165,2.5
+uf,ES,not_comparable,Brancos/comparecentes,%,1193,1193,0,0,0,0.8620689655172413,1.4705882352941175,2.112676056338028
+uf,AC,not_comparable,Brancos/comparecentes,%,451,451,0,0,0,0.4395795494068091,0.9708737864077669,1.5463917525773196
+uf,DF,not_comparable,Brancos/comparecentes,%,2094,2094,0,0,0,0.6920415224913495,1.1029411764705883,1.660784935415834
+uf,PB,not_comparable,Brancos/comparecentes,%,1278,1278,0,0,0,0.9393350699810146,1.531589647353194,2.2388059701492535
+uf,GO,not_comparable,Brancos/comparecentes,%,2027,2027,0,0,0,0.41841004184100417,0.847457627118644,1.383285762122686
+uf,ZZ,not_comparable,Brancos/comparecentes,%,1274,1232,42,0,0,0.8163310515938946,1.383285762122686,2.2522522522522523
+region,Brasil,not_comparable,Brancos/comparecentes,%,68808,68808,0,0,0,0.7782101167315175,1.3793103448275863,2.112676056338028
+uf,BA,not_comparable,Comparecimento,comparecentes,5853,5853,0,0,0,239.0,277.0,308.0
+uf,PA,not_comparable,Comparecimento,comparecentes,2486,2486,0,0,0,234.0,271.0,296.0
+uf,MG,not_comparable,Comparecimento,comparecentes,7431,7431,0,0,0,220.0,257.0,290.0
+uf,MA,not_comparable,Comparecimento,comparecentes,2569,2569,0,0,0,212.0,253.0,282.0
+uf,PE,not_comparable,Comparecimento,comparecentes,2569,2569,0,0,0,257.0,291.0,317.0
+uf,RS,not_comparable,Comparecimento,comparecentes,3145,3145,0,0,0,230.0,264.0,293.0
+uf,ES,not_comparable,Comparecimento,comparecentes,1193,1193,0,0,0,227.0,256.0,284.0
+uf,AC,not_comparable,Comparecimento,comparecentes,451,451,0,0,0,189.5,220.0,249.0
+uf,DF,not_comparable,Comparecimento,comparecentes,2094,2094,0,0,0,244.0,273.0,295.0
+uf,PB,not_comparable,Comparecimento,comparecentes,1278,1278,0,0,0,239.0,273.0,298.0
+uf,GO,not_comparable,Comparecimento,comparecentes,2027,2027,0,0,0,233.0,266.0,294.0
+uf,ZZ,not_comparable,Comparecimento,comparecentes,1274,1274,0,0,0,195.0,258.0,341.75
+region,Brasil,not_comparable,Comparecimento,comparecentes,68808,68808,0,0,0,233.0,268.0,296.0
+uf,BA,not_comparable,Eleitorado apto,eleitores,5853,5853,0,0,0,299.0,350.0,388.0
+uf,PA,not_comparable,Eleitorado apto,eleitores,2486,2486,0,0,0,296.0,338.0,364.0
+uf,MG,not_comparable,Eleitorado apto,eleitores,7431,7431,0,0,0,291.0,333.0,372.0
+uf,MA,not_comparable,Eleitorado apto,eleitores,2569,2569,0,0,0,266.0,316.0,351.0
+uf,PE,not_comparable,Eleitorado apto,eleitores,2569,2569,0,0,0,311.0,359.0,388.0
+uf,RS,not_comparable,Eleitorado apto,eleitores,3145,3145,0,0,0,297.0,340.0,372.0
+uf,ES,not_comparable,Eleitorado apto,eleitores,1193,1193,0,0,0,291.0,327.0,358.0
+uf,AC,not_comparable,Eleitorado apto,eleitores,451,451,0,0,0,236.0,272.0,313.5
+uf,DF,not_comparable,Eleitorado apto,eleitores,2094,2094,0,0,0,300.0,334.0,361.0
+uf,PB,not_comparable,Eleitorado apto,eleitores,1278,1278,0,0,0,294.0,333.0,352.0
+uf,GO,not_comparable,Eleitorado apto,eleitores,2027,2027,0,0,0,299.0,340.0,374.0
+uf,ZZ,not_comparable,Eleitorado apto,eleitores,1274,1274,0,0,0,692.25,774.0,795.75
+region,Brasil,not_comparable,Eleitorado apto,eleitores,68808,68808,0,0,0,296.0,339.0,372.0
+uf,SP,eligible,Nulos/comparecentes,%,91737,91737,0,0,0,2.4096385542168677,3.3834586466165413,4.4609665427509295
+uf,CE,eligible,Nulos/comparecentes,%,20128,20128,0,0,0,2.1459227467811157,3.0534351145038165,4.150943396226415
+uf,MS,eligible,Nulos/comparecentes,%,6316,6316,0,0,0,1.1173184357541899,1.8181818181818181,2.604166666666667
+uf,RJ,eligible,Nulos/comparecentes,%,31804,31804,0,0,0,2.0242914979757085,2.857142857142857,3.8062283737024223
+uf,RN,eligible,Nulos/comparecentes,%,6367,6367,0,0,0,2.1406727828746175,3.0303030303030303,3.968253968253968
+uf,SE,eligible,Nulos/comparecentes,%,4588,4588,0,0,0,2.371541501976284,3.3783783783783785,4.529616724738676
+uf,AM,eligible,Nulos/comparecentes,%,6593,6593,0,0,0,1.023890784982935,1.6326530612244898,2.380952380952381
+uf,RO,eligible,Nulos/comparecentes,%,4103,4103,0,0,0,0.5797150154590671,1.2048192771084338,1.8518518518518516
+uf,AL,eligible,Nulos/comparecentes,%,6233,6233,0,0,0,3.2653061224489797,4.427083333333334,5.7507987220447285
+uf,SC,eligible,Nulos/comparecentes,%,15081,15081,0,0,0,1.006711409395973,1.5873015873015872,2.272727272727273
+uf,PR,eligible,Nulos/comparecentes,%,23926,23926,0,0,0,1.2,1.8796992481203008,2.622950819672131
+uf,RR,eligible,Nulos/comparecentes,%,1251,1251,0,0,0,0.7874015748031495,1.2605042016806722,1.937984496124031
+uf,PI,eligible,Nulos/comparecentes,%,8503,8503,0,0,0,1.8121415123254083,2.7522935779816518,3.8660688072170175
+uf,TO,eligible,Nulos/comparecentes,%,3921,3921,0,0,0,1.7241379310344827,2.608695652173913,3.6585365853658534
+uf,MT,eligible,Nulos/comparecentes,%,6868,6868,0,0,0,1.1152416356877324,1.771480574907425,2.5423728813559325
+uf,AP,eligible,Nulos/comparecentes,%,1655,1655,0,0,0,0.910472506217187,1.4035087719298245,2.049531810623961
+region,Exterior,eligible,Nulos/comparecentes,%,50,50,0,0,0,0.8180894308943091,1.3637490701710886,2.567795875931381
+uf,SP,eligible,Taxa de comparecimento,%,91737,91737,0,0,0,74.42528735632183,77.88461538461539,80.91397849462365
+uf,CE,eligible,Taxa de comparecimento,%,20128,20128,0,0,0,81.84931506849315,85.03649635036497,87.75510204081633
+uf,MS,eligible,Taxa de comparecimento,%,6316,6316,0,0,0,72.09849092367135,76.52306468716861,80.3686662122245
+uf,RJ,eligible,Taxa de comparecimento,%,31804,31804,0,0,0,72.7480141106007,77.74566473988439,81.5625
+uf,RN,eligible,Taxa de comparecimento,%,6367,6367,0,0,0,79.16666666666666,81.84615384615384,84.51612903225806
+uf,SE,eligible,Taxa de comparecimento,%,4588,4588,0,0,0,79.91045214327659,82.93677110460509,85.61701104137077
+uf,AM,eligible,Taxa de comparecimento,%,6593,6593,0,0,0,76.3586956521739,80.59299191374663,84.05063291139241
+uf,RO,eligible,Taxa de comparecimento,%,4103,4103,0,0,0,75.47169811320755,78.36538461538461,81.20912238703886
+uf,AL,eligible,Taxa de comparecimento,%,6233,6233,0,0,0,75.98684210526315,79.32098765432099,82.57142857142857
+uf,SC,eligible,Taxa de comparecimento,%,15081,15081,0,0,0,78.31978319783198,81.47058823529412,84.51443569553805
+uf,PR,eligible,Taxa de comparecimento,%,23926,23926,0,0,0,76.74418604651163,79.74521259331387,82.42074927953891
+uf,RR,eligible,Taxa de comparecimento,%,1251,1251,0,0,0,80.43879351836998,83.23353293413174,85.92874243064358
+uf,PI,eligible,Taxa de comparecimento,%,8503,8503,0,0,0,80.0,83.44594594594594,86.34361233480176
+uf,TO,eligible,Taxa de comparecimento,%,3921,3921,0,0,0,79.13385826771653,81.85053380782918,84.38538205980066
+uf,MT,eligible,Taxa de comparecimento,%,6868,6868,0,0,0,74.5886932037763,77.94117647058823,81.13329432987177
+uf,AP,eligible,Taxa de comparecimento,%,1655,1655,0,0,0,80.36729515305302,83.64485981308411,86.19737092779576
+region,Exterior,eligible,Taxa de comparecimento,%,50,50,0,0,0,33.7507871536524,45.89710316400137,54.13122775800712
+uf,SP,eligible,Participação do candidato 22,%,91737,91737,0,0,0,43.69747899159664,52.27272727272727,60.63829787234043
+uf,CE,eligible,Participação do candidato 22,%,20128,20128,0,0,0,22.301531597022034,31.297709923664126,38.43316779093854
+uf,MS,eligible,Participação do candidato 22,%,6316,6316,0,0,0,52.89164370982553,59.09090909090909,64.68253968253968
+uf,RJ,eligible,Participação do candidato 22,%,31804,31804,0,0,0,48.19277108433735,54.41176470588235,59.8159509202454
+uf,RN,eligible,Participação do candidato 22,%,6367,6367,0,0,0,25.736845371059815,33.557046979865774,41.37931034482759
+uf,SE,eligible,Participação do candidato 22,%,4588,4588,0,0,0,22.882960413080895,30.22222222222222,36.36363636363637
+uf,AM,eligible,Participação do candidato 22,%,6593,6593,0,0,0,34.42622950819672,48.205128205128204,54.91803278688525
+uf,RO,eligible,Participação do candidato 22,%,4103,4103,0,0,0,61.111111111111114,69.39890710382514,74.73684210526315
+uf,AL,eligible,Participação do candidato 22,%,6233,6233,0,0,0,27.88844621513944,39.00709219858156,50.160771704180064
+uf,SC,eligible,Participação do candidato 22,%,15081,15081,0,0,0,61.61616161616161,68.21192052980133,73.46153846153847
+uf,PR,eligible,Participação do candidato 22,%,23926,23926,0,0,0,54.023952788706325,59.8526578568909,65.60000000000001
+uf,RR,eligible,Participação do candidato 22,%,1251,1251,0,0,0,69.8169029809088,74.35897435897436,77.4468085106383
+uf,PI,eligible,Participação do candidato 22,%,8503,8503,0,0,0,15.957446808510639,22.981366459627328,29.76389552476509
+uf,TO,eligible,Participação do candidato 22,%,3921,3921,0,0,0,40.51282051282051,50.0,58.3732057416268
+uf,MT,eligible,Participação do candidato 22,%,6868,6868,0,0,0,56.79012345679012,65.86682404421924,74.57627118644068
+uf,AP,eligible,Participação do candidato 22,%,1655,1655,0,0,0,42.01449275362319,46.931407942238266,50.96339471339471
+region,Exterior,eligible,Participação do candidato 22,%,50,50,0,0,0,25.611164198120722,37.09051724137931,57.41525423728814
+uf,SP,eligible,Participação do candidato 13,%,91737,91737,0,0,0,30.097087378640776,37.4485596707819,45.85365853658537
+uf,CE,eligible,Participação do candidato 13,%,20128,20128,0,0,0,55.07969167780749,63.42949607027276,73.49234744583582
+uf,MS,eligible,Participação do candidato 13,%,6316,6316,0,0,0,28.329646017699115,33.85016025641026,40.42553191489361
+uf,RJ,eligible,Participação do candidato 13,%,31804,31804,0,0,0,32.95019157088122,38.01652892561984,43.95696585293901
+uf,RN,eligible,Participação do candidato 13,%,6367,6367,0,0,0,52.589641434262944,60.9375,69.68414864431539
+uf,SE,eligible,Participação do candidato 13,%,4588,4588,0,0,0,56.033644170132824,63.41463414634146,71.66845493562232
+uf,AM,eligible,Participação do candidato 13,%,6593,6593,0,0,0,36.807817589576544,44.34782608695652,60.451977401129945
+uf,RO,eligible,Participação do candidato 13,%,4103,4103,0,0,0,19.40928270042194,24.5,31.23764822134387
+uf,AL,eligible,Participação do candidato 13,%,6233,6233,0,0,0,44.36619718309859,56.666666666666664,68.15642458100558
+uf,SC,eligible,Participação do candidato 13,%,15081,15081,0,0,0,18.53146853146853,23.25581395348837,29.72972972972973
+uf,PR,eligible,Participação do candidato 13,%,23926,23926,0,0,0,25.568830427563306,30.672268907563026,36.808105457613976
+uf,RR,eligible,Participação do candidato 13,%,1251,1251,0,0,0,16.330595983413286,19.282511210762333,23.13321385902031
+uf,PI,eligible,Participação do candidato 13,%,8503,8503,0,0,0,64.46620694058679,72.39583333333334,80.28169014084507
+uf,TO,eligible,Participação do candidato 13,%,3921,3921,0,0,0,34.93449781659388,44.01913875598086,54.23728813559322
+uf,MT,eligible,Participação do candidato 13,%,6868,6868,0,0,0,20.833333333333336,28.28075840370922,36.598780405633036
+uf,AP,eligible,Participação do candidato 13,%,1655,1655,0,0,0,39.76368795645904,43.92857142857143,49.62584464176021
+region,Exterior,eligible,Participação do candidato 13,%,50,50,0,0,0,30.686621071236456,49.13793103448276,62.94959473150963
+uf,SP,eligible,Brancos/comparecentes,%,91737,91737,0,0,0,1.5625,2.3255813953488373,3.202846975088968
+uf,CE,eligible,Brancos/comparecentes,%,20128,20128,0,0,0,1.0204081632653061,1.6233766233766231,2.34375
+uf,MS,eligible,Brancos/comparecentes,%,6316,6316,0,0,0,0.6493506493506493,1.2552301255230125,1.951219512195122
+uf,RJ,eligible,Brancos/comparecentes,%,31804,31804,0,0,0,1.3071895424836601,1.9933554817275747,2.769230769230769
+uf,RN,eligible,Brancos/comparecentes,%,6367,6367,0,0,0,0.9202453987730062,1.4598540145985401,2.090072286650372
+uf,SE,eligible,Brancos/comparecentes,%,4588,4588,0,0,0,1.0416666666666665,1.6454136885423436,2.3529411764705883
+uf,AM,eligible,Brancos/comparecentes,%,6593,6593,0,0,0,0.3787878787878788,0.9216589861751152,1.557632398753894
+uf,RO,eligible,Brancos/comparecentes,%,4103,4103,0,0,0,0.45045045045045046,0.8733624454148471,1.4345492274184974
+uf,AL,eligible,Brancos/comparecentes,%,6233,6233,0,0,0,1.0309278350515463,1.6260162601626018,2.307692307692308
+uf,SC,eligible,Brancos/comparecentes,%,15081,15081,0,0,0,0.8333333333333334,1.3888888888888888,2.0689655172413794
+uf,PR,eligible,Brancos/comparecentes,%,23926,23926,0,0,0,1.0416666666666665,1.6778523489932886,2.4630541871921183
+uf,RR,eligible,Brancos/comparecentes,%,1251,1251,0,0,0,0.3968253968253968,0.625,1.185770750988142
+uf,PI,eligible,Brancos/comparecentes,%,8503,8503,0,0,0,0.5586592178770949,1.1450381679389312,1.7699115044247788
+uf,TO,eligible,Brancos/comparecentes,%,3921,3921,0,0,0,0.4166666666666667,0.7662835249042145,1.2345679012345678
+uf,MT,eligible,Brancos/comparecentes,%,6868,6868,0,0,0,0.4424778761061947,0.9389671361502347,1.4634146341463417
+uf,AP,eligible,Brancos/comparecentes,%,1655,1655,0,0,0,0.38461538461538464,0.819672131147541,1.2987012987012987
+region,Exterior,eligible,Brancos/comparecentes,%,50,50,0,0,0,0.0,1.0714285714285714,2.2664835164835164
+uf,SP,eligible,Comparecimento,comparecentes,91737,91737,0,0,0,230.0,261.0,285.0
+uf,CE,eligible,Comparecimento,comparecentes,20128,20128,0,0,0,212.0,254.0,284.0
+uf,MS,eligible,Comparecimento,comparecentes,6316,6316,0,0,0,194.0,221.0,243.0
+uf,RJ,eligible,Comparecimento,comparecentes,31804,31804,0,0,0,236.0,266.0,291.0
+uf,RN,eligible,Comparecimento,comparecentes,6367,6367,0,0,0,237.0,271.0,301.0
+uf,SE,eligible,Comparecimento,comparecentes,4588,4588,0,0,0,212.0,242.0,272.0
+uf,AM,eligible,Comparecimento,comparecentes,6593,6593,0,0,0,240.0,283.0,312.0
+uf,RO,eligible,Comparecimento,comparecentes,4103,4103,0,0,0,186.0,215.0,238.0
+uf,AL,eligible,Comparecimento,comparecentes,6233,6233,0,0,0,238.0,274.0,304.0
+uf,SC,eligible,Comparecimento,comparecentes,15081,15081,0,0,0,244.0,276.0,300.0
+uf,PR,eligible,Comparecimento,comparecentes,23926,23926,0,0,0,227.0,255.0,277.0
+uf,RR,eligible,Comparecimento,comparecentes,1251,1251,0,0,0,200.0,223.0,240.0
+uf,PI,eligible,Comparecimento,comparecentes,8503,8503,0,0,0,187.0,219.0,245.0
+uf,TO,eligible,Comparecimento,comparecentes,3921,3921,0,0,0,193.0,220.0,248.0
+uf,MT,eligible,Comparecimento,comparecentes,6868,6868,0,0,0,214.0,253.0,283.0
+uf,AP,eligible,Comparecimento,comparecentes,1655,1655,0,0,0,207.0,258.0,294.0
+region,Exterior,eligible,Comparecimento,comparecentes,50,50,0,0,0,84.0,134.5,197.0
+uf,SP,eligible,Eleitorado apto,eleitores,91737,91737,0,0,0,299.0,338.0,369.0
+uf,CE,eligible,Eleitorado apto,eleitores,20128,20128,0,0,0,252.0,303.0,335.0
+uf,MS,eligible,Eleitorado apto,eleitores,6316,6316,0,0,0,258.0,294.0,320.0
+uf,RJ,eligible,Eleitorado apto,eleitores,31804,31804,0,0,0,310.0,343.0,372.0
+uf,RN,eligible,Eleitorado apto,eleitores,6367,6367,0,0,0,288.0,333.0,371.0
+uf,SE,eligible,Eleitorado apto,eleitores,4588,4588,0,0,0,258.0,293.0,331.0
+uf,AM,eligible,Eleitorado apto,eleitores,6593,6593,0,0,0,308.0,358.0,385.0
+uf,RO,eligible,Eleitorado apto,eleitores,4103,4103,0,0,0,241.0,279.0,304.0
+uf,AL,eligible,Eleitorado apto,eleitores,6233,6233,0,0,0,303.0,349.0,383.0
+uf,SC,eligible,Eleitorado apto,eleitores,15081,15081,0,0,0,303.0,345.0,371.0
+uf,PR,eligible,Eleitorado apto,eleitores,23926,23926,0,0,0,289.0,323.0,345.0
+uf,RR,eligible,Eleitorado apto,eleitores,1251,1251,0,0,0,243.0,272.0,290.0
+uf,PI,eligible,Eleitorado apto,eleitores,8503,8503,0,0,0,230.0,267.0,292.0
+uf,TO,eligible,Eleitorado apto,eleitores,3921,3921,0,0,0,239.0,272.0,301.0
+uf,MT,eligible,Eleitorado apto,eleitores,6868,6868,0,0,0,277.0,329.0,370.0
+uf,AP,eligible,Eleitorado apto,eleitores,1655,1655,0,0,0,256.5,309.0,353.0
+region,Exterior,eligible,Eleitorado apto,eleitores,50,50,0,0,0,259.25,377.0,397.75
+uf,SP,comparable_small,Nulos/comparecentes,%,69,69,0,0,0,0.0,0.0,2.380952380952381
+uf,CE,comparable_small,Nulos/comparecentes,%,25,25,0,0,0,0.0,2.2222222222222223,6.451612903225806
+uf,MS,comparable_small,Nulos/comparecentes,%,4,4,0,0,0,0.0,0.0,0.0
+uf,RJ,comparable_small,Nulos/comparecentes,%,8,8,0,0,0,2.0408163265306123,2.1527777777777777,3.6150464093795796
+uf,RN,comparable_small,Nulos/comparecentes,%,2,2,0,0,0,0.5208333333333333,1.0416666666666665,1.5624999999999998
+uf,SE,comparable_small,Nulos/comparecentes,%,4,4,0,0,0,0.0,1.4705882352941175,3.5572337042925275
+uf,AM,comparable_small,Nulos/comparecentes,%,8,8,0,0,0,0.0,2.5355596784168215,4.4125758411472695
+uf,RO,comparable_small,Nulos/comparecentes,%,9,9,0,0,0,0.0,0.0,1.8867924528301887
+uf,AL,comparable_small,Nulos/comparecentes,%,6,6,0,0,0,0.43859649122807015,1.9883040935672516,4.502923976608186
+uf,SC,comparable_small,Nulos/comparecentes,%,11,11,0,0,0,0.0,0.0,1.7857142857142856
+uf,PR,comparable_small,Nulos/comparecentes,%,19,19,0,0,0,0.0,1.1764705882352942,3.2738095238095237
+uf,RR,comparable_small,Nulos/comparecentes,%,5,5,0,0,0,0.0,0.0,1.9230769230769231
+uf,PI,comparable_small,Nulos/comparecentes,%,12,12,0,0,0,0.0,2.0869565217391304,4.480360065466448
+uf,TO,comparable_small,Nulos/comparecentes,%,5,5,0,0,0,2.5,2.857142857142857,4.3478260869565215
+uf,MT,comparable_small,Nulos/comparecentes,%,13,13,0,0,0,0.0,0.0,2.0408163265306123
+uf,AP,comparable_small,Nulos/comparecentes,%,7,7,0,0,0,0.0,0.0,1.9850628930817609
+region,Exterior,comparable_small,Nulos/comparecentes,%,27,27,0,0,0,0.0,0.0,0.0
+uf,SP,comparable_small,Taxa de comparecimento,%,69,69,0,0,0,75.0,81.03448275862068,88.63636363636364
+uf,CE,comparable_small,Taxa de comparecimento,%,25,25,0,0,0,73.91304347826086,85.0,91.17647058823529
+uf,MS,comparable_small,Taxa de comparecimento,%,4,4,0,0,0,75.55555555555556,76.7948717948718,77.36443883984869
+uf,RJ,comparable_small,Taxa de comparecimento,%,8,8,0,0,0,70.24560238964487,80.15151515151516,85.10781671159029
+uf,RN,comparable_small,Taxa de comparecimento,%,2,2,0,0,0,86.92722371967655,88.14016172506739,89.35309973045823
+uf,SE,comparable_small,Taxa de comparecimento,%,4,4,0,0,0,81.20283018867924,87.5,90.88709677419355
+uf,AM,comparable_small,Taxa de comparecimento,%,8,8,0,0,0,75.01672240802675,78.26769406392694,81.55906593406594
+uf,RO,comparable_small,Taxa de comparecimento,%,9,9,0,0,0,84.0,88.88888888888889,90.9090909090909
+uf,AL,comparable_small,Taxa de comparecimento,%,6,6,0,0,0,87.93363499245852,92.59803921568627,96.82692307692307
+uf,SC,comparable_small,Taxa de comparecimento,%,11,11,0,0,0,71.22328666175386,79.48717948717949,84.64912280701755
+uf,PR,comparable_small,Taxa de comparecimento,%,19,19,0,0,0,68.91480730223124,77.19298245614034,79.37863372093022
+uf,RR,comparable_small,Taxa de comparecimento,%,5,5,0,0,0,72.5,84.375,85.0
+uf,PI,comparable_small,Taxa de comparecimento,%,12,12,0,0,0,68.70300751879698,74.64349376114082,80.74249165739711
+uf,TO,comparable_small,Taxa de comparecimento,%,5,5,0,0,0,81.63265306122449,87.5,90.69767441860465
+uf,MT,comparable_small,Taxa de comparecimento,%,13,13,0,0,0,75.86206896551724,85.45454545454545,86.0
+uf,AP,comparable_small,Taxa de comparecimento,%,7,7,0,0,0,74.80245829675154,79.22077922077922,84.91525423728814
+region,Exterior,comparable_small,Taxa de comparecimento,%,27,27,0,0,0,32.68384663733501,40.243902439024396,47.55538579067991
+uf,SP,comparable_small,Participação do candidato 22,%,69,69,0,0,0,21.052631578947366,38.88888888888889,47.72727272727273
+uf,CE,comparable_small,Participação do candidato 22,%,25,25,0,0,0,13.333333333333334,20.0,29.03225806451613
+uf,MS,comparable_small,Participação do candidato 22,%,4,4,0,0,0,42.383720930232556,53.043047996041565,61.02700490998363
+uf,RJ,comparable_small,Participação do candidato 22,%,8,8,0,0,0,42.32262382864792,51.717758985200845,56.6056407718951
+uf,RN,comparable_small,Participação do candidato 22,%,2,2,0,0,0,26.795212765957448,32.75709219858156,38.718971631205676
+uf,SE,comparable_small,Participação do candidato 22,%,4,4,0,0,0,15.443349753694582,17.94642857142857,27.0625
+uf,AM,comparable_small,Participação do candidato 22,%,8,8,0,0,0,37.545899632802936,46.1447678992919,52.5
+uf,RO,comparable_small,Participação do candidato 22,%,9,9,0,0,0,16.666666666666664,25.0,46.808510638297875
+uf,AL,comparable_small,Participação do candidato 22,%,6,6,0,0,0,9.102564102564102,26.81623931623932,42.361111111111114
+uf,SC,comparable_small,Participação do candidato 22,%,11,11,0,0,0,27.016129032258064,33.33333333333333,54.08163265306122
+uf,PR,comparable_small,Participação do candidato 22,%,19,19,0,0,0,32.57575757575757,40.853658536585364,60.55555555555556
+uf,RR,comparable_small,Participação do candidato 22,%,5,5,0,0,0,2.941176470588235,49.275362318840585,59.25925925925925
+uf,PI,comparable_small,Participação do candidato 22,%,12,12,0,0,0,8.96103896103896,19.244897959183675,29.206349206349206
+uf,TO,comparable_small,Participação do candidato 22,%,5,5,0,0,0,2.941176470588235,6.0,15.789473684210526
+uf,MT,comparable_small,Participação do candidato 22,%,13,13,0,0,0,46.42857142857143,55.00000000000001,71.42857142857143
+uf,AP,comparable_small,Participação do candidato 22,%,7,7,0,0,0,18.78720238095238,35.0,52.672548002075764
+region,Exterior,comparable_small,Participação do candidato 22,%,27,27,0,0,0,17.88563829787234,44.0,58.65817091454272
+uf,SP,comparable_small,Participação do candidato 13,%,69,69,0,0,0,40.476190476190474,53.125,77.27272727272727
+uf,CE,comparable_small,Participação do candidato 13,%,25,25,0,0,0,67.74193548387096,74.4186046511628,85.71428571428571
+uf,MS,comparable_small,Participação do candidato 13,%,4,4,0,0,0,34.819967266775784,42.50371103414152,52.877906976744185
+uf,RJ,comparable_small,Participação do candidato 13,%,8,8,0,0,0,37.24641266699654,42.52114164904863,43.641231593038825
+uf,RN,comparable_small,Participação do candidato 13,%,2,2,0,0,0,58.08953900709219,65.11524822695034,72.1409574468085
+uf,SE,comparable_small,Participação do candidato 13,%,4,4,0,0,0,65.90625,75.9375,81.55172413793103
+uf,AM,comparable_small,Participação do candidato 13,%,8,8,0,0,0,41.42857142857142,50.19669551534225,60.55691554467565
+uf,RO,comparable_small,Participação do candidato 13,%,9,9,0,0,0,50.0,70.2127659574468,78.0
+uf,AL,comparable_small,Participação do candidato 13,%,6,6,0,0,0,56.25,73.18376068376068,85.13986013986013
+uf,SC,comparable_small,Participação do candidato 13,%,11,11,0,0,0,38.60544217687075,62.96296296296296,67.2043010752688
+uf,PR,comparable_small,Participação do candidato 13,%,19,19,0,0,0,30.102564102564102,46.0,61.99346405228758
+uf,RR,comparable_small,Participação do candidato 13,%,5,5,0,0,0,32.758620689655174,46.3768115942029,97.05882352941177
+uf,PI,comparable_small,Participação do candidato 13,%,12,12,0,0,0,68.63095238095238,77.71428571428572,89.15584415584416
+uf,TO,comparable_small,Participação do candidato 13,%,5,5,0,0,0,84.21052631578947,94.0,97.05882352941177
+uf,MT,comparable_small,Participação do candidato 13,%,13,13,0,0,0,18.6046511627907,35.13513513513514,52.083333333333336
+uf,AP,comparable_small,Participação do candidato 13,%,7,7,0,0,0,36.97457187337831,58.333333333333336,72.54464285714286
+region,Exterior,comparable_small,Participação do candidato 13,%,27,27,0,0,0,34.63268365817092,45.94594594594595,66.80743243243244
+uf,SP,comparable_small,Brancos/comparecentes,%,69,69,0,0,0,0.0,0.0,4.3478260869565215
+uf,CE,comparable_small,Brancos/comparecentes,%,25,25,0,0,0,0.0,2.2222222222222223,4.25531914893617
+uf,MS,comparable_small,Brancos/comparecentes,%,4,4,0,0,0,0.0,1.0416666666666665,3.1929347826086953
+uf,RJ,comparable_small,Brancos/comparecentes,%,8,8,0,0,0,1.5306122448979593,2.1073646850044367,2.5093632958801497
+uf,RN,comparable_small,Brancos/comparecentes,%,2,2,0,0,0,0.0,0.0,0.0
+uf,SE,comparable_small,Brancos/comparecentes,%,4,4,0,0,0,0.0,1.4705882352941175,4.057734204793028
+uf,AM,comparable_small,Brancos/comparecentes,%,8,8,0,0,0,0.0,0.8620689655172413,2.353320438426821
+uf,RO,comparable_small,Brancos/comparecentes,%,9,9,0,0,0,0.0,0.0,0.0
+uf,AL,comparable_small,Brancos/comparecentes,%,6,6,0,0,0,2.1739130434782608,2.1980676328502415,2.761437908496732
+uf,SC,comparable_small,Brancos/comparecentes,%,11,11,0,0,0,1.1627906976744187,4.3478260869565215,6.25
+uf,PR,comparable_small,Brancos/comparecentes,%,19,19,0,0,0,0.0,1.9607843137254901,3.4693877551020407
+uf,RR,comparable_small,Brancos/comparecentes,%,5,5,0,0,0,0.0,0.0,0.0
+uf,PI,comparable_small,Brancos/comparecentes,%,12,12,0,0,0,0.0,0.0,0.5319148936170213
+uf,TO,comparable_small,Brancos/comparecentes,%,5,5,0,0,0,0.0,0.0,0.0
+uf,MT,comparable_small,Brancos/comparecentes,%,13,13,0,0,0,0.0,0.0,0.0
+uf,AP,comparable_small,Brancos/comparecentes,%,7,7,0,0,0,0.0,0.0,1.5889029003783102
+region,Exterior,comparable_small,Brancos/comparecentes,%,27,27,0,0,0,0.0,0.0,1.9897557131599684
+uf,SP,comparable_small,Comparecimento,comparecentes,69,69,0,0,0,26.0,38.0,45.0
+uf,CE,comparable_small,Comparecimento,comparecentes,25,25,0,0,0,33.0,37.0,45.0
+uf,MS,comparable_small,Comparecimento,comparecentes,4,4,0,0,0,39.5,47.0,49.0
+uf,RJ,comparable_small,Comparecimento,comparecentes,8,8,0,0,0,45.75,47.0,49.0
+uf,RN,comparable_small,Comparecimento,comparecentes,2,2,0,0,0,30.0,36.0,42.0
+uf,SE,comparable_small,Comparecimento,comparecentes,4,4,0,0,0,28.5,31.5,34.75
+uf,AM,comparable_small,Comparecimento,comparecentes,8,8,0,0,0,36.0,44.5,49.0
+uf,RO,comparable_small,Comparecimento,comparecentes,9,9,0,0,0,21.0,38.0,48.0
+uf,AL,comparable_small,Comparecimento,comparecentes,6,6,0,0,0,39.75,45.5,46.0
+uf,SC,comparable_small,Comparecimento,comparecentes,11,11,0,0,0,25.5,32.0,44.5
+uf,PR,comparable_small,Comparecimento,comparecentes,19,19,0,0,0,35.5,42.0,49.0
+uf,RR,comparable_small,Comparecimento,comparecentes,5,5,0,0,0,52.0,58.0,68.0
+uf,PI,comparable_small,Comparecimento,comparecentes,12,12,0,0,0,37.5,45.5,50.0
+uf,TO,comparable_small,Comparecimento,comparecentes,5,5,0,0,0,39.0,40.0,46.0
+uf,MT,comparable_small,Comparecimento,comparecentes,13,13,0,0,0,29.0,46.0,48.0
+uf,AP,comparable_small,Comparecimento,comparecentes,7,7,0,0,0,44.5,49.0,57.0
+region,Exterior,comparable_small,Comparecimento,comparecentes,27,27,0,0,0,17.5,31.0,39.0
+uf,SP,comparable_small,Eleitorado apto,eleitores,69,69,0,0,0,34.0,47.0,56.0
+uf,CE,comparable_small,Eleitorado apto,eleitores,25,25,0,0,0,35.0,49.0,54.0
+uf,MS,comparable_small,Eleitorado apto,eleitores,4,4,0,0,0,51.5,60.5,63.75
+uf,RJ,comparable_small,Eleitorado apto,eleitores,8,8,0,0,0,54.75,56.0,62.25
+uf,RN,comparable_small,Eleitorado apto,eleitores,2,2,0,0,0,34.25,40.5,46.75
+uf,SE,comparable_small,Eleitorado apto,eleitores,4,4,0,0,0,30.75,35.5,43.25
+uf,AM,comparable_small,Eleitorado apto,eleitores,8,8,0,0,0,45.75,54.0,67.0
+uf,RO,comparable_small,Eleitorado apto,eleitores,9,9,0,0,0,25.0,42.0,54.0
+uf,AL,comparable_small,Eleitorado apto,eleitores,6,6,0,0,0,40.75,48.5,52.5
+uf,SC,comparable_small,Eleitorado apto,eleitores,11,11,0,0,0,33.5,48.0,52.0
+uf,PR,comparable_small,Eleitorado apto,eleitores,19,19,0,0,0,51.0,58.0,62.5
+uf,RR,comparable_small,Eleitorado apto,eleitores,5,5,0,0,0,52.0,80.0,80.0
+uf,PI,comparable_small,Eleitorado apto,eleitores,12,12,0,0,0,52.75,56.5,63.0
+uf,TO,comparable_small,Eleitorado apto,eleitores,5,5,0,0,0,43.0,49.0,53.0
+uf,MT,comparable_small,Eleitorado apto,eleitores,13,13,0,0,0,46.0,55.0,56.0
+uf,AP,comparable_small,Eleitorado apto,eleitores,7,7,0,0,0,58.5,60.0,72.0
+region,Exterior,comparable_small,Eleitorado apto,eleitores,27,27,0,0,0,46.0,69.0,90.0
+uf,SP,not_comparable,Nulos/comparecentes,%,11850,11850,0,0,0,1.9230769230769231,2.8285219014600975,3.8869257950530036
+uf,CE,not_comparable,Nulos/comparecentes,%,3612,3612,0,0,0,1.9504276211593283,2.857142857142857,3.938418987949087
+uf,MS,not_comparable,Nulos/comparecentes,%,786,786,0,0,0,0.8771929824561403,1.5414315414315416,2.314145793192036
+uf,RJ,not_comparable,Nulos/comparecentes,%,5863,5863,0,0,0,1.6260162601626018,2.4,3.2855282546862687
+uf,RN,not_comparable,Nulos/comparecentes,%,1746,1746,0,0,0,1.7723763353981505,2.6408867301824523,3.5294117647058822
+uf,SE,not_comparable,Nulos/comparecentes,%,1331,1331,0,0,0,2.048480948917361,3.0120481927710845,4.006688963210703
+uf,AM,not_comparable,Nulos/comparecentes,%,1556,1556,0,0,0,1.0243328100470956,1.5625,2.1756061221725584
+uf,RO,not_comparable,Nulos/comparecentes,%,586,586,0,0,0,0.7111263631510715,1.2295288485764675,1.8181818181818181
+uf,AL,not_comparable,Nulos/comparecentes,%,862,862,0,0,0,2.48007150811793,3.5597748608720448,4.742238171726003
+uf,SC,not_comparable,Nulos/comparecentes,%,2234,2234,0,0,0,0.8778360858157123,1.4035087719298245,2.0202020202020203
+uf,PR,not_comparable,Nulos/comparecentes,%,3197,3197,0,0,0,0.9771986970684038,1.5789473684210527,2.302631578947368
+uf,RR,not_comparable,Nulos/comparecentes,%,263,263,0,0,0,0.7575757575757576,1.2987012987012987,1.8867924528301887
+uf,PI,not_comparable,Nulos/comparecentes,%,1710,1710,0,0,0,1.681379622556093,2.5594235448250044,3.651580130740725
+uf,TO,not_comparable,Nulos/comparecentes,%,458,458,0,0,0,1.2945029108822212,2.2472023593099824,3.4151663938897983
+uf,MT,not_comparable,Nulos/comparecentes,%,1406,1406,0,0,0,0.9302325581395349,1.5546076322594677,2.2988505747126435
+uf,AP,not_comparable,Nulos/comparecentes,%,252,252,0,0,0,0.9554140127388535,1.386485966935794,1.918468911280413
+region,Exterior,not_comparable,Nulos/comparecentes,%,1274,1232,42,0,0,0.7092198581560284,1.282051282051282,2.0266015549701217
+uf,SP,not_comparable,Taxa de comparecimento,%,11850,11850,0,0,0,74.67782866432721,78.23236550140561,81.31795835743203
+uf,CE,not_comparable,Taxa de comparecimento,%,3612,3612,0,0,0,80.85863704345088,84.0909090909091,86.9956647398844
+uf,MS,not_comparable,Taxa de comparecimento,%,786,786,0,0,0,74.25943034026011,78.2545518207283,81.7183381448475
+uf,RJ,not_comparable,Taxa de comparecimento,%,5863,5863,0,0,0,71.92104921999913,76.57142857142857,80.92485549132948
+uf,RN,not_comparable,Taxa de comparecimento,%,1746,1746,0,0,0,79.3703007518797,82.32134937354473,84.9590665126707
+uf,SE,not_comparable,Taxa de comparecimento,%,1331,1331,0,0,0,80.4546419245001,83.41708542713567,86.1861471861472
+uf,AM,not_comparable,Taxa de comparecimento,%,1556,1556,0,0,0,75.60652131720256,79.78908740455185,83.25237713369229
+uf,RO,not_comparable,Taxa de comparecimento,%,586,586,0,0,0,76.17849153084053,78.86314301580089,81.63547150191721
+uf,AL,not_comparable,Taxa de comparecimento,%,862,862,0,0,0,77.99514563106796,81.43372378794166,84.03397854617367
+uf,SC,not_comparable,Taxa de comparecimento,%,2234,2234,0,0,0,78.08670979867712,81.03006189213085,83.78198677400805
+uf,PR,not_comparable,Taxa de comparecimento,%,3197,3197,0,0,0,77.86259541984732,80.625,83.03030303030303
+uf,RR,not_comparable,Taxa de comparecimento,%,263,263,0,0,0,80.492129389379,83.12101910828027,85.71745324331215
+uf,PI,not_comparable,Taxa de comparecimento,%,1710,1710,0,0,0,79.54348900420065,82.91298263469244,85.99044110931841
+uf,TO,not_comparable,Taxa de comparecimento,%,458,458,0,0,0,79.74257187537592,82.30897906324196,84.87317436199572
+uf,MT,not_comparable,Taxa de comparecimento,%,1406,1406,0,0,0,75.8798290717065,79.1952707856598,82.00247099957986
+uf,AP,not_comparable,Taxa de comparecimento,%,252,252,0,0,0,80.11837696404972,83.48944003884122,86.08473980309424
+region,Exterior,not_comparable,Taxa de comparecimento,%,1274,1274,0,0,0,27.389948479772602,36.58765070055393,45.92220828105395
+uf,SP,not_comparable,Participação do candidato 22,%,11850,11850,0,0,0,44.287345075016304,52.47541086635452,60.2002529160219
+uf,CE,not_comparable,Participação do candidato 22,%,3612,3612,0,0,0,22.064056939501782,31.191510937273648,38.972035664659565
+uf,MS,not_comparable,Participação do candidato 22,%,786,786,0,0,0,55.683336116213056,61.82306940371456,67.12561694956062
+uf,RJ,not_comparable,Participação do candidato 22,%,5863,5863,0,0,0,42.542568542568546,51.587301587301596,57.971014492753625
+uf,RN,not_comparable,Participação do candidato 22,%,1746,1746,0,0,0,26.904937701892013,35.76939054062073,44.10511363636363
+uf,SE,not_comparable,Participação do candidato 22,%,1331,1331,0,0,0,27.29135556661689,33.663366336633665,38.46153846153847
+uf,AM,not_comparable,Participação do candidato 22,%,1556,1556,0,0,0,35.767279934283444,49.68048182931809,55.903749140105475
+uf,RO,not_comparable,Participação do candidato 22,%,586,586,0,0,0,59.197546749013554,66.01463484623847,74.50480192076832
+uf,AL,not_comparable,Participação do candidato 22,%,862,862,0,0,0,39.69423791821561,49.146717921835865,54.15452812109833
+uf,SC,not_comparable,Participação do candidato 22,%,2234,2234,0,0,0,57.2463768115942,66.0255817537371,71.97613172629781
+uf,PR,not_comparable,Participação do candidato 22,%,3197,3197,0,0,0,55.871886120996436,61.18421052631579,66.9683257918552
+uf,RR,not_comparable,Participação do candidato 22,%,263,263,0,0,0,67.62295081967213,72.27272727272728,75.5248133509003
+uf,PI,not_comparable,Participação do candidato 22,%,1710,1710,0,0,0,16.059339661888732,23.36806700521005,31.94935869084476
+uf,TO,not_comparable,Participação do candidato 22,%,458,458,0,0,0,42.68627450980392,55.73014383989994,62.96987622030961
+uf,MT,not_comparable,Participação do candidato 22,%,1406,1406,0,0,0,58.04554079696395,65.37387193811776,75.648470770422
+uf,AP,not_comparable,Participação do candidato 22,%,252,252,0,0,0,42.98232323232323,46.45294540229885,50.0
+region,Exterior,not_comparable,Participação do candidato 22,%,1274,1232,42,0,0,30.208665179993623,41.89829072990453,63.50524475524475
+uf,SP,not_comparable,Participação do candidato 13,%,11850,11850,0,0,0,29.56855285249884,36.162361623616235,44.08018183576748
+uf,CE,not_comparable,Participação do candidato 13,%,3612,3612,0,0,0,54.24948309210965,63.57583774250441,73.83512544802868
+uf,MS,not_comparable,Participação do candidato 13,%,786,786,0,0,0,25.39065712640842,30.42718151413804,37.174568824185194
+uf,RJ,not_comparable,Participação do candidato 13,%,5863,5863,0,0,0,34.30204500211136,40.29304029304029,48.81436259940558
+uf,RN,not_comparable,Participação do candidato 13,%,1746,1746,0,0,0,48.966025836639204,58.333333333333336,68.38798854475326
+uf,SE,not_comparable,Participação do candidato 13,%,1331,1331,0,0,0,53.43297654040264,58.909090909090914,66.79908926748843
+uf,AM,not_comparable,Participação do candidato 13,%,1556,1556,0,0,0,35.163251733856924,41.61058454599909,59.34065934065934
+uf,RO,not_comparable,Participação do candidato 13,%,586,586,0,0,0,20.082395911928117,26.454444365580713,32.21561437324683
+uf,AL,not_comparable,Participação do candidato 13,%,862,862,0,0,0,39.63127213901208,44.616035748735214,55.05019339885315
+uf,SC,not_comparable,Participação do candidato 13,%,2234,2234,0,0,0,19.550953028327275,25.0,32.924935615815784
+uf,PR,not_comparable,Participação do candidato 13,%,3197,3197,0,0,0,23.50877192982456,28.333333333333332,33.210332103321036
+uf,RR,not_comparable,Participação do candidato 13,%,263,263,0,0,0,17.323970757983837,20.242914979757085,24.399384970209493
+uf,PI,not_comparable,Participação do candidato 13,%,1710,1710,0,0,0,61.61233388704319,71.95444573493353,80.31496062992126
+uf,TO,not_comparable,Participação do candidato 13,%,458,458,0,0,0,28.653726801337367,36.93183940242764,51.03125
+uf,MT,not_comparable,Participação do candidato 13,%,1406,1406,0,0,0,19.657697301976626,27.982174619132316,35.311624649859944
+uf,AP,not_comparable,Participação do candidato 13,%,252,252,0,0,0,40.564592173503065,43.90243902439025,47.89267926953355
+region,Exterior,not_comparable,Participação do candidato 13,%,1274,1232,42,0,0,27.737925251014257,49.14847963503508,60.84591767782119
+uf,SP,not_comparable,Brancos/comparecentes,%,11850,11850,0,0,0,1.1152416356877324,1.8050541516245486,2.631578947368421
+uf,CE,not_comparable,Brancos/comparecentes,%,3612,3612,0,0,0,0.8928571428571428,1.4769236362314362,2.1671826625387
+uf,MS,not_comparable,Brancos/comparecentes,%,786,786,0,0,0,0.4761904761904762,1.1070261437908497,1.6444039668083386
+uf,RJ,not_comparable,Brancos/comparecentes,%,5863,5863,0,0,0,0.9433962264150944,1.5384615384615385,2.2568518069366963
+uf,RN,not_comparable,Brancos/comparecentes,%,1746,1746,0,0,0,0.7881796396003858,1.3050605692874329,1.8912564728289984
+uf,SE,not_comparable,Brancos/comparecentes,%,1331,1331,0,0,0,0.90703414232826,1.465201465201465,2.1645021645021645
+uf,AM,not_comparable,Brancos/comparecentes,%,1556,1556,0,0,0,0.38314176245210724,0.9375,1.5345268542199488
+uf,RO,not_comparable,Brancos/comparecentes,%,586,586,0,0,0,0.435257262198595,0.8639349156590536,1.4545454545454546
+uf,AL,not_comparable,Brancos/comparecentes,%,862,862,0,0,0,0.9868421052631579,1.571100634364278,2.192682047584715
+uf,SC,not_comparable,Brancos/comparecentes,%,2234,2234,0,0,0,0.6711409395973155,1.1627906976744187,1.7395206419596663
+uf,PR,not_comparable,Brancos/comparecentes,%,3197,3197,0,0,0,0.7843137254901961,1.3100436681222707,1.9762845849802373
+uf,RR,not_comparable,Brancos/comparecentes,%,263,263,0,0,0,0.37244077012705984,0.7692307692307693,1.1583184257602863
+uf,PI,not_comparable,Brancos/comparecentes,%,1710,1710,0,0,0,0.5797101449275363,1.116280035720961,1.694915254237288
+uf,TO,not_comparable,Brancos/comparecentes,%,458,458,0,0,0,0.3590699118823027,0.7380174291938998,1.1846036537922877
+uf,MT,not_comparable,Brancos/comparecentes,%,1406,1406,0,0,0,0.38314176245210724,0.7905138339920948,1.276595744680851
+uf,AP,not_comparable,Brancos/comparecentes,%,252,252,0,0,0,0.4454408975979772,0.8752777139354937,1.435506241331484
+region,Exterior,not_comparable,Brancos/comparecentes,%,1274,1232,42,0,0,0.8163310515938946,1.383285762122686,2.2522522522522523
+uf,SP,not_comparable,Comparecimento,comparecentes,11850,11850,0,0,0,237.0,267.0,289.0
+uf,CE,not_comparable,Comparecimento,comparecentes,3612,3612,0,0,0,235.0,271.0,300.0
+uf,MS,not_comparable,Comparecimento,comparecentes,786,786,0,0,0,206.0,232.0,252.0
+uf,RJ,not_comparable,Comparecimento,comparecentes,5863,5863,0,0,0,239.0,272.0,300.0
+uf,RN,not_comparable,Comparecimento,comparecentes,1746,1746,0,0,0,245.0,280.0,308.0
+uf,SE,not_comparable,Comparecimento,comparecentes,1331,1331,0,0,0,225.0,255.0,284.5
+uf,AM,not_comparable,Comparecimento,comparecentes,1556,1556,0,0,0,258.75,295.0,322.0
+uf,RO,not_comparable,Comparecimento,comparecentes,586,586,0,0,0,197.0,228.0,249.0
+uf,AL,not_comparable,Comparecimento,comparecentes,862,862,0,0,0,258.0,294.5,331.0
+uf,SC,not_comparable,Comparecimento,comparecentes,2234,2234,0,0,0,262.0,291.0,311.0
+uf,PR,not_comparable,Comparecimento,comparecentes,3197,3197,0,0,0,247.0,273.0,299.0
+uf,RR,not_comparable,Comparecimento,comparecentes,263,263,0,0,0,213.0,237.0,258.0
+uf,PI,not_comparable,Comparecimento,comparecentes,1710,1710,0,0,0,204.0,240.0,270.0
+uf,TO,not_comparable,Comparecimento,comparecentes,458,458,0,0,0,214.25,242.0,267.75
+uf,MT,not_comparable,Comparecimento,comparecentes,1406,1406,0,0,0,227.0,263.0,296.0
+uf,AP,not_comparable,Comparecimento,comparecentes,252,252,0,0,0,210.5,271.5,300.0
+region,Exterior,not_comparable,Comparecimento,comparecentes,1274,1274,0,0,0,195.0,258.0,341.75
+uf,SP,not_comparable,Eleitorado apto,eleitores,11850,11850,0,0,0,308.0,346.0,371.0
+uf,CE,not_comparable,Eleitorado apto,eleitores,3612,3612,0,0,0,286.0,327.0,354.25
+uf,MS,not_comparable,Eleitorado apto,eleitores,786,786,0,0,0,267.0,301.0,325.0
+uf,RJ,not_comparable,Eleitorado apto,eleitores,5863,5863,0,0,0,317.0,348.0,407.0
+uf,RN,not_comparable,Eleitorado apto,eleitores,1746,1746,0,0,0,297.0,340.0,378.0
+uf,SE,not_comparable,Eleitorado apto,eleitores,1331,1331,0,0,0,273.0,306.0,342.0
+uf,AM,not_comparable,Eleitorado apto,eleitores,1556,1556,0,0,0,334.0,375.0,397.0
+uf,RO,not_comparable,Eleitorado apto,eleitores,586,586,0,0,0,254.0,292.0,312.0
+uf,AL,not_comparable,Eleitorado apto,eleitores,862,862,0,0,0,322.0,365.0,398.0
+uf,SC,not_comparable,Eleitorado apto,eleitores,2234,2234,0,0,0,330.0,364.0,385.0
+uf,PR,not_comparable,Eleitorado apto,eleitores,3197,3197,0,0,0,311.0,340.0,374.0
+uf,RR,not_comparable,Eleitorado apto,eleitores,263,263,0,0,0,262.0,288.0,306.0
+uf,PI,not_comparable,Eleitorado apto,eleitores,1710,1710,0,0,0,252.0,291.0,328.0
+uf,TO,not_comparable,Eleitorado apto,eleitores,458,458,0,0,0,265.25,293.0,327.0
+uf,MT,not_comparable,Eleitorado apto,eleitores,1406,1406,0,0,0,290.0,335.0,380.0
+uf,AP,not_comparable,Eleitorado apto,eleitores,252,252,0,0,0,260.75,330.5,370.0
+region,Exterior,not_comparable,Eleitorado apto,eleitores,1274,1274,0,0,0,692.25,774.0,795.75

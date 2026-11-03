@@ -1,0 +1,253 @@
+<!doctype html><html lang='pt-BR'><meta charset='utf-8'><title>Estabilidade dos pares</title>
+    <style>body{font:16px/1.6 system-ui;max-width:1150px;margin:40px auto;padding:20px;color:#183447}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:9px;border-bottom:1px solid #ccd9df;text-align:left}section{margin:32px 0}.note{background:#edf4f7;padding:18px}</style>
+    <h1>Estabilidade dos pares e das prioridades</h1>
+    <p class='note'>Estudo de sensibilidade, sem alteração da referência publicada. Estabilidade de um alerta não demonstra irregularidade; instabilidade identifica dependência da configuração.</p>
+    <p>Universo elegível: 428,571. Universo comum às configurações: 428,521. Os demais casos permanecem nas tabelas, sem receber posição comparável quando faltam pares.</p>
+    <section><h2>Como a comparação foi feita</h2><p>Pares aninhados: prefixo dos 30 publicados e extensão por vizinhos do primeiro turno, com prioridade municipal e complemento na UF.</p><p>A ordem publicada ancora os desempates; a extensão usa entrada em ordem geográfica e as versões registradas do algoritmo/bibliotecas.</p><p>A variante de 30 reproduziu os escores e a seleção publicados em todas as UFs conferidas. Os rankings abaixo usam o mesmo universo comum.</p></section>
+    <section><h2>Configurações</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Pares</th>
+      <th>Elegíveis</th>
+      <th>Pares suficientes</th>
+      <th>Na triagem</th>
+      <th>Universo comum</th>
+      <th>Triagem no universo comum</th>
+      <th>Alertas com MAD abaixo de uma unidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>428.571</td>
+      <td>428.571</td>
+      <td>83.997</td>
+      <td>428.521</td>
+      <td>83.983</td>
+      <td>17.398</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>428.571</td>
+      <td>428.571</td>
+      <td>63.809</td>
+      <td>428.521</td>
+      <td>63.796</td>
+      <td>5.450</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>428.571</td>
+      <td>428.521</td>
+      <td>59.045</td>
+      <td>428.521</td>
+      <td>59.045</td>
+      <td>3.361</td>
+    </tr>
+  </tbody>
+</table><p>O universo comum exige pares suficientes em todas as configurações. MAD abaixo da escala de uma unidade é um diagnóstico do indicador de maior afastamento, não um novo critério de seleção.</p><h3>Brasil e exterior</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Pares</th>
+      <th>Exterior (ZZ)</th>
+      <th>Elegíveis</th>
+      <th>Pares suficientes</th>
+      <th>Universo comum</th>
+      <th>Triagem no universo comum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>não</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>83.983</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>sim</td>
+      <td>50</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>não</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>63.796</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>sim</td>
+      <td>50</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>não</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>428.521</td>
+      <td>59.045</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>sim</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></section>
+    <section><h2>Quanto os primeiros casos se repetem?</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Pares A</th>
+      <th>Pares B</th>
+      <th>Primeiros solicitados</th>
+      <th>Tamanho da lista A</th>
+      <th>Tamanho da lista B</th>
+      <th>Interseção</th>
+      <th>União</th>
+      <th>Jaccard (0–1)</th>
+      <th>Retenção de A (0–1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>30</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>2</td>
+      <td>48</td>
+      <td>0,0417</td>
+      <td>0,0800</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>30</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>4</td>
+      <td>96</td>
+      <td>0,0417</td>
+      <td>0,0800</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>30</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>8</td>
+      <td>192</td>
+      <td>0,0417</td>
+      <td>0,0800</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>50</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>0</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>2</td>
+      <td>98</td>
+      <td>0,0204</td>
+      <td>0,0400</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>50</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>6</td>
+      <td>194</td>
+      <td>0,0309</td>
+      <td>0,0600</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>50</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>2</td>
+      <td>48</td>
+      <td>0,0417</td>
+      <td>0,0800</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>9</td>
+      <td>91</td>
+      <td>0,0989</td>
+      <td>0,1800</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>50</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>18</td>
+      <td>182</td>
+      <td>0,0989</td>
+      <td>0,1800</td>
+    </tr>
+  </tbody>
+</table><p>Interseção conta casos presentes nas duas listas. Jaccard é interseção/união; retenção usa o tamanho efetivo da lista da esquerda. Se não há casos, o indicador fica ausente, não 100%.</p></section>
+    <section><h2>Seleção nas configurações</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Configurações que selecionam</th>
+      <th>Elegíveis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>339.256</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>27.277</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6.417</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>55.571</td>
+    </tr>
+  </tbody>
+</table><p>Somente universo comum; zero configurações significa sem triagem nesses parâmetros, não ausência comprovada de irregularidades.</p></section>
+    <section><h2>Diagnóstico de dispersão</h2><p>MAD comparado a max(100/denominador_1,100/denominador_2): escala de uma unidade no numerador com denominadores fixos; não é teste probabilístico nem novo critério de alerta.</p><p>As tabelas mostram mudança em pp, numeradores e denominadores de cada turno, MAD e mediana. As quantidades não representam transferências individuais de voto.</p></section>
+    <section><h2>Tabelas e reprodução</h2><ul><li><a href='variantes.csv'>variantes.csv</a> / <a href='variantes.parquet'>Parquet</a></li><li><a href='rankings.csv'>rankings.csv</a> / <a href='rankings.parquet'>Parquet</a></li><li><a href='comparacao.csv'>comparacao.csv</a> / <a href='comparacao.parquet'>Parquet</a></li><li><a href='top100.csv'>top100.csv</a> / <a href='top100.parquet'>Parquet</a></li><li><a href='resumo.json'>Resumo, método, versões e hashes</a></li></ul></section></html>

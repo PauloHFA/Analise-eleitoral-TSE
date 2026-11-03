@@ -1,0 +1,28 @@
+{
+  "estabilidade": {
+    "status": "válido",
+    "tabelas": {
+      "comparacao": 428571,
+      "rankings": 206824,
+      "top100": 300,
+      "variantes": 1285713
+    },
+    "links": 9,
+    "comparacao_csv_parquet": "quantidade e dois checksums agregados de linhas com tipos explícitos"
+  },
+  "cobertura": {
+    "status": "válido",
+    "tabelas": {
+      "diferencas": 420,
+      "distribuicao_geografica": 83,
+      "faixas": 6,
+      "municipios": 5757,
+      "perfis": 630,
+      "resumo_uf": 28,
+      "unidades": 499248
+    },
+    "links": 16,
+    "comparacao_csv_parquet": "quantidade e dois checksums agregados de linhas com tipos explícitos"
+  },
+  "invariantes": "referência reproduzida; pares auditados; grupos e cobertura fecham; ausência preservada"
+}

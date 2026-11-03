@@ -1,0 +1,9 @@
+campo,definicao
+analysis_group,eligible: comparável e não pequena; comparable_small: comparável pequena; not_comparable: sem comparação territorial.
+comparable_pct / eligible_pct,100 × quantidade de unidades do grupo / quantidade observada na unidade municipal.
+units / used / missing / nonfinite / out_of_range,Universo do grupo e cobertura da medida; categorias de qualidade mutuamente exclusivas.
+q25 / median / q75,"Quartis das medidas utilizáveis do primeiro turno; taxas em %, quantidades em eleitores/comparecentes."
+median_difference,Mediana do grupo de comparação menos mediana dos elegíveis no primeiro turno; taxas em pp. Não é mudança entre turnos.
+group_share_in_region_pct,"Participação da UF no total de unidades desse grupo, no Brasil ou no exterior."
+aptos_known_1 / attendance_known_1,"Número de unidades com medida conhecida; zero publicado é conhecido, ausência não é zero."
+comparable_*_available_pct_1,Cobertura das somas disponíveis do inventário no primeiro turno; não é certificação de total oficial reconciliado.

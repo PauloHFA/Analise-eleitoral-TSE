@@ -20,3 +20,5 @@ Resultados finais:
 - `preservacao-documentacao-conferencia.log`: resultado da conferência final dos hashes.
 - `validacao-publicacao.log`: hashes dos pacotes e de todos os arquivos incluídos na release.
 - `validacao-pdf.log`: edição explicativa do PDF; sumário, contagens, fichas, margens e proporções das imagens.
+- `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
+- `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.

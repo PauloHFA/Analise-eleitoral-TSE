@@ -4,6 +4,8 @@ Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos
 
 As próximas implementações estão organizadas no [roteiro de etapas e commits](docs/PROXIMAS_ETAPAS.md), com critérios de conclusão, fontes e pendências de cada frente.
 
+**Primeira rodada implementada:** [estabilidade dos pares e perfil das exclusões](docs/RESULTADOS_INCREMENTAIS.md). A referência de 30 pares foi reproduzida, mas o topo do ranking depende da configuração; esses resultados complementares devem acompanhar a interpretação das prioridades originais.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário
