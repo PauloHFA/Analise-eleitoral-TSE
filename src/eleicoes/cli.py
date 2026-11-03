@@ -270,7 +270,9 @@ def main():
     national = sub.add_parser("nacional", help="Ampliar a investigação em saída própria, sem downloads")
     national.add_argument("--output", default="outputs/2026")
     national.add_argument("--dest", help="Pasta nova para a etapa selecionada")
-    national.add_argument("--etapa", choices=["inventario"], default="inventario")
+    national.add_argument("--etapa", choices=["inventario","taxas"], default="inventario")
+    national.add_argument("--min-elegiveis",type=int,default=30)
+    national.add_argument("--cobertura-minima",type=float,default=80)
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -295,9 +297,13 @@ def main():
         result = run_dossier(args.output, args.data, args.dest)
         LOG.info("Dossiê concluído: %s unidades por turno; %s com correspondência aritmética", result["selected_unit_turns"], result["technical_units"])
     elif args.command == "nacional":
-        from .national_inventory import run_inventory
-        result = run_inventory(args.output,args.dest)
-        LOG.info("Inventário nacional concluído: %s", result["tables"])
+        if args.etapa=="inventario":
+            from .national_inventory import run_inventory
+            result = run_inventory(args.output,args.dest)
+        else:
+            from .national_rates import run_rates
+            result = run_rates(args.output,args.dest,args.min_elegiveis,args.cobertura_minima)
+        LOG.info("Etapa nacional concluída: %s", result["tables"])
     else:
         from .demo import create_demo
         root = Path(args.output)
