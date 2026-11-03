@@ -2,6 +2,8 @@
 
 Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos e consistência dos arquivos abertos do TSE. Brasil e exterior têm contagens separadas. A entrega reúne o processamento nacional, as referências históricas, a investigação de passagens a zero e viradas, as fichas e o mapa municipal.
 
+As próximas implementações estão organizadas no [roteiro de etapas e commits](docs/PROXIMAS_ETAPAS.md), com critérios de conclusão, fontes e pendências de cada frente.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário
