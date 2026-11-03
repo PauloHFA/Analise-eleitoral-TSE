@@ -60,3 +60,13 @@ Os pacotes passaram por conferência CRC; o manifesto em `docs/resultados-public
 ## Licenciamento — 03/11/2026
 
 Adicionada licença MIT para código e documentação de autoria própria, com copyright de PauloHFA. `DATA_LICENSE.md` registra o escopo dos materiais do TSE, do IBGE e de outros terceiros, preservando suas condições e atribuições. README e modelo de geração incluem a seção de licença. O pacote Python declara o identificador SPDX MIT e inclui os dois avisos de licença em sua distribuição, usando os metadados suportados pelo setuptools a partir da versão 77. Os artefatos analíticos e os pacotes publicados permanecem com os mesmos bytes e hashes.
+
+## Revisão editorial do PDF — 03/11/2026
+
+O PDF foi reorganizado em perguntas, evidências, interpretação, metodologia e anexos. Foram substituídas as listas de campos e os blocos de JSON por tabelas com unidades e explicações, acrescentados sumário clicável, marcadores e numeração, preservadas as proporções das imagens e compactadas as fichas em comparações entre os dois turnos com explicação do indicador de maior afastamento. A edição mantém os inventários completos e as 100 fichas estatísticas, sem alteração das bases analíticas.
+
+`scripts/gerar_pdf.py` usa apenas os artefatos existentes e não regrava HTML, síntese, tabelas, gráficos ou fichas. A mesma apresentação é utilizada no processamento normal. `pdf_edicao.json` registra páginas, posições dos capítulos e hashes. `scripts/validar_pdf.py` verifica conteúdo e geometria com PyMuPDF; a inspeção visual usa PNGs renderizados. A documentação pode ser atualizada com `--reuse-synthesis`, preservando a cópia da síntese.
+
+Os pacotes `resultados-2026-v1` permanecem como snapshot original, incluindo seu PDF anterior. A edição explicativa é disponibilizada separadamente em `pdf-revisado-v2`. A validação dos pacotes confere seus conteúdos independentemente de revisões editoriais na pasta de trabalho; `--workspace` permite comparar também o snapshot com essa pasta.
+
+Validação da edição explicativa: 79 páginas, sendo 17 antes dos anexos; 15 marcadores; 100 fichas estatísticas; 41 métricas consolidadas; seis imagens com proporções preservadas. Os 76 testes passaram e a demonstração completa também gerou HTML/PDF. Houve inspeção visual de páginas renderizadas e conferência automatizada de sumário, texto, margens e contagens. Os 578 artefatos do inventário de preservação mantiveram seus hashes, e os três pacotes originais foram novamente conferidos por conteúdo e SHA256.

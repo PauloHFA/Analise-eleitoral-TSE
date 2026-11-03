@@ -14,13 +14,14 @@ def table(headers, rows):
                      ["| " + " | ".join(cell(v) for v in row) + " |" for row in rows])
 
 
-def render_readme(synthesis, template, validation=None, tests=None):
+def render_readme(synthesis, template, validation=None, tests=None, pdf_edition=None):
     def results(ids):
         return table(["Resultado", "Valor", "Unidade", "Fonte"], [
             [m["label"], number(m["value"]), m["unit"],
              " + ".join(f"[{p}](outputs/2026/{p})" for p in m["source"].split(" + "))]
             for m in metric_table(synthesis, ids)])
     blocks = {
+        "pdf_edition": (f"A edição explicativa tem **{number(pdf_edition['pages'])} páginas**, com **{number(pdf_edition['sections']['anexo-zeros']-1)} páginas até o início dos anexos**, sumário clicável, marcadores, tabelas por tema e fontes/contexto junto dos resultados. As **{number(pdf_edition['statistical_cases'])} fichas estatísticas** permanecem completas, em quadros comparativos que explicam o motivo da triagem. Contagens e hash da edição: [pdf_edicao.json](outputs/2026/pdf_edicao.json)." if pdf_edition else "Gere o PDF para registrar a edição, a paginação e o hash em `pdf_edicao.json`."),
         "overview": results({"observed", "comparable", "eligible", "excluded", "combined", "bu_matching", "noninstalled", "technical_votes", "coverage_geographic_units", "coverage_turn_units", "coverage_candidate_rows", "zero_flavio", "positive_zero", "flips_RJ", "flips_MG", "map_units"}),
         "sources": results({"sources", "bu_files"}),
         "comparability": results({"observed", "comparable", "eligible", "excluded", "small", "comparable_small"}),
@@ -68,4 +69,6 @@ def render_readme(synthesis, template, validation=None, tests=None):
 def write_readme(root, synthesis, validation=None, tests=None):
     root = Path(root)
     template = (root / "docs/README.template.md").read_text(encoding="utf-8")
-    (root / "README.md").write_text(render_readme(synthesis, template, validation, tests), encoding="utf-8")
+    pdf_path = root / "outputs/2026/pdf_edicao.json"
+    edition = json.loads(pdf_path.read_text(encoding="utf-8")) if pdf_path.exists() else None
+    (root / "README.md").write_text(render_readme(synthesis, template, validation, tests, edition), encoding="utf-8")

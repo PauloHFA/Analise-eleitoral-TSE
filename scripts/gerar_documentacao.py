@@ -13,9 +13,10 @@ def main():
     parser.add_argument("--output", default="outputs/2026")
     parser.add_argument("--validation", help="JSON final emitido pelo validador de entrega")
     parser.add_argument("--tests", help="Log final do pytest")
+    parser.add_argument("--reuse-synthesis", action="store_true", help="Reutilizar a síntese existente sem alterar sua versão ou hash")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    synthesis = build_synthesis(args.output)
+    synthesis = json.loads((Path(args.output) / "sintese_analise.json").read_text(encoding="utf-8")) if args.reuse_synthesis else build_synthesis(args.output)
     validation = json.loads(Path(args.validation).read_text(encoding="utf-8-sig")) if args.validation else None
     test_result = None
     if args.tests:
@@ -25,7 +26,7 @@ def main():
             raise ValueError("O log não registra uma suíte aprovada")
         test_result = match.group(0).strip("= ")
     write_readme(root, synthesis, validation, test_result)
-    print("Síntese e README atualizados a partir dos artefatos locais.")
+    print("README atualizado usando a síntese preservada." if args.reuse_synthesis else "Síntese e README atualizados a partir dos artefatos locais.")
 
 
 if __name__ == "__main__":

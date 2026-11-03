@@ -45,6 +45,7 @@ outputs/logs/*
 !outputs/logs/documentacao.log
 !outputs/logs/preservacao-documentacao-conferencia.log
 !outputs/logs/validacao-publicacao.log
+!outputs/logs/validacao-pdf.log
 .env
 .env.*
 !.env.example

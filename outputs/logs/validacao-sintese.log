@@ -1,7 +1,7 @@
 {
   "status": "síntese e documentação coerentes",
   "metricas": 41,
-  "links_locais_readme": 130,
+  "links_locais_readme": 134,
   "texto_pdf_verificado": true,
   "cobertura_nominal": {
     "geographic_units": 42,

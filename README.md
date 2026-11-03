@@ -8,6 +8,7 @@ Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos
 
 - [Leitura rápida e resultados consolidados](#leitura-rápida-e-resultados-consolidados)
 - [Baixar os resultados completos](#baixar-os-resultados-completos)
+- [PDF: leitura guiada e reprodução](#pdf-leitura-guiada-e-reprodução)
 - [Avaliação de cobertura](#avaliação-de-cobertura)
 - [1. Obtenção e preservação](#1-obtenção-e-preservação)
 - [2. Preparação das bases](#2-preparação-das-bases)
@@ -84,7 +85,31 @@ Get-FileHash outputs/publicacao/*.zip -Algorithm SHA256
 Expand-Archive outputs/publicacao/resultados-2026.zip -DestinationPath . -Force
 Expand-Archive outputs/publicacao/referencia-2018.zip -DestinationPath . -Force
 Expand-Archive outputs/publicacao/referencia-2022.zip -DestinationPath . -Force
+# Atualizar o PDF após extrair o snapshot original, preservando as tabelas
+gh release download pdf-revisado-v2 --repo PauloHFA/Analise-eleitoral-TSE --pattern relatorio.pdf --pattern pdf_edicao.json --dir outputs/2026 --clobber
 ```
+
+Os ZIPs da release `resultados-2026-v1` preservam a edição original do PDF. A [edição explicativa atualizada](https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/pdf-revisado-v2) é distribuída separadamente, mantendo os hashes dos pacotes originais. `scripts/validar_publicacao.py` confere os conteúdos do snapshot compactado; `--workspace` compara também a pasta local, que pode conter revisões posteriores do PDF.
+
+## PDF: leitura guiada e reprodução
+
+A edição explicativa tem **79 páginas**, com **17 páginas até o início dos anexos**, sumário clicável, marcadores, tabelas por tema e fontes/contexto junto dos resultados. As **100 fichas estatísticas** permanecem completas, em quadros comparativos que explicam o motivo da triagem. Contagens e hash da edição: [pdf_edicao.json](outputs/2026/pdf_edicao.json).
+
+O corpo principal responde às perguntas originais antes de apresentar as listas extensas. Cada tema distingue pergunta, resultado, interpretação e limite: comparabilidade, critérios de triagem, concordância entre arquivos, seções não instaladas, diferença nominal/nulos técnicos, passagens a zero, viradas, coortes e referência histórica. O exemplo da cidade do Rio separa perda de vantagem de perda de votos absolutos. O histórico é apresentado em tabelas, sem blocos de JSON.
+
+Os anexos mantêm todas as unanimidades, os municípios com inversão em RJ/MG, os indicadores consolidados e as fichas estatísticas originais. Os percentuais das fichas têm denominadores explicados; cada ficha identifica o indicador mais afastado dos pares e seu MAD. A geração editorial utiliza os dados já processados.
+
+```powershell
+# Apenas o PDF: preserva HTML, síntese, tabelas, gráficos e fichas JSON
+.\.venv\Scripts\python.exe scripts/gerar_pdf.py outputs/2026
+# Inspeção de texto, sumário, margens, imagens e fichas (ferramenta opcional)
+.\.venv\Scripts\python.exe -m pip install pymupdf
+.\.venv\Scripts\python.exe scripts/validar_pdf.py outputs/2026 --render outputs/publicacao/pdf-preview
+# Atualizar o README mantendo o hash da síntese
+.\.venv\Scripts\python.exe scripts/gerar_documentacao.py --output outputs/2026 --reuse-synthesis --validation outputs/logs/validacao-entrega.log --tests outputs/logs/testes-documentacao.log
+```
+
+O processamento nacional e `gerar_relatorio.py` também utilizam essa apresentação do PDF. A validação vigente é descrita na seção de mapas e validação; os detalhes da inspeção editorial estão em [validacao-pdf.log](outputs/logs/validacao-pdf.log).
 
 ## 1. Obtenção e preservação
 
@@ -382,7 +407,7 @@ O mapa permite alternar turno, filtrar UF/viradas, mudar escala, ampliar, arrast
 
 **Validação vigente:**
 
-Validação final registrada: **70 passed in 34.35s**. HTML: **297 referências de links/imagens inventariadas**, com os destinos locais verificados. PDF: **119 páginas**, estrutura e fonte Unicode incorporada verificadas. **65 pares CSV/Parquet** conferidos por quantidade de linhas. JSONs lidos em modo estrito; fichas, fontes e controles verificados.
+Validação final registrada: **76 passed in 48.78s**. HTML: **297 referências de links/imagens inventariadas**, com os destinos locais verificados. PDF: **79 páginas**, estrutura e fonte Unicode incorporada verificadas. **65 pares CSV/Parquet** conferidos por quantidade de linhas. JSONs lidos em modo estrito; fichas, fontes e controles verificados.
 
 Resultados completos: [validação da entrega](outputs/logs/validacao-entrega.log), [testes](outputs/logs/testes-documentacao.log), [coerência da síntese](outputs/logs/validacao-sintese.log) e [preservação SHA256](outputs/logs/preservacao-documentacao-conferencia.log). A contagem de links inclui referências repetidas e externas; URLs externas não foram testadas por rede nesta revisão. O validador confere correspondência analítica e provas documentais dos casos dirigidos; igualdade de contagens CSV/Parquet, isoladamente, não é igualdade de conteúdo de todas as células.
 

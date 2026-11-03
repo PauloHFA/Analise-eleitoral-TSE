@@ -19,3 +19,4 @@ Resultados finais:
 - `preservacao-documentacao.json`: hashes anteriores à revisão para conferir a preservação de tabelas, fichas e mapas.
 - `preservacao-documentacao-conferencia.log`: resultado da conferência final dos hashes.
 - `validacao-publicacao.log`: hashes dos pacotes e de todos os arquivos incluídos na release.
+- `validacao-pdf.log`: edição explicativa do PDF; sumário, contagens, fichas, margens e proporções das imagens.

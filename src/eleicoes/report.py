@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import html
-import json
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -12,18 +11,13 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, PageBreak
 
 from .sources import write_json
 from .documentary import review_exported_issues
-from .investigation_report import load_investigation, pdf_investigation
-from .map_report import load_map, pdf_map
-from .synthesis import build_synthesis, executive_html, executive_pdf
+from .investigation_report import load_investigation
+from .map_report import load_map
+from .synthesis import build_synthesis, executive_html
+from .pdf_report import build_pdf_report
 
 NOTICE = ("Análise exploratória de dados agregados. Uma mudança observada, um alerta estatístico "
           "e uma divergência documental são categorias distintas. Nenhuma delas, isoladamente, "
@@ -280,45 +274,9 @@ def build_report(output, current, history, summary, finalists, bu_issues, manife
     <section><h2>Tabelas completas</h2><ul>{links}<li><a href='dicionario.csv'>Dicionário</a></li><li><a href='resumo.json'>Resumo e estado da execução</a></li></ul><p>CSV em UTF-8; versões Parquet acompanham as tabelas analíticas.</p></section>
     <section class='sources'><h2>Fontes e versões</h2><p>Tribunal Superior Eleitoral — dados abertos, atribuição CC-BY. Os hashes identificam os arquivos obtidos; não equivalem a verificação de assinatura digital.</p><ul>{sources}</ul></section></main></html>"""
     (output / "relatorio.html").write_text(body, encoding="utf-8")
-    fonts = Path(matplotlib.get_data_path()) / "fonts" / "ttf"
-    pdfmetrics.registerFont(TTFont("DejaVu", str(fonts / "DejaVuSans.ttf")))
-    pdfmetrics.registerFont(TTFont("DejaVu-Bold", str(fonts / "DejaVuSans-Bold.ttf")))
-    pdfmetrics.registerFontFamily("DejaVu", normal="DejaVu", bold="DejaVu-Bold", italic="DejaVu", boldItalic="DejaVu-Bold")
-    styles = getSampleStyleSheet()
-    for style in styles.byName.values():
-        style.fontName = "DejaVu-Bold" if style.name in ("Title", "Heading1", "Heading2") else "DejaVu"
-    story = [Paragraph(html.escape(label), styles["Title"]), Spacer(1, 12), Paragraph(NOTICE, styles["BodyText"])]
-    if synthesis:
-        story += executive_pdf(synthesis, styles)
-    story.append(Paragraph("A triagem combinada reúne mudanças absolutas e desvio em relação aos pares. A concentração em dois finalistas pode produzir mudanças grandes e comuns; consulte as frequências históricas e o desvio robusto separadamente.", styles["BodyText"]))
-    for key, value in displayed_summary:
-        story.append(Paragraph(f"<b>{html.escape(str(key))}:</b> {html.escape(fmt(value))}", styles["BodyText"]))
-    for file, caption in figures:
-        story += [Spacer(1, 10), Image(str(file), width=440, height=198), Paragraph(caption, styles["BodyText"])]
-    story += [PageBreak(), Paragraph("Metodologia e limitações", styles["Heading1"])]
-    for text in methods:
-        story += [Paragraph(text, styles["BodyText"]), Spacer(1, 8)]
-    story += [Paragraph("Revisão documental e aritmética", styles["Heading1"])]
-    for text in documentary_notes:
-        story += [Paragraph(html.escape(text), styles["BodyText"]), Spacer(1, 8)]
-    story += [Paragraph("Conferência com a totalização", styles["Heading1"])]
-    for text in totalization_notes:
-        story += [Paragraph(html.escape(text), styles["BodyText"]), Spacer(1, 8)]
-    story += [Paragraph("Referências históricas", styles["Heading1"])]
-    for hist in history:
-        story += [Paragraph(html.escape(json.dumps(hist, ensure_ascii=False)), styles["BodyText"]), Spacer(1, 8)]
-    story += pdf_map(electoral_map, styles)
-    story += pdf_investigation(investigation, styles)
-    for _, row in priority.sort_values(["is_exterior", "priority"], kind="stable").iterrows():
-        region = "Exterior" if row.is_exterior else "Brasil"
-        story += [PageBreak(), Paragraph(f"{region} — caso {row.uf}/{row.municipality}/{row.zone}/{row.section}", styles["Heading1"]),
-                  Paragraph(html.escape(str(row.get("municipality_name_1", ""))), styles["BodyText"]),
-                  Paragraph(html.escape(str(row.reason)), styles["BodyText"])]
-        for title, m in [("Aptos", "aptos"), ("Comparecentes", "attendance"), ("Brancos", "blank"), ("Nulos", "null_votes")] + [(f"Candidato {c}", f"votes_{c}") for c in finalists]:
-            story.append(Paragraph(f"{title}: {fmt(row.get(m+'_1'))} → {fmt(row.get(m+'_2'))}", styles["BodyText"]))
-        story += [Paragraph(f"Situação: {html.escape(str(row.review_status))}. BU: {html.escape(str(row.get('bu_check', 'não disponível')))}.", styles["BodyText"]),
-                  Paragraph(f"Maior desvio robusto: {fmt(row.robust_max)}; maior mudança: {fmt(row.max_change_pp)} pp. Pares e fontes na ficha JSON e no HTML.", styles["BodyText"])]
-    SimpleDocTemplate(str(output / "relatorio.pdf"), pagesize=A4, title=label, author="Análise reproduzível — fonte TSE").build(story)
+    build_pdf_report(output, summary=summary, history=history, priority=priority, finalists=finalists,
+                     candidate_names=candidate_names, manifest=manifest, synthesis=synthesis,
+                     investigation=investigation, electoral_map=electoral_map, demo=demo)
 
 
 def _safe(obj):
