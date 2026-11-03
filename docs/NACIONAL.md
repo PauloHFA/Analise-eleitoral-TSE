@@ -34,7 +34,22 @@ Os totais das mesmas seções territorialmente comparáveis são publicados em c
 
 Os somatórios de votação disponível por seção/local/município/UF são confrontados com a votação oficial nominal dos finalistas, por UF e no Brasil. Linhas ausentes e totais indisponíveis permanecem explícitos. Exterior e Brasil são separados. Essa conferência não presume mesma data de geração das fontes ou equivalência jurídica de todas as categorias. O quadro de BU descreve linhas disponíveis, sem certificar completude de todas as urnas.
 
-## Próximos incrementos desta etapa
+## Mapas e relatório complementar
 
-1. Gerar mapas próprios de mudança de margem e alertas por 1.000 seções elegíveis, com critérios explícitos de exibição e ausência.
-2. Conferir artefatos, apresentar os resultados nacionais e publicar tabelas completas com hashes.
+```powershell
+.\.venv\Scripts\python.exe -m eleicoes nacional --output outputs/2026 --etapa mapas --min-elegiveis 30 --cobertura-minima 80
+```
+
+A saída é `outputs/2026/nacional/mapas/`. A cartografia e o vínculo TSE–IBGE vêm do mapa de referência identificado por hash, sem novo download ou associação de nomes. Exterior permanece nas tabelas.
+
+O mapa tem três modos: liderança entre finalistas no turno escolhido; mudança da margem do segundo menos primeiro turno; e triagem original por 1.000 elegíveis. Azul indica Flávio e vermelho Lula nos modos eleitorais. Na mudança, a cor indica o sentido relativo, não necessariamente quem lidera ao final. A escala de mudança é simétrica fixa ±200 pp. A taxa usa roxo com escala fixa 0–1.000. As escalas não são recalculadas pela UF filtrada.
+
+Branco representa zero conhecido nos modos de mudança/taxa; cinza indica indicador indisponível ou taxa fora dos limites de exibição. No modo de liderança, cinza também identifica empate. Os limites de quantidade/cobertura podem ser ajustados na interface; os valores descritivos permanecem íntegros. Filtros por UF e padrão incluem as inversões nos dois sentidos, reduções de vantagem e mudança de empate.
+
+Ao clicar ou selecionar um território pelo teclado, o painel mostra votos dos dois turnos, quantidades nominais, margem, comparecimento/aptos, variação absoluta, numerador/denominador de alertas e cobertura da coorte. O HTML funciona localmente, sem dependências externas. O PDF complementar usa mapas estáticos com a mesma orientação e regra de cor.
+
+`prioridades.csv/parquet` contém até 50 seções elegíveis com padrão selecionado por UF, nos dois sentidos, ordenadas por escore robusto da margem, mudança absoluta e chave geográfica. Não é uma nova classificação de fraude; dispersão, magnitude e evidência documental precisam acompanhar a prioridade. As fichas anteriores continuam preservadas.
+
+## Fechamento desta etapa
+
+Conferir artefatos, apresentar os resultados nacionais e publicar tabelas completas com hashes.

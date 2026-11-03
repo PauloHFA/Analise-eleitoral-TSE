@@ -270,7 +270,7 @@ def main():
     national = sub.add_parser("nacional", help="Ampliar a investigação em saída própria, sem downloads")
     national.add_argument("--output", default="outputs/2026")
     national.add_argument("--dest", help="Pasta nova para a etapa selecionada")
-    national.add_argument("--etapa", choices=["inventario","taxas"], default="inventario")
+    national.add_argument("--etapa", choices=["inventario","taxas","mapas"], default="inventario")
     national.add_argument("--min-elegiveis",type=int,default=30)
     national.add_argument("--cobertura-minima",type=float,default=80)
     args = parser.parse_args()
@@ -300,10 +300,13 @@ def main():
         if args.etapa=="inventario":
             from .national_inventory import run_inventory
             result = run_inventory(args.output,args.dest)
-        else:
+        elif args.etapa=="taxas":
             from .national_rates import run_rates
             result = run_rates(args.output,args.dest,args.min_elegiveis,args.cobertura_minima)
-        LOG.info("Etapa nacional concluída: %s", result["tables"])
+        else:
+            from .national_map import run_maps
+            result = run_maps(args.output,args.dest,args.min_elegiveis,args.cobertura_minima)
+        LOG.info("Etapa nacional concluída: %s", result.get("tables",result.get("mapped")))
     else:
         from .demo import create_demo
         root = Path(args.output)
