@@ -1,0 +1,12 @@
+{
+  "status": "válido",
+  "units": 2148,
+  "votes": 5246,
+  "typed_csv_parquet": "EXCEPT ALL nos dois sentidos",
+  "sources": 6,
+  "local_captures_verified": 6,
+  "links": 13,
+  "cause_confirmed": false,
+  "primary_act_status": "não obtido nesta pesquisa",
+  "preservation": "entradas e artefatos conferidos por SHA256"
+}

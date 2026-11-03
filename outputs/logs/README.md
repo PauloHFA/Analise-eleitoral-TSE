@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros da pesquisa documental
+
+`execucao-pesquisa.log` registra a geração local dos relatórios a partir das evidências revisadas. `validacao-pesquisa.log` confere as fontes/capturas, vínculos das unidades, identidade da candidatura, ausência de conclusão causal automática e igualdade CSV/Parquet. `testes-pesquisa.log` contém a suíte de 113 testes deste incremento.
+
 ## Registros do dossiê local
 
 `execucao-dossie.log` registra o processamento nacional do primeiro passo da frente 3. `validacao-dossie.log` confere os hashes, as parcelas, as três unidades de cobertura, as 2.231 âncoras e os cinco pares CSV/Parquet pelo multiconjunto tipado completo. `testes-dossie.log` contém a execução da suíte após este incremento. Os logs das rodadas anteriores são preservados como registros de suas respectivas validações.

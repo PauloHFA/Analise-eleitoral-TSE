@@ -1,0 +1,38 @@
+{
+  "status": "concluído",
+  "year": 2026,
+  "technical_units": 2148,
+  "technical_votes": 5246,
+  "assessment": {
+    "normative_rule_status": "identificada em fonte oficial",
+    "candidate_status": "Renúncia confirmada no cadastro consultado",
+    "causal_assessment": "compatível com renúncia; aplicação temporal não confirmada",
+    "primary_act_status": "não obtido nesta pesquisa",
+    "persistence_status": "não avaliada nesta pesquisa",
+    "cause_confirmed": false,
+    "registration_update_is_act_date": false
+  },
+  "candidate_id": 280002554479,
+  "input_hashes": {
+    "C:\\Projetos\\Eleições2026\\docs\\pesquisa_categorias_2026.json": "75f91853b652facaf7e806830561a387397bb45f5a2b9152bd90d69b230f100e",
+    "C:\\Projetos\\Eleições2026\\docs\\candidatura28_evidencia.json": "60c61735b12a1aa498d4b890399fb0fe307eb3c65604ae8d356d9c662e870dff",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\resumo.json": "f0fd51af4c7fa1cb782917189a6e806aa743d441b07875b25f5527a5441b7405",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\unidades.parquet": "394cd746705331de379fbdd844140fa744d6269944118b21fcf2072b742399e9",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\nominais.parquet": "1d4467c1c367882af252485aa370e3b4d9adaf9bbb4847788c3af4b3851a5379",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\relatorio.html": "38ec86816b70759bb3727e991f0e6ae028cfd2b5923c04cbe5d381cfc87dde6e",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07"
+  },
+  "code_hash": "ff331572266f19002136498324e05fddd315ce79072e313fdb8aed3ffc5e0503",
+  "capture_hash_meaning": "SHA256 de extrações Firecrawl, não binários originais; capturas integrais locais fora da distribuição",
+  "sources": 6,
+  "primary_act_obtained": false,
+  "pending_questions": [
+    "Obter o ato ou histórico de renúncia do processo 0602033-94.2026.6.00.0000, com data de eficácia.",
+    "Confirmar a situação da chapa e eventual substituição entre o fechamento do CAND e o primeiro turno.",
+    "Relacionar a destinação no SISTOT à candidatura individual e às versões dos arquivos utilizadas.",
+    "Determinar se as diferenças de geração contribuíram para a divergência nominal."
+  ],
+  "preservation_verified": true
+}

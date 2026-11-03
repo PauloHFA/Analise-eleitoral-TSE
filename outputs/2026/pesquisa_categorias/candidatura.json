@@ -1,0 +1,26 @@
+{
+  "candidate": {
+    "id": 280002554479,
+    "numero": 28,
+    "nomeUrna": "LEONARDO AVALANCHE",
+    "nomeCompleto": "LEONARDO ALVES DE ARAUJO",
+    "descricaoSituacao": "Renúncia",
+    "descricaoTotalizacao": "Não eleito",
+    "dataUltimaAtualizacao": "2026-10-05 12:51",
+    "numeroProcesso": "06020339420266000000",
+    "motivoSituacao": null,
+    "cargo": {
+      "codigo": 1,
+      "nome": "Presidente"
+    },
+    "eleicao": {
+      "id": 20322002026,
+      "ano": 2026
+    },
+    "partido": {
+      "numero": 28,
+      "sigla": "PRTB"
+    }
+  },
+  "source_capture_sha256": "7f7386198f8374d0e1c765ef79ba2e44e951afce87e8c1b8d7db1e457b764ba5"
+}

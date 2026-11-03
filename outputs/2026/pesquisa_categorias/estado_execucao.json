@@ -1,0 +1,16 @@
+{
+  "status": "concluído",
+  "started": "2026-11-03T18:27:23.184782+00:00",
+  "input_hashes": {
+    "C:\\Projetos\\Eleições2026\\docs\\pesquisa_categorias_2026.json": "75f91853b652facaf7e806830561a387397bb45f5a2b9152bd90d69b230f100e",
+    "C:\\Projetos\\Eleições2026\\docs\\candidatura28_evidencia.json": "60c61735b12a1aa498d4b890399fb0fe307eb3c65604ae8d356d9c662e870dff",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\resumo.json": "f0fd51af4c7fa1cb782917189a6e806aa743d441b07875b25f5527a5441b7405",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\unidades.parquet": "394cd746705331de379fbdd844140fa744d6269944118b21fcf2072b742399e9",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\nominais.parquet": "1d4467c1c367882af252485aa370e3b4d9adaf9bbb4847788c3af4b3851a5379",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\dossie_categorias\\relatorio.html": "38ec86816b70759bb3727e991f0e6ae028cfd2b5923c04cbe5d381cfc87dde6e",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "C:\\Projetos\\Eleições2026\\outputs\\2026\\sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07"
+  },
+  "finished": "2026-11-03T18:27:24.026910+00:00"
+}

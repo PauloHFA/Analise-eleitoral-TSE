@@ -1,0 +1,77 @@
+{
+  "tag": "pesquisa-categorias-v1",
+  "release": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/pesquisa-categorias-v1",
+  "extraction": "Extrair na raiz do clone; arquivos em outputs/2026/pesquisa_categorias.",
+  "scope": "Norma e cadastro identificados; ato individual, eficácia temporal e persistência não confirmados. Capturas integrais locais não distribuídas.",
+  "baseline": "Referência e releases anteriores preservadas.",
+  "assets": [
+    {
+      "name": "pesquisa-categorias.zip",
+      "bytes": 89636,
+      "sha256": "ec49c4ffbc2d60f8f0e657c6a89f9924fa90184f431d9a9f6bc7bec7fe3e354a",
+      "files": [
+        {
+          "path": "DATA_LICENSE.md",
+          "bytes": 3994,
+          "sha256": "bf1311c1e00b681ded9a00ddcd37ad9d51ca211da590a213cb66610809cb9924"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "210e5a0fbe1ea94996a10027f5cf6473058492cc9d826689f588168edeece82d"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/candidatura.json",
+          "bytes": 676,
+          "sha256": "3ee7f4f731b80f21c323befe5fdfd4fa732c76c681e60d0f98f314ffa3b85a89"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/estado_execucao.json",
+          "bytes": 1474,
+          "sha256": "777ee4f7b030a7daa1c3e49e423ab8e8bb76312ca4dde77b7b9f05e908836026"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/evidencias.json",
+          "bytes": 8432,
+          "sha256": "aa1ecf9daa4dcef3ccc78ebc35d35c935223f9370cd30616424dffc4defb7a91"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/fontes.json",
+          "bytes": 6579,
+          "sha256": "b2afd1e35f6b90372625899a2af1ef50526a34843f65e145e079105923743623"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/manifesto.json",
+          "bytes": 711,
+          "sha256": "fb8b097c927d9fcd0b7dec8e73bd660b04be53f8c05d99a4fc64ec4bdb7bf9aa"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/relatorio.html",
+          "bytes": 9916,
+          "sha256": "68883c11770a86e0ca1912df233514f6477891c3c33edb9bcad8466019000854"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/relatorio.pdf",
+          "bytes": 55027,
+          "sha256": "3a6c4125b55e662b30209f1a9530c226261c1af4c88f3c25e74de6aef37ba682"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/resumo.json",
+          "bytes": 2688,
+          "sha256": "26f67267ba6d004b968c9b9c2c473625c6e6e89a3920bf96489df2e62bd76d1b"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/unidades.csv",
+          "bytes": 370002,
+          "sha256": "419f7531bbedc7dc4ccb670eb7a612a3afd72e011f8d635c7972d0155ccddfb9"
+        },
+        {
+          "path": "outputs/2026/pesquisa_categorias/unidades.parquet",
+          "bytes": 14363,
+          "sha256": "f8ed3d998ac9fc7dbffd5df1f040b1a1d333110337e01bdfa00fc86297561a59"
+        }
+      ],
+      "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/pesquisa-categorias-v1/pesquisa-categorias.zip"
+    }
+  ]
+}

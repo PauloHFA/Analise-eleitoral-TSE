@@ -61,7 +61,7 @@ O relatório complementar fica em `outputs/2026/pesquisa_categorias/`, em HTML e
 
 A suíte passou com **113 testes**, incluindo nove que verificam a distinção entre atualização cadastral e eficácia de ato, o vínculo de identidade e o papel das fontes. O novo CSV/Parquet foi comparado pelo multiconjunto tipado completo nos dois sentidos. As 2.148 unidades e 5.246 votos foram vinculados ao dossiê, com classificação causal ainda não confirmada. Foram verificadas as seis capturas locais, 13 links do HTML e hashes das entradas e artefatos. O PDF passou por conferência de conteúdo, margens, marcadores e inspeção visual.
 
-O [pacote pesquisa-categorias-v1](https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/pesquisa-categorias-v1) contém as tabelas e os relatórios complementares, com manifesto e SHA256. As capturas integrais locais não integram o pacote público.
+O [pacote pesquisa-categorias-v1](https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/pesquisa-categorias-v1) contém as tabelas e os relatórios complementares, com [manifesto e SHA256](pesquisa-publicada.json). As capturas integrais locais não integram o pacote público.
 
 ## O que falta para avançar a conclusão
 
