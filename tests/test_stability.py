@@ -83,23 +83,31 @@ def test_empty_top_lists_do_not_claim_perfect_agreement():
     assert result["left_size"] == 2 and result["retention_left"] == .5
 
 
-def test_run_uses_common_universe_and_keeps_source_unchanged(tmp_path):
+@pytest.mark.parametrize("size",[65,40])
+def test_run_uses_common_universe_and_keeps_source_unchanged(tmp_path,size):
     source = tmp_path/"source"
     source.mkdir()
-    frame = reference()
+    frame = reference(size)
     writer = duckdb.connect()
     export_frame(writer,frame,source/"indicadores_secoes")
     export_frame(writer,pd.DataFrame([dict(turn=t,candidate=c) for t in (1,2) for c in ([13,22,55] if t==1 else [13,22])]),source/"candidatos")
     writer.close()
     before = (source/"indicadores_secoes.parquet").read_bytes()
     result = run_stability(source)
-    assert result["eligible_units"] == result["common_units"] == 65
+    assert result["eligible_units"] == size
+    assert result["common_units"] == (size if size>=51 else 0)
     assert (source/"indicadores_secoes.parquet").read_bytes() == before
     con = duckdb.connect()
     for name in ("variantes","rankings","comparacao","top100"):
         path = source/"estabilidade"/name
         assert con.execute("SELECT count(*) FROM read_parquet(?)",[str(path.with_suffix('.parquet'))]).fetchone() == con.execute("SELECT count(*) FROM read_csv(?,header=true)",[str(path.with_suffix('.csv'))]).fetchone()
-    assert con.execute("SELECT count(*) FROM read_parquet(?)",[str(source/"estabilidade/variantes.parquet")]).fetchone()[0] == 195
+    assert con.execute("SELECT count(*) FROM read_parquet(?)",[str(source/"estabilidade/variantes.parquet")]).fetchone()[0] == size*3
+    if size<51:
+        parquet=source/"estabilidade/variantes.parquet"
+        schema={r[0]:r[1] for r in con.execute("DESCRIBE SELECT * FROM read_parquet(?)",[str(parquet)]).fetchall()}
+        parsed=con.read_csv(str(parquet.with_suffix('.csv')),columns=schema,header=True,quotechar='"',escapechar='"',allow_quoted_nulls=False).df()
+        unavailable=parsed.loc[parsed.k.eq(50)]
+        assert unavailable.peer_ids.eq("").all() and unavailable.driver_metric.isna().all()
     con.close()
     with pytest.raises(FileExistsError):
         run_stability(source)

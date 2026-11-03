@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlparse, unquote
 
 import duckdb
+from eleicoes.validation import read_export_csv
 
 
 class Links(HTMLParser):
@@ -48,8 +49,8 @@ def validate(folder):
         csv = file.with_suffix(".csv")
         if not csv.exists():
             continue
-        pq_count = con.execute("SELECT count(*) FROM read_parquet(?)", [str(file)]).fetchone()[0]
-        csv_count = con.execute("SELECT count(*) FROM read_csv(?,header=true,all_varchar=true,max_line_size=16777216)", [str(csv)]).fetchone()[0]
+        pq_count = con.execute("SELECT count(*) FROM read_parquet(?)", [str(file)]).fetchall()[0][0]
+        csv_count = read_export_csv(con,csv).aggregate("count(*)").fetchall()[0][0]
         assert pq_count == csv_count, f"Contagens CSV/Parquet divergem: {file.name}"
         counts[str(file.relative_to(root).with_suffix(""))] = pq_count
     quality = {}
