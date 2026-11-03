@@ -33,6 +33,8 @@ outputs/2026/**/*.parquet
 !outputs/2026/cobertura/diferencas.csv
 !outputs/2026/cobertura/faixas.csv
 !outputs/2026/cobertura/distribuicao_geografica.csv
+!outputs/2026/dossie_categorias/dicionario.csv
+!outputs/2026/dossie_categorias/resumo_uf.csv
 outputs/logs/*
 !outputs/logs/README.md
 !outputs/logs/preservacao-documentacao.json
@@ -56,6 +58,9 @@ outputs/logs/*
 !outputs/logs/validacao-pdf.log
 !outputs/logs/testes-incrementos.log
 !outputs/logs/validacao-incrementos.log
+!outputs/logs/testes-dossie.log
+!outputs/logs/execucao-dossie.log
+!outputs/logs/validacao-dossie.log
 .env
 .env.*
 !.env.example

@@ -82,3 +82,9 @@ A cobertura fecha 499.248 unidades: 428.571 elegíveis, 595 comparáveis pequena
 Os CSV/Parquet novos foram lidos com esquema e aspas explícitos, preservando a distinção entre strings vazias e ausências, e comparados por contagem e dois checksums agregados de linhas. Pares, universo comum, ranking e fechamento dos grupos também foram auditados. As frentes 3–5 continuam pendentes conforme o roteiro; nenhuma explicação causal ou auditoria de RDV foi anunciada como realizada.
 
 A rodada terminou com 92 testes aprovados. A validação geral passou incluindo as tabelas novas e manteve o PDF de 79 páginas. A correção da leitura estrita e os validadores foram publicados em `7428437`. Os pacotes incrementais preservam os arquivos por SHA256 e são distribuídos separadamente das releases anteriores.
+
+## Dossiê de categorias — implementação local
+
+Implementado o primeiro passo da frente 3, solicitado pelo usuário: comando `eleicoes dossie`, inventário por município/zona/turno e por candidato, leitura do detalhe oficial original, datas de geração, partições, hashes e HTML com filtros locais. A correspondência aritmética é recalculada por unidade e confrontada com o detalhe original. A classificação publicada permanece preservada. Compensações entre candidatos, dados ausentes e partições duplicadas não encerram apontamentos silenciosamente.
+
+Foram adicionados 12 testes controlados e o validador independente `scripts/validar_dossie.py`, com comparação tipada completa de CSV/Parquet por `EXCEPT ALL` nos dois sentidos. A execução nacional é registrada em incremento posterior. A explicação documental das causas e a persistência não são investigadas pelo comando; não houve pesquisa externa ou contato com terceiros.

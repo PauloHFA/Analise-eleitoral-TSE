@@ -9,7 +9,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 0 | Roteiro e preservação | Este documento, critérios de aceitação e convenções | Documentado |
 | 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Implementado, executado nacionalmente e validado |
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
-| 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Planejado; explicação oficial pode exigir documentos adicionais |
+| 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê local implementado; execução e pesquisa documental em etapas separadas |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
 | 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
 
@@ -82,6 +82,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 **Aceitação:** separar correspondência aritmética, documento encontrado e explicação jurídica/operacional confirmada. Concordância de números ou busca sem resultado não encerra a explicação. Solicitações formais ou contatos dependem de instrução expressa do usuário.
 
 **Commits previstos:** ferramenta de dossiê e testes; fontes/documentos obtidos; relatório da conferência. Publicar pendências quando a explicação não puder ser determinada.
+
+**Primeiro passo implementado:** `eleicoes dossie --output outputs/2026 --data data`, com saída separada em `dossie_categorias/`. O [método do dossiê](DOSSIE_CATEGORIAS.md) descreve parcelas, partições, datas, seleção e validação. A pesquisa externa e a confirmação jurídica/operacional permanecem pendentes; não são realizadas pelo comando local.
 
 ## 4. Investigação nacional e mapas de mudanças
 

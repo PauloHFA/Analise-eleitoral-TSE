@@ -263,6 +263,10 @@ def main():
     coverage.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
     coverage.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/cobertura")
     coverage.add_argument("--limiares",nargs="+",type=float,default=[50,80,95])
+    dossier = sub.add_parser("dossie", help="Organizar diferenças nominais, categorias e versões locais, sem downloads")
+    dossier.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
+    dossier.add_argument("--data", default="data", help="Pasta dos arquivos originais preservados")
+    dossier.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/dossie_categorias")
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -282,6 +286,10 @@ def main():
         from .coverage import run_coverage
         result = run_coverage(args.output,args.dest,args.limiares)
         LOG.info("Cobertura concluída: %s observadas; %s elegíveis",result["observed_units"],result["eligible_units"])
+    elif args.command == "dossie":
+        from .dossier import run_dossier
+        result = run_dossier(args.output, args.data, args.dest)
+        LOG.info("Dossiê concluído: %s unidades por turno; %s com correspondência aritmética", result["selected_unit_turns"], result["technical_units"])
     else:
         from .demo import create_demo
         root = Path(args.output)
