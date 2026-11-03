@@ -1,6 +1,6 @@
 # Dossiê local de categorias e versões
 
-Esta entrega implementa o primeiro passo da frente 3: organizar as evidências já disponíveis por município, zona e turno. A pesquisa de documentos oficiais e a explicação jurídica/operacional das categorias continuam pendentes. Não houve nova ingestão nacional ou contato externo.
+Esta entrega implementa o primeiro passo da frente 3: organizar as evidências já disponíveis por município, zona e turno. O estado da pesquisa posterior consta de [Pesquisa documental](PESQUISA_CATEGORIAS.md): norma e situação cadastral foram identificadas; ato e eficácia temporal continuam pendentes. Não houve nova ingestão nacional ou contato externo.
 
 ## Resultado da execução nacional — 03/11/2026
 

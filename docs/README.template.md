@@ -8,6 +8,8 @@ As próximas implementações estão organizadas no [roteiro de etapas e commits
 
 **Frente 3 — primeiro passo:** [dossiê local de categorias e versões](docs/DOSSIE_CATEGORIAS.md), com parcelas por município/zona/turno, conferência do detalhe oficial original e preservação das classificações anteriores. A explicação documental da causa continua pendente.
 
+**Pesquisa documental realizada:** [norma de nulos técnicos e situação Renúncia do candidato 28](docs/PESQUISA_CATEGORIAS.md). As fontes oficiais oferecem uma explicação compatível com os arquivos; o ato individual e sua eficácia temporal ainda não foram confirmados.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário
