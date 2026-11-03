@@ -29,7 +29,8 @@ def fixtures():
             valid_difference=None if absent else tech,null_total_difference=None if absent else -tech,
             blank_difference=None if absent else 0,attendance_difference=None if absent else 0,
             technical_category_match=technical,status="compatível" if technical else "concordante",source_file="simulado.csv"))
-        attendance.append(dict(**key,aptos_sections=200,aptos_official=200,attendance_sections=total,attendance_official=total))
+        attendance.append(dict(**key,aptos_sections=200,aptos_official=200,attendance_sections=total,attendance_official=total,
+                               aptos_difference=0,attendance_difference=0))
         context.append(dict(**key,municipality_name="SIMULADO <teste>",detail_generations="26/10/2026 10:00:00"))
         raw.append(dict(**key,DT_GERACAO="01/11/2026",HH_GERACAO="19:00:00",ANO_ELEICAO="2026",NR_TURNO=str(turn),
             SG_UF="SP",CD_MUNICIPIO="1",NR_ZONA=zone,CD_CARGO="1",CD_ELEICAO=str(100+turn),
@@ -49,6 +50,7 @@ def test_local_matching_cannot_be_hidden_by_canceling_differences():
     technical=units.loc[units.zone.eq("1") & units.turn.eq(1)].iloc[0]
     assert technical.technical_arithmetic_match and technical.official_null_technical==5
     assert technical.published_match_reproduced
+    assert technical.attendance_difference==technical.detail_attendance_difference==0
     cancellation=units.loc[units.zone.eq("3")].iloc[0]
     assert cancellation.nominal_difference==0 and cancellation.nominal_gap_rows==2
     assert cancellation.selected and not cancellation.technical_arithmetic_match

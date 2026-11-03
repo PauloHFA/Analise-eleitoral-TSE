@@ -31,6 +31,8 @@ O inventário inclui todas as unidades das tabelas de referência. Os casos com 
 
 A classificação publicada está preservada em campo próprio. Explicação documental da causa e persistência permanecem como **não investigadas neste incremento**, inclusive para os casos aritmeticamente compatíveis. O dossiê não reconstitui a razão jurídica da destinação dos votos de uma candidatura.
 
+`attendance_difference` compara a soma dos votos das seções com o comparecimento oficial. `detail_attendance_difference` compara as quantidades de comparecentes nos dois arquivos de detalhe. Os nomes são distintos porque os numeradores representam conferências diferentes.
+
 ## Reprodução
 
 São necessários os Parquets de referência e os quatro arquivos eleitorais originais, nas versões do manifesto. Os ZIPs originais não integram as releases de tabelas derivadas; a rotina recusa versões ausentes ou com hash diferente. Não usa o banco DuckDB da ingestão e não acessa a rede.

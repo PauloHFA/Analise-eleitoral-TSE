@@ -128,6 +128,9 @@ def build_dossier(nominal, categories, attendance, context, raw):
         section_generation=("section_generation", joined), official_nominal_generation=("official_generation", joined),
         generation_relations=("generation_relation", joined)).reset_index()
     categories = categories.rename(columns={"status": "published_category_status", "technical_category_match": "published_technical_match"})
+    # Categorias comparam soma dos votos com comparecimento; o outro arquivo
+    # compara comparecentes do detalhe de seção com os do detalhe municipal.
+    attendance = attendance.rename(columns={"attendance_difference": "detail_attendance_difference"})
     keys = pd.concat([f[KEY] for f in (categories, n, attendance, context, raw)], ignore_index=True).drop_duplicates()
     units = keys
     for frame in (categories, n, attendance, context, aggregate_raw(raw)):
@@ -332,6 +335,8 @@ def run_dossier(source, data="data", destination=None):
             "nominal_difference": "Soma das diferenças seção menos oficial por candidato; ausente se alguma parcela estiver ausente. Diferenças de sinais opostos não anulam a seleção por linha.",
             "technical_arithmetic_match": "Conferência local das parcelas nominais, brancos, nulos, comparecimento e detalhe original; não explica a causa.",
             "published_technical_match": "Classificação publicada preservada, sem substituição do artefato de referência.",
+            "attendance_difference": "Soma dos votos de todas as categorias nas seções menos comparecimento oficial; provém da reconciliação de categorias.",
+            "detail_attendance_difference": "Comparecimento no detalhe por seção menos comparecimento no detalhe oficial por município/zona; provém da reconciliação de comparecimento.",
             "raw_categories_confirmed": "Todas as seis categorias conhecidas e iguais ao detalhe original, sem partição duplicada ou eleições ambíguas.",
             "zero_attendance_coverage": "Lacuna nominal, comparecimento zero conhecido nas duas fontes e soma nominal oficial zero conhecida.",
             "generation_relation": "Comparação das datas informadas no formato dia/mês/ano, sem fuso inferido. Ausência/data inválida permanece identificada.",
