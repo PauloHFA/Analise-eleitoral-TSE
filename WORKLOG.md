@@ -56,3 +56,7 @@ Para reproduzir, usar os comandos do `README.md`. Para regenerar apenas os relat
 O repositório `PauloHFA/Analise-eleitoral-TSE` versiona código, documentação e os artefatos de leitura: relatórios, mapas, fichas, sínteses e tabelas pequenas. Os CSV/Parquet completos são distribuídos pela release `resultados-2026-v1`, em três pacotes: resultados de 2026 e referências de 2018/2022. Os pacotes contêm 596 arquivos, incluindo a geografia utilizada; as cópias eleitorais originais e o banco DuckDB permanecem fora dessa distribuição.
 
 Os pacotes passaram por conferência CRC; o manifesto em `docs/resultados-publicados.json` registra tamanho e SHA256 dos pacotes e de cada arquivo. Atributos Git preservam os bytes das cópias e suas quebras de linha. O commit inclui a atribuição `Co-authored-by: Codex <noreply@openai.com>`, conforme solicitado.
+
+## Licenciamento — 03/11/2026
+
+Adicionada licença MIT para código e documentação de autoria própria, com copyright de PauloHFA. `DATA_LICENSE.md` registra o escopo dos materiais do TSE, do IBGE e de outros terceiros, preservando suas condições e atribuições. README e modelo de geração incluem a seção de licença. O pacote Python declara o identificador SPDX MIT e inclui os dois avisos de licença em sua distribuição, usando os metadados suportados pelo setuptools a partir da versão 77. Os artefatos analíticos e os pacotes publicados permanecem com os mesmos bytes e hashes.

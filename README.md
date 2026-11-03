@@ -21,6 +21,7 @@ Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos
 - [Reprodução passo a passo](#reprodução-passo-a-passo)
 - [Análises adicionais propostas](#análises-adicionais-propostas)
 - [Inventário de entregas](#inventário-de-entregas)
+- [Licença](#licença)
 
 ## Leitura rápida e resultados consolidados
 
@@ -507,3 +508,9 @@ Os limites de 5/10/15 pp **já foram executados** e documentados; a proposta nov
 | [WORKLOG](WORKLOG.md) / [logs](outputs/logs/README.md) | Registro técnico e execuções |
 
 As tabelas analíticas têm versões CSV UTF-8 e Parquet quando aplicável. O README apresenta resultados consolidados e aponta para os registros completos; não reproduz centenas de milhares de linhas.
+
+## Licença
+
+O código e a documentação de autoria própria estão disponíveis sob a [licença MIT](LICENSE), com copyright de 2026 atribuído a PauloHFA.
+
+Dados eleitorais do TSE, geografia do IBGE, dependências e outros materiais de terceiros preservam suas licenças e atribuições originais. O escopo e as fontes estão descritos em [DATA_LICENSE.md](DATA_LICENSE.md), inclusive para os dados incorporados aos relatórios, mapas e pacotes da release.
