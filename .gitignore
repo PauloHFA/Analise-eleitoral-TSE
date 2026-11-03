@@ -25,6 +25,8 @@ outputs/2026/**/*.parquet
 !outputs/2026/mapa_correspondencia_municipios.csv
 !outputs/2026/pendencias_documentais.csv
 !outputs/2026/revisao_documental.csv
+!outputs/2026/estabilidade/dicionario.csv
+!outputs/2026/estabilidade/top100.csv
 outputs/logs/*
 !outputs/logs/README.md
 !outputs/logs/preservacao-documentacao.json

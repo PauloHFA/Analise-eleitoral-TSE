@@ -182,7 +182,9 @@ def paired(base, finalists, candidates, level="secao"):
 
 
 def peers(frame, finalists, candidates, k=30):
-    """30 vizinhos: município primeiro; completar na mesma UF. Alvo sempre excluído."""
+    """k vizinhos: município primeiro; completar na mesma UF. Alvo sempre excluído."""
+    if isinstance(k, bool) or not isinstance(k, (int, np.integer)) or k < 1:
+        raise ValueError("A quantidade de pares deve ser um inteiro positivo")
     frame = frame.copy()
     metrics = ["delta_turnout_pp", "delta_blank_pp", "delta_null_pp"] + [f"delta_share_{c}_pp" for c in finalists]
     frame["peer_count"] = 0
@@ -198,7 +200,7 @@ def peers(frame, finalists, candidates, k=30):
         ids = np.asarray(sorted(ids))
         f = frame.loc[ids]
         if len(f) < k + 1:
-            frame.loc[ids, "peer_status"] = "menos de 30 pares elegíveis na UF"
+            frame.loc[ids, "peer_status"] = f"menos de {k} pares elegíveis na UF"
             continue
         features = [np.log1p(f.aptos_1.to_numpy(float)), f.turnout_1.to_numpy(float)]
         features.extend(ratio(f[f"votes_{c}_1"], f.valid_1).to_numpy(float) for c in candidates)

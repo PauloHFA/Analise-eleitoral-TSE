@@ -255,6 +255,10 @@ def main():
     inquiry = sub.add_parser("investigar", help="Investigar zeros e viradas usando os Parquets locais, sem baixar novamente")
     inquiry.add_argument("--output", default="outputs/2026")
     inquiry.add_argument("--ufs", nargs="+", default=["RJ", "MG"], help="UFs para a investigação de viradas; zeros são nacionais")
+    stability = sub.add_parser("estabilidade", help="Comparar pares aninhados, preservando a análise publicada")
+    stability.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
+    stability.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/estabilidade")
+    stability.add_argument("--pares", nargs="+", type=int, default=[15,30,50])
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -266,6 +270,10 @@ def main():
     elif args.command == "investigar":
         from .investigation import investigate
         investigate(args.output, args.ufs)
+    elif args.command == "estabilidade":
+        from .stability import run_stability
+        result = run_stability(args.output,args.dest,args.pares)
+        LOG.info("Estabilidade concluída: %s elegíveis; %s no universo comum",result["eligible_units"],result["common_units"])
     else:
         from .demo import create_demo
         root = Path(args.output)

@@ -7,7 +7,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | Ordem | Frente | Entrega | Estado inicial |
 | --- | --- | --- | --- |
 | 0 | Roteiro e preservação | Este documento, critérios de aceitação e convenções | Documentado |
-| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Próxima implementação |
+| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Comando implementado e testado; execução nacional pendente |
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Planejado; dados locais disponíveis |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Planejado; explicação oficial pode exigir documentos adicionais |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
@@ -46,6 +46,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 **Aceitação:** k=30 reproduz escores e seleção publicados; pares válidos e aninhados; testes para MAD zero/pequeno, empate, passagem a zero e UF com poucos pares; rankings no universo comum; nenhuma alteração das fontes. Documentar se não houver reprodução da referência em vez de substituir os resultados silenciosamente.
 
 **Commits previstos:** implementação/testes do comando; execução nacional e síntese conferida. Uma alteração do algoritmo original além da parametrização exige justificativa e comparação própria.
+
+**Incremento implementado:** `eleicoes estabilidade --output outputs/2026 --pares 15 30 50`. O comando escreve em `outputs/2026/estabilidade/` e recusa sobrescrever uma pasta já preenchida; `--dest` permite uma execução independente. Há testes de referência reproduzida, conjuntos aninhados, pares insuficientes, MAD, listas vazias e preservação das entradas. A execução sobre os dados nacionais ainda precisa ser conferida para encerrar a frente.
 
 ## 2. Cobertura e perfil das unidades excluídas
 
