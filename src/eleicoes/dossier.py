@@ -211,7 +211,7 @@ def build_html(destination, units, nominal, sources, summary):
         key = tuple(row[k] for k in KEY)
         candidates = groups.get(key)
         selected = candidates.loc[candidates.unresolved_nominal] if candidates is not None else pd.DataFrame()
-        details = "".join(f"<tr><td>{esc(v.candidate)}</td><td>{number(v.section_votes)}</td><td>{number(v.official_votes)}</td><td>{number(v.difference)}</td><td>{esc(v.status)}</td></tr>" for v in selected.itertuples())
+        details = "".join(f"<tr><td>{esc(v.candidate)}</td><td>{number(v.section_votes)}</td><td>{number(v.official_votes)}</td><td>{number(v.difference)}</td><td>{'Sim (referência)' if v.zero_imputed else 'Não'}</td><td>{esc(v.status)}</td></tr>" for v in selected.itertuples())
         quantities = "".join(f"<tr><th>{label}</th><td>{number(row.get(field))}</td></tr>" for field,label in labels.items())
         generations = "".join(f"<li>{label}: {esc(row.get(field) or 'ausente')}</li>" for field,label in
             (("section_generation","Votação por seção"),("official_nominal_generation","Nominais oficiais"),
@@ -224,8 +224,8 @@ def build_html(destination, units, nominal, sources, summary):
 <td>{esc(row['uf'])}</td><td>{esc(row.get('municipality_name') or '')}<br>{esc(row['municipality'])} / zona {esc(row['zone'])}</td><td>{row['turn']}</td>
 <td>{number(row['nominal_difference'])}</td><td>{number(row['official_null_technical'])}</td><td>{esc(row['finding'])}
 <details><summary>Valores, versões e pendências</summary><p>{interpretation}</p><table><tbody>{quantities}</tbody></table>
-<p>Linhas nominais com apontamento, por número do candidato. Ausência não foi substituída por zero.</p>
-<table><thead><tr><th>Candidato</th><th>Seções</th><th>Oficial</th><th>Diferença</th><th>Situação original</th></tr></thead><tbody>{details}</tbody></table>
+<p>Linhas nominais com apontamento, por número do candidato. Os zeros implícitos da reconciliação original estão identificados; as demais ausências permanecem ausentes.</p>
+<table><thead><tr><th>Candidato</th><th>Seções</th><th>Oficial</th><th>Diferença</th><th>Zero implícito na referência?</th><th>Situação original</th></tr></thead><tbody>{details}</tbody></table>
 <ul>{generations}</ul><p>Relação das gerações: {esc(row.get('generation_relations'))}. Datas distintas não demonstram a causa da diferença.</p>
 <p>Fontes: <a href="#fontes">votes, detail, official_votes e official_detail</a>. As versões são as do manifesto local. Campos originais, partições e linhas do CSV estão em categorias_originais.</p>
 <p>Explicação documental da causa: não investigada neste incremento. Persistência: não investigada neste incremento.</p></details></td></tr>''')
@@ -333,6 +333,7 @@ def run_dossier(source, data="data", destination=None):
         write_json(destination / "resumo.json", summary)
         definitions = {
             "nominal_difference": "Soma das diferenças seção menos oficial por candidato; ausente se alguma parcela estiver ausente. Diferenças de sinais opostos não anulam a seleção por linha.",
+            "zero_imputed": "Indicador preservado da reconciliação original: ausência da linha de um candidato tratada como zero esparso quando as duas fontes cobrem a unidade e não há conflito. Não é imputação nova do dossiê nem zero explicitamente publicado em uma linha original.",
             "technical_arithmetic_match": "Conferência local das parcelas nominais, brancos, nulos, comparecimento e detalhe original; não explica a causa.",
             "published_technical_match": "Classificação publicada preservada, sem substituição do artefato de referência.",
             "attendance_difference": "Soma dos votos de todas as categorias nas seções menos comparecimento oficial; provém da reconciliação de categorias.",

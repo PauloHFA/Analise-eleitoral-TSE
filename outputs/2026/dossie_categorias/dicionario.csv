@@ -1,0 +1,14 @@
+field,definition
+nominal_difference,Soma das diferenças seção menos oficial por candidato; ausente se alguma parcela estiver ausente. Diferenças de sinais opostos não anulam a seleção por linha.
+zero_imputed,Indicador preservado da reconciliação original: ausência da linha de um candidato tratada como zero esparso quando as duas fontes cobrem a unidade e não há conflito. Não é imputação nova do dossiê nem zero explicitamente publicado em uma linha original.
+technical_arithmetic_match,"Conferência local das parcelas nominais, brancos, nulos, comparecimento e detalhe original; não explica a causa."
+published_technical_match,"Classificação publicada preservada, sem substituição do artefato de referência."
+attendance_difference,Soma dos votos de todas as categorias nas seções menos comparecimento oficial; provém da reconciliação de categorias.
+detail_attendance_difference,Comparecimento no detalhe por seção menos comparecimento no detalhe oficial por município/zona; provém da reconciliação de comparecimento.
+raw_categories_confirmed,"Todas as seis categorias conhecidas e iguais ao detalhe original, sem partição duplicada ou eleições ambíguas."
+zero_attendance_coverage,"Lacuna nominal, comparecimento zero conhecido nas duas fontes e soma nominal oficial zero conhecida."
+generation_relation,"Comparação das datas informadas no formato dia/mês/ano, sem fuso inferido. Ausência/data inválida permanece identificada."
+selected,"Apontamento nominal, diferença em categorias/aptos/comparecimento, lacuna ou conflito de categorias originais ou referência não reproduzida."
+source_line,Linha física final do registro no CSV original (cabeçalho na linha 1); identificar junto com member e hash do ZIP.
+documentary_cause_status,Não investigada neste incremento. Concordância aritmética não comprova causa ou inexistência de irregularidade.
+persistence_status,Não investigada neste incremento; não equivale a zero divergências existentes.

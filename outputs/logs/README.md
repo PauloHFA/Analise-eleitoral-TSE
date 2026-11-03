@@ -22,3 +22,7 @@ Resultados finais:
 - `validacao-pdf.log`: edição explicativa do PDF; sumário, contagens, fichas, margens e proporções das imagens.
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
+
+## Registros do dossiê local
+
+`execucao-dossie.log` registra o processamento nacional do primeiro passo da frente 3. `validacao-dossie.log` confere os hashes, as parcelas, as três unidades de cobertura, as 2.231 âncoras e os cinco pares CSV/Parquet pelo multiconjunto tipado completo. `testes-dossie.log` contém a execução da suíte após este incremento. Os logs das rodadas anteriores são preservados como registros de suas respectivas validações.

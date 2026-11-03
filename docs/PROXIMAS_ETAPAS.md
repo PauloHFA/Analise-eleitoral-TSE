@@ -9,7 +9,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 0 | Roteiro e preservação | Este documento, critérios de aceitação e convenções | Documentado |
 | 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Implementado, executado nacionalmente e validado |
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
-| 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê local implementado; execução e pesquisa documental em etapas separadas |
+| 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Primeiro passo executado e validado; pesquisa e explicação documental pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
 | 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
 
@@ -84,6 +84,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 **Commits previstos:** ferramenta de dossiê e testes; fontes/documentos obtidos; relatório da conferência. Publicar pendências quando a explicação não puder ser determinada.
 
 **Primeiro passo implementado:** `eleicoes dossie --output outputs/2026 --data data`, com saída separada em `dossie_categorias/`. O [método do dossiê](DOSSIE_CATEGORIAS.md) descreve parcelas, partições, datas, seleção e validação. A pesquisa externa e a confirmação jurídica/operacional permanecem pendentes; não são realizadas pelo comando local.
+
+**Execução conferida:** 12.584 unidades por turno, 90.236 linhas nominais preservadas e 2.231 casos detalhados. Foram reproduzidos os 5.246 votos nas 2.148 unidades e as contagens distintas de 42/83/576. As categorias concordaram com o detalhe original; 104 testes passaram. Código inicial em `efb3522` e distinção das duas conferências de comparecimento em `e253f71`. Resultados e limites no [dossiê publicado](DOSSIE_CATEGORIAS.md). A frente 3 permanece aberta para os passos de pesquisa e esclarecimento.
 
 ## 4. Investigação nacional e mapas de mudanças
 

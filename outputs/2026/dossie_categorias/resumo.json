@@ -1,0 +1,81 @@
+{
+  "status": "concluído",
+  "year": 2026,
+  "unit_turns": 12584,
+  "selected_unit_turns": 2231,
+  "selected_geographic_units": 2190,
+  "technical_units": 2148,
+  "technical_votes": 5246,
+  "technical_by_turn": [
+    {
+      "turn": 1,
+      "units": 2148,
+      "votes": 5246
+    }
+  ],
+  "nominal_differences_by_candidate": [
+    {
+      "turn": 1,
+      "candidate": 28,
+      "rows": 2148,
+      "votes": 5246
+    }
+  ],
+  "coverage_turn_units": 83,
+  "coverage_geographic_units": 42,
+  "coverage_candidate_rows": 576,
+  "raw_category_mismatches": 0,
+  "raw_categories_unconfirmed": 0,
+  "published_match_not_reproduced": 0,
+  "findings": [
+    {
+      "finding": "concordante no escopo aritmético",
+      "unit_turns": 10353
+    },
+    {
+      "finding": "correspondência aritmética com nulos técnicos",
+      "unit_turns": 2148
+    },
+    {
+      "finding": "lacuna nominal com comparecimento zero",
+      "unit_turns": 83
+    }
+  ],
+  "input_hashes": {
+    "reconciliacao_municipio_zona.parquet": "efdc970e16c1923731a7ef018e377d0c18e0f2498a0dd647f97d5b5ae6a07683",
+    "reconciliacao_categorias.parquet": "6df94e57591839c612fcb1ee5d7150deeceb90725934589e4f3e545384978f54",
+    "reconciliacao_comparecimento.parquet": "bc5627786143f53f8e529105cd9706dd3538429877f5e40dbb8a6cfc1c230854",
+    "secoes_por_turno.parquet": "00ccc2e795d4d4e2ad76c1c44b44321e1c8782dd22a87fdbb7ea396b10fbd0ce",
+    "fontes_utilizadas.json": "c03039639e866dfb92713119bc7fe5163304fdfd4ec791a418e62abed613b2fd",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07"
+  },
+  "original_hashes": {
+    "votes": "c928321f63f2d095706fca73d4607c048d2ada23bda6876455d6911aaf1bc9c1",
+    "detail": "8ef9ce3a85cde260471faf7a83a9b4f5ccf3993fdda942aacaa658574344789c",
+    "official_votes": "f247e5012badac76b6c3933de60108ee9819fe77c967b872e2a74567506f9157",
+    "official_detail": "9af3890f4c50779bd516660be7506a6e2ea1c10febc61a732c56e891ccde3b53"
+  },
+  "documentary_cause_status": "não investigada neste incremento",
+  "persistence_status": "não investigada neste incremento",
+  "code_hash": "0542dd90decad7d79f0d6b3ddbe566a78f5e4314d93dd11e07d2c335c272b204",
+  "tables": {
+    "unidades": 12584,
+    "nominais": 90236,
+    "categorias_originais": 12584,
+    "resumo_uf": 56
+  },
+  "versions": {
+    "python": "3.12.10",
+    "duckdb": "2.0.0",
+    "pandas": "3.1.0"
+  },
+  "limitations": [
+    "Sem pesquisa externa ou explicação jurídica da destinação por candidato",
+    "Gerações distintas não demonstram a causa",
+    "Não confirma persistência nem atribui irregularidade"
+  ],
+  "preservation_verified": true,
+  "finished": "2026-11-03T15:15:20.123935-03:00"
+}

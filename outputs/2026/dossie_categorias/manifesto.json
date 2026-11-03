@@ -1,0 +1,15 @@
+{
+  "categorias_originais.csv": "afefe53375e0bba9646f942c0a394029b2c9337a46ea890919959db3f0f9204f",
+  "categorias_originais.parquet": "70d14dde94a59d9d2e03725c160a6d8eac612bb91d383eeae0efaa8382da4263",
+  "dicionario.csv": "8515a69b107584cab7421d4de51557c2a8596290798363b8a8363660c5ecacab",
+  "dicionario.parquet": "c4c03df6d7068f615db3ddb37f1edbe045cbd09cdf85d4d7d79c2d5d7555cfec",
+  "fontes.json": "6c76a52b5d3d0cf342152511618a68e93214cc0aa1712ff545c7cc4e993e6e60",
+  "nominais.csv": "a7c79d0ae8f2aea7045bbc6fde8d29e9de8cbe7501214ef0c0880e2eea859839",
+  "nominais.parquet": "1d4467c1c367882af252485aa370e3b4d9adaf9bbb4847788c3af4b3851a5379",
+  "relatorio.html": "38ec86816b70759bb3727e991f0e6ae028cfd2b5923c04cbe5d381cfc87dde6e",
+  "resumo.json": "f0fd51af4c7fa1cb782917189a6e806aa743d441b07875b25f5527a5441b7405",
+  "resumo_uf.csv": "2e8a0948a3f32ec1fa9db4196f42666f473b11c6933219a7d4132966df35b62d",
+  "resumo_uf.parquet": "4190da780f7bbe722f5552d7eddb603ed78604ae0ea8bb6069baaa2a5f7f5734",
+  "unidades.csv": "17c793857ca9ef50bef2514b54a2758e64fed39c44a778fd81102b9210ee8dd5",
+  "unidades.parquet": "394cd746705331de379fbdd844140fa744d6269944118b21fcf2072b742399e9"
+}

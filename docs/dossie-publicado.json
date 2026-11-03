@@ -1,0 +1,102 @@
+{
+  "tag": "dossie-categorias-v1",
+  "release": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/dossie-categorias-v1",
+  "extraction": "Extrair na raiz do clone; os arquivos ficam em outputs/2026/dossie_categorias.",
+  "scope": "Primeiro passo local da frente 3; sem pesquisa jurídica, novas versões, nova ingestão ou confirmação de persistência.",
+  "baseline": "Arquivos e releases anteriores preservados.",
+  "assets": [
+    {
+      "name": "dossie-categorias.zip",
+      "bytes": 4105334,
+      "sha256": "a026f509c5ee263b20957c1a05c2a8d372909f354997fe0e5f7cbc741a0fc2ed",
+      "files": [
+        {
+          "path": "DATA_LICENSE.md",
+          "bytes": 3994,
+          "sha256": "bf1311c1e00b681ded9a00ddcd37ad9d51ca211da590a213cb66610809cb9924"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "210e5a0fbe1ea94996a10027f5cf6473058492cc9d826689f588168edeece82d"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/categorias_originais.csv",
+          "bytes": 3907285,
+          "sha256": "afefe53375e0bba9646f942c0a394029b2c9337a46ea890919959db3f0f9204f"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/categorias_originais.parquet",
+          "bytes": 681924,
+          "sha256": "70d14dde94a59d9d2e03725c160a6d8eac612bb91d383eeae0efaa8382da4263"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/dicionario.csv",
+          "bytes": 2002,
+          "sha256": "8515a69b107584cab7421d4de51557c2a8596290798363b8a8363660c5ecacab"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/dicionario.parquet",
+          "bytes": 1931,
+          "sha256": "c4c03df6d7068f615db3ddb37f1edbe045cbd09cdf85d4d7d79c2d5d7555cfec"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/estado_execucao.json",
+          "bytes": 970,
+          "sha256": "cfe949b83fde5d14922c7801585be65cd7e2d7e443ec10f40f6f496b003d3037"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/fontes.json",
+          "bytes": 3696,
+          "sha256": "6c76a52b5d3d0cf342152511618a68e93214cc0aa1712ff545c7cc4e993e6e60"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/manifesto.json",
+          "bytes": 1184,
+          "sha256": "8d273f6094718b695aa59397f1866b166ed4fe0ada20595918b742e5418fc881"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/nominais.csv",
+          "bytes": 13304770,
+          "sha256": "a7c79d0ae8f2aea7045bbc6fde8d29e9de8cbe7501214ef0c0880e2eea859839"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/nominais.parquet",
+          "bytes": 420604,
+          "sha256": "1d4467c1c367882af252485aa370e3b4d9adaf9bbb4847788c3af4b3851a5379"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/relatorio.html",
+          "bytes": 5138498,
+          "sha256": "38ec86816b70759bb3727e991f0e6ae028cfd2b5923c04cbe5d381cfc87dde6e"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/resumo.json",
+          "bytes": 2951,
+          "sha256": "f0fd51af4c7fa1cb782917189a6e806aa743d441b07875b25f5527a5441b7405"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/resumo_uf.csv",
+          "bytes": 1310,
+          "sha256": "2e8a0948a3f32ec1fa9db4196f42666f473b11c6933219a7d4132966df35b62d"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/resumo_uf.parquet",
+          "bytes": 1780,
+          "sha256": "4190da780f7bbe722f5552d7eddb603ed78604ae0ea8bb6069baaa2a5f7f5734"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/unidades.csv",
+          "bytes": 9390342,
+          "sha256": "17c793857ca9ef50bef2514b54a2758e64fed39c44a778fd81102b9210ee8dd5"
+        },
+        {
+          "path": "outputs/2026/dossie_categorias/unidades.parquet",
+          "bytes": 807539,
+          "sha256": "394cd746705331de379fbdd844140fa744d6269944118b21fcf2072b742399e9"
+        }
+      ],
+      "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/dossie-categorias-v1/dossie-categorias.zip"
+    }
+  ]
+}

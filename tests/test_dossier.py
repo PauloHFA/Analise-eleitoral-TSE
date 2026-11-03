@@ -40,7 +40,7 @@ def fixtures():
         for candidate, section, official in values:
             diff=None if absent else section-official
             nominal.append(dict(**key,candidate=candidate,section_votes=section,official_votes=official,difference=diff,
-                section_generation="26/10/2026 12:07:25",official_generation="02/11/2026 19:31:33",zero_imputed=False,
+                section_generation="26/10/2026 12:07:25",official_generation="02/11/2026 19:31:33",zero_imputed=technical and candidate==28,
                 status="cobertura divergente" if absent else "pendente" if diff else "concordante"))
     return tuple(pd.DataFrame(f) for f in (nominal,categories,attendance,context,raw))
 
@@ -156,6 +156,7 @@ def test_end_to_end_exports_preserve_sources_and_refuse_overwrite(tmp_path):
     out=source/"dossie_categorias"
     page=(out/"relatorio.html").read_text(encoding="utf-8")
     assert "SIMULADO &lt;teste&gt;" in page and "<teste>" not in page
+    assert "Sim (referência)" in page
     assert page.count('data-finding="')==4
     con=duckdb.connect()
     for parquet in out.glob("*.parquet"):

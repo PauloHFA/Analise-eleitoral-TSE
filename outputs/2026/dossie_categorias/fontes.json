@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_BR.zip",
+    "path": "raw\\c928321f63f2d095\\votacao_secao_2026_BR.zip",
+    "sha256": "c928321f63f2d095706fca73d4607c048d2ada23bda6876455d6911aaf1bc9c1",
+    "bytes": 241891087,
+    "retrieved_utc": "2026-11-03T01:06:37.043902+00:00",
+    "remote": {
+      "ETag": "\"e6af70f-65ec1dac721b7\"",
+      "Last-Modified": "Mon, 26 Oct 2026 17:42:32 GMT",
+      "Content-Length": "241891087"
+    },
+    "resource_id": "01ea4ccd-f443-469c-9f29-c69ff97f7d4c",
+    "kind": "votes",
+    "year": 2026,
+    "resource_metadata_modified": "2026-10-08T13:47:25.937103",
+    "license": "CC-BY — Tribunal Superior Eleitoral",
+    "source_id": "votes",
+    "local_path": "C:\\Projetos\\Eleições2026\\data\\raw\\c928321f63f2d095\\votacao_secao_2026_BR.zip",
+    "hash_verified": true
+  },
+  {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2026.zip",
+    "path": "raw\\8ef9ce3a85cde260\\detalhe_votacao_secao_2026.zip",
+    "sha256": "8ef9ce3a85cde260471faf7a83a9b4f5ccf3993fdda942aacaa658574344789c",
+    "bytes": 234357769,
+    "retrieved_utc": "2026-11-03T01:05:21.424497+00:00",
+    "remote": {
+      "ETag": "\"df80409-65ec014ca87c2\"",
+      "Last-Modified": "Mon, 26 Oct 2026 15:35:35 GMT",
+      "Content-Length": "234357769"
+    },
+    "resource_id": "32892c16-6a45-436e-a2d1-0809c31f3898",
+    "kind": "detail",
+    "year": 2026,
+    "resource_metadata_modified": "2026-10-08T12:26:18.786994",
+    "license": "CC-BY — Tribunal Superior Eleitoral",
+    "source_id": "detail",
+    "local_path": "C:\\Projetos\\Eleições2026\\data\\raw\\8ef9ce3a85cde260\\detalhe_votacao_secao_2026.zip",
+    "hash_verified": true
+  },
+  {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+    "path": "raw\\f247e5012badac76\\votacao_candidato_munzona_2026.zip",
+    "sha256": "f247e5012badac76b6c3933de60108ee9819fe77c967b872e2a74567506f9157",
+    "bytes": 469950224,
+    "retrieved_utc": "2026-11-03T01:04:45.057225+00:00",
+    "remote": {
+      "ETag": "\"1c02df10-65f534d0b0be7\"",
+      "Last-Modified": "Mon, 02 Nov 2026 23:13:59 GMT",
+      "Content-Length": "469950224"
+    },
+    "resource_id": "c807b826-21ff-4bcf-97ca-d86482656320",
+    "kind": "official_votes",
+    "year": 2026,
+    "resource_metadata_modified": "2026-10-07T14:35:28.459900",
+    "license": "CC-BY — Tribunal Superior Eleitoral",
+    "source_id": "official_votes",
+    "local_path": "C:\\Projetos\\Eleições2026\\data\\raw\\f247e5012badac76\\votacao_candidato_munzona_2026.zip",
+    "hash_verified": true
+  },
+  {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip",
+    "path": "raw\\9af3890f4c50779b\\detalhe_votacao_munzona_2026.zip",
+    "sha256": "9af3890f4c50779bd516660be7506a6e2ea1c10febc61a732c56e891ccde3b53",
+    "bytes": 4189457,
+    "retrieved_utc": "2026-11-03T01:04:51.483323+00:00",
+    "remote": {
+      "ETag": "\"3fed11-65f3eca6db11b\"",
+      "Last-Modified": "Sun, 01 Nov 2026 22:45:49 GMT",
+      "Content-Length": "4189457"
+    },
+    "resource_id": "db2f6a49-a150-42a5-9aca-9ddd16d297f0",
+    "kind": "official_detail",
+    "year": 2026,
+    "resource_metadata_modified": "2026-10-07T14:37:12.428628",
+    "license": "CC-BY — Tribunal Superior Eleitoral",
+    "source_id": "official_detail",
+    "local_path": "C:\\Projetos\\Eleições2026\\data\\raw\\9af3890f4c50779b\\detalhe_votacao_munzona_2026.zip",
+    "hash_verified": true
+  }
+]
