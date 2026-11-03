@@ -1,0 +1,44 @@
+{
+  "inventario": {
+    "tables": {
+      "contagens": 112,
+      "locais": 94343,
+      "municipios": 5757,
+      "secoes": 499248,
+      "ufs": 28
+    },
+    "csv_parquet": "multiconjunto tipado completo nos dois sentidos"
+  },
+  "taxas": {
+    "tables": {
+      "conferencia_bu": 11431,
+      "dicionario": 9,
+      "municipios": 5757,
+      "reconciliacao": 116,
+      "regioes": 2,
+      "ufs": 28
+    },
+    "csv_parquet": "multiconjunto tipado completo nos dois sentidos"
+  },
+  "mapas": {
+    "tables": {
+      "prioridades": 1356
+    },
+    "csv_parquet": "multiconjunto tipado completo nos dois sentidos"
+  },
+  "interface": {
+    "status": "cores, turnos, todas as UFs, padrões, máscaras, valores ausentes e teclado válidos",
+    "checks": 33467,
+    "municipalities": 5571
+  },
+  "status": "válido",
+  "reference_counts": {
+    "observed": 499248,
+    "comparable": 429166,
+    "eligible": 428571,
+    "alerts": 63809
+  },
+  "rjmg": "resultados territoriais preservados",
+  "peer_score_sample": 84,
+  "geometry": "polígonos, códigos e limites preservados"
+}

@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros da investigação nacional
+
+`nacional-inventario.log`, `nacional-taxas.log` e `nacional-mapas.log` registram as três execuções. `validacao-nacional.log` confere tabelas tipadas, referência, coortes, 84 escores, geografia e 33.467 condições da interface. `testes-nacional.log` registra 135 testes aprovados; `preservacao-nacional.log` confirma os 578 hashes anteriores. Os logs de validações anteriores mantêm suas contagens históricas.
+
 ## Registros da pesquisa documental
 
 `execucao-pesquisa.log` registra a geração local dos relatórios a partir das evidências revisadas. `validacao-pesquisa.log` confere as fontes/capturas, vínculos das unidades, identidade da candidatura, ausência de conclusão causal automática e igualdade CSV/Parquet. `testes-pesquisa.log` contém a suíte de 113 testes deste incremento.

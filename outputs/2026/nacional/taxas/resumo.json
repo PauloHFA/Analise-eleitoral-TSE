@@ -1,0 +1,106 @@
+{
+  "year": 2026,
+  "minimum_eligible_sections": 30,
+  "minimum_eligible_coverage_pct": 80,
+  "tables": {
+    "municipios": 5757,
+    "ufs": 28,
+    "regioes": 2,
+    "conferencia_bu": 11431,
+    "reconciliacao": 116
+  },
+  "regions": [
+    {
+      "year": 2026,
+      "region": "Brasil",
+      "observed_sections": 497897,
+      "comparable_sections": 429089,
+      "eligible_sections": 428521,
+      "reference_alert_sections": 63796,
+      "pattern_eligible_sections": 81264,
+      "margin_inconclusive_sections": 0,
+      "comparable_coverage_pct": 86.1802742334,
+      "eligible_coverage_pct": 86.0661944137,
+      "rate_per_1000": 148.8748509408
+    },
+    {
+      "year": 2026,
+      "region": "Exterior",
+      "observed_sections": 1351,
+      "comparable_sections": 77,
+      "eligible_sections": 50,
+      "reference_alert_sections": 13,
+      "pattern_eligible_sections": 7,
+      "margin_inconclusive_sections": 0,
+      "comparable_coverage_pct": 5.6994818653,
+      "eligible_coverage_pct": 3.7009622502,
+      "rate_per_1000": 260.0
+    }
+  ],
+  "map_status_counts": [
+    {
+      "is_exterior": false,
+      "rate_map_status": "apresentável pelos limites escolhidos",
+      "municipal_units": 2397
+    },
+    {
+      "is_exterior": false,
+      "rate_map_status": "cobertura elegível abaixo do limite ou desconhecida",
+      "municipal_units": 294
+    },
+    {
+      "is_exterior": false,
+      "rate_map_status": "quantidade de elegíveis abaixo do limite",
+      "municipal_units": 2876
+    },
+    {
+      "is_exterior": false,
+      "rate_map_status": "sem denominador elegível",
+      "municipal_units": 4
+    },
+    {
+      "is_exterior": true,
+      "rate_map_status": "quantidade de elegíveis abaixo do limite",
+      "municipal_units": 41
+    },
+    {
+      "is_exterior": true,
+      "rate_map_status": "sem denominador elegível",
+      "municipal_units": 145
+    }
+  ],
+  "reconciliation_status": [
+    {
+      "status": "concordante nos somatórios disponíveis",
+      "rows": 112
+    },
+    {
+      "status": "limitação de cobertura ou parcela indisponível",
+      "rows": 4
+    }
+  ],
+  "documental_records": 5731614,
+  "documental_pending_records": 0,
+  "interpretation": "Taxa descritiva da triagem original em população não aleatória; não estima risco de fraude. Coortes e resultado territorial completo permanecem distintos.",
+  "status": "concluído",
+  "input_hashes": {
+    "nacional/inventario/secoes.parquet": "8518d40ca8525ca94088684173b676d9a4999a4d4f071d9cd584a5ffcc6ffd84",
+    "nacional/inventario/locais.parquet": "223722437673e8c6d7baa102a708c2b487586185c059cd94a7e119d20ca41e39",
+    "nacional/inventario/municipios.parquet": "875639dccd77731588fdb391f447475ca16bb7900332f0fad811df56ca7cdd5d",
+    "nacional/inventario/ufs.parquet": "d2dd3bd3f7f3252d1daa9ee113924fbd70ee331d0d788c1783e56d8649b8a6a7",
+    "nacional/inventario/resumo.json": "85fc21d0525cb3036c7c5df86f7a1e310a46c344113187678881961fc66db262",
+    "reconciliacao_municipio_zona.parquet": "efdc970e16c1923731a7ef018e377d0c18e0f2498a0dd647f97d5b5ae6a07683",
+    "conferencia_bu.parquet": "9e03ff58835ae285eed6f677484431171a9c9292aeac664af39bdf7b5c9eb27b",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "national_rates.py": "6b027154578b0b8506dc5874f8d58f8d09909e84e75fd33f939508efa61aa137",
+    "national_common.py": "73189e9ff714c55e0061095b5d294d146460f0b40ebb4baf66c5e8cda6995ce4",
+    "investigation.py": "f7ce73943bcf6415d282f138bc3ba3f9d2cd76b2a25089e58afcbe886360737c"
+  }
+}

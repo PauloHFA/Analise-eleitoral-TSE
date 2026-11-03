@@ -1,0 +1,18 @@
+{
+  "status": "concluído",
+  "started": "2026-11-03T18:40:48.786577+00:00",
+  "input_hashes": {
+    "indicadores_secoes.parquet": "ccd20d20d95dd6d172ac8e62637ec8e3bc73833c26ab0ab7a3ad87ab1ec488ef",
+    "indicadores_local.parquet": "07a7be867745a572c9ed683f1d028c8a50b991eda9345eb5bd8ccc0316357a22",
+    "indicadores_municipio.parquet": "0e1ff639aa82d889562181c401f5848d0c1e3c881c22da4f1e9611e55569b846",
+    "indicadores_uf.parquet": "4d32e94317d4beda6c297ee984c7d71d68085f13047f284c20d471dda251135e",
+    "candidatos.parquet": "56b3c88538f2a117bf05b5756d39d9c626e1db384f18c60b09c74192b8f7b5f1",
+    "fontes_utilizadas.json": "c03039639e866dfb92713119bc7fe5163304fdfd4ec791a418e62abed613b2fd",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "finished": "2026-11-03T18:42:32.183537+00:00"
+}

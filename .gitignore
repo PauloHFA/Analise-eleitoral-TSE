@@ -36,6 +36,13 @@ outputs/2026/**/*.parquet
 !outputs/2026/cobertura/distribuicao_geografica.csv
 !outputs/2026/dossie_categorias/dicionario.csv
 !outputs/2026/dossie_categorias/resumo_uf.csv
+!outputs/2026/nacional/inventario/contagens.csv
+!outputs/2026/nacional/taxas/dicionario.csv
+!outputs/2026/nacional/taxas/ufs.csv
+!outputs/2026/nacional/taxas/regioes.csv
+!outputs/2026/nacional/taxas/reconciliacao.csv
+!outputs/2026/nacional/mapas/prioridades.csv
+outputs/2026/nacional/mapas/mapa_dados.json
 outputs/logs/*
 !outputs/logs/README.md
 !outputs/logs/preservacao-documentacao.json
@@ -65,6 +72,12 @@ outputs/logs/*
 !outputs/logs/testes-pesquisa.log
 !outputs/logs/execucao-pesquisa.log
 !outputs/logs/validacao-pesquisa.log
+!outputs/logs/nacional-inventario.log
+!outputs/logs/nacional-taxas.log
+!outputs/logs/nacional-mapas.log
+!outputs/logs/testes-nacional.log
+!outputs/logs/validacao-nacional.log
+!outputs/logs/preservacao-nacional.log
 .env
 .env.*
 !.env.example

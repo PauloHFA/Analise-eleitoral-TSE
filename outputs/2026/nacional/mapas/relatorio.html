@@ -1,0 +1,65 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investigação nacional — 2026</title><style>body{font:16px/1.6 system-ui;max-width:1250px;margin:auto;padding:28px;color:#183447}table{border-collapse:collapse;width:100%}td,th{border:1px solid #cad6df;padding:8px;text-align:left}.note{padding:16px;background:#edf4f7}iframe{width:100%;height:1120px;border:1px solid #cad6df}img{max-width:100%}</style>
+<h1>Investigação nacional de mudanças entre turnos</h1><p class="note">Mudanças observadas, alertas estatísticos e divergências documentais são categorias distintas. Este estudo amplia a localização dos padrões, sem concluir irregularidade ou reconstruir votos individuais.</p>
+<h2>O que foi encontrado?</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Universo</th>
+      <th>Unidades municipais</th>
+      <th>Flávio → Lula</th>
+      <th>Lula → Flávio</th>
+      <th>Empate no 1º</th>
+      <th>Empate no 2º</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brasil</td>
+      <td>5571</td>
+      <td>211</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Exterior</td>
+      <td>186</td>
+      <td>7</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Universo</th>
+      <th>Observadas</th>
+      <th>Comparáveis</th>
+      <th>Elegíveis</th>
+      <th>Alertas originais</th>
+      <th>Por 1.000 elegíveis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brasil</td>
+      <td>497897</td>
+      <td>429089</td>
+      <td>428521</td>
+      <td>63796</td>
+      <td>148,87</td>
+    </tr>
+    <tr>
+      <td>Exterior</td>
+      <td>1351</td>
+      <td>77</td>
+      <td>50</td>
+      <td>13</td>
+      <td>260,00</td>
+    </tr>
+  </tbody>
+</table><p>O inventário nacional preserva 499.248 seções e amplia os padrões para todos os estados. No resultado municipal completo do Brasil, 211 unidades passaram de liderança de Flávio para Lula e 1 fizeram o caminho inverso, entre os dois finalistas. Esses resultados são descritivos; a comparabilidade de cada território consta da tabela.</p><p>A margem usa 100 × (Flávio − Lula)/(Flávio + Lula) em cada turno. A mudança é segundo menos primeiro: positivo favorece Flávio, negativo favorece Lula. Participações sobre todos os nominais usam outro denominador. Perder vantagem relativa pode ocorrer mesmo ganhando votos absolutos. Inversões são incluídas independentemente de limites de mudança; empates têm identificação própria.</p><p>As reduções de vantagem de 5/10/15 pp são calculadas nos dois sentidos. Os resultados por seção, local, município e UF estão no inventário, inclusive os não comparáveis. O escore de margem reutiliza os mesmos 30 pares; a triagem original permanece em reference_alert. O escore adicional não altera aquela seleção.</p><p>As taxas usam contagens agregadas: 1.000 × alertas originais entre elegíveis / seções elegíveis. Elas não são médias de taxas municipais e não usam votos, eleitores ou área como denominador. Um denominador zero gera ausência. Os limites de 30 elegíveis e 80% de cobertura são escolhas operacionais de apresentação, ajustáveis no mapa, sem interpretação de precisão estatística.</p><p>A coorte das mesmas seções territorialmente comparáveis, incluindo pequenas, é uma análise complementar. Seus valores e coberturas dos dois turnos aparecem ao clicar no mapa e nas tabelas. Ela não substitui o total municipal. Ausências e somas incompletas permanecem ausentes.</p><p>Os somatórios disponíveis dos finalistas são confrontados entre níveis e com a fonte oficial nominal. Contagens de linhas ausentes acompanham os somatórios. Conferência de linhas de BU não certifica completude de urnas, a causa de mudanças ou persistência. Brasil e exterior são separados.</p><p>As listas estatísticas dependem do método de comparação: o estudo anterior de estabilidade mostrou sensibilidade do topo dos rankings. A lista nacional de prioridades deve ser examinada junto com magnitude absoluta, dispersão e documentação, sem equivalência automática com fraude. As fontes eleitorais, os mapas e as fichas anteriores foram preservados.</p>
+<h2>Mapa com consulta dos dois turnos e cobertura</h2><p><a href="mapa.html">Abrir mapa em página própria</a> · <a href="relatorio.pdf">PDF explicativo</a></p><iframe src="mapa.html" title="Mapa nacional interativo" loading="lazy"></iframe>
+<h2>Leitura das escalas</h2><p>No modo de mudança, azul indica deslocamento relativo em favor de Flávio e vermelho em favor de Lula, mesmo que a liderança final seja outra. A taxa de triagem é roxa e tem denominador próprio. Branco é zero conhecido e cinza identifica ausência ou taxa sem exibição conforme a legenda de cada modo.</p><img src="margin.png" alt="Mapa nacional de mudança de margem"><img src="rate.png" alt="Mapa nacional de taxa de triagem">
+<h2>Dados completos e reprodução</h2><ul><li><a href="../inventario/secoes.csv">Seções completas</a></li><li><a href="../inventario/locais.csv">Locais completos</a></li><li><a href="../taxas/municipios.csv">Municípios e coortes</a></li><li><a href="../taxas/ufs.csv">UFs e denominadores</a></li><li><a href="../inventario/contagens.csv">Sensibilidade 5/10/15 pp por nível/UF</a></li><li><a href="../taxas/reconciliacao.csv">Somatórios e ausências</a></li><li><a href="../taxas/conferencia_bu.csv">Linhas de BU disponíveis</a></li><li><a href="prioridades.csv">Até 50 seções elegíveis por UF, nos dois sentidos</a></li><li><a href="../taxas/dicionario.csv">Dicionário</a></li><li><a href="resumo.json">Fontes, parâmetros e hashes</a></li></ul>
+<p>Executar as etapas inventario, taxas e mapas do comando eleicoes nacional, nessa ordem. Saídas preenchidas são recusadas. Os critérios de exibição podem ser ajustados sem alterar os valores descritivos das tabelas.</p><p><a href="../../relatorio.html">Relatório de referência</a> · <a href="../../estabilidade/relatorio.html">Estabilidade dos pares</a> · <a href="../../pesquisa_categorias/relatorio.html">Pesquisa documental</a></p></html>

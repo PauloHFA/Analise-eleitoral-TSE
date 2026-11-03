@@ -1,0 +1,226 @@
+{
+  "tag": "nacional-v1",
+  "release": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/nacional-v1",
+  "extraction": "Extrair na raiz do clone; os arquivos ficam em outputs/2026/nacional, sem substituir as referências anteriores.",
+  "scope": "Inventários nacionais, taxas/coortes, somatórios, mapa offline, relatório HTML/PDF e lista de revisão. Sem nova ingestão ou auditoria de RDV.",
+  "implementation_commits": {
+    "inventario": "f192ab6",
+    "taxas": "d41deb6",
+    "mapas": "cae77ef"
+  },
+  "assets": [
+    {
+      "name": "investigacao-nacional.zip",
+      "bytes": 206186667,
+      "sha256": "09ecc1f305d54d3f4ca660faf69963b99852eb5c837ba32ff4e78241ac5ead37",
+      "files": [
+        {
+          "path": "DATA_LICENSE.md",
+          "bytes": 3994,
+          "sha256": "bf1311c1e00b681ded9a00ddcd37ad9d51ca211da590a213cb66610809cb9924"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "210e5a0fbe1ea94996a10027f5cf6473058492cc9d826689f588168edeece82d"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/contagens.csv",
+          "bytes": 5340,
+          "sha256": "84d8e838e483b67e9c74561a3ddc708232a452ab665525891b86eb8063ae0910"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/contagens.parquet",
+          "bytes": 4949,
+          "sha256": "7137d6c78fcd6346a0c55b8998d723f0d7c4f21106d231dd3998f4d2c917b468"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/estado_execucao.json",
+          "bytes": 1232,
+          "sha256": "fce7c1ea9bfa5680c9b8e82b9b1cc5aa36bd20cc44d81987179b71c68293f766"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/locais.csv",
+          "bytes": 54390641,
+          "sha256": "68c4a88ab9fef3e1d0302efaade779a3d09e4daf3b7d8a8794f51b9f8a554272"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/locais.parquet",
+          "bytes": 12623689,
+          "sha256": "223722437673e8c6d7baa102a708c2b487586185c059cd94a7e119d20ca41e39"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/manifesto.json",
+          "bytes": 967,
+          "sha256": "d27c80e94e556e43ae6afa2f239c3b0bb4085683b8f8cc5bf64e5088c6f7b7ad"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/municipios.csv",
+          "bytes": 3409683,
+          "sha256": "01183b2b3ec4364496c110e0fd7d2acad9aa5673793b9ab6ede59dc25c73985e"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/municipios.parquet",
+          "bytes": 956261,
+          "sha256": "875639dccd77731588fdb391f447475ca16bb7900332f0fad811df56ca7cdd5d"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/resumo.json",
+          "bytes": 44863,
+          "sha256": "85fc21d0525cb3036c7c5df86f7a1e310a46c344113187678881961fc66db262"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/secoes.csv",
+          "bytes": 384531868,
+          "sha256": "4069744c80258f47664c4d15df821af03c438fad7d6df3a4bad8601c9c9b2c76"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/secoes.parquet",
+          "bytes": 68112254,
+          "sha256": "8518d40ca8525ca94088684173b676d9a4999a4d4f071d9cd584a5ffcc6ffd84"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/ufs.csv",
+          "bytes": 18471,
+          "sha256": "d6b53b3e82ca05bcc86d687d7edc2bf9f4a9478139b4ab2c72a6d9fdd523a5c1"
+        },
+        {
+          "path": "outputs/2026/nacional/inventario/ufs.parquet",
+          "bytes": 17681,
+          "sha256": "d2dd3bd3f7f3252d1daa9ee113924fbd70ee331d0d788c1783e56d8649b8a6a7"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/estado_execucao.json",
+          "bytes": 1403,
+          "sha256": "58884f70fae90a8d59e161f59cd667d0b0bbcd17fb8f0b32059723a1957a3321"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/manifesto.json",
+          "bytes": 792,
+          "sha256": "83c1fba0184bbab2386cdb2efa1ae57717a3bd32ba2b0f8dbb317969e67a00f0"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/mapa.html",
+          "bytes": 23619107,
+          "sha256": "4c2fb9a54f429ead73b7a9fe7647e0a5fe5a3e9cd12c74e486b194795f778de0"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/mapa_dados.json",
+          "bytes": 25478808,
+          "sha256": "11265029f1e4db3eb29bfb2f0e0729ce4a853ffda82f0df44fe02fb0989ee71f"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/margin.png",
+          "bytes": 432297,
+          "sha256": "266a6b988f2f945d77b22b6955c8ff801e27557619e58a656a46f1b6e88f9986"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/prioridades.csv",
+          "bytes": 1042417,
+          "sha256": "1d656a6c783094cce5ae32c6ac8b1ec77790bfce2e28beb046b82c8bd2f2ab17"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/prioridades.parquet",
+          "bytes": 234894,
+          "sha256": "30452443c121430d01681d8243533c14e71337a84718e7fc47a950854414e7c3"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/rate.png",
+          "bytes": 479184,
+          "sha256": "d47828cd15d121eaff96aa7b7d04392aff7f321d72e2a5f37012dd3c4bc6f7ac"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/relatorio.html",
+          "bytes": 6418,
+          "sha256": "51ee776b7340b4052a4223bc535151b227d9b0941d4794b49cc2d0ee4cffe77a"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/relatorio.pdf",
+          "bytes": 947312,
+          "sha256": "8703750ff83c372e44d29195f382f59e79afd4f66fc8394f874b1c96116fc95f"
+        },
+        {
+          "path": "outputs/2026/nacional/mapas/resumo.json",
+          "bytes": 2148,
+          "sha256": "18807bc8b05315784de2779e774786cc47d5e019a5382dc7448c8436eb616b02"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/conferencia_bu.csv",
+          "bytes": 750659,
+          "sha256": "91336607ac7b7a410027d5fbd44319f6f5a3295a85237ba005e3e256fb2c9261"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/conferencia_bu.parquet",
+          "bytes": 34443,
+          "sha256": "bd71333b0a99d2e013a709e6f6e019f6689dc987c7b7397fd4d2037cc9ddaadf"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/dicionario.csv",
+          "bytes": 1559,
+          "sha256": "49f30f2991e9ef590bd056e4a489f2d60e1a13c1f157de99bc3bce95e6ffa737"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/dicionario.parquet",
+          "bytes": 1958,
+          "sha256": "067c01e43c0c4842d446b3b988145b32adc959d92c93b15559c380fd5b0fc012"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/estado_execucao.json",
+          "bytes": 1393,
+          "sha256": "f54c7d3590e84c91e240758158d09fcc175258f5f171d182f0612bf7a03cbbed"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/manifesto.json",
+          "bytes": 1175,
+          "sha256": "9ba6c4ac7e1f5ee93a7b9b27a3a9a25582ee4897871c7c8febaea82511d2d0d5"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/municipios.csv",
+          "bytes": 7245191,
+          "sha256": "6ba70a4bbf8c8bea8fa5fddf62562edfa02d8c07b05e6f71b71073c379b3218f"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/municipios.parquet",
+          "bytes": 2047109,
+          "sha256": "08e1a5cf32a0d75d139de0edb25c071385cc4bf4bbda80183d9b22e3481336b7"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/reconciliacao.csv",
+          "bytes": 12726,
+          "sha256": "8a605fa6c8131ef7c9881b23e084751a0ad2d977ad5148a2e54a1e9fc6076ae8"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/reconciliacao.parquet",
+          "bytes": 6139,
+          "sha256": "50e7c5f14c4d87538588dd85e94472d74f7e925657d3f2764f224259fdcde9bd"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/regioes.csv",
+          "bytes": 385,
+          "sha256": "4e2fd170ddacc37649d2cc7e6301621d42a9f061ecdb0d90cf1625090d3895b1"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/regioes.parquet",
+          "bytes": 2012,
+          "sha256": "db572efb4684d97c9a696d25c98aae4f109cdf57f8183835d398cc37dda233b8"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/resumo.json",
+          "bytes": 4088,
+          "sha256": "9981043f53ac931b5103b87a5eff8ecdd908d6c930f0d34ac7ce366ef269b1aa"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/ufs.csv",
+          "bytes": 22548,
+          "sha256": "fd13588f989c317a41f296da27e3949c78c3f7fd97ae25c3029b1e170b0a8e42"
+        },
+        {
+          "path": "outputs/2026/nacional/taxas/ufs.parquet",
+          "bytes": 21651,
+          "sha256": "fc2a02a0d61d55554210a06f36cb734ccd7e4d6101b39ff55075044a1b1382eb"
+        }
+      ],
+      "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/nacional-v1/investigacao-nacional.zip"
+    }
+  ]
+}

@@ -10,6 +10,10 @@ As próximas implementações estão organizadas no [roteiro de etapas e commits
 
 **Pesquisa documental realizada:** [norma de nulos técnicos e situação Renúncia do candidato 28](docs/PESQUISA_CATEGORIAS.md). As fontes oficiais oferecem uma explicação compatível com os arquivos; o ato individual e sua eficácia temporal ainda não foram confirmados.
 
+**Etapa 4 concluída:** [inventário nacional, mapas e taxas com cobertura](docs/NACIONAL.md). O resultado municipal completo registra 211 inversões de Flávio para Lula e uma no sentido inverso no Brasil; são mudanças descritivas entre finalistas, com comparabilidade e coortes identificadas. [Abrir o novo relatório](outputs/2026/nacional/mapas/relatorio.html).
+
+**Validação nacional:** 135 testes aprovados, 12 pares CSV/Parquet conferidos integralmente e 5.571 polígonos preservados. O PDF complementar tem cinco páginas; os relatórios de referência mantêm suas versões e contagens históricas.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário

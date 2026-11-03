@@ -10,7 +10,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Implementado, executado nacionalmente e validado |
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
-| 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
+| 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
 | 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
@@ -100,6 +100,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 **Aceitação:** somas nacionais e estaduais conferidas; população elegível explícita; mesmas regras nos dois sentidos; cobertura/cartografia preservadas; filtros e cores testados; nenhuma equivalência automática entre concentração de alertas e fraude.
 
 **Commits previstos:** inventário nacional; agregações/taxas; mapas e relatórios; publicação de resultados completos com hashes.
+
+**Entrega executada:** [investigação nacional](NACIONAL.md), em três etapas isoladas. Inventário em `f192ab6`, taxas/coortes em `d41deb6`, mapas e relatório em `cae77ef`. Foram preservadas as 499.248 seções e a cartografia de 5.571 unidades brasileiras. O resultado municipal completo registra 211 inversões para Lula e uma para Flávio no Brasil; no exterior, sete e três. A comparabilidade não foi presumida a partir dessas contagens. Há 1.356 prioridades por seção, até 50 por UF, sem reclassificação causal. A suíte tem 135 testes aprovados; a validação confere as tabelas, 84 escores com o método anterior e 33.467 condições da interface. A próxima implementação é a frente 5; a eficácia do ato na frente 3 continua pendente.
 
 ## 5. RDV, assinaturas e documentos da urna
 

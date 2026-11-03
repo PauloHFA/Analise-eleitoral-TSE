@@ -1,0 +1,3 @@
+year,region,observed_sections,comparable_sections,eligible_sections,reference_alert_sections,pattern_eligible_sections,margin_inconclusive_sections,comparable_coverage_pct,eligible_coverage_pct,rate_per_1000
+2026,Brasil,497897,429089,428521,63796,81264,0,86.18027423342579,86.06619441370404,148.87485094079403
+2026,Exterior,1351,77,50,13,7,0,5.699481865284974,3.7009622501850483,260.0

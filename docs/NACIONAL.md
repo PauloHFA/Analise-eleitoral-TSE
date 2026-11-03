@@ -2,6 +2,83 @@
 
 Etapa 4 do [roteiro](PROXIMAS_ETAPAS.md). Amplia a investigação dirigida a todas as UFs e mantém o exterior separado. Os relatórios, tabelas, mapas e fichas anteriores são preservados. Não realiza nova ingestão nacional.
 
+## Resultados da execução — 03/11/2026
+
+| Universo / medida | Resultado |
+| --- | --- |
+| Seções observadas | 499.248 |
+| Locais observados | 94.343 |
+| Unidades municipais, Brasil + exterior | 5.757 |
+| UFs, incluindo ZZ | 28 |
+| Seções territorialmente comparáveis | 429.166 |
+| Seções elegíveis para triagem | 428.571 |
+| Alertas da triagem original | 63.809 |
+| Cartografia brasileira preservada | 5.571 unidades, sem novo vínculo ou polígono faltante |
+| Lista nacional de prioridades | 1.356 seções; até 50 elegíveis por UF |
+
+### Inversões entre os dois finalistas
+
+| Universo | Flávio → Lula | Lula → Flávio | Empates no 1º | Empates no 2º |
+| --- | --- | --- | --- | --- |
+| Brasil, 5.571 unidades municipais | 211 | 1 | 2 | 1 |
+| Exterior, 186 unidades na classificação TSE | 7 | 3 | 1 | 0 |
+
+São contagens do resultado territorial completo com margens disponíveis, sem selecionar apenas municípios comparáveis. No Brasil, **72 das 211 inversões para Lula têm composição e aptos compatíveis pelos critérios estritos da referência; 139 têm comparação territorial limitada**. A inversão para Flávio é territorialmente comparável. A restrição não apaga o resultado municipal publicado; exige cuidado para atribuir a mudança à mesma composição de seções e eleitorado. Cobertura das coortes é publicada nos dois turnos.
+
+O inventário reproduz **76 inversões para Lula em MG e nove no RJ**. O sentido inverso no Brasil ocorre em **Uirapuru/GO**: Flávio 854 → 1.087 votos; Lula 930 → 1.069. A margem de Flávio passa de −4,26 para +0,83 pp. Lula ganhou votos absolutos e perdeu a liderança relativa entre finalistas. Há sete seções na coorte e 70% de cobertura elegível; a taxa não recebe cor no limite padrão de 30 elegíveis/80% de cobertura. Nenhum desses fatos determina irregularidade.
+
+| UF | Flávio → Lula | Lula → Flávio |
+| --- | --- | --- |
+| AL | 7 | 0 |
+| AM | 3 | 0 |
+| AP | 2 | 0 |
+| CE | 1 | 0 |
+| ES | 3 | 0 |
+| GO | 14 | 1 |
+| MA | 1 | 0 |
+| MG | 76 | 0 |
+| MS | 4 | 0 |
+| MT | 2 | 0 |
+| PA | 5 | 0 |
+| PR | 20 | 0 |
+| RJ | 9 | 0 |
+| RN | 1 | 0 |
+| RS | 19 | 0 |
+| SC | 1 | 0 |
+| SP | 32 | 0 |
+| TO | 11 | 0 |
+| ZZ | 7 | 3 |
+
+As demais UFs não têm inversão municipal desse tipo na cópia analisada. A tabela [contagens](../outputs/2026/nacional/inventario/contagens.csv) inclui todos os estados, os quatro níveis e a sensibilidade de 5/10/15 pp. Os padrões selecionados somam 249 unidades municipais no Brasil e 23 no exterior; essa união inclui inversões, reduções de vantagem de 10 pp e mudança de condição de empate, não somente viradas.
+
+### Taxas e exibição no mapa
+
+| Universo | Elegíveis | Alertas originais | Por 1.000 elegíveis |
+| --- | --- | --- | --- |
+| Brasil | 428.521 | 63.796 | 148,87 |
+| Exterior | 50 | 13 | 260,00 |
+
+O exterior tem apenas 50 elegíveis em 1.351 seções observadas, cobertura de 3,70%. A taxa descritiva não torna esse subconjunto representativo. No Brasil, a cobertura elegível é de 86,07% das 497.897 seções observadas.
+
+Nos limites padrão, **2.397** unidades brasileiras recebem cor de taxa e **3.174** ficam identificadas sem cor: quatro sem elegíveis, 2.876 abaixo da quantidade mínima e 294 abaixo da cobertura mínima, depois de separar os grupos anteriores. Os valores brutos permanecem nas tabelas. Cinza não significa ausência de alerta.
+
+### Conferências e validação
+
+- Os 112 somatórios completos disponíveis, por UF/Brasil, turno e finalista, concordaram entre seção/local/município/UF e fonte nominal oficial. Quatro comparações do exterior ficaram limitadas por total estadual indisponível; não foram transformadas em totais zero.
+- Foram agregadas 5.731.614 linhas da conferência BU armazenada, sem apontamento de diferença nessas linhas. São registros, não pessoas ou urnas distintas, e isso não certifica completude ou causa das mudanças.
+- A igualdade tipada completa dos **12 pares CSV/Parquet** foi conferida nos dois sentidos. A seleção original foi preservada e 84 escores de margem, três por UF, reproduziram a implementação anterior.
+- O mapa passou por **33.467 verificações** de cores, turnos, UFs, padrões, limites, ausência e teclado; geometrias/códigos/limites foram comparados à referência. Houve inspeção visual em Chrome headless dos modos de margem e taxa.
+- O PDF complementar tem **cinco páginas e dez marcadores**, com conteúdo, margens e orientação conferidos e páginas inspecionadas visualmente.
+- A suíte passou com **135 testes**. Os 578 artefatos do inventário anterior preservaram seus SHA256. HTML/PDF/síntese de referência e a investigação RJ/MG mantiveram seus hashes.
+
+### Acesso aos resultados
+
+- [Relatório nacional HTML](../outputs/2026/nacional/mapas/relatorio.html), [PDF](../outputs/2026/nacional/mapas/relatorio.pdf) e [mapa interativo](../outputs/2026/nacional/mapas/mapa.html).
+- [Contagens por UF/nível](../outputs/2026/nacional/inventario/contagens.csv), [taxas por UF](../outputs/2026/nacional/taxas/ufs.csv), [Brasil/exterior](../outputs/2026/nacional/taxas/regioes.csv) e [somatórios](../outputs/2026/nacional/taxas/reconciliacao.csv).
+- [Prioridades por seção](../outputs/2026/nacional/mapas/prioridades.csv), [dicionário](../outputs/2026/nacional/taxas/dicionario.csv), [validação](../outputs/logs/validacao-nacional.log) e [testes](../outputs/logs/testes-nacional.log).
+
+As tabelas completas e o JSON geográfico do novo mapa são distribuídos no [pacote nacional-v1](https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/nacional-v1), com [manifesto e hashes por arquivo](nacional-publicado.json). Extrair na raiz do clone. As capturas e releases anteriores não são substituídas.
+
 ## Inventário nacional
 
 ```powershell

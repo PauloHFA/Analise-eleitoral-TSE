@@ -1,0 +1,10 @@
+field,definition
+rate_per_1000,"1.000 × seções elegíveis com reference_alert / seções elegíveis. Zero elegíveis produz ausência; não usa votos, eleitores ou área como denominador."
+eligible_coverage_pct,100 × seções elegíveis / seções observadas na unidade. Não é cobertura ponderada por eleitores.
+rate_map_value / rate_map_status,Exibição padrão exige ao menos 30 seções elegíveis e 80% de cobertura elegível. Limites operacionais de leitura; não representam precisão ou teste de validade.
+reference_alert_sections,"Numerador da triagem combinada original, preservada; não é contagem de irregularidades ou de viradas."
+pattern_eligible_sections,"Padrões dirigidos entre elegíveis: inversões, reduções de margem de 10 pp e mudança de condição de empate; medida distinta da triagem original."
+cohort_*,"Totais das mesmas seções territorialmente comparáveis, incluindo pequenas. Uma soma exige todas as parcelas; coorte vazia tem quantidade zero e medidas ausentes."
+cohort_coverage_*_pct,100 × quantidade da coorte / total territorial da mesma medida e turno; denominador zero ou ausente produz ausência. Coorte não substitui resultado completo.
+*_available_votes / *_missing_rows,"Somatórios das quantidades conhecidas, com contagem de linhas ausentes por nível. Ausência por local/turno pode indicar criação ou remanejamento, não voto zero imputado."
+records_checked / pending_records,"Linhas da conferência BU armazenada, não urnas ou pessoas distintas; não demonstra completude ou causa das escolhas."

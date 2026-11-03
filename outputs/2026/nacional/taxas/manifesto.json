@@ -1,0 +1,15 @@
+{
+  "conferencia_bu.csv": "91336607ac7b7a410027d5fbd44319f6f5a3295a85237ba005e3e256fb2c9261",
+  "conferencia_bu.parquet": "bd71333b0a99d2e013a709e6f6e019f6689dc987c7b7397fd4d2037cc9ddaadf",
+  "dicionario.csv": "49f30f2991e9ef590bd056e4a489f2d60e1a13c1f157de99bc3bce95e6ffa737",
+  "dicionario.parquet": "067c01e43c0c4842d446b3b988145b32adc959d92c93b15559c380fd5b0fc012",
+  "municipios.csv": "6ba70a4bbf8c8bea8fa5fddf62562edfa02d8c07b05e6f71b71073c379b3218f",
+  "municipios.parquet": "08e1a5cf32a0d75d139de0edb25c071385cc4bf4bbda80183d9b22e3481336b7",
+  "reconciliacao.csv": "8a605fa6c8131ef7c9881b23e084751a0ad2d977ad5148a2e54a1e9fc6076ae8",
+  "reconciliacao.parquet": "50e7c5f14c4d87538588dd85e94472d74f7e925657d3f2764f224259fdcde9bd",
+  "regioes.csv": "4e2fd170ddacc37649d2cc7e6301621d42a9f061ecdb0d90cf1625090d3895b1",
+  "regioes.parquet": "db572efb4684d97c9a696d25c98aae4f109cdf57f8183835d398cc37dda233b8",
+  "resumo.json": "9981043f53ac931b5103b87a5eff8ecdd908d6c930f0d34ac7ce366ef269b1aa",
+  "ufs.csv": "fd13588f989c317a41f296da27e3949c78c3f7fd97ae25c3029b1e170b0a8e42",
+  "ufs.parquet": "fc2a02a0d61d55554210a06f36cb734ccd7e4d6101b39ff55075044a1b1382eb"
+}

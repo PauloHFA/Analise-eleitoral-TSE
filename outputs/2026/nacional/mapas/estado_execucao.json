@@ -1,0 +1,19 @@
+{
+  "status": "concluído",
+  "started": "2026-11-03T18:47:16.289686+00:00",
+  "input_hashes": {
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa",
+    "indicadores_municipio.parquet": "0e1ff639aa82d889562181c401f5848d0c1e3c881c22da4f1e9611e55569b846",
+    "nacional/inventario/secoes.parquet": "8518d40ca8525ca94088684173b676d9a4999a4d4f071d9cd584a5ffcc6ffd84",
+    "nacional/inventario/contagens.parquet": "7137d6c78fcd6346a0c55b8998d723f0d7c4f21106d231dd3998f4d2c917b468",
+    "nacional/taxas/municipios.parquet": "08e1a5cf32a0d75d139de0edb25c071385cc4bf4bbda80183d9b22e3481336b7",
+    "nacional/taxas/regioes.parquet": "db572efb4684d97c9a696d25c98aae4f109cdf57f8183835d398cc37dda233b8",
+    "nacional/taxas/conferencia_bu.parquet": "bd71333b0a99d2e013a709e6f6e019f6689dc987c7b7397fd4d2037cc9ddaadf",
+    "nacional/taxas/reconciliacao.parquet": "50e7c5f14c4d87538588dd85e94472d74f7e925657d3f2764f224259fdcde9bd",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b"
+  },
+  "finished": "2026-11-03T18:47:25.347568+00:00"
+}
