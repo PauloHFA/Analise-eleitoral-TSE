@@ -267,6 +267,10 @@ def main():
     dossier.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
     dossier.add_argument("--data", default="data", help="Pasta dos arquivos originais preservados")
     dossier.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/dossie_categorias")
+    national = sub.add_parser("nacional", help="Ampliar a investigação em saída própria, sem downloads")
+    national.add_argument("--output", default="outputs/2026")
+    national.add_argument("--dest", help="Pasta nova para a etapa selecionada")
+    national.add_argument("--etapa", choices=["inventario"], default="inventario")
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -290,6 +294,10 @@ def main():
         from .dossier import run_dossier
         result = run_dossier(args.output, args.data, args.dest)
         LOG.info("Dossiê concluído: %s unidades por turno; %s com correspondência aritmética", result["selected_unit_turns"], result["technical_units"])
+    elif args.command == "nacional":
+        from .national_inventory import run_inventory
+        result = run_inventory(args.output,args.dest)
+        LOG.info("Inventário nacional concluído: %s", result["tables"])
     else:
         from .demo import create_demo
         root = Path(args.output)
