@@ -259,6 +259,10 @@ def main():
     stability.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
     stability.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/estabilidade")
     stability.add_argument("--pares", nargs="+", type=int, default=[15,30,50])
+    coverage = sub.add_parser("cobertura", help="Examinar cobertura e perfis incluídos/excluídos sem reingestão")
+    coverage.add_argument("--output", default="outputs/2026", help="Pasta da referência já processada")
+    coverage.add_argument("--dest", help="Nova pasta de saída; padrão: <output>/cobertura")
+    coverage.add_argument("--limiares",nargs="+",type=float,default=[50,80,95])
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -274,6 +278,10 @@ def main():
         from .stability import run_stability
         result = run_stability(args.output,args.dest,args.pares)
         LOG.info("Estabilidade concluída: %s elegíveis; %s no universo comum",result["eligible_units"],result["common_units"])
+    elif args.command == "cobertura":
+        from .coverage import run_coverage
+        result = run_coverage(args.output,args.dest,args.limiares)
+        LOG.info("Cobertura concluída: %s observadas; %s elegíveis",result["observed_units"],result["eligible_units"])
     else:
         from .demo import create_demo
         root = Path(args.output)

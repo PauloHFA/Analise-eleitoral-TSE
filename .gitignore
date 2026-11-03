@@ -27,6 +27,12 @@ outputs/2026/**/*.parquet
 !outputs/2026/revisao_documental.csv
 !outputs/2026/estabilidade/dicionario.csv
 !outputs/2026/estabilidade/top100.csv
+!outputs/2026/cobertura/dicionario.csv
+!outputs/2026/cobertura/resumo_uf.csv
+!outputs/2026/cobertura/perfis.csv
+!outputs/2026/cobertura/diferencas.csv
+!outputs/2026/cobertura/faixas.csv
+!outputs/2026/cobertura/distribuicao_geografica.csv
 outputs/logs/*
 !outputs/logs/README.md
 !outputs/logs/preservacao-documentacao.json

@@ -7,8 +7,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | Ordem | Frente | Entrega | Estado inicial |
 | --- | --- | --- | --- |
 | 0 | Roteiro e preservação | Este documento, critérios de aceitação e convenções | Documentado |
-| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Comando implementado e testado; execução nacional pendente |
-| 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Planejado; dados locais disponíveis |
+| 1 | Estabilidade dos pares | Variações de 15/30/50 pares, sobreposição dos rankings e diagnóstico de MAD | Executado; conferência final pendente |
+| 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Comando implementado e testado; execução nacional pendente |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Planejado; explicação oficial pode exigir documentos adicionais |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Planejado; depende da avaliação das frentes 1/2 |
 | 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
@@ -68,6 +68,8 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 **Aceitação:** fechar as 499.248 unidades da referência; separar 429.166 comparáveis de 428.571 elegíveis; fechar motivos de exclusão; percentuais com denominador conhecido; testes de ausências e grupos pequenos; fontes preservadas.
 
 **Commits previstos:** implementação/testes; execução e documentação dos achados. Se os resultados justificarem, propor ponderação ou modelagem como nova etapa, sem alterar a amostra original automaticamente.
+
+**Incremento implementado:** `eleicoes cobertura --output outputs/2026 --limiares 50 80 95`. A saída padrão é `outputs/2026/cobertura/`; `--dest` escolhe uma pasta nova. Os testes distinguem ausência de zero publicado, conferem os três grupos e seus denominadores, medidas não finitas/fora do intervalo, grupos vazios, diferenças em pp e contagens CSV/Parquet. A análise é descritiva e não atribui representatividade automaticamente às coortes.
 
 ## 3. Nulos técnicos, versões e esclarecimento documental
 
