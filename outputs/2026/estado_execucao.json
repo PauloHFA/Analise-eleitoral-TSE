@@ -1,0 +1,20 @@
+{
+  "status": "concluído",
+  "years_requested": [
+    2018,
+    2022,
+    2026
+  ],
+  "completed": [
+    2018,
+    2022,
+    2026
+  ],
+  "limitations": [
+    "Alertas exploratórios; revisão documental de persistência não automatizada"
+  ],
+  "historical_checkpoints_reused": [
+    2018,
+    2022
+  ]
+}

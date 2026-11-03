@@ -1,0 +1,11 @@
+{
+  "status": "mapa válido",
+  "mapped": 5571,
+  "total": 5571,
+  "votes_reconciled": true,
+  "interactive": {
+    "status": "cores, turnos, filtros e consulta municipal válidos",
+    "checks": 11150,
+    "municipalities": 5571
+  }
+}

@@ -1,0 +1,8 @@
+is_exterior,comparison_reason,sections
+false,comparável,429089
+false,quantidade de aptos diferente ou ausente,53882
+false,seção agregada: conferir em unidade territorial compatível,14926
+true,comparável,77
+true,"fonte ausente, votos válidos zero ou inconsistência de origem",43
+true,quantidade de aptos diferente ou ausente,15
+true,seção agregada: conferir em unidade territorial compatível,1216

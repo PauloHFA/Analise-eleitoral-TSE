@@ -1,0 +1,8 @@
+{
+  "url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application%2Fvnd.geo%2Bjson&qualidade=minima&intrarregiao=municipio",
+  "sha256": "5efffedf8772dc8654322affafac4e3e8b001839e7c2af5cab4eb1094dcd6240",
+  "file": "malha_municipal_ibge-5efffedf8772dc86.json",
+  "bytes": 3605638,
+  "retrieved_utc": "2026-11-03T04:39:08.692322+00:00",
+  "source": "IBGE"
+}

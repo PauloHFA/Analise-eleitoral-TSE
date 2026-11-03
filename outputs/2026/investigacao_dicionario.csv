@@ -1,0 +1,10 @@
+﻿campo,definicao
+margin_1_pp,"100 × (Flávio − Lula) / (Flávio + Lula), primeiro turno. Não usa os eliminados no denominador."
+margin_2_pp,Mesma margem entre os finalistas no segundo turno.
+margin_loss_22_pp,Margem do primeiro menos segundo turno: positivo indica redução relativa da vantagem de Flávio.
+margin_loss_22_votes,Saldo de votos Flávio − Lula no primeiro menos o saldo no segundo turno.
+delta_votes_22,Votos de Flávio no segundo menos no primeiro turno; pode ser positivo mesmo quando sua vantagem diminui.
+margin_robust_z,"|mudança de margem − mediana dos 30 pares| / (1,4826 × MAD). Não é probabilidade; MAD insuficiente resulta em ausência."
+unanimity_all_ballots,"Todos os votos depositados foram para o finalista vencedor, com brancos/nulos/outros zerados e comparecimento igual aos seus votos."
+ballot_balance_residual,"ΔLula + ΔFlávio − votos dos eliminados no primeiro turno − Δválidos. Zero demonstra identidade contábil, sem identificar transferências pessoais."
+investigation_status,"Classificação da comparação: mudança/observação confirmada nos arquivos, comparação territorial limitada ou divergência documental sem persistência presumida."

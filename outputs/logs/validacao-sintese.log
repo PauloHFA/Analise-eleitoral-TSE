@@ -1,0 +1,14 @@
+{
+  "status": "síntese e documentação coerentes",
+  "metricas": 41,
+  "links_locais_readme": 130,
+  "texto_pdf_verificado": true,
+  "cobertura_nominal": {
+    "geographic_units": 42,
+    "turn_units": 83,
+    "candidate_rows": 576,
+    "compatible_zero_attendance_rows": 576,
+    "unresolved_rows": 0
+  },
+  "persistencia": "não investigado"
+}

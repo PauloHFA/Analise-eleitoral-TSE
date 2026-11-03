@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "year": 2026,
+  "generated": "2026-11-03T13:03:07-03:00",
+  "scope": "Síntese derivada dos artefatos locais existentes; sem nova ingestão nacional.",
+  "metrics": [
+    {
+      "id": "observed",
+      "label": "Universo observado",
+      "value": 499248,
+      "unit": "unidades de seção, Brasil + exterior",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "comparable",
+      "label": "Comparação territorial válida",
+      "value": 429166,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "eligible",
+      "label": "Elegíveis para triagem estatística",
+      "value": 428571,
+      "unit": "unidades de seção comparáveis e não pequenas",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "excluded",
+      "label": "Sem comparação territorial válida",
+      "value": 70082,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "small",
+      "label": "Menos de 50 comparecentes em algum turno",
+      "value": 721,
+      "unit": "unidades de seção, categoria sobreposta",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "comparable_small",
+      "label": "Comparáveis, mas pequenas",
+      "value": 595,
+      "unit": "unidades de seção fora da triagem estatística",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "combined",
+      "label": "Triagem combinada: união dos critérios",
+      "value": 63809,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "robust",
+      "label": "Desvio robusto acima de 3,5",
+      "value": 17272,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "cutoff5",
+      "label": "Limite de 5 pp ou passagem a zero",
+      "value": 327177,
+      "unit": "unidades de seção elegíveis",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "cutoff10",
+      "label": "Limite de 10 pp ou passagem a zero",
+      "value": 51297,
+      "unit": "unidades de seção elegíveis",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "cutoff15",
+      "label": "Limite de 15 pp ou passagem a zero",
+      "value": 2099,
+      "unit": "unidades de seção elegíveis",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "overlap",
+      "label": "Sobreposição: 10 pp/zero e desvio robusto",
+      "value": 4760,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "cutoff_only",
+      "label": "Somente limite de 10 pp/zero",
+      "value": 46537,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "robust_only",
+      "label": "Somente desvio robusto",
+      "value": 12512,
+      "unit": "unidades de seção",
+      "source": "indicadores_secoes.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "bu_matching",
+      "label": "Concordância BU × resultado por seção",
+      "value": 5731614,
+      "unit": "linhas de votação por seção/código/turno; não pessoas nem urnas distintas",
+      "source": "conferencia_bu.parquet",
+      "status": "realizado",
+      "interpretation": "Concordância de arquivos não explica o comportamento dos eleitores nem audita o equipamento de forma independente."
+    },
+    {
+      "id": "documentary_rows",
+      "label": "Apontamentos aritméticos originais",
+      "value": 82,
+      "unit": "linhas seção/turno",
+      "source": "revisao_documental.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "noninstalled",
+      "label": "Seções não instaladas: regra aritmética fora de contexto",
+      "value": 41,
+      "unit": "seções distintas",
+      "source": "revisao_documental.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Sem votação, comparecimento e abstenções zerados. Não foi estabelecido o motivo da não instalação ou o destino dos eleitores."
+    },
+    {
+      "id": "coverage_geographic_units",
+      "label": "Cobertura nominal: unidades geográficas",
+      "value": 42,
+      "unit": "combinações UF/município/zona",
+      "source": "reconciliacao_municipio_zona.parquet + reconciliacao_comparecimento.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Ausência nominal compatível com comparecimento publicado zero nas duas fontes e votos oficiais zero; apontamentos brutos preservados."
+    },
+    {
+      "id": "coverage_turn_units",
+      "label": "Cobertura nominal: unidades por turno",
+      "value": 83,
+      "unit": "combinações ano/turno/UF/município/zona",
+      "source": "reconciliacao_municipio_zona.parquet + reconciliacao_comparecimento.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Ausência nominal compatível com comparecimento publicado zero nas duas fontes e votos oficiais zero; apontamentos brutos preservados."
+    },
+    {
+      "id": "coverage_candidate_rows",
+      "label": "Cobertura nominal: linhas por candidato",
+      "value": 576,
+      "unit": "linhas de votação nominal",
+      "source": "reconciliacao_municipio_zona.parquet + reconciliacao_comparecimento.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Ausência nominal compatível com comparecimento publicado zero nas duas fontes e votos oficiais zero; apontamentos brutos preservados."
+    },
+    {
+      "id": "coverage_compatible_zero_attendance_rows",
+      "label": "Linhas compatíveis com comparecimento zero",
+      "value": 576,
+      "unit": "linhas de votação nominal",
+      "source": "reconciliacao_municipio_zona.parquet + reconciliacao_comparecimento.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Ausência nominal compatível com comparecimento publicado zero nas duas fontes e votos oficiais zero; apontamentos brutos preservados."
+    },
+    {
+      "id": "technical_units",
+      "label": "Correspondência com nulos técnicos",
+      "value": 2148,
+      "unit": "unidades município/zona/turno",
+      "source": "reconciliacao_categorias.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": ""
+    },
+    {
+      "id": "technical_votes",
+      "label": "Diferença nominal compensada em nulos técnicos",
+      "value": 5246,
+      "unit": "votos, primeiro turno",
+      "source": "reconciliacao_categorias.parquet",
+      "status": "explicado quanto ao apontamento",
+      "interpretation": "Correspondência aritmética; razão jurídica e operacional não estabelecida. Versões diferem."
+    },
+    {
+      "id": "zero_flavio",
+      "label": "Flávio zerado no segundo turno",
+      "value": 106,
+      "unit": "seções com válidos exclusivos para Lula",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "positive_zero",
+      "label": "Flávio: positivo para zero",
+      "value": 56,
+      "unit": "seções",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "already_zero",
+      "label": "Flávio já zerado no primeiro turno",
+      "value": 50,
+      "unit": "seções",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "previous_votes",
+      "label": "Votos anteriores nas passagens a zero",
+      "value": 118,
+      "unit": "votos no primeiro turno",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "previous_max",
+      "label": "Máximo anterior por seção nas passagens a zero",
+      "value": 16,
+      "unit": "votos no primeiro turno",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "previous_lead",
+      "label": "Liderança anterior de Flávio nas passagens a zero",
+      "value": 0,
+      "unit": "seções",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "zero_comparable",
+      "label": "Passagens a zero territorialmente comparáveis",
+      "value": 44,
+      "unit": "seções",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "zero_limited",
+      "label": "Passagens a zero com comparação limitada",
+      "value": 12,
+      "unit": "seções",
+      "source": "investigacao_zeros.parquet",
+      "status": "comparação limitada",
+      "interpretation": ""
+    },
+    {
+      "id": "zero_lula",
+      "label": "Lula zerado no segundo turno",
+      "value": 4,
+      "unit": "seções com válidos exclusivos para Flávio",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "all_ballots",
+      "label": "Lula: unanimidade em todos os votos depositados",
+      "value": 29,
+      "unit": "seções, subconjunto dos válidos exclusivos",
+      "source": "investigacao_zeros.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "flips_RJ",
+      "label": "Inversões municipais Flávio → Lula — RJ",
+      "value": 9,
+      "unit": "municípios",
+      "source": "investigacao_viradas.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "flips_MG",
+      "label": "Inversões municipais Flávio → Lula — MG",
+      "value": 76,
+      "unit": "municípios",
+      "source": "investigacao_viradas.parquet",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "stat_cases",
+      "label": "Fichas estatísticas originais",
+      "value": 100,
+      "unit": "arquivos JSON; grupos podem tratar a mesma ocorrência",
+      "source": "fichas/",
+      "status": "realizado",
+      "interpretation": "Geração automática de fichas não equivale a investigação individual das causas."
+    },
+    {
+      "id": "doc_cases",
+      "label": "Fichas documentais",
+      "value": 41,
+      "unit": "arquivos JSON; grupos podem tratar a mesma ocorrência",
+      "source": "fichas/",
+      "status": "realizado",
+      "interpretation": "Geração automática de fichas não equivale a investigação individual das causas."
+    },
+    {
+      "id": "directed_cases",
+      "label": "Fichas da investigação dirigida",
+      "value": 297,
+      "unit": "arquivos JSON; grupos podem tratar a mesma ocorrência",
+      "source": "investigacao_fichas/",
+      "status": "realizado",
+      "interpretation": "Geração automática de fichas não equivale a investigação individual das causas."
+    },
+    {
+      "id": "map_units",
+      "label": "Vínculo TSE–IBGE no mapa",
+      "value": 5571,
+      "unit": "unidades municipais brasileiras",
+      "source": "mapa_dados.json",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "sources",
+      "label": "Arquivos eleitorais preservados",
+      "value": 68,
+      "unit": "arquivos TSE",
+      "source": "fontes_utilizadas.json",
+      "status": "realizado",
+      "interpretation": ""
+    },
+    {
+      "id": "bu_files",
+      "label": "Arquivos de boletins de urna",
+      "value": 56,
+      "unit": "arquivos ZIP, incluídos no total",
+      "source": "fontes_utilizadas.json",
+      "status": "realizado",
+      "interpretation": ""
+    }
+  ],
+  "regional": [
+    {
+      "is_exterior": false,
+      "observed": 497897,
+      "comparable": 429089,
+      "eligible": 428521,
+      "combined": 63796
+    },
+    {
+      "is_exterior": true,
+      "observed": 1351,
+      "comparable": 77,
+      "eligible": 50,
+      "combined": 13
+    }
+  ],
+  "exclusions": [
+    {
+      "is_exterior": false,
+      "comparison_reason": "comparável",
+      "sections": 429089
+    },
+    {
+      "is_exterior": false,
+      "comparison_reason": "quantidade de aptos diferente ou ausente",
+      "sections": 53882
+    },
+    {
+      "is_exterior": false,
+      "comparison_reason": "seção agregada: conferir em unidade territorial compatível",
+      "sections": 14926
+    },
+    {
+      "is_exterior": true,
+      "comparison_reason": "comparável",
+      "sections": 77
+    },
+    {
+      "is_exterior": true,
+      "comparison_reason": "fonte ausente, votos válidos zero ou inconsistência de origem",
+      "sections": 43
+    },
+    {
+      "is_exterior": true,
+      "comparison_reason": "quantidade de aptos diferente ou ausente",
+      "sections": 15
+    },
+    {
+      "is_exterior": true,
+      "comparison_reason": "seção agregada: conferir em unidade territorial compatível",
+      "sections": 1216
+    }
+  ],
+  "bu_status": [
+    {
+      "status": "concordante",
+      "records": 5731614
+    }
+  ],
+  "nominal_coverage": {
+    "geographic_units": 42,
+    "turn_units": 83,
+    "candidate_rows": 576,
+    "compatible_zero_attendance_rows": 576,
+    "unresolved_rows": 0
+  },
+  "persistence": {
+    "value": null,
+    "unit": "divergências persistentes confirmadas",
+    "status": "não investigado",
+    "raw_compatibility_value": 0,
+    "interpretation": "A confirmação de persistência não foi realizada. O zero do resumo legado não demonstra ausência de irregularidades."
+  },
+  "historical": [
+    {
+      "ano": 2018,
+      "secoes_observadas": 453706,
+      "comparaveis_ge50": 435308,
+      "alertas_5pp": 429598,
+      "alertas_10pp": 364382,
+      "alertas_15pp": 220143,
+      "alertas_robustos": 18778,
+      "frequencia_10pp_pct": 83.70670881307029,
+      "frequencia_robusta_pct": 4.3137272919404195,
+      "tipo": "referência descritiva; eleitores e candidatos variam entre anos"
+    },
+    {
+      "ano": 2022,
+      "secoes_observadas": 471011,
+      "comparaveis_ge50": 420938,
+      "alertas_5pp": 281252,
+      "alertas_10pp": 34359,
+      "alertas_15pp": 1630,
+      "alertas_robustos": 17808,
+      "frequencia_10pp_pct": 8.162484736469503,
+      "frequencia_robusta_pct": 4.230551767718762,
+      "tipo": "referência descritiva; eleitores e candidatos variam entre anos"
+    },
+    {
+      "ano": 2026,
+      "secoes_observadas": 497897,
+      "comparaveis_ge50": 428521,
+      "alertas_5pp": 327134,
+      "alertas_10pp": 51288,
+      "alertas_15pp": 2099,
+      "alertas_robustos": 17266,
+      "frequencia_10pp_pct": 11.968608306244034,
+      "frequencia_robusta_pct": 4.029207436741723,
+      "tipo": "referência descritiva; eleitores e candidatos variam entre anos"
+    }
+  ],
+  "directed_sensitivity": [
+    {
+      "uf": "MG",
+      "level": "local",
+      "observed": 10075,
+      "loss5": 3681,
+      "loss10": 669,
+      "loss15": 75,
+      "flip_to_lula": 940,
+      "flip_to_flavio": 15
+    },
+    {
+      "uf": "MG",
+      "level": "municipio",
+      "observed": 853,
+      "loss5": 290,
+      "loss10": 3,
+      "loss15": 0,
+      "flip_to_lula": 76,
+      "flip_to_flavio": 0
+    },
+    {
+      "uf": "MG",
+      "level": "secao",
+      "observed": 52062,
+      "loss5": 21814,
+      "loss10": 8092,
+      "loss15": 1313,
+      "flip_to_lula": 5570,
+      "flip_to_flavio": 93
+    },
+    {
+      "uf": "MG",
+      "level": "uf",
+      "observed": 1,
+      "loss5": 1,
+      "loss10": 0,
+      "loss15": 0,
+      "flip_to_lula": 1,
+      "flip_to_flavio": 0
+    },
+    {
+      "uf": "RJ",
+      "level": "local",
+      "observed": 5046,
+      "loss5": 3850,
+      "loss10": 1311,
+      "loss15": 102,
+      "flip_to_lula": 585,
+      "flip_to_flavio": 0
+    },
+    {
+      "uf": "RJ",
+      "level": "municipio",
+      "observed": 92,
+      "loss5": 82,
+      "loss10": 4,
+      "loss15": 0,
+      "flip_to_lula": 9,
+      "flip_to_flavio": 0
+    },
+    {
+      "uf": "RJ",
+      "level": "secao",
+      "observed": 37675,
+      "loss5": 24499,
+      "loss10": 11938,
+      "loss15": 2620,
+      "flip_to_lula": 4271,
+      "flip_to_flavio": 25
+    },
+    {
+      "uf": "RJ",
+      "level": "uf",
+      "observed": 1,
+      "loss5": 1,
+      "loss10": 0,
+      "loss15": 0,
+      "flip_to_lula": 0,
+      "flip_to_flavio": 0
+    }
+  ],
+  "news": [
+    {
+      "source": "TSE",
+      "url": "https://www.justicaeleitoral.jus.br/fato-ou-boato/checagens/2026/e-falso-que-124-mil-urnas-tenham-registrado-votos-apenas-para-lula-no-2o-turno-das-eleicoes-2026",
+      "published": "2026-10-29",
+      "claim": "Seções com válidos exclusivamente para Lula",
+      "reported": 106,
+      "observed": 106,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "TSE",
+      "url": "https://www.justicaeleitoral.jus.br/fato-ou-boato/checagens/2026/e-falso-que-124-mil-urnas-tenham-registrado-votos-apenas-para-lula-no-2o-turno-das-eleicoes-2026",
+      "published": "2026-10-29",
+      "claim": "Seções com válidos exclusivamente para Flávio",
+      "reported": 4,
+      "observed": 4,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "TSE",
+      "url": "https://www.justicaeleitoral.jus.br/fato-ou-boato/checagens/2026/e-falso-que-124-mil-urnas-tenham-registrado-votos-apenas-para-lula-no-2o-turno-das-eleicoes-2026",
+      "published": "2026-10-29",
+      "claim": "Votos de Lula nas seções em que Flávio zerou",
+      "reported": 14860,
+      "observed": 14860,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "Folha",
+      "url": "https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-teve-zero-voto-em-106-urnas-nas-quais-somou-quase-15-mil.shtml",
+      "published": "2026-10-28",
+      "claim": "Municípios brasileiros que viraram de Flávio para Lula",
+      "reported": 211,
+      "observed": 211,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "O TEMPO",
+      "url": "https://www.otempo.com.br/politica/2026/10/28/em-minas-76-cidades-viraram-para-lula-na-eleicao-veja-quais",
+      "published": "2026-10-28",
+      "claim": "Municípios de MG que viraram de Flávio para Lula",
+      "reported": 76,
+      "observed": 76,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "Folha",
+      "url": "https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-teve-zero-voto-em-106-urnas-nas-quais-somou-quase-15-mil.shtml",
+      "published": "2026-10-28",
+      "claim": "Vantagem de Lula na cidade do Rio: reportagem cita aproximadamente 644 mil",
+      "reported": 644000,
+      "observed": 113193,
+      "status": "relato não confirmado",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    },
+    {
+      "source": "CNN Brasil",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/veja-a-votacao-nas-cidades-que-lula-e-flavio-fizeram-campanha-no-2o-turno/",
+      "published": "2026-10-26",
+      "claim": "Votos de Lula na cidade do Rio no segundo turno",
+      "reported": 1898391,
+      "observed": 1898391,
+      "status": "confirmado na cópia analisada",
+      "reviewed_on": "2026-11-03",
+      "note": "Afirmações registradas na consulta de 03/11/2026 e reproduzidas offline. Comparação com a versão local; divergência da notícia não é divergência da votação."
+    }
+  ],
+  "rio_de_janeiro": {
+    "votes_13_1": 1524517.0,
+    "votes_13_2": 1898391.0,
+    "votes_22_1": 1662354.0,
+    "votes_22_2": 1785198.0,
+    "cohort_coverage_attendance_1_pct": 79.85325089685473,
+    "cohort_coverage_attendance_2_pct": 79.9081489015353,
+    "cohort_margin_1_votes": 155278.0,
+    "cohort_margin_2_votes": -53522.0
+  },
+  "states": [
+    {
+      "uf": "MG",
+      "votes_13_1": 5188936,
+      "votes_13_2": 6351099,
+      "votes_22_1": 5777548,
+      "votes_22_2": 6241786
+    },
+    {
+      "uf": "RJ",
+      "votes_13_1": 3693021,
+      "votes_13_2": 4565393,
+      "votes_22_1": 4966844,
+      "votes_22_2": 5169033
+    }
+  ],
+  "duplicate_groups": {
+    "duplicidades_bu": 0,
+    "duplicidades_detail": 0,
+    "duplicidades_official_detail": 0,
+    "duplicidades_official_votes": 0,
+    "duplicidades_votes": 0
+  },
+  "source_versions": {
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "retrieved_utc_min": "2026-11-03T01:04:45.057225+00:00",
+    "retrieved_utc_max": "2026-11-03T02:23:21.972678+00:00",
+    "generations": [
+      {
+        "section_generation": "26/10/2026 12:07:25",
+        "official_generation": "02/11/2026 19:31:33"
+      },
+      {
+        "section_generation": "ausente",
+        "official_generation": "02/11/2026 19:31:33"
+      }
+    ],
+    "geography": [
+      {
+        "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?view=nivelado",
+        "sha256": "77bf68d9f5b1237522bcd28c39b8857725ebb25e913a5b13aa4a740ce67041b4",
+        "file": "municipios_ibge-77bf68d9f5b12375.json",
+        "bytes": 2372050,
+        "retrieved_utc": "2026-11-03T04:39:06.702097+00:00",
+        "source": "IBGE"
+      },
+      {
+        "url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application%2Fvnd.geo%2Bjson&qualidade=minima&intrarregiao=municipio",
+        "sha256": "5efffedf8772dc8654322affafac4e3e8b001839e7c2af5cab4eb1094dcd6240",
+        "file": "malha_municipal_ibge-5efffedf8772dc86.json",
+        "bytes": 3605638,
+        "retrieved_utc": "2026-11-03T04:39:08.692322+00:00",
+        "source": "IBGE"
+      },
+      {
+        "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/MT/MT_Municipios_2025.zip",
+        "file": "MT_Municipios_2025-86f3cc662ff63c97.zip",
+        "sha256": "86f3cc662ff63c9742f095ba60fa201721f8faf1d9dc4cd3f59c20028cc9b7a0",
+        "bytes": 9476597,
+        "retrieved_utc": "2026-11-03T04:42:40.470002+00:00",
+        "source": "IBGE — malha municipal MT 2025"
+      }
+    ]
+  },
+  "coverage_matrix": [
+    {
+      "question": "Mudanças, zeros, viradas, participação, brancos/nulos",
+      "status": "realizado",
+      "evidence": "Indicadores nacionais, investigação dirigida e fichas; causas individuais não inferidas."
+    },
+    {
+      "question": "Duplicidades e consistência BU × resultado",
+      "status": "realizado",
+      "evidence": "Tabelas de duplicidades e conferência linha a linha; não é auditoria independente da urna."
+    },
+    {
+      "question": "Soma das seções não instaladas e cobertura nominal com comparecimento zero",
+      "status": "explicado quanto ao apontamento",
+      "evidence": "Situação oficial e zeros publicados contextualizam os apontamentos; motivos administrativos não estabelecidos."
+    },
+    {
+      "question": "Diferença nominal e nulos técnicos",
+      "status": "explicado quanto ao apontamento",
+      "evidence": "Compensação aritmética nas mesmas unidades; razão jurídica e alinhamento de versões pendentes."
+    },
+    {
+      "question": "Remanejamentos, excluídas e representatividade das coortes",
+      "status": "comparação limitada",
+      "evidence": "Sem correspondência oficial completa; coortes informam cobertura, sem substituir o resultado territorial."
+    },
+    {
+      "question": "Causas jurídicas/administrativas e confirmação de persistência",
+      "status": "não investigado",
+      "evidence": "Não foi concluída investigação de causas ou de persistência; o zero legado não é conclusão."
+    },
+    {
+      "question": "RDV, assinaturas digitais, logs e BU impresso/imagem",
+      "status": "não investigado",
+      "evidence": "Arquivos da urna e documentos físicos não foram auditados nesta execução."
+    }
+  ],
+  "recommendations": [
+    "Esclarecer versões, motivo da classificação dos nulos técnicos e situação das seções sem comparecimento.",
+    "Obter correspondências oficiais de remanejamentos e comparar perfis incluídos/excluídos para avaliar a representatividade das coortes.",
+    "Ampliar a conferência nos casos prioritários: recontagem de RDV, assinaturas, logs e comparação com BU impresso ou imagem.",
+    "Variar a quantidade de pares e examinar rankings sensíveis a MAD muito pequeno. A sensibilidade de 5/10/15 pp já foi realizada."
+  ],
+  "recommendations_status": "propostas ainda não executadas"
+}

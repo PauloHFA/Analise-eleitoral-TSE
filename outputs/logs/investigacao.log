@@ -1,0 +1,5 @@
+2026-11-03 01:16:27,679 INFO Lendo indicadores nacionais e distinguindo os padrões
+2026-11-03 01:16:44,336 INFO Calculando a margem com os mesmos 30 pares: 100173 alvos
+2026-11-03 01:20:41,470 INFO Conferindo BU, situação e duplicidades nos dois turnos
+2026-11-03 01:22:51,675 INFO Exportando inventário, conferências e fichas
+2026-11-03 01:24:04,833 INFO Concluído: outputs/2026

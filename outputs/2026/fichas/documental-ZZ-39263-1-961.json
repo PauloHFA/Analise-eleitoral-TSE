@@ -1,0 +1,1238 @@
+{
+  "status": "explicado quanto ao alerta aritmético",
+  "observacoes": [
+    {
+      "year": 2026,
+      "turn": 2,
+      "uf": "ZZ",
+      "municipality": "39263",
+      "zone": "1",
+      "section": "961",
+      "candidate": null,
+      "raw_votes_result": null,
+      "raw_votes_bu": null,
+      "result_generation": null,
+      "bu_generation": null,
+      "result_election": null,
+      "bu_election": null,
+      "result_source": null,
+      "bu_source": null,
+      "votes_result": null,
+      "votes_bu": null,
+      "difference": null,
+      "status": "pendente: incompatibilidade aritmética nos dados por seção",
+      "aptos": 5.0,
+      "attendance": 0.0,
+      "abstention": 0.0,
+      "valid": null,
+      "blank": null,
+      "null_votes": null,
+      "other_votes": null,
+      "generation": "26/10/2026 09:49:06",
+      "vote_generation": null,
+      "evidence_installed": "Não",
+      "evidence_has_votes": false,
+      "evidence_has_detail": true,
+      "evidence_source_file": "8ef9ce3a85cde260/detalhe_votacao_secao_2026.zip:detalhe_votacao_secao_2026_BR.csv",
+      "evidence_generation": "26/10/2026 09:49:06",
+      "review_status": "explicado quanto ao alerta aritmético",
+      "review_explanation": "O arquivo oficial marca ST_SECAO_INSTALADA=Não; não há registros de votação, e comparecimento e abstenções estão zerados. A igualdade comparecimento + abstenções = aptos foi aplicada fora de seu contexto e não permite classificar esta seção não instalada como inconsistência da votação. A seção continua excluída da comparação entre turnos. Esta revisão explica o alerta contábil; não determina o motivo da não instalação nem o destino dos eleitores."
+    },
+    {
+      "year": 2026,
+      "turn": 1,
+      "uf": "ZZ",
+      "municipality": "39263",
+      "zone": "1",
+      "section": "961",
+      "candidate": null,
+      "raw_votes_result": null,
+      "raw_votes_bu": null,
+      "result_generation": null,
+      "bu_generation": null,
+      "result_election": null,
+      "bu_election": null,
+      "result_source": null,
+      "bu_source": null,
+      "votes_result": null,
+      "votes_bu": null,
+      "difference": null,
+      "status": "pendente: incompatibilidade aritmética nos dados por seção",
+      "aptos": 5.0,
+      "attendance": 0.0,
+      "abstention": 0.0,
+      "valid": null,
+      "blank": null,
+      "null_votes": null,
+      "other_votes": null,
+      "generation": "26/10/2026 09:49:06",
+      "vote_generation": null,
+      "evidence_installed": "Não",
+      "evidence_has_votes": false,
+      "evidence_has_detail": true,
+      "evidence_source_file": "8ef9ce3a85cde260/detalhe_votacao_secao_2026.zip:detalhe_votacao_secao_2026_BR.csv",
+      "evidence_generation": "26/10/2026 09:49:06",
+      "review_status": "explicado quanto ao alerta aritmético",
+      "review_explanation": "O arquivo oficial marca ST_SECAO_INSTALADA=Não; não há registros de votação, e comparecimento e abstenções estão zerados. A igualdade comparecimento + abstenções = aptos foi aplicada fora de seu contexto e não permite classificar esta seção não instalada como inconsistência da votação. A seção continua excluída da comparação entre turnos. Esta revisão explica o alerta contábil; não determina o motivo da não instalação nem o destino dos eleitores."
+    }
+  ],
+  "fontes": [
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+      "path": "raw\\f247e5012badac76\\votacao_candidato_munzona_2026.zip",
+      "sha256": "f247e5012badac76b6c3933de60108ee9819fe77c967b872e2a74567506f9157",
+      "bytes": 469950224,
+      "retrieved_utc": "2026-11-03T01:04:45.057225+00:00",
+      "remote": {
+        "ETag": "\"1c02df10-65f534d0b0be7\"",
+        "Last-Modified": "Mon, 02 Nov 2026 23:13:59 GMT",
+        "Content-Length": "469950224"
+      },
+      "resource_id": "c807b826-21ff-4bcf-97ca-d86482656320",
+      "kind": "official_votes",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-07T14:35:28.459900",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip",
+      "path": "raw\\9af3890f4c50779b\\detalhe_votacao_munzona_2026.zip",
+      "sha256": "9af3890f4c50779bd516660be7506a6e2ea1c10febc61a732c56e891ccde3b53",
+      "bytes": 4189457,
+      "retrieved_utc": "2026-11-03T01:04:51.483323+00:00",
+      "remote": {
+        "ETag": "\"3fed11-65f3eca6db11b\"",
+        "Last-Modified": "Sun, 01 Nov 2026 22:45:49 GMT",
+        "Content-Length": "4189457"
+      },
+      "resource_id": "db2f6a49-a150-42a5-9aca-9ddd16d297f0",
+      "kind": "official_detail",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-07T14:37:12.428628",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2026.zip",
+      "path": "raw\\8ef9ce3a85cde260\\detalhe_votacao_secao_2026.zip",
+      "sha256": "8ef9ce3a85cde260471faf7a83a9b4f5ccf3993fdda942aacaa658574344789c",
+      "bytes": 234357769,
+      "retrieved_utc": "2026-11-03T01:05:21.424497+00:00",
+      "remote": {
+        "ETag": "\"df80409-65ec014ca87c2\"",
+        "Last-Modified": "Mon, 26 Oct 2026 15:35:35 GMT",
+        "Content-Length": "234357769"
+      },
+      "resource_id": "32892c16-6a45-436e-a2d1-0809c31f3898",
+      "kind": "detail",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-08T12:26:18.786994",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_BR.zip",
+      "path": "raw\\c928321f63f2d095\\votacao_secao_2026_BR.zip",
+      "sha256": "c928321f63f2d095706fca73d4607c048d2ada23bda6876455d6911aaf1bc9c1",
+      "bytes": 241891087,
+      "retrieved_utc": "2026-11-03T01:06:37.043902+00:00",
+      "remote": {
+        "ETag": "\"e6af70f-65ec1dac721b7\"",
+        "Last-Modified": "Mon, 26 Oct 2026 17:42:32 GMT",
+        "Content-Length": "241891087"
+      },
+      "resource_id": "01ea4ccd-f443-469c-9f29-c69ff97f7d4c",
+      "kind": "votes",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-08T13:47:25.937103",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AC_051020261403.zip",
+      "path": "raw\\4f29bba14c324309\\bweb_1t_AC_051020261403.zip",
+      "sha256": "4f29bba14c32430932d10e03b365adbb142fa5100fe86225c2bff1f7fae170e7",
+      "bytes": 16959055,
+      "retrieved_utc": "2026-11-03T01:07:41.257561+00:00",
+      "remote": {
+        "ETag": "\"102c64f-65d2d7d77e8d2\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:17:00 GMT",
+        "Content-Length": "16959055"
+      },
+      "resource_id": "d12f4e2a-4bd8-45e3-a596-34f659362f50",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:49:02.640856",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2018.zip",
+      "path": "raw\\f880848ef4ba340b\\votacao_candidato_munzona_2018.zip",
+      "sha256": "f880848ef4ba340b15cb91ff0754aa370d34ca7b7e605d6607c0f2a75009adc8",
+      "bytes": 395389280,
+      "retrieved_utc": "2026-11-03T01:13:36.567884+00:00",
+      "remote": {
+        "ETag": "\"17912960-626cdc9223858\"",
+        "Last-Modified": "Wed, 13 Nov 2024 16:25:44 GMT",
+        "Content-Length": "395389280"
+      },
+      "resource_id": "e1dae37e-c2d6-493c-bf66-437f3788af89",
+      "kind": "official_votes",
+      "year": 2018,
+      "resource_metadata_modified": "2021-08-30T16:51:34.777028",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2018.zip",
+      "path": "raw\\df68c258a2261dff\\detalhe_votacao_munzona_2018.zip",
+      "sha256": "df68c258a2261dff37b379f65ea5f2e8de7b3d824bb2340d8f4830274a3fabb5",
+      "bytes": 4269741,
+      "retrieved_utc": "2026-11-03T01:13:46.072034+00:00",
+      "remote": {
+        "ETag": "\"4126ad-63b13e8577a7f\"",
+        "Last-Modified": "Tue, 29 Jul 2025 16:29:08 GMT",
+        "Content-Length": "4269741"
+      },
+      "resource_id": "a96bfc8e-1e57-4eec-afcd-f98525d5cf51",
+      "kind": "official_detail",
+      "year": 2018,
+      "resource_metadata_modified": "2021-08-30T16:52:06.143593",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2018.zip",
+      "path": "raw\\de35b08db427ee0c\\detalhe_votacao_secao_2018.zip",
+      "sha256": "de35b08db427ee0c3089d88317e6166ea5dea33630f5b1dabdccf3304de48f70",
+      "bytes": 256133172,
+      "retrieved_utc": "2026-11-03T01:14:18.287251+00:00",
+      "remote": {
+        "ETag": "\"f444834-64f09c8d4cf8f\"",
+        "Last-Modified": "Thu, 09 Apr 2026 16:48:22 GMT",
+        "Content-Length": "256133172"
+      },
+      "resource_id": "7f6271bc-555e-47a5-aace-7009dc01c341",
+      "kind": "detail",
+      "year": 2018,
+      "resource_metadata_modified": "2021-08-30T16:52:20.988046",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2018_BR.zip",
+      "path": "raw\\dde2250058a7efa3\\votacao_secao_2018_BR.zip",
+      "sha256": "dde2250058a7efa3b7ee336520556905456cb75d7debf99ea4badfc4d598a48c",
+      "bytes": 250985147,
+      "retrieved_utc": "2026-11-03T01:14:57.328074+00:00",
+      "remote": {
+        "ETag": "\"ef5babb-63c68071041ac\"",
+        "Last-Modified": "Fri, 15 Aug 2025 14:15:53 GMT",
+        "Content-Length": "250985147"
+      },
+      "resource_id": "f6feee37-4913-4d83-b73b-dc25ba51e2e6",
+      "kind": "votes",
+      "year": 2018,
+      "resource_metadata_modified": "2021-08-30T16:58:56.385611",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip",
+      "path": "raw\\3cd620314da3cd4b\\votacao_candidato_munzona_2022.zip",
+      "sha256": "3cd620314da3cd4b1f24f68b08fcb310e96ebab5aace8d978219937f71a060fc",
+      "bytes": 577231064,
+      "retrieved_utc": "2026-11-03T02:02:58.724892+00:00",
+      "remote": {
+        "ETag": "\"2267d8d8-65f31ad5641d6\"",
+        "Last-Modified": "Sun, 01 Nov 2026 07:07:06 GMT",
+        "Content-Length": "577231064"
+      },
+      "resource_id": "40fdcf49-256a-4c81-87cf-711545bd1528",
+      "kind": "official_votes",
+      "year": 2022,
+      "resource_metadata_modified": "2022-11-05T22:32:41.886902",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2022.zip",
+      "path": "raw\\9a5b6ce2c80666e9\\detalhe_votacao_munzona_2022.zip",
+      "sha256": "9a5b6ce2c80666e98f9473f3977870a6ec840baeb1edc096557d6a7ba9004fa9",
+      "bytes": 4448508,
+      "retrieved_utc": "2026-11-03T02:03:00.131423+00:00",
+      "remote": {
+        "ETag": "\"43e0fc-65f4e0de6a5aa\"",
+        "Last-Modified": "Mon, 02 Nov 2026 16:58:25 GMT",
+        "Content-Length": "4448508"
+      },
+      "resource_id": "0e59001a-3c9f-4a0d-a8db-7befdba22330",
+      "kind": "official_detail",
+      "year": 2022,
+      "resource_metadata_modified": "2022-11-05T22:35:04.538189",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2022.zip",
+      "path": "raw\\ad22c50b9e6d9dfb\\detalhe_votacao_secao_2022.zip",
+      "sha256": "ad22c50b9e6d9dfb096a2170680a190f1734895ba89d8977b95fd63ca02c03da",
+      "bytes": 243822213,
+      "retrieved_utc": "2026-11-03T02:04:09.719918+00:00",
+      "remote": {
+        "ETag": "\"e886e85-657ed7705d300\"",
+        "Last-Modified": "Fri, 31 Jul 2026 19:47:56 GMT",
+        "Content-Length": "243822213"
+      },
+      "resource_id": "9f042e8b-ed41-4b18-a01b-e0613a68d90c",
+      "kind": "detail",
+      "year": 2022,
+      "resource_metadata_modified": "2022-11-05T22:37:07.419594",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_BR.zip",
+      "path": "raw\\9353993de5cf0377\\votacao_secao_2022_BR.zip",
+      "sha256": "9353993de5cf03778aef44e01d4925e7ee105f5262491d344a2f0dbc956b0139",
+      "bytes": 271292455,
+      "retrieved_utc": "2026-11-03T02:04:47.617265+00:00",
+      "remote": {
+        "ETag": "\"102b9827-5ee383298b080\"",
+        "Last-Modified": "Thu, 24 Nov 2022 14:26:58 GMT",
+        "Content-Length": "271292455"
+      },
+      "resource_id": "f509562b-3b7f-487d-ad61-145a7ae6b96f",
+      "kind": "votes",
+      "year": 2022,
+      "resource_metadata_modified": "2022-11-05T22:39:09.204778",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AC_261020260742.zip",
+      "path": "raw\\35c1f1676e04d082\\bweb_2t_AC_261020260742.zip",
+      "sha256": "35c1f1676e04d0824eb57df158f40d3c1e943926fd4754933a9d2863ccf06e1b",
+      "bytes": 1254611,
+      "retrieved_utc": "2026-11-03T02:19:01.676682+00:00",
+      "remote": {
+        "ETag": "\"1324d3-65ebd11312773\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:50 GMT",
+        "Content-Length": "1254611"
+      },
+      "resource_id": "4753eb99-062b-484a-b569-04c51d039885",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:00:06.037762",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AL_051020261403.zip",
+      "path": "raw\\574b40f5be2cd428\\bweb_1t_AL_051020261403.zip",
+      "sha256": "574b40f5be2cd4283dacefa70144249029e852e1c56e5134e03d1ca5cdcb9de9",
+      "bytes": 48253491,
+      "retrieved_utc": "2026-11-03T02:19:42.819052+00:00",
+      "remote": {
+        "ETag": "\"2e04a33-65d2dfe391186\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:53:00 GMT",
+        "Content-Length": "48253491"
+      },
+      "resource_id": "64e3b797-d7ee-42b1-b980-c7479c4a84b2",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:49:33.099984",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AL_261020260742.zip",
+      "path": "raw\\c42eb06a14d00901\\bweb_2t_AL_261020260742.zip",
+      "sha256": "c42eb06a14d00901c1e2023560eb561933c11837cbf992a70228fd7a389e6be1",
+      "bytes": 1945168,
+      "retrieved_utc": "2026-11-03T02:19:44.786319+00:00",
+      "remote": {
+        "ETag": "\"1dae50-65ebd10df13f8\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:45 GMT",
+        "Content-Length": "1945168"
+      },
+      "resource_id": "35cb0003-abb1-4f19-a8ac-34da3148688d",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:00:39.518609",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AM_051020261403.zip",
+      "path": "raw\\8e367a44ecb4b798\\bweb_1t_AM_051020261403.zip",
+      "sha256": "8e367a44ecb4b79833a99e99574402a0415ec24a485fa7da37f2b7d034b77c0a",
+      "bytes": 77017934,
+      "retrieved_utc": "2026-11-03T02:20:02.770650+00:00",
+      "remote": {
+        "ETag": "\"497334e-65d2dfe3c036c\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:53:00 GMT",
+        "Content-Length": "77017934"
+      },
+      "resource_id": "71b6e06c-3f79-4e0c-9892-aefd9ecdef21",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:50:06.392922",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AM_261020260742.zip",
+      "path": "raw\\c6312af9d2553320\\bweb_2t_AM_261020260742.zip",
+      "sha256": "c6312af9d25533203e6b0c660f6e48d072cf86f03c952f5af51565503ebb2167",
+      "bytes": 4276454,
+      "retrieved_utc": "2026-11-03T02:20:29.067068+00:00",
+      "remote": {
+        "ETag": "\"4140e6-65ebd1483baf7\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:46 GMT",
+        "Content-Length": "4276454"
+      },
+      "resource_id": "94220270-b671-4ce7-bdd6-74e606dcd62c",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:01:08.345582",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AP_051020261403.zip",
+      "path": "raw\\4d15319c3a20984e\\bweb_1t_AP_051020261403.zip",
+      "sha256": "4d15319c3a20984e421982e8cf61edd0e73cf53a82da658b8b6d00622ad84a92",
+      "bytes": 16659046,
+      "retrieved_utc": "2026-11-03T02:20:34.522647+00:00",
+      "remote": {
+        "ETag": "\"fe3266-65d2dfdfb5127\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:56 GMT",
+        "Content-Length": "16659046"
+      },
+      "resource_id": "14e60d24-3b2c-4140-ba6f-fddb52216477",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:50:23.931785",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AP_261020260742.zip",
+      "path": "raw\\56e4ac4f714d84f1\\bweb_2t_AP_261020260742.zip",
+      "sha256": "56e4ac4f714d84f1592b3507eb63a632439abf37601cb22eea8a1d1a0bfa4a4a",
+      "bytes": 596704,
+      "retrieved_utc": "2026-11-03T02:20:35.753130+00:00",
+      "remote": {
+        "ETag": "\"91ae0-65ebd10c8d0d1\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:43 GMT",
+        "Content-Length": "596704"
+      },
+      "resource_id": "98212ac3-aaf9-4046-97a5-a26423eefeb3",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:01:38.442447",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_BA_261020260742.zip",
+      "path": "raw\\b7da4dd73937c74a\\bweb_2t_BA_261020260742.zip",
+      "sha256": "b7da4dd73937c74a76e1d5307550085760ba0c1b1be1073f575d9f29afee553c",
+      "bytes": 9513048,
+      "retrieved_utc": "2026-11-03T02:10:33.808399+00:00",
+      "remote": {
+        "ETag": "\"912858-65ebd112129bf\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:49 GMT",
+        "Content-Length": "9513048"
+      },
+      "resource_id": "cf6303d6-b988-4584-9592-0dcabef0d5c5",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:02:11.613182",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_CE_261020260742.zip",
+      "path": "raw\\e06473e8f738e7d3\\bweb_2t_CE_261020260742.zip",
+      "sha256": "e06473e8f738e7d323d31261c2b4f785f5b09671847390fa0dd31a40847466cf",
+      "bytes": 6151144,
+      "retrieved_utc": "2026-11-03T02:10:38.885115+00:00",
+      "remote": {
+        "ETag": "\"5ddbe8-65ebd11368e3f\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:50 GMT",
+        "Content-Length": "6151144"
+      },
+      "resource_id": "fc928d98-c341-497e-9f7e-0aaa06926fd3",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:02:39.712051",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_DF_261020260742.zip",
+      "path": "raw\\da7ea3674e771acc\\bweb_2t_DF_261020260742.zip",
+      "sha256": "da7ea3674e771acc7a7780ba7220f82d1c88458186c6a6e86df71e7e425ce2d4",
+      "bytes": 3846786,
+      "retrieved_utc": "2026-11-03T02:10:47.368771+00:00",
+      "remote": {
+        "ETag": "\"3ab282-65ebd113cf6da\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:51 GMT",
+        "Content-Length": "3846786"
+      },
+      "resource_id": "81eede48-f4d7-4075-ad97-3858b8b2f920",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:03:06.162067",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_DF_051020261403.zip",
+      "path": "raw\\8f54bb9cdf8c7347\\bweb_1t_DF_051020261403.zip",
+      "sha256": "8f54bb9cdf8c7347afbc2dbe3d2eeae25c8ecb6003fbd1daecb956e3e5d4be0b",
+      "bytes": 77026962,
+      "retrieved_utc": "2026-11-03T02:11:10.294785+00:00",
+      "remote": {
+        "ETag": "\"4975692-65d2dfd7099f0\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:47 GMT",
+        "Content-Length": "77026962"
+      },
+      "resource_id": "7fbf7cf2-8c58-49ed-881d-00755d24cafd",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:51:34.610421",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_ES_261020260742.zip",
+      "path": "raw\\54d636f7d22d5182\\bweb_2t_ES_261020260742.zip",
+      "sha256": "54d636f7d22d51824a1245fa12aeebe679f7eddf0189ac5d0d4a9a2335d2c5cb",
+      "bytes": 5275706,
+      "retrieved_utc": "2026-11-03T02:11:24.431102+00:00",
+      "remote": {
+        "ETag": "\"50803a-65ebd15d24685\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:08 GMT",
+        "Content-Length": "5275706"
+      },
+      "resource_id": "6d629b42-413e-43ce-82f4-6c9990be0eed",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:03:34.709413",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_ES_051020261403.zip",
+      "path": "raw\\305a5cee00a58700\\bweb_1t_ES_051020261403.zip",
+      "sha256": "305a5cee00a58700b8e870d6a8f02c5a49e90eae813aed4e713d39cb77e93a74",
+      "bytes": 81978606,
+      "retrieved_utc": "2026-11-03T02:11:24.503332+00:00",
+      "remote": {
+        "ETag": "\"4e2e4ee-65d2dfd8f3d93\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:49 GMT",
+        "Content-Length": "81978606"
+      },
+      "resource_id": "feef6bdf-fd1b-4010-b1fd-1ee692720f89",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:51:56.603641",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_GO_261020260742.zip",
+      "path": "raw\\f2c29ffbf465dbaf\\bweb_2t_GO_261020260742.zip",
+      "sha256": "f2c29ffbf465dbaf82a9d26e7ae040d20cddc914a1ef8d225410650aaff1f308",
+      "bytes": 4248869,
+      "retrieved_utc": "2026-11-03T02:11:30.312812+00:00",
+      "remote": {
+        "ETag": "\"40d525-65ebd1584fd97\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:03 GMT",
+        "Content-Length": "4248869"
+      },
+      "resource_id": "daf741dd-e688-4682-bafd-330b36257de5",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:04:02.090043",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_CE_051020261403.zip",
+      "path": "raw\\db72adfff9031363\\bweb_1t_CE_051020261403.zip",
+      "sha256": "db72adfff90313635ee992714b34045f56a65ee2a2c7fd2462b3714ce169e62e",
+      "bytes": 203005857,
+      "retrieved_utc": "2026-11-03T02:11:50.937344+00:00",
+      "remote": {
+        "ETag": "\"c199fa1-65d2e05279460\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:54:56 GMT",
+        "Content-Length": "203005857"
+      },
+      "resource_id": "04ba699b-0b81-44de-b279-d4c78a862503",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:51:18.307487",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MA_261020260742.zip",
+      "path": "raw\\38b2a6180190729d\\bweb_2t_MA_261020260742.zip",
+      "sha256": "38b2a6180190729dfece31f1d22d30ebce257467e539277d678d67089ea1a9dd",
+      "bytes": 4609442,
+      "retrieved_utc": "2026-11-03T02:12:05.687643+00:00",
+      "remote": {
+        "ETag": "\"4655a2-65ebd11fc567b\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:03 GMT",
+        "Content-Length": "4609442"
+      },
+      "resource_id": "8d0d8a96-22ee-41d1-8ec6-10775813096f",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:04:29.851669",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_GO_051020261403.zip",
+      "path": "raw\\9622a2d62a9a310f\\bweb_1t_GO_051020261403.zip",
+      "sha256": "9622a2d62a9a310fd79c52e11cdeef5c4dcc09e2c26284798976f2b10af54a4a",
+      "bytes": 157210218,
+      "retrieved_utc": "2026-11-03T02:12:54.069463+00:00",
+      "remote": {
+        "ETag": "\"95ed66a-65d2dfd918f51\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:49 GMT",
+        "Content-Length": "157210218"
+      },
+      "resource_id": "a8762410-6c5e-4591-8934-190653b02836",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:52:23.676568",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_BA_051020261403.zip",
+      "path": "raw\\872dfe30b931eb38\\bweb_1t_BA_051020261403.zip",
+      "sha256": "872dfe30b931eb38c5bc16c3ddeef3f2313240688270ae4d58b4ca1bf08e866f",
+      "bytes": 324997821,
+      "retrieved_utc": "2026-11-03T02:12:57.349176+00:00",
+      "remote": {
+        "ETag": "\"135f12bd-65d2dfe104074\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:57 GMT",
+        "Content-Length": "324997821"
+      },
+      "resource_id": "5065758c-2dc7-467f-bccd-2310bca548e8",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:50:39.823470",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MG_261020260742.zip",
+      "path": "raw\\56a96873e0c03508\\bweb_2t_MG_261020260742.zip",
+      "sha256": "56a96873e0c03508d0a58060a09ef8f8660aa80e8fd36289fd3b25c1c71b7839",
+      "bytes": 14071007,
+      "retrieved_utc": "2026-11-03T02:12:59.088578+00:00",
+      "remote": {
+        "ETag": "\"d6b4df-65ebd14b1eb0d\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:49 GMT",
+        "Content-Length": "14071007"
+      },
+      "resource_id": "6c3e6458-fe4d-4af2-bef7-dc5861c2e525",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:05:04.946720",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MA_051020261403.zip",
+      "path": "raw\\38d161597c5fc707\\bweb_1t_MA_051020261403.zip",
+      "sha256": "38d161597c5fc7073ca1ae687612ad51949e612317f210e0306110f9767ada25",
+      "bytes": 142453462,
+      "retrieved_utc": "2026-11-03T02:12:59.303957+00:00",
+      "remote": {
+        "ETag": "\"87daad6-65d2dffbd1bf8\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:53:25 GMT",
+        "Content-Length": "142453462"
+      },
+      "resource_id": "a77732be-2dc0-4b94-b761-18dc7f5993bb",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:52:39.494266",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MS_261020260742.zip",
+      "path": "raw\\c47916ff1aca6d5c\\bweb_2t_MS_261020260742.zip",
+      "sha256": "c47916ff1aca6d5c6d991d2687f67e9f09e9a1dbd16e3fcf855f7602923677e9",
+      "bytes": 1863398,
+      "retrieved_utc": "2026-11-03T02:13:03.258487+00:00",
+      "remote": {
+        "ETag": "\"1c6ee6-65ebd115acb7c\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:53 GMT",
+        "Content-Length": "1863398"
+      },
+      "resource_id": "d60fd644-1e3f-4170-81e9-c1e13a3636ac",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:05:44.221158",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MT_261020260742.zip",
+      "path": "raw\\5303d588838ed3b4\\bweb_2t_MT_261020260742.zip",
+      "sha256": "5303d588838ed3b40499f86b0758237da1eb1b594449550f753fdecb152bd569",
+      "bytes": 2204666,
+      "retrieved_utc": "2026-11-03T02:13:06.461823+00:00",
+      "remote": {
+        "ETag": "\"21a3fa-65ebd1589cc0b\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:03 GMT",
+        "Content-Length": "2204666"
+      },
+      "resource_id": "4fc6a94d-94c8-4d03-91ff-72aefb954d33",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:06:14.192155",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MS_051020261403.zip",
+      "path": "raw\\df991c3c6ac57afb\\bweb_1t_MS_051020261403.zip",
+      "sha256": "df991c3c6ac57afbdc38811a44aae37ba2df8e98653ce527d5c2536055b4bcd8",
+      "bytes": 51978602,
+      "retrieved_utc": "2026-11-03T02:13:19.898506+00:00",
+      "remote": {
+        "ETag": "\"319216a-65d2dfd6e156a\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:47 GMT",
+        "Content-Length": "51978602"
+      },
+      "resource_id": "0f8d5eca-4110-4358-a860-2aa8cbdca6b6",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:54:08.686691",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PA_261020260742.zip",
+      "path": "raw\\f50720b4ef7a99f1\\bweb_2t_PA_261020260742.zip",
+      "sha256": "f50720b4ef7a99f1167bff6ac24959b035901e586514a4d4b15f5538fd12073b",
+      "bytes": 5158441,
+      "retrieved_utc": "2026-11-03T02:13:22.198483+00:00",
+      "remote": {
+        "ETag": "\"4eb629-65ebd15bab36f\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:06 GMT",
+        "Content-Length": "5158441"
+      },
+      "resource_id": "4d2aeaf2-4bf9-445a-9eb4-4eb211f634f6",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:06:40.116419",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MT_051020261403.zip",
+      "path": "raw\\610eda446fb6bab2\\bweb_1t_MT_051020261403.zip",
+      "sha256": "610eda446fb6bab25f29ceea31adf8f91acf68db14a179228516d11c0fac226f",
+      "bytes": 63492478,
+      "retrieved_utc": "2026-11-03T02:13:28.886417+00:00",
+      "remote": {
+        "ETag": "\"3c8d17e-65d2dfcdf62ae\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:37 GMT",
+        "Content-Length": "63492478"
+      },
+      "resource_id": "8cc4cad8-fc91-4f3b-97ce-4b0af8f02393",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:54:25.334232",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PB_261020260742.zip",
+      "path": "raw\\07cac4be3e1ab493\\bweb_2t_PB_261020260742.zip",
+      "sha256": "07cac4be3e1ab49386eee5e9ba72b5aaf6626f9479775459c614d423d5642350",
+      "bytes": 2871353,
+      "retrieved_utc": "2026-11-03T02:13:32.277224+00:00",
+      "remote": {
+        "ETag": "\"2bd039-65ebd122863b2\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:06 GMT",
+        "Content-Length": "2871353"
+      },
+      "resource_id": "f309a3af-1652-4440-8e33-9d7e412f9a32",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:08:17.144027",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PB_051020261403.zip",
+      "path": "raw\\b26f94ca8fbbd4e4\\bweb_1t_PB_051020261403.zip",
+      "sha256": "b26f94ca8fbbd4e4613e34989f9088201637810f3622a782280746767a67c21e",
+      "bytes": 77916707,
+      "retrieved_utc": "2026-11-03T02:13:50.526767+00:00",
+      "remote": {
+        "ETag": "\"4a4ea23-65d2dfcef4cd7\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:38 GMT",
+        "Content-Length": "77916707"
+      },
+      "resource_id": "03e105fb-f340-4aaf-9ab0-76cf6da5569c",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:55:43.227269",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PE_261020260742.zip",
+      "path": "raw\\9c917e885a2d0688\\bweb_2t_PE_261020260742.zip",
+      "sha256": "9c917e885a2d068821f226f1524cf063bb623acc809ec37d1387f3b05df80508",
+      "bytes": 5761723,
+      "retrieved_utc": "2026-11-03T02:14:02.261440+00:00",
+      "remote": {
+        "ETag": "\"57eabb-65ebd11dbde13\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:01 GMT",
+        "Content-Length": "5761723"
+      },
+      "resource_id": "7c11291c-59fe-464a-92d8-b82627bda1a7",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:09:29.242082",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PA_051020261403.zip",
+      "path": "raw\\1f518a884d15a1ef\\bweb_1t_PA_051020261403.zip",
+      "sha256": "1f518a884d15a1ef3cc3800df8aea7db4ab2c06af99c9110c6d040b3455d08c6",
+      "bytes": 172050487,
+      "retrieved_utc": "2026-11-03T02:14:22.959721+00:00",
+      "remote": {
+        "ETag": "\"a414837-65d2dfcd94c1b\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:37 GMT",
+        "Content-Length": "172050487"
+      },
+      "resource_id": "b3af3634-32d1-41bc-8292-2548d4a518d1",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:54:48.190129",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PI_051020261403.zip",
+      "path": "raw\\7afc6de9c8c26c3d\\bweb_1t_PI_051020261403.zip",
+      "sha256": "7afc6de9c8c26c3d4ff52ee06368e692349be9a6d10191d8cb119b3544be5724",
+      "bytes": 66216824,
+      "retrieved_utc": "2026-11-03T02:14:22.965720+00:00",
+      "remote": {
+        "ETag": "\"3f26378-65d2dfc7d78a0\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:31 GMT",
+        "Content-Length": "66216824"
+      },
+      "resource_id": "9fa55147-5b1b-41c4-8742-6c646c873189",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:56:16.924375",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PI_261020260742.zip",
+      "path": "raw\\d0fd3ff93cc97ef0\\bweb_2t_PI_261020260742.zip",
+      "sha256": "d0fd3ff93cc97ef0e2ae35dc3e6a1a54ce73ad6b9e299cbf676d27007d1c38b3",
+      "bytes": 2648710,
+      "retrieved_utc": "2026-11-03T02:14:34.845791+00:00",
+      "remote": {
+        "ETag": "\"286a86-65ebd15fdc335\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:11 GMT",
+        "Content-Length": "2648710"
+      },
+      "resource_id": "2e89fb03-478f-43c8-97f6-3159b6dd7a79",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:09:53.508952",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PR_261020260742.zip",
+      "path": "raw\\32e8a0bfc7e9fe76\\bweb_2t_PR_261020260742.zip",
+      "sha256": "32e8a0bfc7e9fe76db9ce0e4bc3cfd39eff4ef46ca376d98764f605cfed2147f",
+      "bytes": 7189112,
+      "retrieved_utc": "2026-11-03T02:14:41.413736+00:00",
+      "remote": {
+        "ETag": "\"6db278-65ebd105cc111\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:36 GMT",
+        "Content-Length": "7189112"
+      },
+      "resource_id": "15a97b2a-1888-41d3-9683-4467cfed7d58",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:10:20.372556",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PE_051020261403.zip",
+      "path": "raw\\377cd78885ab7548\\bweb_1t_PE_051020261403.zip",
+      "sha256": "377cd78885ab75480a601a231e3007f2fbf39163831164a14ea38cac7172c0f9",
+      "bytes": 204972135,
+      "retrieved_utc": "2026-11-03T02:14:43.735850+00:00",
+      "remote": {
+        "ETag": "\"c37a067-65d2dfc501f6a\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:28 GMT",
+        "Content-Length": "204972135"
+      },
+      "resource_id": "6f7228a2-3fac-4aa7-bd23-942c4ee73481",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:55:58.823683",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RJ_261020260742.zip",
+      "path": "raw\\d13abd46e8f36590\\bweb_2t_RJ_261020260742.zip",
+      "sha256": "d13abd46e8f365900f65c94dbc6ccd334a7ff65e2c759a24f5ebd13f4b0aceb5",
+      "bytes": 10004912,
+      "retrieved_utc": "2026-11-03T02:14:57.976531+00:00",
+      "remote": {
+        "ETag": "\"98a9b0-65ebd12198325\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:05 GMT",
+        "Content-Length": "10004912"
+      },
+      "resource_id": "2f6eaf77-3abf-4abc-a6ab-f810a91457db",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:11:03.459746",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RN_051020261403.zip",
+      "path": "raw\\e5a2a3980e2db6b7\\bweb_1t_RN_051020261403.zip",
+      "sha256": "e5a2a3980e2db6b791d81a019cd3efa8dbb3c4543ff3b1579a84d30cf2a87a3d",
+      "bytes": 54412606,
+      "retrieved_utc": "2026-11-03T02:15:19.953130+00:00",
+      "remote": {
+        "ETag": "\"33e453e-65d2dfc4113e8\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:27 GMT",
+        "Content-Length": "54412606"
+      },
+      "resource_id": "14521fa7-39fe-4819-b952-98309958742a",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:58:36.964284",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RN_261020260742.zip",
+      "path": "raw\\cf48f4e878bace44\\bweb_2t_RN_261020260742.zip",
+      "sha256": "cf48f4e878bace44e0b3f1ab0c133e0fd59970ca9fc6f317141a9cef7f28d423",
+      "bytes": 4424654,
+      "retrieved_utc": "2026-11-03T02:15:33.816369+00:00",
+      "remote": {
+        "ETag": "\"4383ce-65ebd120b5e18\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:04 GMT",
+        "Content-Length": "4424654"
+      },
+      "resource_id": "741e6cd6-ef18-4bdf-9ebd-d5aa5371ec3b",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:11:36.419384",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RO_051020261403.zip",
+      "path": "raw\\c7d7e56d27d0cd05\\bweb_1t_RO_051020261403.zip",
+      "sha256": "c7d7e56d27d0cd05f691ab2db5d5ff4d1842bc4af06dc4fc1cfaca72ffc0b8a5",
+      "bytes": 36216443,
+      "retrieved_utc": "2026-11-03T02:16:03.404966+00:00",
+      "remote": {
+        "ETag": "\"2289e7b-65d2dfccfca8c\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:36 GMT",
+        "Content-Length": "36216443"
+      },
+      "resource_id": "9d1376fd-3706-43e5-b6bc-9f644a70def4",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:58:53.409733",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RO_261020260742.zip",
+      "path": "raw\\dec6d43ae423a667\\bweb_2t_RO_261020260742.zip",
+      "sha256": "dec6d43ae423a66722b50fda80e6dfc4378482fc141a390bfca367fd9549ede3",
+      "bytes": 1250142,
+      "retrieved_utc": "2026-11-03T02:16:04.792408+00:00",
+      "remote": {
+        "ETag": "\"13135e-65ebd169fd303\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:21 GMT",
+        "Content-Length": "1250142"
+      },
+      "resource_id": "f5f40a47-72c3-450c-b8de-6b82c5b26896",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:12:03.653684",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MG_051020261403.zip",
+      "path": "raw\\75589fcb276e2b48\\bweb_1t_MG_051020261403.zip",
+      "sha256": "75589fcb276e2b48573d448b1540c82667956b7bc4cb19baeb17fa4f148fce87",
+      "bytes": 489306781,
+      "retrieved_utc": "2026-11-03T02:16:07.229588+00:00",
+      "remote": {
+        "ETag": "\"1d2a3a9d-65d2dfd9b7e40\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:50 GMT",
+        "Content-Length": "489306781"
+      },
+      "resource_id": "c0389446-6384-4c8c-a447-ac5dfd12b5e2",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:52:55.855360",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PR_051020261403.zip",
+      "path": "raw\\993e2987bac1d415\\bweb_1t_PR_051020261403.zip",
+      "sha256": "993e2987bac1d415f45ad6e14e304563aeb1b312813c4bf1745a99f1cf48ecbc",
+      "bytes": 270246858,
+      "retrieved_utc": "2026-11-03T02:16:11.943318+00:00",
+      "remote": {
+        "ETag": "\"101ba3ca-65d2e140b628f\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:59:06 GMT",
+        "Content-Length": "270246858"
+      },
+      "resource_id": "5946ead8-a9ba-44ac-aade-20f967ac0750",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:56:33.513177",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RR_261020260742.zip",
+      "path": "raw\\6554fcbd0c55cf90\\bweb_2t_RR_261020260742.zip",
+      "sha256": "6554fcbd0c55cf90abf970cb83125bfe7b35e748d676fe6fe60bdbca0a4262af",
+      "bytes": 500520,
+      "retrieved_utc": "2026-11-03T02:16:12.839884+00:00",
+      "remote": {
+        "ETag": "\"7a328-65ebd16e39679\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:26 GMT",
+        "Content-Length": "500520"
+      },
+      "resource_id": "e54adb15-931b-462e-a506-7b6330dd2a9d",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-29T13:23:34.010143",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RR_051020261403.zip",
+      "path": "raw\\b2833692aaa3b51e\\bweb_1t_RR_051020261403.zip",
+      "sha256": "b2833692aaa3b51e814b223206cf98b66c9d1a9faeb75ae2f914ae308fe847e2",
+      "bytes": 11931936,
+      "retrieved_utc": "2026-11-03T02:16:16.345701+00:00",
+      "remote": {
+        "ETag": "\"b61120-65d2dfc62b529\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:29 GMT",
+        "Content-Length": "11931936"
+      },
+      "resource_id": "589282af-5a03-42f2-96a3-76ed3d4b8645",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:59:16.514759",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RS_261020260742.zip",
+      "path": "raw\\e4e7fff8d09e5882\\bweb_2t_RS_261020260742.zip",
+      "sha256": "e4e7fff8d09e588246f5e55750e78cdfe7e4de995361bcd11ad3e7445538e9e3",
+      "bytes": 7410270,
+      "retrieved_utc": "2026-11-03T02:16:17.590174+00:00",
+      "remote": {
+        "ETag": "\"71125e-65ebd160b2cc3\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:11 GMT",
+        "Content-Length": "7410270"
+      },
+      "resource_id": "8a087956-743e-4a09-8d1a-29dc5e3ed3b8",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:13:20.678206",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_SC_261020260742.zip",
+      "path": "raw\\6f169b88a07858e9\\bweb_2t_SC_261020260742.zip",
+      "sha256": "6f169b88a07858e920b3c9e974f3ae5238f36dfe6e6d138a1758764c5b4de697",
+      "bytes": 4487185,
+      "retrieved_utc": "2026-11-03T02:16:25.886861+00:00",
+      "remote": {
+        "ETag": "\"447811-65ebd10f9103d\"",
+        "Last-Modified": "Mon, 26 Oct 2026 11:59:46 GMT",
+        "Content-Length": "4487185"
+      },
+      "resource_id": "7c874499-a9dd-440e-9526-d46033e93625",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:14:00.244608",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SE_051020261403.zip",
+      "path": "raw\\83ab7d8208afd867\\bweb_1t_SE_051020261403.zip",
+      "sha256": "83ab7d8208afd867eeb847781640a2de4238f60b3bf9586b8119a0748355c11b",
+      "bytes": 46931962,
+      "retrieved_utc": "2026-11-03T02:16:50.461791+00:00",
+      "remote": {
+        "ETag": "\"2cc1ffa-65d2dfc7d3e08\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:31 GMT",
+        "Content-Length": "46931962"
+      },
+      "resource_id": "ddf793b9-a2dc-4497-912c-2f1998cac982",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T20:02:44.920036",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_SE_261020260742.zip",
+      "path": "raw\\4dfc5ee64ed4f6e7\\bweb_2t_SE_261020260742.zip",
+      "sha256": "4dfc5ee64ed4f6e71aedc133afc4e0376eaa5dcd9c0545ab9aa29d320a77fc0a",
+      "bytes": 1645477,
+      "retrieved_utc": "2026-11-03T02:16:53.395899+00:00",
+      "remote": {
+        "ETag": "\"191ba5-65ebd15d24685\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:01:08 GMT",
+        "Content-Length": "1645477"
+      },
+      "resource_id": "f79a726a-aa9c-449e-a3b5-e2a8add696e6",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:14:30.328130",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SC_051020261403.zip",
+      "path": "raw\\af9e03f17cefe6f4\\bweb_1t_SC_051020261403.zip",
+      "sha256": "af9e03f17cefe6f4a0be48093a920974d61feb9b07d3ea69b1b84fb7c9a7599f",
+      "bytes": 153178332,
+      "retrieved_utc": "2026-11-03T02:17:03.874742+00:00",
+      "remote": {
+        "ETag": "\"92150dc-65d2dfcaf5de2\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:34 GMT",
+        "Content-Length": "153178332"
+      },
+      "resource_id": "6b41d6e9-1de3-4091-a543-9e1b7da96b2d",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T20:02:27.704156",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_SP_261020260742.zip",
+      "path": "raw\\ffadfa193e68261e\\bweb_2t_SP_261020260742.zip",
+      "sha256": "ffadfa193e68261e2e8aa667b3075e6bc8172b0b6629c752d3b8cf680ac10c4e",
+      "bytes": 28188300,
+      "retrieved_utc": "2026-11-03T02:17:18.212090+00:00",
+      "remote": {
+        "ETag": "\"1ae1e8c-65ebd120124ef\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:04 GMT",
+        "Content-Length": "28188300"
+      },
+      "resource_id": "f6205a0c-a6af-4e94-abad-f82488590efb",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:14:53.763820",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_TO_051020261403.zip",
+      "path": "raw\\896fa2b3057eb4a1\\bweb_1t_TO_051020261403.zip",
+      "sha256": "896fa2b3057eb4a1be16064ddd42e7bfccdbd59e5a48b882049e1760f5641727",
+      "bytes": 29667347,
+      "retrieved_utc": "2026-11-03T02:17:32.943500+00:00",
+      "remote": {
+        "ETag": "\"1c4b013-65d2dfca41b1c\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:33 GMT",
+        "Content-Length": "29667347"
+      },
+      "resource_id": "2f8a1291-e92c-46c3-b185-700314d7db03",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T20:03:20.015799",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_TO_261020260742.zip",
+      "path": "raw\\f2dfdafb28d13aae\\bweb_2t_TO_261020260742.zip",
+      "sha256": "f2dfdafb28d13aae5958ad6d04f604442c10456d6819b84a21a1f52a49db0f6d",
+      "bytes": 2383586,
+      "retrieved_utc": "2026-11-03T02:17:35.304570+00:00",
+      "remote": {
+        "ETag": "\"245ee2-65ebd11eb6e68\"",
+        "Last-Modified": "Mon, 26 Oct 2026 12:00:02 GMT",
+        "Content-Length": "2383586"
+      },
+      "resource_id": "3d632f58-de62-4412-87ac-5db598ea0c34",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:15:20.493341",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RS_051020261403.zip",
+      "path": "raw\\ca9994669f2b9aa5\\bweb_1t_RS_051020261403.zip",
+      "sha256": "ca9994669f2b9aa56856e5ac1f975f664d92330bac0e2484aabbbdfc97a93927",
+      "bytes": 270859776,
+      "retrieved_utc": "2026-11-03T02:17:36.771451+00:00",
+      "remote": {
+        "ETag": "\"1024fe00-65d2dfc50b7c1\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:28 GMT",
+        "Content-Length": "270859776"
+      },
+      "resource_id": "b616ca1a-a3b0-4d21-829e-0475f8fe5e95",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:59:33.775272",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_ZZ_051020261403.zip",
+      "path": "raw\\8512a5230c9e7927\\bweb_1t_ZZ_051020261403.zip",
+      "sha256": "8512a5230c9e7927da6891382aab742f5c232e60eab16fdc52c9e5b5ea357250",
+      "bytes": 1039125,
+      "retrieved_utc": "2026-11-03T02:17:37.395767+00:00",
+      "remote": {
+        "ETag": "\"fdb15-65d2d7e9f1a11\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:17:19 GMT",
+        "Content-Length": "1039125"
+      },
+      "resource_id": "7ea139ab-ed7c-4a67-b58b-a0b59802b534",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T20:03:46.427715",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_ZZ_261020260742.zip",
+      "path": "raw\\f088ff08053c1d95\\bweb_2t_ZZ_261020260742.zip",
+      "sha256": "f088ff08053c1d95ff069f644fed434d290c87f2d9281ac3a9fac0a953cbc558",
+      "bytes": 502322,
+      "retrieved_utc": "2026-11-03T02:17:38.399667+00:00",
+      "remote": {
+        "ETag": "\"7aa32-65ec39fbfb1a3\"",
+        "Last-Modified": "Mon, 26 Oct 2026 19:49:12 GMT",
+        "Content-Length": "502322"
+      },
+      "resource_id": "530d0fcb-a578-4f08-8b87-8ae048394686",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-27T19:15:45.660489",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RJ_051020261403.zip",
+      "path": "raw\\db87f2620f5dc36d\\bweb_1t_RJ_051020261403.zip",
+      "sha256": "db87f2620f5dc36de1941fb41d981d3d1c6195db8019e0a1d895c56491a10a43",
+      "bytes": 536375038,
+      "retrieved_utc": "2026-11-03T02:18:06.515932+00:00",
+      "remote": {
+        "ETag": "\"1ff86efe-65d2dfcb9c9d0\"",
+        "Last-Modified": "Tue, 06 Oct 2026 15:52:35 GMT",
+        "Content-Length": "536375038"
+      },
+      "resource_id": "d824e28a-359c-432d-8d7c-55988d82bf96",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T19:58:18.970671",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SP_051020261403.zip",
+      "path": "raw\\53fb5770a6cda04d\\bweb_1t_SP_051020261403.zip",
+      "sha256": "53fb5770a6cda04d3a00c48f2fd7c5f84aa00eda3cc5ed0ca5fe01e2ed3629f4",
+      "bytes": 1395007777,
+      "retrieved_utc": "2026-11-03T02:23:21.972678+00:00",
+      "remote": {
+        "ETag": "\"53262121-65d2e869534f7\"",
+        "Last-Modified": "Tue, 06 Oct 2026 16:31:08 GMT",
+        "Content-Length": "1395007777"
+      },
+      "resource_id": "cf27bba1-3ee0-4952-ad36-3be435799623",
+      "kind": "bu",
+      "year": 2026,
+      "resource_metadata_modified": "2026-10-06T20:03:01.376565",
+      "license": "CC-BY — Tribunal Superior Eleitoral"
+    }
+  ],
+  "nota": "O status se refere ao motivo documentado nesta ficha; não estabelece o destino de eleitores ou uma auditoria integral da eleição."
+}

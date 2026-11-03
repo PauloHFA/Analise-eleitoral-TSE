@@ -1,0 +1,144 @@
+﻿campo,definicao
+year,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+uf,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+municipality,"Código TSE do município, distinto do código IBGE."
+zone,Número da zona eleitoral.
+section,"Número da seção eleitoral; identifica-se em conjunto com UF, município e zona."
+municipality_name_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+local_1,Número do local de votação na zona e município. Turno 1.
+local_name_1,Nome do local publicado no arquivo oficial. Turno 1.
+local_address_1,Endereço do local publicado no arquivo oficial; não foi geocodificado. Turno 1.
+generation_1,Data e hora de geração publicadas no arquivo; não é o momento de obtenção. Turno 1.
+vote_generation_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+aggregation_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+eligible_source_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+aptos_1,"Eleitorado apto publicado pelo TSE, sem redistribuir a correção nacional de 39 registros. Turno 1."
+attendance_1,Quantidade de eleitores comparecentes no turno. Turno 1.
+abstention_1,Quantidade de abstenções no turno. Turno 1.
+valid_1,"Soma de votos dos candidatos presidenciais (números de 1 a 94), anterior a eventual tratamento jurídico na totalização. Turno 1."
+blank_1,"Votos brancos, código 95. Turno 1."
+null_votes_1,"Votos nulos, código 96. Turno 1."
+other_votes_1,"Votos com outros códigos, preservados separadamente, sem presumir sua destinação. Turno 1."
+votes_13_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_14_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_16_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_21_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_22_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_27_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_28_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_29_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_30_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_35_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_55_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_70_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_80_1,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+_member_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+membership_1,Conjunto ordenado de zonas/seções na unidade territorial; usado para validar a composição entre turnos. Turno 1.
+n_sections_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+municipality_name_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+local_2,Número do local de votação na zona e município. Turno 2.
+local_name_2,Nome do local publicado no arquivo oficial. Turno 2.
+local_address_2,Endereço do local publicado no arquivo oficial; não foi geocodificado. Turno 2.
+generation_2,Data e hora de geração publicadas no arquivo; não é o momento de obtenção. Turno 2.
+vote_generation_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+aggregation_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+eligible_source_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+aptos_2,"Eleitorado apto publicado pelo TSE, sem redistribuir a correção nacional de 39 registros. Turno 2."
+attendance_2,Quantidade de eleitores comparecentes no turno. Turno 2.
+abstention_2,Quantidade de abstenções no turno. Turno 2.
+valid_2,"Soma de votos dos candidatos presidenciais (números de 1 a 94), anterior a eventual tratamento jurídico na totalização. Turno 2."
+blank_2,"Votos brancos, código 95. Turno 2."
+null_votes_2,"Votos nulos, código 96. Turno 2."
+other_votes_2,"Votos com outros códigos, preservados separadamente, sem presumir sua destinação. Turno 2."
+votes_13_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_14_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_16_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_21_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_22_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_27_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_28_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_29_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_30_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_35_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_55_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_70_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+votes_80_2,Quantidade de votos do candidato indicado no nome; sufixo 1/2 indica turno.
+_member_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+membership_2,Conjunto ordenado de zonas/seções na unidade territorial; usado para validar a composição entre turnos. Turno 2.
+n_sections_2,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+coverage,both: existe nos dois turnos; left_only: só primeiro; right_only: só segundo.
+level,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+is_exterior,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+comparable,Mesma composição de seções e aptos; fontes completas e sem conflito aritmético; não estabelece identidade dos votantes.
+comparison_reason,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+local_changed,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+small,"Menos de 50 comparecentes em algum turno: somente descrição, sem alerta estatístico de seção."
+delta_aptos,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_aptos,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_attendance,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_attendance,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_abstention,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_abstention,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_valid,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_valid,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_blank,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_blank,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_null_votes,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_null_votes,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_other_votes,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_other_votes,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_votes_13,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_votes_13,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+delta_votes_22,Quantidade do segundo turno menos quantidade do primeiro turno.
+pct_votes_22,100 * (quantidade_2 - quantidade_1) / quantidade_1; ausente se base zero.
+turnout_1,Taxa de comparecimento / aptos (fração de 0 a 1). Turno 1.
+turnout_2,Taxa de comparecimento / aptos (fração de 0 a 1). Turno 2.
+delta_turnout_pp,100 * (comparecimento_2 / aptos_2 - comparecimento_1 / aptos_1).
+blank_share_1,Fração de brancos / comparecentes. Turno 1.
+blank_share_2,Fração de brancos / comparecentes. Turno 2.
+delta_blank_pp,Mudança em pontos percentuais; brancos e nulos têm comparecimento como denominador.
+null_share_1,Fração de nulos / comparecentes. Turno 1.
+null_share_2,Fração de nulos / comparecentes. Turno 2.
+delta_null_pp,Mudança em pontos percentuais; brancos e nulos têm comparecimento como denominador.
+share_13_1,Participação do candidato nos votos válidos (fração de 0 a 1).
+share_13_2,Participação do candidato nos votos válidos (fração de 0 a 1).
+delta_share_13_pp,"Participação do candidato nos votos válidos do segundo turno menos a do primeiro, em pontos percentuais."
+zero_13,Candidato teve votos positivos no primeiro turno e zero no segundo.
+share_22_1,Participação do candidato nos votos válidos (fração de 0 a 1).
+share_22_2,Participação do candidato nos votos válidos (fração de 0 a 1).
+delta_share_22_pp,"Participação do candidato nos votos válidos do segundo turno menos a do primeiro, em pontos percentuais."
+zero_22,Candidato teve votos positivos no primeiro turno e zero no segundo.
+eliminated_votes_1,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+non_finalist_pool_1,Votos dos eliminados + brancos + nulos no primeiro turno; não estima transferências de pessoas.
+max_change_pp,"Maior mudança absoluta em pp: participação dos finalistas, comparecimento, brancos e nulos."
+any_zero,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+flag_5pp,Triagem para unidade comparável e >=50 comparecentes: limite de pp indicado ou passagem a zero.
+flag_10pp,Triagem para unidade comparável e >=50 comparecentes: limite de pp indicado ou passagem a zero.
+flag_15pp,Triagem para unidade comparável e >=50 comparecentes: limite de pp indicado ou passagem a zero.
+observed_extreme,"Mudança bruta >=10 pp ou candidato que passa a zero, inclusive unidades não comparáveis; não constitui alerta validado."
+robust_max,"Maior |mudança - mediana dos 30 pares| / (1,4826 * MAD). MAD zero implica indicador inconclusivo."
+robust_flag,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+peer_status,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+peer_count,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+peer_scope,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+peer_median_delta_turnout_pp,Mediana da mudança do indicador nos pares.
+peer_mad_delta_turnout_pp,Mediana dos desvios absolutos à mediana nos pares (pp).
+z_delta_turnout_pp,Desvio robusto absoluto para o indicador; ausente se MAD insuficiente. Não é p-valor.
+peer_median_delta_blank_pp,Mediana da mudança do indicador nos pares.
+peer_mad_delta_blank_pp,Mediana dos desvios absolutos à mediana nos pares (pp).
+z_delta_blank_pp,Desvio robusto absoluto para o indicador; ausente se MAD insuficiente. Não é p-valor.
+peer_median_delta_null_pp,Mediana da mudança do indicador nos pares.
+peer_mad_delta_null_pp,Mediana dos desvios absolutos à mediana nos pares (pp).
+z_delta_null_pp,Desvio robusto absoluto para o indicador; ausente se MAD insuficiente. Não é p-valor.
+peer_median_delta_share_13_pp,Mediana da mudança do indicador nos pares.
+peer_mad_delta_share_13_pp,Mediana dos desvios absolutos à mediana nos pares (pp).
+z_delta_share_13_pp,Desvio robusto absoluto para o indicador; ausente se MAD insuficiente. Não é p-valor.
+peer_median_delta_share_22_pp,Mediana da mudança do indicador nos pares.
+peer_mad_delta_share_22_pp,Mediana dos desvios absolutos à mediana nos pares (pp).
+z_delta_share_22_pp,Desvio robusto absoluto para o indicador; ausente se MAD insuficiente. Não é p-valor.
+peer_ids,"Identificadores UF/município/zona/seção dos 30 pares, separados por |; o próprio alvo é excluído."
+statistical_alert,"Elegível e mudança >=10 pp, passagem a zero ou desvio robusto >3,5; critério exploratório."
+review_status,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+reason,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.
+priority,"Ordem de revisão: maior desvio robusto, maior mudança em pp e chave geográfica como desempate."
+bu_check,Campo descritivo ou contagem; sufixo _1/_2 indica turno. Ver metodologia e fonte original.

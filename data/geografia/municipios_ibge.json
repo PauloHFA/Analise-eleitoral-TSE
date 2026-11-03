@@ -1,0 +1,8 @@
+{
+  "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?view=nivelado",
+  "sha256": "77bf68d9f5b1237522bcd28c39b8857725ebb25e913a5b13aa4a740ce67041b4",
+  "file": "municipios_ibge-77bf68d9f5b12375.json",
+  "bytes": 2372050,
+  "retrieved_utc": "2026-11-03T04:39:06.702097+00:00",
+  "source": "IBGE"
+}

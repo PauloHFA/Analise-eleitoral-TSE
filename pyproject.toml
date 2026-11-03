@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analise-eleitoral-tse"
+version = "0.1.0"
+description = "Análise reproduzível e exploratória dos dois turnos presidenciais"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.2", "pandas>=2.2", "numpy>=2.0", "scipy>=1.13", "matplotlib>=3.9", "requests>=2.32", "reportlab>=4.2", "pyshp>=3.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+eleicoes = "eleicoes.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eleicoes = ["*.js"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,35 @@
+{
+  "mapped": 5571,
+  "electoral_municipalities": 5571,
+  "unmatched_names": 0,
+  "missing_geometry": [],
+  "sources": [
+    {
+      "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?view=nivelado",
+      "sha256": "77bf68d9f5b1237522bcd28c39b8857725ebb25e913a5b13aa4a740ce67041b4",
+      "file": "municipios_ibge-77bf68d9f5b12375.json",
+      "bytes": 2372050,
+      "retrieved_utc": "2026-11-03T04:39:06.702097+00:00",
+      "source": "IBGE"
+    },
+    {
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application%2Fvnd.geo%2Bjson&qualidade=minima&intrarregiao=municipio",
+      "sha256": "5efffedf8772dc8654322affafac4e3e8b001839e7c2af5cab4eb1094dcd6240",
+      "file": "malha_municipal_ibge-5efffedf8772dc86.json",
+      "bytes": 3605638,
+      "retrieved_utc": "2026-11-03T04:39:08.692322+00:00",
+      "source": "IBGE"
+    },
+    {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/MT/MT_Municipios_2025.zip",
+      "file": "MT_Municipios_2025-86f3cc662ff63c97.zip",
+      "sha256": "86f3cc662ff63c9742f095ba60fa201721f8faf1d9dc4cd3f59c20028cc9b7a0",
+      "bytes": 9476597,
+      "retrieved_utc": "2026-11-03T04:42:40.470002+00:00",
+      "source": "IBGE — malha municipal MT 2025"
+    }
+  ],
+  "results_sha256": "0e1ff639aa82d889562181c401f5848d0c1e3c881c22da4f1e9611e55569b846",
+  "projection": "Equirretangular, longitude × cos(15°), latitude invertida para o SVG; malha simplificada do IBGE.",
+  "note": "Cor indica o candidato com mais votos no município. Área geográfica não representa quantidade de eleitores. Exterior não possui polígonos neste mapa."
+}

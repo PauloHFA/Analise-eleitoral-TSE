@@ -1,0 +1,12 @@
+{
+  "status": "investigação válida",
+  "fichas": 297,
+  "filtros": {
+    "status": "filtros e paginação válidos",
+    "rows": 29812,
+    "combinations": 35
+  },
+  "zeros_22": 106,
+  "positivos_para_zero_22": 56,
+  "preservadas_fichas_originais": 100
+}
