@@ -1,0 +1,121 @@
+{
+  "sections": 24,
+  "priority_sections": 12,
+  "control_sections": 12,
+  "section_turns": 48,
+  "obtained_documents": 240,
+  "vote_rows": 265,
+  "concordant_rows": 265,
+  "concordant_units": 48,
+  "attendance_reconciled": 48,
+  "denominators_reconciled": 48,
+  "cryptographic_signatures_verified": 0,
+  "signature_verification_status": "não realizada por incompatibilidade de formato com o esquema consultado",
+  "log_events_examined": 0,
+  "independent_paper_bu_obtained": 0,
+  "group_results": [
+    {
+      "territory": "Brasil",
+      "group": "comparacao",
+      "section_turns": 20,
+      "concordant": 20,
+      "attendance": 20,
+      "denominators": 20
+    },
+    {
+      "territory": "Brasil",
+      "group": "prioritario",
+      "section_turns": 20,
+      "concordant": 20,
+      "attendance": 20,
+      "denominators": 20
+    },
+    {
+      "territory": "Exterior",
+      "group": "comparacao",
+      "section_turns": 4,
+      "concordant": 4,
+      "attendance": 4,
+      "denominators": 4
+    },
+    {
+      "territory": "Exterior",
+      "group": "prioritario",
+      "section_turns": 4,
+      "concordant": 4,
+      "attendance": 4,
+      "denominators": 4
+    }
+  ],
+  "document_statuses": [
+    {
+      "kind": "assinatura",
+      "status": "limitado",
+      "documents": 48
+    },
+    {
+      "kind": "bu",
+      "status": "extraido",
+      "documents": 48
+    },
+    {
+      "kind": "imagem",
+      "status": "extraido",
+      "documents": 48
+    },
+    {
+      "kind": "log",
+      "status": "preservado",
+      "documents": 48
+    },
+    {
+      "kind": "rdv",
+      "status": "recontado",
+      "documents": 48
+    }
+  ],
+  "acquisition_network_bytes": 353642570,
+  "remote_archives": 22,
+  "interpretation": "Concordância confirma os totais publicados para esta amostra e estas versões. Não explica por que eleitores mudaram suas escolhas, não demonstra transferências individuais e não constitui auditoria integral da eleição. RDV, BU e imagem digital são documentos do mesmo equipamento; sua concordância não é uma fonte independente.",
+  "remaining": [
+    "As assinaturas digitais não foram validadas: os arquivos obtidos não foram decodificados com o esquema de assinaturas consultado. Isso limita o leitor e não demonstra assinatura inválida. Os logs foram preservados, sem análise de eventos. Não foi obtido BU em papel de fonte independente.",
+    "Os esquemas ASN.1 foram obtidos de um espelho de terceiros de pacote atribuído ao TSE, fixados por SHA256. O download direto do pacote consultado no TSE retornou HTTP 403. A origem do espelho não equivale à autenticação pelo TSE; incompatibilidades são declaradas, sem adaptar o formato silenciosamente."
+  ],
+  "sample_not_probabilistic": true,
+  "environment": {
+    "python": "3.12.10",
+    "packages": {
+      "duckdb": "2.0.0",
+      "pandas": "3.1.0",
+      "numpy": "2.5.4",
+      "requests": "2.34.2",
+      "asn1tools": "0.167.0",
+      "reportlab": "5.1.0"
+    }
+  },
+  "sources": {
+    "documents": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao",
+    "audit_procedures": "https://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/como-realizar-auditoria",
+    "schemas_mirror": "https://github.com/doccaz/urnas-br/tree/main/docv2",
+    "schemas_archive_sha256": "1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235",
+    "schemas_origin": "Espelho de terceiros; não constitui âncora oficial de confiança"
+  },
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/conferencia/unidades.parquet": "91fd8a67175bf629bfff95351d5f3b8e6cf5a451c069d1dc0331240ea0eb4784",
+    "auditoria/conferencia/votacao.parquet": "be7f6bbd4f655073ad2d8c59d80c29c55a0aaa17dba813f23a9466fa9d9a07b6",
+    "auditoria/conferencia/documentos.parquet": "fae30d1cce1f97ad47721b0fce3e494dc993484bc5d82a154ab11e3595de6e92",
+    "auditoria/documentos/resumo.json": "9e06f556e22aeee85c3e74add6d0236b5540ffd08aa5f3c7bb7558cfc6dc98ec",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_report.py": "6dcb27596dc3e6c5de2cb412dffd60eedb6d51920f2aca968101303208ac9ad8",
+    "pdf_layout.py": "bea1c6df920556ff2ba1a7cf728bedaa53e2c2a162874656b28b913b29f18e69"
+  }
+}

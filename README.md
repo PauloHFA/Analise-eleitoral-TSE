@@ -14,6 +14,12 @@ As próximas implementações estão organizadas no [roteiro de etapas e commits
 
 **Validação nacional:** 135 testes aprovados, 12 pares CSV/Parquet conferidos integralmente e 5.571 polígonos preservados. O PDF complementar tem cinco páginas; os relatórios de referência mantêm suas versões e contagens históricas.
 
+**Etapa 5 — primeira conferência executada:** [amostra e método](docs/AUDITORIA.md), com 12 prioridades e 12 controles escolhidos antes dos documentos. Foram obtidos 240 arquivos para 48 unidades seção/turno. A recontagem presidencial do RDV, o BU binário, o texto da imagem do BU e os dois CSV preservados concordaram nas 265 linhas por candidato/categoria; aptos e comparecimento também coincidiram. [Novo HTML](outputs/2026/auditoria/relatorio/relatorio.html) · [PDF de nove páginas](outputs/2026/auditoria/relatorio/relatorio.pdf).
+
+**Limites da etapa 5:** assinaturas criptográficas e cadeia não verificadas por incompatibilidade do formato com o esquema consultado; logs preservados, sem análise de eventos; nenhum papel independente obtido. A concordância amostral não encerra a auditoria nem explica escolhas individuais. A validação incremental tem 151 testes aprovados, seis pares CSV/Parquet conferidos, 900 condições dos filtros e preservação dos 578 artefatos anteriores. [Pendências e próximos incrementos](docs/AUDITORIA.md#próximos-incrementos-ainda-abertos).
+
+[Baixar o pacote da conferência amostral](https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/tag/auditoria-amostral-v1), com os seis pares CSV/Parquet, relatórios e inventários de hashes; não inclui documentos brutos nem conteúdo individual do RDV.
+
 **Os padrões pedidos foram pesquisados; a investigação de todas as incongruências não está encerrada.** Há mudanças confirmadas nos arquivos, apontamentos explicados quanto à sua regra aritmética, comparações limitadas e procedimentos ainda não realizados. Alertas exploratórios não demonstram fraude, nem permitem saber como pessoas específicas mudaram de voto.
 
 ## Sumário
@@ -417,7 +423,7 @@ O mapa permite alternar turno, filtrar UF/viradas, mudar escala, ampliar, arrast
 
 **Resultado:** a correspondência cobre todas as unidades municipais brasileiras da base, incluindo unidades especiais como DF; a contagem não deve ser apresentada como municípios convencionais apenas. Os valores dos finalistas por município e suas somas nacionais foram comparados às tabelas de origem. O mapa HTML funciona offline; o PDF inclui os dois turnos de Brasil, RJ e MG.
 
-**Validação vigente:**
+**Validação do relatório de referência preservado:**
 
 Validação final registrada: **92 passed in 15.33s**. HTML: **297 referências de links/imagens inventariadas**, com os destinos locais verificados. PDF: **79 páginas**, estrutura e fonte Unicode incorporada verificadas. **76 pares CSV/Parquet** conferidos por quantidade de linhas. JSONs lidos em modo estrito; fichas, fontes e controles verificados.
 

@@ -1,0 +1,17 @@
+{
+  "status": "concluído",
+  "started": "2026-11-04T04:16:23.814787+00:00",
+  "input_hashes": {
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/conferencia/unidades.parquet": "91fd8a67175bf629bfff95351d5f3b8e6cf5a451c069d1dc0331240ea0eb4784",
+    "auditoria/conferencia/votacao.parquet": "be7f6bbd4f655073ad2d8c59d80c29c55a0aaa17dba813f23a9466fa9d9a07b6",
+    "auditoria/conferencia/documentos.parquet": "fae30d1cce1f97ad47721b0fce3e494dc993484bc5d82a154ab11e3595de6e92",
+    "auditoria/documentos/resumo.json": "9e06f556e22aeee85c3e74add6d0236b5540ffd08aa5f3c7bb7558cfc6dc98ec",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "finished": "2026-11-04T04:16:25.031545+00:00"
+}

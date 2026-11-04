@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros da primeira conferência amostral
+
+`auditoria-amostra.log` registra a seleção anterior aos documentos; `auditoria-documentos.log`, a obtenção seletiva; `auditoria-conferencia.log`, a recontagem agregada; e `auditoria-relatorio.log`, o relatório complementar. `testes-auditoria.log` registra 151 testes aprovados (avisos de depreciação da dependência ASN.1). `validacao-auditoria.log` confere os seis pares CSV/Parquet completos, 240 originais, 48 unidades, 265 linhas, links, filtros e o PDF. `preservacao-auditoria.log` confirma os 578 hashes anteriores. Assinaturas criptográficas, cadeia e eventos dos logs não foram verificados; essa limitação consta dos resultados e não é uma validação negativa das assinaturas.
+
 ## Registros da investigação nacional
 
 `nacional-inventario.log`, `nacional-taxas.log` e `nacional-mapas.log` registram as três execuções. `validacao-nacional.log` confere tabelas tipadas, referência, coortes, 84 escores, geografia e 33.467 condições da interface. `testes-nacional.log` registra 135 testes aprovados; `preservacao-nacional.log` confirma os 578 hashes anteriores. Os logs de validações anteriores mantêm suas contagens históricas.

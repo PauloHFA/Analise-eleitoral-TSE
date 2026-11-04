@@ -1,0 +1,928 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conferência amostral de documentos — 2026</title>
+<style>body{font:17px/1.65 system-ui;color:#183447;background:#f1f5f7;margin:0}main{max-width:1100px;margin:auto;background:white;padding:2rem}h1{line-height:1.2}h2{margin-top:2.5rem;color:#12677a}.finding{border-left:5px solid #12677a;background:#edf4f7;padding:1rem}.limit{border-left:5px solid #bd7427;background:#fff8e9;padding:1rem}table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{padding:.55rem;text-align:left;border-bottom:1px solid #ccd9df}th{background:#edf4f7}.scroll{overflow:auto}.case{margin:1.2rem 0;border:1px solid #cbd8df;padding:1rem;border-radius:8px}select{padding:.5rem;font:inherit}a{color:#075f8a}article[hidden]{display:none}@media(max-width:650px){main{padding:1rem}}@media print{select,label{display:none}.case{break-inside:avoid}}</style>
+<main><p>Etapa 5 · conferência ampliada · versão inicial com limites documentados</p><h1>Os totais da amostra concordam; assinaturas e logs continuam pendentes</h1>
+<p>A conferência abrange 24 seções, nos dois turnos, com 240 documentos obtidos. São 12 prioridades e 12 controles, nas cinco regiões e no exterior.</p><div class="finding"><strong>48 de 48 unidades seção/turno com valores presidenciais concordantes nas cinco leituras; 265 de 265 linhas por candidato ou categoria concordantes.</strong><p>São linhas de votação por candidato/categoria, não pessoas ou urnas distintas. Comparecimento e aptos coincidiram em 48/48 unidades.</p></div>
+<p class="limit">As assinaturas digitais não foram validadas: os arquivos obtidos não foram decodificados com o esquema de assinaturas consultado. Isso limita o leitor e não demonstra assinatura inválida. Os logs foram preservados, sem análise de eventos. Não foi obtido BU em papel de fonte independente.</p><p>Concordância confirma os totais publicados para esta amostra e estas versões. Não explica por que eleitores mudaram suas escolhas, não demonstra transferências individuais e não constitui auditoria integral da eleição. RDV, BU e imagem digital são documentos do mesmo equipamento; sua concordância não é uma fonte independente.</p>
+<nav><a href="relatorio.pdf">PDF</a> · <a href="#metodo">Método e cobertura</a> · <a href="#casos">24 seções</a> · <a href="#dados">Tabelas e reprodução</a> · <a href="../../relatorio.html">Relatório de referência preservado</a></nav>
+<h2>Resultado por grupo e território</h2><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Território</th>
+      <th>Grupo</th>
+      <th>Seção/turno</th>
+      <th>Totais concordantes</th>
+      <th>Aptos/comparecimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brasil</td>
+      <td>Comparação</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Brasil</td>
+      <td>Prioritário</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Exterior</td>
+      <td>Comparação</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Exterior</td>
+      <td>Prioritário</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table></div><p>Os grupos são dirigidos e pequenos. A tabela descreve somente a amostra; não compara taxas nacionais de irregularidade.</p>
+<h2 id="metodo">O que foi feito e o que permanece aberto</h2><p>A seleção foi registrada em commit antes da obtenção dos documentos: 12 prioridades e 12 controles. Os prioritários têm alerta em todas as variantes disponíveis de 15/30/50 pares; no exterior somente 15 e 30 estão disponíveis. Os controles não têm alerta nos critérios registrados e foram pareados na mesma UF, preferindo o município, por tamanho, comparecimento e participações dos finalistas no primeiro turno. A amostra dirigida não permite estimar frequência nacional de irregularidades.</p><p>O leitor identifica seção, eleição e cargo Presidente, reconta votos nominais, brancos e nulos no RDV e compara com o BU binário, o texto da imagem digital do BU e os CSV preservados de resultados e de BU. Brancos/nulos após suspensão são reunidos nas categorias correspondentes. Tipos desconhecidos, registros ausentes ou repetidos e leitura incompleta geram limitação. Zeros implícitos só são usados em uma unidade oficial instalada com votação e cargo identificado.</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Documento</th>
+      <th>Unidades</th>
+      <th>Conferência realizada / limite</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RDV</td>
+      <td>48</td>
+      <td>Recontagem presidencial agregada</td>
+    </tr>
+    <tr>
+      <td>BU binário</td>
+      <td>48</td>
+      <td>Votos, aptos e comparecimento</td>
+    </tr>
+    <tr>
+      <td>Imagem digital do BU</td>
+      <td>48</td>
+      <td>Texto presidencial; não é papel independente</td>
+    </tr>
+    <tr>
+      <td>Arquivo de assinaturas</td>
+      <td>48</td>
+      <td>Preservado; formato não suportado pelo leitor</td>
+    </tr>
+    <tr>
+      <td>Log</td>
+      <td>48</td>
+      <td>Preservado; eventos não analisados</td>
+    </tr>
+  </tbody>
+</table></div><p>Os documentos foram extraídos de 22 ZIPs do catálogo oficial, apenas nos intervalos necessários, com ETag forte, conferência de Content-Range e CRC32. Cada membro tem SHA256; não há hash do ZIP completo, pois ele não foi baixado integralmente. A versão do documento pode diferir da versão das bases CSV: a conferência compara os valores e conserva as gerações e fontes.</p><p>Os esquemas ASN.1 foram obtidos de um espelho de terceiros de pacote atribuído ao TSE, fixados por SHA256. O download direto do pacote consultado no TSE retornou HTTP 403. A origem do espelho não equivale à autenticação pelo TSE; incompatibilidades são declaradas, sem adaptar o formato silenciosamente.</p>
+<h2 id="casos">Seções conferidas</h2><p>Valores abaixo recontados no RDV presidencial. “Outros nominais” são candidatos diferentes dos finalistas; brancos e nulos têm colunas próprias. Margens usam apenas os dois finalistas e não são percentuais de todos os votos.</p>
+<label>UF <select id="uf"><option value="all">Todas</option><option>AC</option><option>BA</option><option>CE</option><option>GO</option><option>MT</option><option>PA</option><option>PR</option><option>RJ</option><option>SC</option><option>SP</option><option>ZZ</option></select></label> <label>Grupo <select id="group"><option value="all">Todos</option><option value="prioritario">Prioritário</option><option value="comparacao">Comparação</option></select></label><p id="count" aria-live="polite">24 seções exibidas</p><article class="case" data-uf="GO" data-group="comparacao"><h3>P05 · Comparação · GO · POSSE</h3><p>Município TSE 95613 · zona 29 · seção 40 · Centro-Oeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>50</td>
+      <td>131</td>
+      <td>22</td>
+      <td>0</td>
+      <td>6</td>
+      <td>209</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>54</td>
+      <td>147</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>206</td>
+      <td>254</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -44.75 → -46.27 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 3.167.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="GO" data-group="prioritario"><h3>P05 · Prioritário · GO · POSSE</h3><p>Município TSE 95613 · zona 29 · seção 44 · Centro-Oeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>19</td>
+      <td>92</td>
+      <td>13</td>
+      <td>1</td>
+      <td>2</td>
+      <td>127</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>32</td>
+      <td>80</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>114</td>
+      <td>153</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -65.77 → -42.86 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 3.167.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="MT" data-group="comparacao"><h3>P06 · Comparação · MT · BARRA DO GARÇAS</h3><p>Município TSE 90352 · zona 9 · seção 444 · Centro-Oeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>147</td>
+      <td>76</td>
+      <td>23</td>
+      <td>3</td>
+      <td>2</td>
+      <td>251</td>
+      <td>328</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>153</td>
+      <td>97</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2</td>
+      <td>257</td>
+      <td>328</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 31.84 → 22.40 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.305.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="MT" data-group="prioritario"><h3>P06 · Prioritário · MT · BARRA DO GARÇAS</h3><p>Município TSE 90352 · zona 9 · seção 369 · Centro-Oeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>150</td>
+      <td>77</td>
+      <td>18</td>
+      <td>6</td>
+      <td>16</td>
+      <td>267</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>161</td>
+      <td>106</td>
+      <td>0</td>
+      <td>6</td>
+      <td>4</td>
+      <td>277</td>
+      <td>350</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 32.16 → 20.60 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.305.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="ZZ" data-group="comparacao"><h3>P11 · Comparação · ZZ · PRAIA</h3><p>Município TSE 30368 · zona 1 · seção 375 · Exterior</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>20</td>
+      <td>39</td>
+      <td>11</td>
+      <td>3</td>
+      <td>1</td>
+      <td>74</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>29</td>
+      <td>48</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>81</td>
+      <td>146</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -32.20 → -24.68 pp. Alerta em 0/2 variantes disponíveis. mesma UF; distância 1.068.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="ZZ" data-group="prioritario"><h3>P11 · Prioritário · ZZ · ZAGREB</h3><p>Município TSE 39020 · zona 1 · seção 1004 · Exterior</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>17</td>
+      <td>29</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>52</td>
+      <td>136</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>26</td>
+      <td>31</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>59</td>
+      <td>136</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -26.09 → -8.77 pp. Alerta em 2/2 variantes disponíveis. mesma UF; distância 1.068.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="ZZ" data-group="comparacao"><h3>P12 · Comparação · ZZ · BOSTON</h3><p>Município TSE 29416 · zona 1 · seção 920 · Exterior</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>80</td>
+      <td>36</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>123</td>
+      <td>398</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>93</td>
+      <td>48</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>144</td>
+      <td>398</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 37.93 → 31.91 pp. Alerta em 0/2 variantes disponíveis. mesmo município; distância 1.196.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="ZZ" data-group="prioritario"><h3>P12 · Prioritário · ZZ · BOSTON</h3><p>Município TSE 29416 · zona 1 · seção 3466 · Exterior</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>51</td>
+      <td>12</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>73</td>
+      <td>398</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>65</td>
+      <td>26</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>92</td>
+      <td>398</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 61.90 → 42.86 pp. Alerta em 2/2 variantes disponíveis. mesmo município; distância 1.196.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="CE" data-group="comparacao"><h3>P03 · Comparação · CE · PARAIPABA</h3><p>Município TSE 15997 · zona 109 · seção 220 · Nordeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>53</td>
+      <td>94</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>159</td>
+      <td>183</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>55</td>
+      <td>99</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>158</td>
+      <td>183</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -27.89 → -28.57 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.963.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="CE" data-group="prioritario"><h3>P03 · Prioritário · CE · PARAIPABA</h3><p>Município TSE 15997 · zona 109 · seção 198 · Nordeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>56</td>
+      <td>75</td>
+      <td>13</td>
+      <td>1</td>
+      <td>5</td>
+      <td>150</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>67</td>
+      <td>73</td>
+      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+      <td>146</td>
+      <td>171</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -14.50 → -4.29 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.963.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="BA" data-group="comparacao"><h3>P04 · Comparação · BA · CAMPO FORMOSO</h3><p>Município TSE 34193 · zona 53 · seção 231 · Nordeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>70</td>
+      <td>86</td>
+      <td>14</td>
+      <td>0</td>
+      <td>3</td>
+      <td>173</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>75</td>
+      <td>98</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>177</td>
+      <td>208</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -10.26 → -13.29 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 2.223.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="BA" data-group="prioritario"><h3>P04 · Prioritário · BA · CAMPO FORMOSO</h3><p>Município TSE 34193 · zona 53 · seção 274 · Nordeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>53</td>
+      <td>41</td>
+      <td>2</td>
+      <td>2</td>
+      <td>10</td>
+      <td>108</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>42</td>
+      <td>60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>103</td>
+      <td>134</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 12.77 → -17.65 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 2.223.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="PA" data-group="comparacao"><h3>P01 · Comparação · PA · AFUÁ</h3><p>Município TSE 4057 · zona 16 · seção 133 · Norte</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>47</td>
+      <td>124</td>
+      <td>10</td>
+      <td>1</td>
+      <td>3</td>
+      <td>185</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>43</td>
+      <td>133</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>180</td>
+      <td>217</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -45.03 → -51.14 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 1.568.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="PA" data-group="prioritario"><h3>P01 · Prioritário · PA · AFUÁ</h3><p>Município TSE 4057 · zona 16 · seção 137 · Norte</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>30</td>
+      <td>77</td>
+      <td>12</td>
+      <td>0</td>
+      <td>3</td>
+      <td>122</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>30</td>
+      <td>55</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>87</td>
+      <td>140</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -43.93 → -29.41 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 1.568.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="AC" data-group="comparacao"><h3>P02 · Comparação · AC · FEIJÓ</h3><p>Município TSE 1139 · zona 7 · seção 32 · Norte</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>107</td>
+      <td>79</td>
+      <td>6</td>
+      <td>3</td>
+      <td>9</td>
+      <td>204</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>92</td>
+      <td>81</td>
+      <td>0</td>
+      <td>3</td>
+      <td>9</td>
+      <td>185</td>
+      <td>270</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 15.05 → 6.36 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.402.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="AC" data-group="prioritario"><h3>P02 · Prioritário · AC · FEIJÓ</h3><p>Município TSE 1139 · zona 7 · seção 47 · Norte</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>113</td>
+      <td>79</td>
+      <td>6</td>
+      <td>1</td>
+      <td>10</td>
+      <td>209</td>
+      <td>271</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>63</td>
+      <td>63</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>130</td>
+      <td>271</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 17.71 → 0.00 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.402.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="SP" data-group="comparacao"><h3>P07 · Comparação · SP · SÃO PAULO</h3><p>Município TSE 71072 · zona 351 · seção 100 · Sudeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>85</td>
+      <td>132</td>
+      <td>16</td>
+      <td>10</td>
+      <td>10</td>
+      <td>253</td>
+      <td>381</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>95</td>
+      <td>166</td>
+      <td>0</td>
+      <td>9</td>
+      <td>6</td>
+      <td>276</td>
+      <td>381</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -21.66 → -27.20 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.142.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="SP" data-group="prioritario"><h3>P07 · Prioritário · SP · SÃO PAULO</h3><p>Município TSE 71072 · zona 2 · seção 491 · Sudeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>88</td>
+      <td>137</td>
+      <td>21</td>
+      <td>3</td>
+      <td>8</td>
+      <td>257</td>
+      <td>387</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>150</td>
+      <td>158</td>
+      <td>0</td>
+      <td>3</td>
+      <td>6</td>
+      <td>317</td>
+      <td>387</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -21.78 → -2.60 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.142.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="RJ" data-group="comparacao"><h3>P08 · Comparação · RJ · MANGARATIBA</h3><p>Município TSE 58513 · zona 54 · seção 53 · Sudeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>186</td>
+      <td>65</td>
+      <td>16</td>
+      <td>2</td>
+      <td>8</td>
+      <td>277</td>
+      <td>344</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>189</td>
+      <td>83</td>
+      <td>0</td>
+      <td>3</td>
+      <td>5</td>
+      <td>280</td>
+      <td>344</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 48.21 → 38.97 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.403.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="RJ" data-group="prioritario"><h3>P08 · Prioritário · RJ · MANGARATIBA</h3><p>Município TSE 58513 · zona 54 · seção 134 · Sudeste</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>198</td>
+      <td>65</td>
+      <td>7</td>
+      <td>2</td>
+      <td>6</td>
+      <td>278</td>
+      <td>346</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>119</td>
+      <td>62</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>184</td>
+      <td>346</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 50.57 → 31.49 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.403.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="PR" data-group="comparacao"><h3>P09 · Comparação · PR · GUARAPUAVA</h3><p>Município TSE 75833 · zona 43 · seção 452 · Sul</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>51</td>
+      <td>91</td>
+      <td>5</td>
+      <td>3</td>
+      <td>5</td>
+      <td>155</td>
+      <td>203</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>50</td>
+      <td>100</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>155</td>
+      <td>203</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -28.17 → -33.33 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 1.091.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="PR" data-group="prioritario"><h3>P09 · Prioritário · PR · GUARAPUAVA</h3><p>Município TSE 75833 · zona 43 · seção 384 · Sul</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>46</td>
+      <td>74</td>
+      <td>16</td>
+      <td>2</td>
+      <td>1</td>
+      <td>139</td>
+      <td>178</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>62</td>
+      <td>78</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>144</td>
+      <td>178</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: -23.33 → -11.43 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 1.091.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="SC" data-group="comparacao"><h3>P10 · Comparação · SC · SÃO JOSÉ</h3><p>Município TSE 83275 · zona 84 · seção 198 · Sul</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>138</td>
+      <td>93</td>
+      <td>32</td>
+      <td>6</td>
+      <td>3</td>
+      <td>272</td>
+      <td>338</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>160</td>
+      <td>115</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>279</td>
+      <td>338</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 19.48 → 16.36 pp. Alerta em 0/3 variantes disponíveis. mesmo município; distância 0.443.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article><article class="case" data-uf="SC" data-group="prioritario"><h3>P10 · Prioritário · SC · SÃO JOSÉ</h3><p>Município TSE 83275 · zona 84 · seção 188 · Sul</p><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Turno</th>
+      <th>Flávio</th>
+      <th>Lula</th>
+      <th>Outros nominais</th>
+      <th>Brancos</th>
+      <th>Nulos</th>
+      <th>Comparecimento</th>
+      <th>Aptos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>120</td>
+      <td>86</td>
+      <td>23</td>
+      <td>6</td>
+      <td>14</td>
+      <td>249</td>
+      <td>312</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>114</td>
+      <td>139</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>259</td>
+      <td>312</td>
+    </tr>
+  </tbody>
+</table></div><p>Margem (Flávio − Lula) entre finalistas: 16.50 → -9.88 pp. Alerta em 3/3 variantes disponíveis. mesmo município; distância 0.443.</p><p><strong>Totais concordantes nos dois turnos</strong>. Assinatura e eventos do log não verificados.</p></article>
+<h2 id="dados">Tabelas, fontes e reprodução</h2><ul><li><a href="../amostra/secoes.csv">Seleção e pareamento</a> · <a href="../amostra/protocolo.json">Protocolo anterior aos documentos</a></li><li><a href="../documentos/inventario.csv">240 documentos, URLs e hashes</a> · <a href="../documentos/arquivos_remotos.json">Versões e intervalos dos ZIPs</a></li><li><a href="../conferencia/votacao.csv">265 comparações por candidato/categoria</a> · <a href="../conferencia/unidades.csv">48 unidades e denominadores</a> · <a href="../conferencia/documentos.csv">Situação de cada documento e erros de leitura</a></li><li><a href="resumo.json">Síntese desta edição</a> · <a href="../../../../docs/AUDITORIA.md">Método e comandos</a></li><li><a href="https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao">Catálogo oficial de arquivos da urna</a> · <a href="https://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/como-realizar-auditoria">Procedimentos de auditoria do TSE</a></li></ul>
+<h2>Próximo incremento</h2><p>Obter a especificação compatível das assinaturas, validar os vínculos arquivo–assinatura e a cadeia com âncoras oficiais; analisar os eventos dos logs com critérios próprios. A conferência com BU em papel ou imagem recolhida independentemente permanece aberta. A pesquisa do ato individual sobre os nulos técnicos também continua pendente.</p>
+</main><script>const selects=[document.querySelector('#uf'),document.querySelector('#group')];function filter(){let total=0;document.querySelectorAll('.case').forEach(e=>{e.hidden=!selects.every(s=>s.value==='all'||e.dataset[s.id]===s.value);if(!e.hidden)total++});document.querySelector('#count').textContent=total+' seções exibidas'}selects.forEach(s=>s.addEventListener('change',filter));filter();</script></html>

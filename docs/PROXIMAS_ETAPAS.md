@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Amostra registrada; obtenção e conferência dos documentos em andamento |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Primeira recontagem/conferência concluída; assinaturas, eventos de log e papel independente pendentes |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -119,7 +119,7 @@ O [TSE descreve possibilidades de auditoria](https://www.tse.jus.br/eleicoes/urn
 
 ## Registro de cada entrega
 
-**Etapa 5 iniciada:** [protocolo e amostra](AUDITORIA.md) registrados antes da obtenção dos documentos dos casos: 12 prioridades e 12 controles, 48 unidades seção/turno, cinco regiões e exterior. Quatro testes verificam determinismo, controles, ausência de dados do segundo turno no pareamento e insuficiências explícitas. A seleção não representa auditoria executada.
+**Etapa 5 — primeira execução:** [protocolo, resultados e limites](AUDITORIA.md). A seleção em `e1ed429` antecedeu os documentos: 12 prioridades e 12 controles, 48 unidades seção/turno, cinco regiões e exterior. Em `0ba50d7`, foram obtidos 240 documentos de 22 ZIPs oficiais e conferidas 265 linhas presidenciais, todas concordantes entre RDV, BU binário, texto da imagem e os dois CSV. Aptos e comparecimento coincidiram. A validação tem 151 testes aprovados, seis pares CSV/Parquet completos e referência preservada. **A frente continua aberta:** assinatura criptográfica/cadeia não verificadas por incompatibilidade de formato, eventos dos logs ainda não analisados e nenhum BU em papel independente obtido. O relatório complementar explicita esses limites; a concordância não encerra a auditoria.
 
 Em cada frente, acrescentar: commit(s), comando executado, parâmetros, testes, arquivos produzidos, resultados, limitações, pendências e próxima decisão. Atualizar o estado na tabela somente com base nesses registros. A referência atual continua verificável enquanto os novos estudos são produzidos.
 

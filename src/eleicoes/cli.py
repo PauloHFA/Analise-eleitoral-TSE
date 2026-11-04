@@ -276,7 +276,7 @@ def main():
     audit = sub.add_parser("auditoria", help="Amostra dirigida e conferência adicional dos arquivos das urnas")
     audit.add_argument("--output",default="outputs/2026")
     audit.add_argument("--dest")
-    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia"],default="amostra")
+    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia","relatorio"],default="amostra")
     audit.add_argument("--data",default="data")
     audit.add_argument("--schema")
     args = parser.parse_args()
@@ -320,9 +320,12 @@ def main():
         elif args.etapa=="documentos":
             from .audit_download import run_download
             result=run_download(args.output,args.data,args.dest)
-        else:
+        elif args.etapa=="conferencia":
             from .audit_count import run_count
             result=run_count(args.output,args.data,args.schema,args.dest)
+        else:
+            from .audit_report import run_report
+            result=run_report(args.output,args.dest)
         LOG.info("Etapa de auditoria registrada: %s seções; %s unidades seção/turno",result["sections"],result["section_turns"])
     else:
         from .demo import create_demo

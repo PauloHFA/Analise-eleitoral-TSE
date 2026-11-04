@@ -85,6 +85,13 @@ outputs/logs/*
 !outputs/logs/testes-nacional.log
 !outputs/logs/validacao-nacional.log
 !outputs/logs/preservacao-nacional.log
+!outputs/logs/auditoria-amostra.log
+!outputs/logs/auditoria-documentos.log
+!outputs/logs/auditoria-conferencia.log
+!outputs/logs/auditoria-relatorio.log
+!outputs/logs/testes-auditoria.log
+!outputs/logs/validacao-auditoria.log
+!outputs/logs/preservacao-auditoria.log
 .env
 .env.*
 !.env.example
