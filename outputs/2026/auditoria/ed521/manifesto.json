@@ -1,0 +1,14 @@
+{
+  "arquivos_assinados.csv": "988f951b9f343b2ab5593657e9b0557f8d53ac9f79b394377f8947de0995678d",
+  "arquivos_assinados.parquet": "a64aebd056b1057854056ca33bafd494be4e21491de3bfd79a2a425f85e6de5e",
+  "certificados.csv": "a39da453715c3003f63654e43833475195d844b9c4f09be055bb8d8d93bd3aec",
+  "certificados.parquet": "e0a4a4c2fb145f72d22f85755f6f60ea3861bb2e3afd2fa43e720a1c8c926cd7",
+  "envelopes.csv": "d55b27dbf90bc6fea630d1b674b8eb5d2784e6443872837c6290d172b0259ba8",
+  "envelopes.parquet": "45af201357f9d04e2224491ec18dd097fca014a0cb0eb39aa11ac72e98a68f5d",
+  "layout_observado.asn1": "ba30c77c804c6b8baeb5b3cfe4b135d747e49e3f25998a70d0152937570ce31e",
+  "relatorio.html": "0e8e7150f551a0498cb710eabe3adf2d746b80cf21dd50765b70e509e8809f86",
+  "relatorio.pdf": "0b1d1a9a97ae14fe3354e099c7740f64d287d288c3ca076da9b26af48793ccd9",
+  "resumo.json": "11f91a2ac610a473d1ef3a2fd2c553016eeb484be32466cf65caa4582802d66e",
+  "unidades.csv": "785a1b257426a785c26fffa4ef0aa936c9f79e50bd0fb92b36d42870d06415a6",
+  "unidades.parquet": "eb8c5b7f56e2c6da61983b298a17f0d6390aa3f4fd6e9b9973526bd47b336b93"
+}

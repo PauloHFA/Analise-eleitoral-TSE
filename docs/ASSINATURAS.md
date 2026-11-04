@@ -1,5 +1,7 @@
 # Assinaturas da amostra — leitura e verificação parcial
 
+**Atualização posterior:** este documento descreve a entrega ECDSA preservada. O [incremento Ed521](ED521.md) acrescentou 170 verificações com chaves embutidas e uma referência independente, sem reescrever as classificações desta versão. CEPESC, cadeia e revogação continuam pendentes.
+
 Este incremento resolve a leitura dos **48 arquivos de assinatura** preservados na primeira conferência. Os documentos e os relatórios anteriores não foram substituídos. A amostra continua com 24 seções, 12 prioridades e 12 controles, nos dois turnos, sem representatividade estatística nacional.
 
 ## Alcance e resultados
@@ -73,4 +75,4 @@ As quatro tabelas são geradas em CSV/Parquet: `arquivos_assinados` (1.008 entra
 
 ## Próximas verificações
 
-Confirmar o layout por documentação oficial; implementar Ed521 com referência e vetores independentes antes de atribuir resultados criptográficos; validar cadeia e revogação com âncoras oficiais. A análise de eventos dos logs, o BU de fonte independente e a eficácia temporal do ato sobre nulos técnicos permanecem abertos. A leitura agora realizada não transforma retrospectivamente a primeira entrega em auditoria completa.
+O Ed521 foi implementado em [incremento posterior separado](ED521.md). Continuam abertos: confirmação oficial do layout, CEPESC, cadeia e revogação com âncoras oficiais, eventos dos logs, BU independente e eficácia temporal do ato sobre nulos técnicos. As ampliações não transformam retrospectivamente a primeira entrega em auditoria completa.

@@ -26,6 +26,8 @@ URLs, datas de obtenção e hashes geográficos são registrados em [mapa_dados.
 
 ## Dependências, fontes tipográficas e conteúdos externos
 
+Na extensão Ed521, o PDF técnico do ITI é obtido separadamente da fonte oficial e preserva seus termos; o pacote de resultados informa URL, versão e hash, sem relicenciar ou redistribuir o PDF. Os vetores sintéticos são gerados pelo projeto com o genérico Noble configurado para o perfil e têm sua origem explicitada em [ED521.md](docs/ED521.md); não são vetores oficiais. As dependências npm de referência permanecem sob suas licenças MIT originais e são instaladas por lockfile, sem incluir `node_modules` no repositório ou nos resultados.
+
 Na conferência amostral, os RDV, BUs, imagens digitais, assinaturas e logs provêm do [catálogo de arquivos transmitidos para totalização do TSE](https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao). O pacote público desta etapa distribui resultados agregados e inventário de fontes/hashes; os originais ficam preservados localmente. Os esquemas ASN.1 consultados são obtidos separadamente de [espelho de terceiros](https://github.com/doccaz/urnas-br/tree/main/docv2), com origem e hashes explícitos em [AUDITORIA.md](docs/AUDITORIA.md). Não são relicenciados como código de autoria própria nem incluídos no pacote público. Nenhum código desse espelho é executado.
 
 Bibliotecas, fontes tipográficas incorporadas e eventuais conteúdos de terceiros mantêm suas respectivas licenças e avisos de copyright. A licença MIT do projeto não os relicencia. Links e registros de afirmações de notícias identificam as fontes consultadas; não concedem direitos sobre o conteúdo integral dos veículos.

@@ -1,0 +1,10 @@
+{
+  "tag": "ed521-amostral-v1",
+  "asset": {
+    "name": "ed521-amostra-2026.zip",
+    "bytes": 275485,
+    "sha256": "5b25f04b4b1aded569dcc62b5eba195fc45f98f1a2a15edebd6f5ebd8e6a041c",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/ed521-amostral-v1/ed521-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/ed521-amostral-v1/manifesto-ed521.json"
+}

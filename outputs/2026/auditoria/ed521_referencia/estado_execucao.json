@@ -1,0 +1,14 @@
+{
+  "status": "concluído",
+  "started": "2026-11-04T18:14:27.787499+00:00",
+  "input_hashes": {
+    "auditoria/ed521/manifesto.json": "b2c57b59406e595c43a0906de949dcadd684629520f924f3a5ffc11dcbc70aa2",
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "finished": "2026-11-04T18:14:41.759633+00:00"
+}

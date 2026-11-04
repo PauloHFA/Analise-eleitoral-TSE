@@ -1,0 +1,49 @@
+{
+  "status": "concluído",
+  "original_checks": 170,
+  "mutated_checks": 170,
+  "comparisons": 340,
+  "agreement_checks": 340,
+  "expected_checks": 340,
+  "reference": {
+    "profile": "ICP-Brasil DOC-ICP-01.01 v4.2 Ed521 puro; phflag=0",
+    "authority": "Vetores gerados pelo projeto com referência independente; não são vetores oficiais publicados",
+    "generator": "@noble/curves 2.4.0 + @noble/hashes 2.4.0, generic Edwards/EdDSA wrapper",
+    "vectors": 12,
+    "vectors_sha256": "70fb5fe687e6e63ffc4a9a28f0847cc1c8d936855b26c6e345c51a802705b018",
+    "generator_sha256": "c6b64318c72078933612a7782a2e0b256a0e8ba9f2515b1a3897cd8ab28aa572",
+    "package_lock_sha256": "f84bba66fae37774ce488c6b0618a562e581a73523d126993c3532d31a2ac44a",
+    "source_url": "https://www.gov.br/iti/pt-br/central-de-conteudo/doc-icp-01-01-v-4-2-padroes-e-algoritmos-criptograficos-da-icp-brasil-copy-pdf",
+    "source_pdf_sha256": "000be4d4aee6f7f4a9ac645539f8b0da889a5d93a45ff4b0c427382ca10f7ea9",
+    "source_page": 12,
+    "strict_policy": "Pontos canônicos, chave não neutra, A/R no subgrupo primo. Mais restritivo que uma equação apenas cofatada.",
+    "scope": "Verificador de dados públicos; não gera chaves ou assinaturas em produção. Referência Noble é usada somente para testes e conferência independente."
+  },
+  "installed_versions": {
+    "curves": "2.4.0",
+    "hashes": "2.4.0"
+  },
+  "reference_command": "node scripts/ed521_reference/reference.mjs verify",
+  "policy_boundary": {
+    "python_result": false,
+    "noble_result": true,
+    "expected_difference": true,
+    "explanation": "Chave com componente de torção: a equação cofatada aceita; a política estrita de subgrupo rejeita. Não é caso da amostra."
+  },
+  "interpretation": "Comparação de duas implementações configuradas para o mesmo perfil. Não são vetores oficiais nem certificação; não valida cadeia ou revogação.",
+  "input_hashes": {
+    "auditoria/ed521/manifesto.json": "b2c57b59406e595c43a0906de949dcadd684629520f924f3a5ffc11dcbc70aa2",
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "conferir_ed521_referencia.py": "0b25623d4c8e52346992b23aff2c8f09b95227e2b7b7483001ac05109f0ff42f",
+    "ed521.py": "ecf691d453584fba4c82ee0ce4ffce30190130c81a1a64d944055c07b5975842",
+    "reference.mjs": "c6b64318c72078933612a7782a2e0b256a0e8ba9f2515b1a3897cd8ab28aa572"
+  }
+}

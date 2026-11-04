@@ -1,0 +1,21 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 5,
+  "section_turns": 48,
+  "ed521_checks": 170,
+  "ecdsa_checks": 70,
+  "independent_originals": 170,
+  "independent_mutations": 170,
+  "expected_policy_boundary_difference": true,
+  "official_source_pdf_sha256": "000be4d4aee6f7f4a9ac645539f8b0da889a5d93a45ff4b0c427382ca10f7ea9",
+  "vectors": 12,
+  "vectors_authority": "gerados pelo projeto com referência independente; não oficiais",
+  "local_links": 10,
+  "pdf": {
+    "pages": 5,
+    "bookmarks": 5,
+    "geometry": "dentro das margens"
+  },
+  "previous_stages": "cinco manifestos e seus artefatos preservados",
+  "trust_chain": "não validada"
+}

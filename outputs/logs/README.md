@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros do incremento Ed521
+
+`auditoria-ed521.log` registra a verificação estendida; `referencia-ed521.log`, a comparação independente de 170 originais e 170 mensagens alteradas e a fronteira de política esperada. `testes-ed521.log` contém 176 testes aprovados. `validacao-ed521.log` confere cinco pares CSV/Parquet, resultados/escopo, PDF/links, hash do documento técnico do ITI e preservação dos cinco manifestos amostrais anteriores. `preservacao-ed521.log` confirma os 578 artefatos originais. Os vetores são gerados pelo projeto com referência independente, sem caráter oficial; cadeia, revogação e CEPESC não são validados.
+
 ## Registros do incremento de assinaturas
 
 `auditoria-assinaturas.log` registra a execução da leitura observada, hashes SW/HW e verificação ECDSA com a chave embutida. `testes-assinaturas.log` registra 160 testes aprovados. `validacao-assinaturas.log` confere os quatro pares CSV/Parquet, 48 unidades, escopo das 1.008 entradas, separação entre hash/criptografia/confiança, links e PDF. `preservacao-assinaturas.log` confirma os 578 artefatos anteriores. Os resultados não validam Ed521, CEPESC, cadeia ou revogação.
