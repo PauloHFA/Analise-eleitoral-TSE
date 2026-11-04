@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros do incremento de assinaturas
+
+`auditoria-assinaturas.log` registra a execução da leitura observada, hashes SW/HW e verificação ECDSA com a chave embutida. `testes-assinaturas.log` registra 160 testes aprovados. `validacao-assinaturas.log` confere os quatro pares CSV/Parquet, 48 unidades, escopo das 1.008 entradas, separação entre hash/criptografia/confiança, links e PDF. `preservacao-assinaturas.log` confirma os 578 artefatos anteriores. Os resultados não validam Ed521, CEPESC, cadeia ou revogação.
+
 ## Registros da primeira conferência amostral
 
 `auditoria-amostra.log` registra a seleção anterior aos documentos; `auditoria-documentos.log`, a obtenção seletiva; `auditoria-conferencia.log`, a recontagem agregada; e `auditoria-relatorio.log`, o relatório complementar. `testes-auditoria.log` registra 151 testes aprovados (avisos de depreciação da dependência ASN.1). `validacao-auditoria.log` confere os seis pares CSV/Parquet completos, 240 originais, 48 unidades, 265 linhas, links, filtros e o PDF. `preservacao-auditoria.log` confirma os 578 hashes anteriores. Assinaturas criptográficas, cadeia e eventos dos logs não foram verificados; essa limitação consta dos resultados e não é uma validação negativa das assinaturas.

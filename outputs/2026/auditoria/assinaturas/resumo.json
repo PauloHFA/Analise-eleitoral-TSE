@@ -1,0 +1,123 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "read_units": 48,
+  "observed_layout": "observado-vsc-2026-sequencia-final-v1",
+  "layout_authority": "Adaptação explícita ao layout observado, não homologada nem obtida como especificação oficial do TSE",
+  "layout_sha256": "905c43eb36bd606b4f199060719c4749bf795177e10ff81d92b676766d0d241c",
+  "listed_file_entries": 1008,
+  "selected_file_checks": 384,
+  "outside_scope_entries": 624,
+  "file_hash_statuses": [
+    {
+      "hash_status": "concordante",
+      "checks": 384
+    }
+  ],
+  "envelope_hash_statuses": [
+    {
+      "hash_status": "concordante",
+      "checks": 96
+    }
+  ],
+  "file_crypto_statuses": [
+    {
+      "role": "hw",
+      "algorithm": 2,
+      "crypto_status": "valida_com_chave_embutida",
+      "checks": 56
+    },
+    {
+      "role": "hw",
+      "algorithm": 4,
+      "crypto_status": "nao_verificado_algoritmo",
+      "checks": 136
+    },
+    {
+      "role": "sw",
+      "algorithm": 3,
+      "crypto_status": "nao_verificado_algoritmo",
+      "checks": 192
+    }
+  ],
+  "envelope_crypto_statuses": [
+    {
+      "role": "hw",
+      "algorithm": 2,
+      "crypto_status": "valida_com_chave_embutida",
+      "checks": 14
+    },
+    {
+      "role": "hw",
+      "algorithm": 4,
+      "crypto_status": "nao_verificado_algoritmo",
+      "checks": 34
+    },
+    {
+      "role": "sw",
+      "algorithm": 3,
+      "crypto_status": "nao_verificado_algoritmo",
+      "checks": 48
+    }
+  ],
+  "certificate_statuses": [
+    {
+      "status": "extraido",
+      "time_status": "compativel_em_todos_os_fusos_considerados",
+      "chain_status": "nao_validada",
+      "certificates": 48
+    }
+  ],
+  "models": [
+    {
+      "model": 13,
+      "hardware_algorithm": 2,
+      "section_turns": 8
+    },
+    {
+      "model": 15,
+      "hardware_algorithm": 2,
+      "section_turns": 6
+    },
+    {
+      "model": 20,
+      "hardware_algorithm": 4,
+      "section_turns": 4
+    },
+    {
+      "model": 22,
+      "hardware_algorithm": 4,
+      "section_turns": 30
+    }
+  ],
+  "environment": {
+    "python": "3.12.10",
+    "packages": {
+      "asn1tools": "0.167.0",
+      "cryptography": "50.0.2",
+      "duckdb": "2.0.0",
+      "pandas": "3.1.0"
+    }
+  },
+  "interpretation": "Integridade SHA512 separada de assinatura criptográfica. ECDSA verificada somente com a chave embutida, sem cadeia/revogação. Ed521 e CEPESC não verificados; data do VSC não é carimbo de tempo autenticado. Sem conclusão de auditoria integral ou causalidade eleitoral.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "auditoria/documentos/manifesto.json": "271bb43e5aba8fe356ae04108d47ddd91c50dd48f91db72b8572f9e2d11d1bd6",
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/conferencia/manifesto.json": "17d7f43c9478dc10d11d5072132b7d5bdf8a76b4fa41d8b51ae050371d0993a6",
+    "auditoria/relatorio/manifesto.json": "f46aeb4eba1b6b150db3e8f2b8b3c90c9332983a5d15ee3e83c55aedaf801715",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_signature_run.py": "e14ad82c2b931f4396bf73ed8eb0a25ccd928a98888f4b487f520d2a875743a7",
+    "audit_signature.py": "e98a868a718e9ed991caa40b4ae34c660e8f7f76d43dc64a170bd753a1be7848",
+    "audit_signature_report.py": "3d058137c4fda5715c48970f992c38ce1525e7f5a5dbe35f2de3fe52cff0ad1a"
+  }
+}

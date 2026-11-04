@@ -1,0 +1,10 @@
+{
+  "tag": "assinaturas-amostrais-v1",
+  "asset": {
+    "name": "assinaturas-amostra-2026.zip",
+    "bytes": 220181,
+    "sha256": "3a22679b5d303098f02d26686e6a31b06b72cf98387bc6d8a9107d5f075dfc95",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/assinaturas-amostrais-v1/assinaturas-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/assinaturas-amostrais-v1/manifesto-assinaturas.json"
+}

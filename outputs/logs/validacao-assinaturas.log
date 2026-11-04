@@ -1,0 +1,20 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 4,
+  "section_turns": 48,
+  "listed_entries": 1008,
+  "selected_file_checks": 384,
+  "internal_hash_checks": 96,
+  "ecdsa_checks": 70,
+  "ecdsa_list_signatures_rechecked": 14,
+  "ed521_units_not_verified": 34,
+  "cepesc_units_not_verified": 48,
+  "chain_status": "não validada",
+  "local_links": 9,
+  "pdf": {
+    "pages": 5,
+    "bookmarks": 5,
+    "geometry": "dentro das margens"
+  },
+  "prior_inputs": "hashes preservados"
+}

@@ -48,6 +48,10 @@ outputs/2026/**/*.parquet
 !outputs/2026/auditoria/conferencia/documentos.csv
 !outputs/2026/auditoria/conferencia/votacao.csv
 !outputs/2026/auditoria/conferencia/unidades.csv
+!outputs/2026/auditoria/assinaturas/arquivos_assinados.csv
+!outputs/2026/auditoria/assinaturas/envelopes.csv
+!outputs/2026/auditoria/assinaturas/certificados.csv
+!outputs/2026/auditoria/assinaturas/unidades.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
@@ -92,6 +96,10 @@ outputs/logs/*
 !outputs/logs/testes-auditoria.log
 !outputs/logs/validacao-auditoria.log
 !outputs/logs/preservacao-auditoria.log
+!outputs/logs/auditoria-assinaturas.log
+!outputs/logs/testes-assinaturas.log
+!outputs/logs/validacao-assinaturas.log
+!outputs/logs/preservacao-assinaturas.log
 .env
 .env.*
 !.env.example

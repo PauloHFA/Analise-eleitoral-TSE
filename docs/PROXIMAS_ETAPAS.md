@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Primeira recontagem/conferência concluída; assinaturas, eventos de log e papel independente pendentes |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes SW/HW e ECDSA parcial executados; Ed521, CEPESC, cadeia/revogação, eventos de log e papel independente pendentes |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -118,6 +118,8 @@ O [TSE descreve possibilidades de auditoria](https://www.tse.jus.br/eleicoes/urn
 **Commits previstos:** seleção e inventário; leitores/verificadores por formato; conferência da amostra; relatório com casos confirmados, limitados e pendentes.
 
 ## Registro de cada entrega
+
+**Incremento de assinaturas:** [layout, método e resultados](ASSINATURAS.md). Leitor explícito do layout observado em `38f4302`, com rejeição de campos extras/versões/nomes inseguros e nove testes adicionais. Foram lidos os 48 VSC; conferiram 384 hashes de documentos e 96 internos, além de 70 verificações ECDSA com a chave embutida (14 listas e 56 documentos). O layout ainda não tem confirmação oficial localizada. Ed521 e CEPESC não foram verificados, assim como cadeia e revogação. A suíte tem 160 testes aprovados; relatórios anteriores preservados.
 
 **Etapa 5 — primeira execução:** [protocolo, resultados e limites](AUDITORIA.md). A seleção em `e1ed429` antecedeu os documentos: 12 prioridades e 12 controles, 48 unidades seção/turno, cinco regiões e exterior. Em `0ba50d7`, foram obtidos 240 documentos de 22 ZIPs oficiais e conferidas 265 linhas presidenciais, todas concordantes entre RDV, BU binário, texto da imagem e os dois CSV. Aptos e comparecimento coincidiram. A validação tem 151 testes aprovados, seis pares CSV/Parquet completos e referência preservada. **A frente continua aberta:** assinatura criptográfica/cadeia não verificadas por incompatibilidade de formato, eventos dos logs ainda não analisados e nenhum BU em papel independente obtido. O relatório complementar explicita esses limites; a concordância não encerra a auditoria.
 

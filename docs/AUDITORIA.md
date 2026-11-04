@@ -1,5 +1,7 @@
 # Conferência ampliada dos documentos das urnas
 
+**Atualização posterior:** a primeira entrega abaixo está preservada. O [incremento de assinaturas](ASSINATURAS.md) passou a ler os 48 VSC, conferiu os hashes SW/HW e realizou a verificação ECDSA com as chaves embutidas em 14 unidades. Ed521, CEPESC, cadeia e revogação permanecem sem validação. As limitações e os números abaixo descrevem a primeira versão, sem reclassificação retrospectiva.
+
 A etapa 5 começou com uma seleção registrada **antes da obtenção dos documentos dos casos**. A amostra contém **24 seções, 12 prioritárias e 12 de comparação, nos dois turnos: 48 unidades seção/turno**. Ela cobre as cinco regiões brasileiras e o exterior. Não é uma amostra probabilística e não permite estimar a frequência nacional de irregularidades.
 
 ## Seleção reproduzível
@@ -95,8 +97,8 @@ Reutilizar os artefatos das entregas nacional e de estabilidade já preservados.
 
 ## Próximos incrementos ainda abertos
 
-1. Localizar e preservar a especificação compatível dos arquivos de assinaturas da amostra; implementar leitura com teste de corrupção e versões.
-2. Conferir o vínculo de cada arquivo com a assinatura, o algoritmo, a assinatura criptográfica, a validade temporal e a cadeia com âncoras oficiais. Documentar separadamente qualquer limite de cadeia ou revogação.
+1. Confirmar por documentação oficial o layout observado do leitor já implementado, descrito em [ASSINATURAS.md](ASSINATURAS.md).
+2. Ampliar a verificação criptográfica a Ed521 e validar cadeia/revogação com âncoras oficiais. Os hashes e a verificação ECDSA parcial estão documentados no incremento, sem equivalência com confiança institucional demonstrada.
 3. Definir e executar conferência de eventos dos logs, sem inferir sequência de votos a partir do RDV e sem publicar dados pessoais.
 4. Obter BU em papel ou imagem de fonte independente nos casos prioritários e comparar a mesma seção/turno/versão.
 5. Manter aberta a pesquisa do ato individual e da eficácia temporal da classificação dos nulos técnicos da frente 3.

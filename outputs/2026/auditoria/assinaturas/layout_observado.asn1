@@ -1,0 +1,15 @@
+ObservedVSC DEFINITIONS IMPLICIT TAGS ::= BEGIN
+VSC ::= SEQUENCE { sw Entity, hw Entity, platform Platform }
+Platform ::= SEQUENCE { model ENUMERATED {ue2009(9),ue2010(10),ue2011(11),ue2013(13),ue2015(15),ue2020(20),ue2022(22)}, algorithm Algorithm }
+Algorithm ::= ENUMERATED {rsa(1),ecdsa(2),cepesc(3),eddsa(4)}
+Entity ::= SEQUENCE { created GeneralString (SIZE(15)), version INTEGER (2..2), auto Auto,
+    payload OCTET STRING, keyset [0] GeneralString OPTIONAL, certificate [1] OCTET STRING OPTIONAL }
+Auto ::= SEQUENCE { user User, hashAlgorithm HashAlgorithm, algorithm SignatureAlgorithm, signature Digital }
+User ::= SEQUENCE { name GeneralString, serial INTEGER }
+HashAlgorithm ::= SEQUENCE { algorithm ENUMERATED {sha1(1),sha256(2),sha384(3),sha512(4)} }
+SignatureAlgorithm ::= SEQUENCE { algorithm Algorithm, bits INTEGER }
+Digital ::= SEQUENCE { size INTEGER, hash OCTET STRING, signature OCTET STRING }
+Payload ::= SEQUENCE { files SEQUENCE OF SignedFile }
+SignedFile ::= SEQUENCE { name GeneralString, signature Digital }
+ECDSASignature ::= SEQUENCE { r INTEGER, s INTEGER }
+END
