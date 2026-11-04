@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; cadeia completa/revogação indeterminadas, 14 pendências de vigência; logs, CEPESC, layout oficial e BU independente abertos |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; backend de caminho completo/LCR implementado e testado sinteticamente, execução real inconclusiva sem âncora, 14 pendências de vigência; logs, CEPESC, layout oficial e BU independente abertos |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -139,3 +139,12 @@ Em cada frente, acrescentar: commit(s), comando executado, parâmetros, testes, 
 - Estabilidade: referência de 30 reproduzida nas 28 UFs; universo comum de 428.521 seções; sensibilidade relevante do topo dos rankings.
 - Cobertura: 499.248 unidades fechadas em três grupos; perfis, cobertura municipal/UF e ausências explicitados.
 - Próxima frente de trabalho: dossiê de categorias/versões, preservando a distinção entre compensação aritmética e explicação documental confirmada.
+
+
+### Caminho completo — implementação e fontes ainda pendentes
+
+O [backend PKIX e adaptador Ed521](CAMINHO_PKIX.md) passou a construir e validar caminhos completos com âncoras explícitas e duas passagens separadas: estrutura sem revogação e LCR obrigatória para ponta/intermediários. Cadeias completas e LCR sintéticas ECDSA/Ed521 foram exercitadas; a suíte tem 194 testes aprovados. Isso não constitui homologação do perfil TSE ou conformidade exaustiva com toda a RFC 5280.
+
+A execução real tem 48 unidades/144 hipóteses de horário inconclusivas, zero âncoras selecionadas e zero LCR fornecidas. Foram realizadas 11 novas consultas com HTTP 403, separadas das 21 anteriores. Três pares CSV/Parquet, oito links locais e PDF de cinco páginas/cinco marcadores foram verificados; oito manifestos amostrais e 578 artefatos originais preservados. Saída isolada em `auditoria/caminho_pkix/`; nenhum resultado anterior substituído.
+
+**O item 1 permanece parcialmente aberto por falta de evidência:** obter emissores/raízes e LCR aplicáveis às datas, documentar a confiança e confirmar o perfil oficial. Os 14 apontamentos de vigência continuam sem causa confirmada. Não foram enviados contatos externos. Eventos dos logs constituem uma frente distinta e não foram executados neste incremento.

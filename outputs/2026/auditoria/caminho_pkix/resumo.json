@@ -1,0 +1,57 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "scenarios": 144,
+  "anchors_supplied": 0,
+  "intermediates_supplied": 3,
+  "crls_supplied": 0,
+  "path_statuses": [
+    {
+      "path_status": "inconclusivo_sem_ancora",
+      "scenarios": 144
+    }
+  ],
+  "revocation_statuses": [
+    {
+      "revocation_status": "nao_avaliada_sem_caminho",
+      "scenarios": 144
+    }
+  ],
+  "new_source_attempts": 11,
+  "new_http_403": 11,
+  "previous_source_attempts": 21,
+  "issuer_period_outside": 14,
+  "environment": {
+    "pyhanko-certvalidator": "0.33.0",
+    "asn1crypto": "1.5.1",
+    "cryptography": "50.0.2"
+  },
+  "source_hashes": {
+    "auditoria/pkix/v1/confianca.json": "43a91e471b70b24693fa270a9357381e6e3f07b961b484a3220168b6b5e4b776",
+    "auditoria/pkix/v1/fontes.json": "342613fb1dbaa5083dc35ff37991a05fb981d88052d6137770686ab12dc8c42a",
+    "auditoria/cadeia/v1/ac-ue2020.pem": "90fa46d45d93015290631416ce8cfacf78b3d69d37bb3d493c9c537a9b901454",
+    "auditoria/cadeia/v1/ac-ue2022.pem": "ff1d8f27a3d3a3cc24b5dd42515e4975f69628660d814b18091e62a9a1394e29",
+    "auditoria/cadeia/v1/ac-urna.pem": "5ccf7c696458bd643d773e9b5b0385ad209bac2b5b5ee657a5f00c5a1e15e271",
+    "auditoria/cadeia/v1/fontes.json": "307921caf26fb4060a1d208884f0293d772c4b9d3f9adb04a6b9acb32af6dd7c"
+  },
+  "object_notes": [],
+  "interpretation": "Validação de caminho completo implementada com backend PKIX e adaptador Ed521, testada com cadeias sintéticas. Resultados reais permanecem inconclusivos sem âncoras/emissores. Nenhum êxito em dados de teste é atribuído à amostra; hipóteses de horário não são prova de tempo ou de confiança.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/cadeia/manifesto.json": "dcfb8a2d89afacb4f3b6077d59b08221455b80b32faf3c6f699fd49df36292b2",
+    "auditoria/cadeia/vinculos.parquet": "5c2801aa179514a3bfd42903ee2f9e0542355a9bf0627a1eb70847d9a6a4e357",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_pkix.py": "cf91c7a33fef635ba4fc1a0d1bb39597aaa72d2a5aec3919d00ce5ac2b198f64",
+    "pkix_path.py": "4a6e527074a87d23cd038a2a409a0563a9b7aca7af5db731e92988fd8b3da75e",
+    "audit_pkix_report.py": "e7be0b6efcc323878a2a1fc83fea222ff830f16daa78accb400a85ccdc0a22d4"
+  }
+}

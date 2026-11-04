@@ -62,6 +62,9 @@ outputs/2026/**/*.parquet
 !outputs/2026/auditoria/cadeia/intermediarios.csv
 !outputs/2026/auditoria/cadeia/tentativas.csv
 !outputs/2026/auditoria/cadeia/pendencias_vigencia.csv
+!outputs/2026/auditoria/caminho_pkix/validacoes.csv
+!outputs/2026/auditoria/caminho_pkix/unidades.csv
+!outputs/2026/auditoria/caminho_pkix/novas_tentativas.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
@@ -120,6 +123,11 @@ outputs/logs/*
 !outputs/logs/testes-cadeia.log
 !outputs/logs/validacao-cadeia.log
 !outputs/logs/preservacao-cadeia.log
+!outputs/logs/fontes-pkix.log
+!outputs/logs/auditoria-pkix.log
+!outputs/logs/testes-pkix.log
+!outputs/logs/validacao-pkix.log
+!outputs/logs/preservacao-pkix.log
 .env
 .env.*
 !.env.example

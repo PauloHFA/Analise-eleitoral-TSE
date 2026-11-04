@@ -1,0 +1,10 @@
+{
+  "tag": "caminho-pkix-amostral-v1",
+  "asset": {
+    "name": "caminho-pkix-amostra-2026.zip",
+    "bytes": 113003,
+    "sha256": "a45063ee3f945ed8c589f8260703607ae9cfd6cf51d65acf2957198cbc48ee69",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/caminho-pkix-amostral-v1/caminho-pkix-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/caminho-pkix-amostral-v1/manifesto-pkix.json"
+}

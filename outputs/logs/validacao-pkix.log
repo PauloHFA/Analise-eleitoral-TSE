@@ -1,0 +1,20 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 3,
+  "section_turns": 48,
+  "time_scenarios": 144,
+  "explicit_anchors": 0,
+  "real_paths_conferred": 0,
+  "revocation": "não avaliada sem caminho, não aprovação",
+  "new_attempts": 11,
+  "new_http_403": 11,
+  "previous_attempts_preserved": 21,
+  "issuer_period_outside": 14,
+  "previous_stage_manifests_preserved": 8,
+  "local_links": 8,
+  "pdf": {
+    "pages": 5,
+    "bookmarks": 5,
+    "geometry": "dentro das margens"
+  }
+}

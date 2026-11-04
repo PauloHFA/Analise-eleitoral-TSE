@@ -1,0 +1,14 @@
+{
+  "trust_manifest": {
+    "version": 1,
+    "anchors": [],
+    "policy": "Âncoras somente por seleção explícita com impressão digital e proveniência. Nunca usar a lista TLS do sistema, um espelho ou um autoassinado implicitamente."
+  },
+  "allow_fetching": false,
+  "system_trust_store": false,
+  "path_only_revocation_rule": "NO_CHECK, sem promover êxito a status de revogação",
+  "strict_revocation_rule": "CRL_REQUIRED em ponta e intermediários",
+  "retroactive_revinfo": false,
+  "time_tolerance_seconds": 0,
+  "time_claim": "Hipóteses UTC e limites de fuso, não carimbo autenticado nem prova contínua de revogação em todo o intervalo"
+}

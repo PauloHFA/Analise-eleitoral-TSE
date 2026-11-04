@@ -1,0 +1,12 @@
+{
+  "novas_tentativas.csv": "1a972c03303aea4c392a4f558f19eb3f5b41ac8830ebf4ecaeeb343a1aefc580",
+  "novas_tentativas.parquet": "a8dda2a737a60bfdc711c01b223be7635ccac8a2cca48e94a4a6fe829972cd54",
+  "politica_executada.json": "56a5509a40b272d8d29e22133968cc609631e3bbe5c2d4365f253d7895f8dd6d",
+  "relatorio.html": "585da5194717b1a981d6fa397707061654e01cf4636c164893ca732b1121244f",
+  "relatorio.pdf": "40cfde157a35a9a05fd927225d540fc5f797109e9a7d84a28c5de3921b5d625b",
+  "resumo.json": "0e685229ed53542e5b0b553d7fae2304f2da90fadd26833be3c55fa92511beb0",
+  "unidades.csv": "23837193113c3acd7a495414ca5fd8606a90ceeb71bccb4cbda50ffc1ed60b61",
+  "unidades.parquet": "7515b4c1942c1a63cf5bb5ede7aff57d8bab124aed43df20ed62c4df413532b9",
+  "validacoes.csv": "b17526232b4244efc6a5ecc833d24c89307ca796953ee0f02b1d47bdd9b5bd79",
+  "validacoes.parquet": "9c71409ee80666f7919555686a8e4d7106d4580b428cd47a171a6d4d31b4af3d"
+}

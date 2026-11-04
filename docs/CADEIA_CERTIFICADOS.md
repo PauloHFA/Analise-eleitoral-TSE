@@ -2,6 +2,8 @@
 
 Este incremento verifica o vínculo entre os certificados das urnas e **três intermediários candidatos**. Não é validação integral de uma cadeia de confiança. A consulta de revogação procura Listas de Certificados Revogados (LCR). As entregas anteriores de RDV, hashes, ECDSA e Ed521 continuam preservadas.
 
+**Atualização posterior:** o [backend de caminho completo e LCR](CAMINHO_PKIX.md) foi implementado e testado com cadeias sintéticas. A execução real continua inconclusiva por falta de âncora/emissores e LCR adequadas. As contagens, arquivos e limites desta primeira etapa permanecem preservados.
+
 ## Resultado e alcance
 
 | Pergunta | Universo | Resultado |

@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros do backend PKIX
+
+`fontes-pkix.log` registra 11 consultas complementares sem objeto obtido. `auditoria-pkix.log` é a execução do backend; `testes-pkix.log` registra 194 testes aprovados e 543 avisos de depreciação ASN.1. `validacao-pkix.log` confere três pares CSV/Parquet completos, 48 unidades/144 hipóteses inconclusivas, 14 pendências preservadas, oito manifestos anteriores, oito links locais e PDF de cinco páginas/cinco marcadores. `preservacao-pkix.log` confere os 578 artefatos originais. O sucesso sintético não é atribuído à amostra; a revogação real não foi avaliada sem caminho.
+
 ## Registros de vínculos e consulta de revogação
 
 `fontes-cadeia.log` resume a preparação dos candidatos e as 21 tentativas; `auditoria-cadeia.log` registra a execução dos 48 vínculos. `testes-cadeia.log` contém 185 testes aprovados. `validacao-cadeia.log` confere quatro pares CSV/Parquet, 48 reconferências criptográficas, 14 pendências de vigência, links/PDF e os sete manifestos anteriores. `preservacao-cadeia.log` confirma os 578 artefatos originais. Nenhuma cadeia completa ou revogação real foi concluída; LCR não obtida permanece indeterminada.
