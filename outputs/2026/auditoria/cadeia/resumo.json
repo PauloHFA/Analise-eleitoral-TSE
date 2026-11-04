@@ -1,0 +1,47 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "unique_leaf_certificates": 25,
+  "candidate_intermediates": 3,
+  "certificate_signatures_match": 48,
+  "issuer_period_compatible": 34,
+  "issuer_period_outside": 14,
+  "complete_paths_verified": 0,
+  "revocation_obtained_crls": 0,
+  "revocation_statuses": [
+    {
+      "revocation_status": "indeterminado_lcr_nao_obtida",
+      "section_turns": 48
+    }
+  ],
+  "access_attempts": 21,
+  "http_200": 0,
+  "tls_errors": 8,
+  "source_manifest_sha256": "eb47c214e1e36c3d6fa9e7e9d681012e4cd47722447f0ecadf73f0f9660bcc3b",
+  "sources_hashes": {
+    "ac-ue2020.pem": "90fa46d45d93015290631416ce8cfacf78b3d69d37bb3d493c9c537a9b901454",
+    "ac-ue2022.pem": "ff1d8f27a3d3a3cc24b5dd42515e4975f69628660d814b18091e62a9a1394e29",
+    "ac-urna.pem": "5ccf7c696458bd643d773e9b5b0385ad209bac2b5b5ee657a5f00c5a1e15e271",
+    "fontes.json": "307921caf26fb4060a1d208884f0293d772c4b9d3f9adb04a6b9acb32af6dd7c"
+  },
+  "interpretation": "Conferência de um vínculo até intermediário candidato, não validação integral RFC 5280. Nenhuma âncora promovida. Vigência incompatível do candidato disponível é pendência documental, sem inferir renovação, causa ou irregularidade nos votos. LCR não obtida não significa ausência de revogação.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/ed521/manifesto.json": "b2c57b59406e595c43a0906de949dcadd684629520f924f3a5ffc11dcbc70aa2",
+    "auditoria/ed521_referencia/manifesto.json": "a9109e49641a96c179052eca34994e9531ef9cf2d38bc67ec0039edd3d88e7bd",
+    "auditoria/assinaturas/manifesto.json": "154358f24ceaad0b8eb07a73441a6de319c0160a156346eca9bf16334d4d36bc",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_chain.py": "77a1c86cdccee5c03f019f473ad3179724181e520597c333a9ee68b2af36f658",
+    "certificate_chain.py": "c19604a0a94e4522d43a40bf0cd8b0af56a94c3d0c244a68474fbc4bf252b32f",
+    "audit_chain_report.py": "bad653aca933d1aee6235cdf23ffbc8d59be0404bff81c2debe3c553f7e64560"
+  }
+}

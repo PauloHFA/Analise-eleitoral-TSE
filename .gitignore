@@ -58,6 +58,10 @@ outputs/2026/**/*.parquet
 !outputs/2026/auditoria/ed521/certificados.csv
 !outputs/2026/auditoria/ed521/unidades.csv
 !outputs/2026/auditoria/ed521_referencia/comparacao.csv
+!outputs/2026/auditoria/cadeia/vinculos.csv
+!outputs/2026/auditoria/cadeia/intermediarios.csv
+!outputs/2026/auditoria/cadeia/tentativas.csv
+!outputs/2026/auditoria/cadeia/pendencias_vigencia.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
@@ -111,6 +115,11 @@ outputs/logs/*
 !outputs/logs/testes-ed521.log
 !outputs/logs/validacao-ed521.log
 !outputs/logs/preservacao-ed521.log
+!outputs/logs/fontes-cadeia.log
+!outputs/logs/auditoria-cadeia.log
+!outputs/logs/testes-cadeia.log
+!outputs/logs/validacao-cadeia.log
+!outputs/logs/preservacao-cadeia.log
 .env
 .env.*
 !.env.example

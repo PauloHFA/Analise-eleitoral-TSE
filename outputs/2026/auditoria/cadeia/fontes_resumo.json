@@ -1,0 +1,32 @@
+{
+  "package_sha256": "1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235",
+  "origin": "Espelho de terceiros preservado em rodada anterior; nenhum código executado",
+  "candidates": [
+    {
+      "name": "AC URNA",
+      "file": "ac-urna.pem",
+      "der_sha256": "dc20a4c3b8aef01794b80efe8e143e1fbf719707e00bb0d4ba8865191dc2731d",
+      "file_sha256": "5ccf7c696458bd643d773e9b5b0385ad209bac2b5b5ee657a5f00c5a1e15e271",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    },
+    {
+      "name": "AC UE2020",
+      "file": "ac-ue2020.pem",
+      "der_sha256": "77f31bef3d8eb35f0cc969a2b9bba3ff2a498cc339d29a375d3181e0547c0376",
+      "file_sha256": "90fa46d45d93015290631416ce8cfacf78b3d69d37bb3d493c9c537a9b901454",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    },
+    {
+      "name": "AC UE2022",
+      "file": "ac-ue2022.pem",
+      "der_sha256": "6ae65790dae7cc5d97394e461204744c8e2f7a810d0303af828d4d3dbecfa293",
+      "file_sha256": "ff1d8f27a3d3a3cc24b5dd42515e4975f69628660d814b18091e62a9a1394e29",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    }
+  ],
+  "anchors_trusted": [],
+  "source_manifest_sha256": "eb47c214e1e36c3d6fa9e7e9d681012e4cd47722447f0ecadf73f0f9660bcc3b"
+}

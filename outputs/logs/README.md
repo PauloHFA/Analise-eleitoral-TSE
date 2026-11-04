@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros de vínculos e consulta de revogação
+
+`fontes-cadeia.log` resume a preparação dos candidatos e as 21 tentativas; `auditoria-cadeia.log` registra a execução dos 48 vínculos. `testes-cadeia.log` contém 185 testes aprovados. `validacao-cadeia.log` confere quatro pares CSV/Parquet, 48 reconferências criptográficas, 14 pendências de vigência, links/PDF e os sete manifestos anteriores. `preservacao-cadeia.log` confirma os 578 artefatos originais. Nenhuma cadeia completa ou revogação real foi concluída; LCR não obtida permanece indeterminada.
+
 ## Registros do incremento Ed521
 
 `auditoria-ed521.log` registra a verificação estendida; `referencia-ed521.log`, a comparação independente de 170 originais e 170 mensagens alteradas e a fronteira de política esperada. `testes-ed521.log` contém 176 testes aprovados. `validacao-ed521.log` confere cinco pares CSV/Parquet, resultados/escopo, PDF/links, hash do documento técnico do ITI e preservação dos cinco manifestos amostrais anteriores. `preservacao-ed521.log` confirma os 578 artefatos originais. Os vetores são gerados pelo projeto com referência independente, sem caráter oficial; cadeia, revogação e CEPESC não são validados.

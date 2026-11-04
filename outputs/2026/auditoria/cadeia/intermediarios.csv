@@ -1,0 +1,4 @@
+name,der_sha256,not_before,not_after,issuer_cn,key_oid,source,trust_anchor,basic_constraints_critical,key_usage_critical
+AC URNA,dc20a4c3b8aef01794b80efe8e143e1fbf719707e00bb0d4ba8865191dc2731d,2011-07-22T21:59:57+00:00,2026-07-18T21:59:57+00:00,AC RAIZ UE,1.2.840.10045.2.1,Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança,false,false,false
+AC UE2020,77f31bef3d8eb35f0cc969a2b9bba3ff2a498cc339d29a375d3181e0547c0376,2021-07-05T21:31:56+00:00,2037-07-01T21:31:56+00:00,AC URNA v2,1.3.6.1.4.1.44588.2.1,Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança,false,false,false
+AC UE2022,6ae65790dae7cc5d97394e461204744c8e2f7a810d0303af828d4d3dbecfa293,2023-02-28T13:46:49+00:00,2039-02-24T13:46:49+00:00,AC URNA v2,1.3.6.1.4.1.44588.2.1,Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança,false,false,false

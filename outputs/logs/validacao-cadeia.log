@@ -1,0 +1,22 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 4,
+  "section_turns": 48,
+  "unique_leaf_certificates": 25,
+  "candidate_intermediates": 3,
+  "certificate_signature_rechecks": 48,
+  "issuer_time_compatible": 34,
+  "issuer_time_outside": 14,
+  "access_attempts": 21,
+  "http_403": 13,
+  "tls_errors": 8,
+  "complete_paths_verified": 0,
+  "revocation": "indeterminada em 48 unidades",
+  "previous_stages": "sete manifestos e seus artefatos preservados",
+  "local_links": 9,
+  "pdf": {
+    "pages": 6,
+    "bookmarks": 6,
+    "geometry": "dentro das margens"
+  }
+}

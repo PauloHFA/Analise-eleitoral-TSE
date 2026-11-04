@@ -1,0 +1,10 @@
+{
+  "tag": "cadeia-certificados-amostral-v1",
+  "asset": {
+    "name": "cadeia-certificados-amostra-2026.zip",
+    "bytes": 113443,
+    "sha256": "a3227d0dbccdbfabeced8d21e0e055b40adf091549d9993c93c10768a382cdb2",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/cadeia-certificados-amostral-v1/cadeia-certificados-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/cadeia-certificados-amostral-v1/manifesto-cadeia.json"
+}

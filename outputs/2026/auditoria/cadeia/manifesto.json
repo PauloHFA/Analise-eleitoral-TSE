@@ -1,0 +1,14 @@
+{
+  "fontes_resumo.json": "6c6ef63fe8e6d53f4b438f0dbd97ccd86c13e788793e6b3743802b4519b9f489",
+  "intermediarios.csv": "9fbb8a2126a2469012c4701ffc1ff4b6fdfd132053c3963bb938ba1947016d6c",
+  "intermediarios.parquet": "8741fdb2e27a013e931c0d483bba7459ce1fd2a214dd07ba1dbb7bd3dc401f9b",
+  "pendencias_vigencia.csv": "1d8bcfd8e78945d961f08b7d0e9c5f0b77b745cc1c8224b1821126df6f9bb90b",
+  "pendencias_vigencia.parquet": "b7902e5048ceee74585e8a1223a754dcf711265462373a205ddd1849932ff439",
+  "relatorio.html": "1e9527edf81bd8bc369d9c1a2c7ca581bfc8009fe1e2830e42efc8bc0e27984e",
+  "relatorio.pdf": "ab6312c078886878085c95b260084aa9cdd7d2d98528958d452278626c7edc75",
+  "resumo.json": "b44d97cc011b6e3c6800ea04ed24af4528323fc8674572fb8c8ba6177315c22f",
+  "tentativas.csv": "b7480efe574a379338f328eb6c33759c1f21b1e69525f6126514e20bb8c227d4",
+  "tentativas.parquet": "3c0196d4e71659e126cf29a73b0ab9807d3f01ccc835ff8482833b444afa8955",
+  "vinculos.csv": "82b62587d4f5ba6001c807dc4b8726bb6b19d4499d13a1364c4ccd211af0b474",
+  "vinculos.parquet": "5c2801aa179514a3bfd42903ee2f9e0542355a9bf0627a1eb70847d9a6a4e357"
+}

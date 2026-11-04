@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes SW/HW e ECDSA/Ed521 com chaves embutidas executados; CEPESC, cadeia/revogação, confirmação oficial do layout, eventos de log e papel independente pendentes |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; cadeia completa/revogação indeterminadas, 14 pendências de vigência; logs, CEPESC, layout oficial e BU independente abertos |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -118,6 +118,8 @@ O [TSE descreve possibilidades de auditoria](https://www.tse.jus.br/eleicoes/urn
 **Commits previstos:** seleção e inventário; leitores/verificadores por formato; conferência da amostra; relatório com casos confirmados, limitados e pendentes.
 
 ## Registro de cada entrega
+
+**Incremento de vínculos e revogação:** [método e matriz do que falta](CADEIA_CERTIFICADOS.md), com leitores em `ff14eb6`. As 48 assinaturas de ponta conferem com três candidatos; 14 ocorrências usam o candidato disponível AC URNA fora de seu período de validade. Não foi inferida a causa. Houve 21 tentativas públicas sem certificado/âncora/LCR utilizável obtido; TLS permaneceu verificado. O leitor de LCR foi testado com material sintético, sem resultado real de revogação. A suíte tem 185 testes aprovados; PDF/HTML e quatro pares CSV/Parquet validados. Falta implementar a validação integral de caminho e obter fontes oficiais/históricas. A próxima frente executável com dados locais é a análise de eventos dos logs.
 
 **Incremento Ed521:** [método e resultados](ED521.md), com implementação em `b23a26f`. Conferiram 170 verificações Ed521 com as chaves embutidas (34 listas e 136 documentos), preservando as 70 ECDSA anteriores. Referência técnica do ITI identificada por hash; 12 vetores gerados com Noble, sem atribuição de oficialidade, 340 comparações de originais/mutações concordantes e um caso de política intencionalmente distinto. A suíte tem 176 testes aprovados. Confiança da cadeia, revogação e CEPESC permanecem não verificados.
 

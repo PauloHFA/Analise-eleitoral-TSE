@@ -1,0 +1,53 @@
+{
+  "package_sha256": "1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235",
+  "candidate_certificates": [
+    {
+      "name": "AC URNA",
+      "file": "ac-urna.pem",
+      "der_sha256": "dc20a4c3b8aef01794b80efe8e143e1fbf719707e00bb0d4ba8865191dc2731d",
+      "file_sha256": "5ccf7c696458bd643d773e9b5b0385ad209bac2b5b5ee657a5f00c5a1e15e271",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    },
+    {
+      "name": "AC UE2020",
+      "file": "ac-ue2020.pem",
+      "der_sha256": "77f31bef3d8eb35f0cc969a2b9bba3ff2a498cc339d29a375d3181e0547c0376",
+      "file_sha256": "90fa46d45d93015290631416ce8cfacf78b3d69d37bb3d493c9c537a9b901454",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    },
+    {
+      "name": "AC UE2022",
+      "file": "ac-ue2022.pem",
+      "der_sha256": "6ae65790dae7cc5d97394e461204744c8e2f7a810d0303af828d4d3dbecfa293",
+      "file_sha256": "ff1d8f27a3d3a3cc24b5dd42515e4975f69628660d814b18091e62a9a1394e29",
+      "origin": "Extraído como dado de pacote técnico obtido de espelho; não é âncora de confiança",
+      "trust_anchor": false
+    }
+  ],
+  "official_objects_obtained": 0,
+  "attempts": 21,
+  "anchors_trusted": [],
+  "source_manifest_sha256": "eb47c214e1e36c3d6fa9e7e9d681012e4cd47722447f0ecadf73f0f9660bcc3b",
+  "source_scope": "Candidatos de pacote em espelho e tentativas públicas. Nenhum emissor/raiz/LCR utilizável obtido diretamente nesta rodada.",
+  "secondary_hash_copy": {
+    "url": "https://github.com/havaianasdestruido/resumos-eleicao-2026/blob/main/extracted/pc1holo/pc1holo.html",
+    "capture_sha256": "3ff1b18aa528ae1b2519cc8223ed7f80cd84c97b5ee0cbf3d41c13c3da830ad4",
+    "scope": "Captura textual via ferramenta GitHub; não hash dos bytes originais publicados pelo TSE",
+    "official_archive_obtained": false,
+    "used_as_trust_anchor": false,
+    "matches": [
+      {
+        "candidate_file": "ac-ue2020.pem",
+        "sha512_base64": "LLveJWbhgUEiPfm/WlQL2b1Y0UtSdzvLlKB+tDAhM60rQ869y7/iEw3yQKSkMKVVN3goJsmB/m21MASvdxKhzg==",
+        "found_in_copy": true
+      },
+      {
+        "candidate_file": "ac-ue2022.pem",
+        "sha512_base64": "nawawQDNRHwS4X5kYuMNZhn+aTv/ZDxzdIhbMP0mQ6rqGZ6Q5YkiTjeRSmhEEUztze7D94pBvHQAkXdI28eYeQ==",
+        "found_in_copy": true
+      }
+    ]
+  }
+}
