@@ -123,7 +123,15 @@ def canonical_ecdsa(signature):
     return utils.encode_dss_signature(obj['r'],obj['s'])
 
 
-def verify_signature(cert,algorithm,digest,signature):
+def verify_signature(cert,algorithm,digest,signature,*,enable_ed521=False):
+    if algorithm==4 and enable_ed521:
+        if cert is None:return 'nao_verificado_certificado','Certificado não disponível ou ilegível'
+        from .ed521 import public_key_from_certificate,verify
+        try:key=public_key_from_certificate(cert)
+        except ValueError as exc:return 'nao_verificado_chave',str(exc)
+        # Ed521 puro sobre SHA512(hash). Não é Ed521ph (phflag permanece zero).
+        if verify(key,hashlib.sha512(digest).digest(),signature):return 'valida_com_chave_embutida',None
+        return 'invalida_com_chave_embutida','Não confere com a chave e o perfil Ed521 estrito implementado'
     if algorithm!=2:return 'nao_verificado_algoritmo',('Ed521 não implementado nesta versão' if algorithm==4 else 'Algoritmo não implementado nesta versão')
     if cert is None:return 'nao_verificado_certificado','Certificado não disponível ou ilegível'
     key=cert.public_key()

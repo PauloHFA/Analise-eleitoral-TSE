@@ -1,0 +1,10 @@
+{
+  "name": "eleicoes-ed521-reference",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@noble/curves": "2.4.0",
+    "@noble/hashes": "2.4.0"
+  }
+}

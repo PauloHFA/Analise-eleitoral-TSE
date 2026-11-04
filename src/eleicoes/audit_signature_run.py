@@ -14,12 +14,13 @@ from .audit_signature import LAYOUT_ID,SCHEMA,parse_vsc,certificate,temporal_sta
 GEO=['year','turn','uf','municipality','zone','section']
 
 
-def run_signatures(source,data='data',destination=None):
+def run_signatures(source,data='data',destination=None,*,enable_ed521=False):
     source=Path(source).resolve();data=Path(data).resolve()
-    destination=Path(destination).resolve() if destination else source/'auditoria/assinaturas'
+    destination=Path(destination).resolve() if destination else source/('auditoria/ed521' if enable_ed521 else 'auditoria/assinaturas')
     names=['auditoria/documentos/inventario.parquet','auditoria/documentos/manifesto.json',
            'auditoria/amostra/turnos.parquet','auditoria/amostra/secoes.parquet',
            'auditoria/conferencia/manifesto.json','auditoria/relatorio/manifesto.json']
+    if enable_ed521:names+=['auditoria/assinaturas/manifesto.json']
     source,destination,state=begin(source,destination,names);con=duckdb.connect();file_rows=[];envelopes=[];certs=[];units=[]
     try:
         inventory=con.read_parquet(str(source/names[0])).df()
@@ -51,7 +52,7 @@ def run_signatures(source,data='data',destination=None):
                 signatures={}
                 for role in ('sw','hw'):
                     ent=obj[role];alg=ent['auto']['algorithm']['algorithm'];dig=ent['auto']['signature']
-                    crypto,reason=verify_signature(cert if role=='hw' else None,alg,dig['hash'],dig['signature'])
+                    crypto,reason=verify_signature(cert if role=='hw' else None,alg,dig['hash'],dig['signature'],enable_ed521=enable_ed521)
                     envelopes.append(dict(**key,role=role,created=ent['created'],algorithm=alg,
                         hash_status=hash_status(ent['payload'],dig['hash']),crypto_status=crypto,crypto_reason=reason,
                         signed_files=len(ent['files']),signature_sha256=signature['sha256'],certificate_sha256=(cert_info or {}).get('sha256')))
@@ -63,7 +64,7 @@ def run_signatures(source,data='data',destination=None):
                         actual=lookup.get(name);digest=signed['signature']['hash']
                         if actual:
                             content=(data/actual['path']).read_bytes();digest_state=hash_status(content,digest)
-                            crypto,reason=verify_signature(cert if role=='hw' else None,alg,digest,signed['signature']['signature'])
+                            crypto,reason=verify_signature(cert if role=='hw' else None,alg,digest,signed['signature']['signature'],enable_ed521=enable_ed521)
                         else:digest_state='fora_do_escopo';crypto='nao_verificado_fora_escopo';reason='Documento não obtido na amostra de cinco tipos'
                         file_rows.append(dict(**key,role=role,member=name,kind=actual['kind'] if actual else None,
                             scope='documento_obtido' if actual else 'nao_obtido_no_escopo',signed_sha512=digest.hex(),
@@ -91,10 +92,17 @@ def run_signatures(source,data='data',destination=None):
             certificate_statuses=records(frames['certificados'].groupby(['status','time_status','chain_status']).size().reset_index(name='certificates')),
             models=records(frames['unidades'].groupby(['model','hardware_algorithm']).size().reset_index(name='section_turns')),
             environment=dict(python=platform.python_version(),packages={n:version(n) for n in ('asn1tools','cryptography','duckdb','pandas')}),
-            interpretation='Integridade SHA512 separada de assinatura criptográfica. ECDSA verificada somente com a chave embutida, sem cadeia/revogação. Ed521 e CEPESC não verificados; data do VSC não é carimbo de tempo autenticado. Sem conclusão de auditoria integral ou causalidade eleitoral.')
+            interpretation=('ECDSA e Ed521 verificados somente com a chave embutida; CEPESC, cadeia e revogação não verificados. Data declarada não é carimbo de tempo autenticado. Sem conclusão de auditoria integral ou causalidade eleitoral.' if enable_ed521 else 'Integridade SHA512 separada de assinatura criptográfica. ECDSA verificada somente com a chave embutida, sem cadeia/revogação. Ed521 e CEPESC não verificados; data do VSC não é carimbo de tempo autenticado. Sem conclusão de auditoria integral ou causalidade eleitoral.'))
         (destination/'layout_observado.asn1').write_text(SCHEMA,encoding='utf8')
-        from .audit_signature_report import render
+        if enable_ed521:
+            from .audit_ed521_report import render
+            from .ed521_reference import reference_metadata
+            summary['ed521_reference']=reference_metadata()
+        else:
+            from .audit_signature_report import render
         render(destination,summary,frames,sample)
-        return finish(source,destination,state,summary,[Path(__file__),Path(__file__).with_name('audit_signature.py'),Path(__file__).with_name('audit_signature_report.py')])
+        code_files=[Path(__file__),Path(__file__).with_name('audit_signature.py'),Path(__file__).with_name('audit_ed521_report.py' if enable_ed521 else 'audit_signature_report.py')]
+        if enable_ed521:code_files+=[Path(__file__).with_name('ed521.py'),Path(__file__).with_name('ed521_reference.py')]
+        return finish(source,destination,state,summary,code_files)
     except Exception as exc:failed(destination,state,exc);raise
     finally:con.close()
