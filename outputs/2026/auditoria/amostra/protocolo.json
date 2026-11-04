@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "priority_per_region": 2,
+  "regions": [
+    "Norte",
+    "Nordeste",
+    "Centro-Oeste",
+    "Sudeste",
+    "Sul",
+    "Exterior"
+  ],
+  "selection": "Dirigida, determinística, sem probabilidade de inclusão estimada. Não permite estimar frequência populacional de irregularidade.",
+  "priority": "Elegível, padrão nacional selecionado, alerta original e alerta em todas as configurações disponíveis, com pelo menos duas. Priorizar ausência de aviso de MAD abaixo de uma unidade, menor escore robusto entre configurações, mudança absoluta e chave geográfica.",
+  "allocation": "Uma mudança de margem positiva e uma negativa por região, preferindo UFs distintas quando possível. Falta de sentido ou estrato é registrada; não é preenchida após consultar documentos.",
+  "control": "Sem alerta original, sem alerta nas configurações disponíveis e sem padrão nacional selecionado. Mesma UF; priorizar mesmo município; não reutilizar controle.",
+  "matching": "Distância euclidiana usando ln(1+aptos), comparecimento/aptos e participações dos dois finalistas nos nominais do primeiro turno, centrados pela mediana e escalados pelo desvio padrão da UF (ddof=0). Nenhuma característica do segundo turno no pareamento.",
+  "exterior": "Pode ter apenas duas configurações disponíveis; essa limitação é explícita e não é chamada de estabilidade 3/3.",
+  "documents": "Dois turnos por seção; RDV, BU binário, assinatura, imagem do BU e log quando disponíveis. Correspondência de arquivos não é fonte independente do equipamento."
+}

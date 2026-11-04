@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Planejado; depende da obtenção e leitura dos documentos |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Amostra registrada; obtenção e conferência dos documentos em andamento |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -118,6 +118,8 @@ O [TSE descreve possibilidades de auditoria](https://www.tse.jus.br/eleicoes/urn
 **Commits previstos:** seleção e inventário; leitores/verificadores por formato; conferência da amostra; relatório com casos confirmados, limitados e pendentes.
 
 ## Registro de cada entrega
+
+**Etapa 5 iniciada:** [protocolo e amostra](AUDITORIA.md) registrados antes da obtenção dos documentos dos casos: 12 prioridades e 12 controles, 48 unidades seção/turno, cinco regiões e exterior. Quatro testes verificam determinismo, controles, ausência de dados do segundo turno no pareamento e insuficiências explícitas. A seleção não representa auditoria executada.
 
 Em cada frente, acrescentar: commit(s), comando executado, parâmetros, testes, arquivos produzidos, resultados, limitações, pendências e próxima decisão. Atualizar o estado na tabela somente com base nesses registros. A referência atual continua verificável enquanto os novos estudos são produzidos.
 

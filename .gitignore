@@ -42,6 +42,8 @@ outputs/2026/**/*.parquet
 !outputs/2026/nacional/taxas/regioes.csv
 !outputs/2026/nacional/taxas/reconciliacao.csv
 !outputs/2026/nacional/mapas/prioridades.csv
+!outputs/2026/auditoria/amostra/secoes.csv
+!outputs/2026/auditoria/amostra/turnos.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/logs/*
 !outputs/logs/README.md

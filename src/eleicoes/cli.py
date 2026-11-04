@@ -273,6 +273,10 @@ def main():
     national.add_argument("--etapa", choices=["inventario","taxas","mapas"], default="inventario")
     national.add_argument("--min-elegiveis",type=int,default=30)
     national.add_argument("--cobertura-minima",type=float,default=80)
+    audit = sub.add_parser("auditoria", help="Amostra dirigida e conferência adicional dos arquivos das urnas")
+    audit.add_argument("--output",default="outputs/2026")
+    audit.add_argument("--dest")
+    audit.add_argument("--etapa",choices=["amostra"],default="amostra")
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", stream=sys.stdout)
@@ -307,6 +311,10 @@ def main():
             from .national_map import run_maps
             result = run_maps(args.output,args.dest,args.min_elegiveis,args.cobertura_minima)
         LOG.info("Etapa nacional concluída: %s", result.get("tables",result.get("mapped")))
+    elif args.command == "auditoria":
+        from .audit_sample import run_sample
+        result=run_sample(args.output,args.dest)
+        LOG.info("Amostra registrada: %s seções; %s unidades seção/turno",result["sections"],result["section_turns"])
     else:
         from .demo import create_demo
         root = Path(args.output)

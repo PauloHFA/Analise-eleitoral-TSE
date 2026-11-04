@@ -1,0 +1,166 @@
+{
+  "year": 2026,
+  "sections": 24,
+  "priority_sections": 12,
+  "control_sections": 12,
+  "section_turns": 48,
+  "strata": [
+    {
+      "region": "Centro-Oeste",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Centro-Oeste",
+      "group": "prioritario",
+      "sections": 2
+    },
+    {
+      "region": "Exterior",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Exterior",
+      "group": "prioritario",
+      "sections": 2
+    },
+    {
+      "region": "Nordeste",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Nordeste",
+      "group": "prioritario",
+      "sections": 2
+    },
+    {
+      "region": "Norte",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Norte",
+      "group": "prioritario",
+      "sections": 2
+    },
+    {
+      "region": "Sudeste",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Sudeste",
+      "group": "prioritario",
+      "sections": 2
+    },
+    {
+      "region": "Sul",
+      "group": "comparacao",
+      "sections": 2
+    },
+    {
+      "region": "Sul",
+      "group": "prioritario",
+      "sections": 2
+    }
+  ],
+  "shortfalls": [],
+  "selection_before_documents": true,
+  "document_status": "ainda não obtidos nesta etapa de seleção",
+  "protocol": {
+    "version": 1,
+    "priority_per_region": 2,
+    "regions": [
+      "Norte",
+      "Nordeste",
+      "Centro-Oeste",
+      "Sudeste",
+      "Sul",
+      "Exterior"
+    ],
+    "selection": "Dirigida, determinística, sem probabilidade de inclusão estimada. Não permite estimar frequência populacional de irregularidade.",
+    "priority": "Elegível, padrão nacional selecionado, alerta original e alerta em todas as configurações disponíveis, com pelo menos duas. Priorizar ausência de aviso de MAD abaixo de uma unidade, menor escore robusto entre configurações, mudança absoluta e chave geográfica.",
+    "allocation": "Uma mudança de margem positiva e uma negativa por região, preferindo UFs distintas quando possível. Falta de sentido ou estrato é registrada; não é preenchida após consultar documentos.",
+    "control": "Sem alerta original, sem alerta nas configurações disponíveis e sem padrão nacional selecionado. Mesma UF; priorizar mesmo município; não reutilizar controle.",
+    "matching": "Distância euclidiana usando ln(1+aptos), comparecimento/aptos e participações dos dois finalistas nos nominais do primeiro turno, centrados pela mediana e escalados pelo desvio padrão da UF (ddof=0). Nenhuma característica do segundo turno no pareamento.",
+    "exterior": "Pode ter apenas duas configurações disponíveis; essa limitação é explícita e não é chamada de estabilidade 3/3.",
+    "documents": "Dois turnos por seção; RDV, BU binário, assinatura, imagem do BU e log quando disponíveis. Correspondência de arquivos não é fonte independente do equipamento."
+  },
+  "available_configurations": [
+    {
+      "uf": "AC",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "BA",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "CE",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "GO",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "MT",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "PA",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "PR",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "RJ",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "SC",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "SP",
+      "available_configurations": 3,
+      "sections": 2
+    },
+    {
+      "uf": "ZZ",
+      "available_configurations": 2,
+      "sections": 4
+    }
+  ],
+  "interpretation": "Amostra dirigida não representativa; divergência, concordância ou indisponibilidade precisam ser avaliadas por documento, sem inferência populacional.",
+  "status": "concluído",
+  "input_hashes": {
+    "nacional/inventario/secoes.parquet": "8518d40ca8525ca94088684173b676d9a4999a4d4f071d9cd584a5ffcc6ffd84",
+    "estabilidade/variantes.parquet": "db07d5e746525129dc0e0af4b408d4c66c855c8d5813024d6ada3358bd03c40b",
+    "secoes_por_turno.parquet": "00ccc2e795d4d4e2ad76c1c44b44321e1c8782dd22a87fdbb7ea396b10fbd0ce",
+    "fontes_utilizadas.json": "c03039639e866dfb92713119bc7fe5163304fdfd4ec791a418e62abed613b2fd",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_sample.py": "122096ce10c6be3606a14143319d53e588e6e14619f6b75758c366346615008f",
+    "national_common.py": "73189e9ff714c55e0061095b5d294d146460f0b40ebb4baf66c5e8cda6995ce4"
+  }
+}
