@@ -1,0 +1,9 @@
+{
+  "documentos.csv": "c566c914d08a76b67c364d030220d1d8b384d1cc4cad7968281b67360195b97f",
+  "documentos.parquet": "fae30d1cce1f97ad47721b0fce3e494dc993484bc5d82a154ab11e3595de6e92",
+  "resumo.json": "477ba0a8ef04e951635b263b68b5c026b1263dfca19904451a59fad1e483d30b",
+  "unidades.csv": "230840a8bc4fe493cebfa85904f3ee1f47d19ac86b5d4476d767828bad236fbf",
+  "unidades.parquet": "91fd8a67175bf629bfff95351d5f3b8e6cf5a451c069d1dc0331240ea0eb4784",
+  "votacao.csv": "d515dd5e16b7097dbbb1122d30e22f4445c4133417c462ce0617fbadebc852e3",
+  "votacao.parquet": "be7f6bbd4f655073ad2d8c59d80c29c55a0aaa17dba813f23a9466fa9d9a07b6"
+}

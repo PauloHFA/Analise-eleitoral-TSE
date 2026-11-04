@@ -1,0 +1,58 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "expected_documents": 240,
+  "statuses": [
+    {
+      "kind": "assinatura",
+      "status": "obtido",
+      "documents": 48
+    },
+    {
+      "kind": "bu",
+      "status": "obtido",
+      "documents": 48
+    },
+    {
+      "kind": "imagem",
+      "status": "obtido",
+      "documents": 48
+    },
+    {
+      "kind": "log",
+      "status": "obtido",
+      "documents": 48
+    },
+    {
+      "kind": "rdv",
+      "status": "obtido",
+      "documents": 48
+    }
+  ],
+  "obtained_documents": 240,
+  "remote_archives": 22,
+  "catalog": {
+    "url": "https://dadosabertos.tse.jus.br/api/3/action/package_show?id=resultados-2026-arquivos-transmitidos-para-totalizacao",
+    "path": "auditoria/urnas/catalogo.json",
+    "sha256": "f5dc5de59fc94ce401d21c8c5973e3027d33fa3dfbae65ac9b66680274401895",
+    "size": 43810
+  },
+  "network_bytes": 353642570,
+  "sample_manifest_sha256": "027b8f49772872ef264d9a3119ef957fbea9f0bbbd3b88a6d954d69fd6fb70f8",
+  "interpretation": "Obtenção e CRC32/SHA256 dos membros. Ainda não constitui recontagem do RDV, conferência do BU nem validação das assinaturas. ZIPs completos não baixados; ETag fixa versão por arquivo remoto.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/amostra/manifesto.json": "027b8f49772872ef264d9a3119ef957fbea9f0bbbd3b88a6d954d69fd6fb70f8",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_download.py": "4636d2b69ffbce64ed301b19acbe854d44ee89a3b71e6cbf3f790ef14565d35f"
+  }
+}

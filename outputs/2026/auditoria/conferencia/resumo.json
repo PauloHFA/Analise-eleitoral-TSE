@@ -1,0 +1,80 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "documents": 240,
+  "vote_rows": 265,
+  "document_statuses": [
+    {
+      "kind": "assinatura",
+      "status": "limitado",
+      "documents": 48
+    },
+    {
+      "kind": "bu",
+      "status": "extraido",
+      "documents": 48
+    },
+    {
+      "kind": "imagem",
+      "status": "extraido",
+      "documents": 48
+    },
+    {
+      "kind": "log",
+      "status": "preservado",
+      "documents": 48
+    },
+    {
+      "kind": "rdv",
+      "status": "recontado",
+      "documents": 48
+    }
+  ],
+  "vote_statuses": [
+    {
+      "status": "concordante",
+      "rows": 265
+    }
+  ],
+  "unit_statuses": [
+    {
+      "vote_status": "concordante",
+      "section_turns": 48
+    }
+  ],
+  "attendance_reconciled": 48,
+  "denominators_reconciled": 48,
+  "schemas": {
+    "bu": {
+      "sha256": "e53e28e9812bb7e19cc4bcc77b6ce48f25c413f62a60369a91c4f269e19b7ed6",
+      "bytes": 24353
+    },
+    "rdv": {
+      "sha256": "282dcde0c7ba1f1bb128fe27443ad8d18f7490416c9546d033910a7ec557a465",
+      "bytes": 15274
+    },
+    "assinatura": {
+      "sha256": "66dfa7bcb79f31b2d6a4d1427dc0e1d1b7134aba83fb62c496713a4ac2c7e083",
+      "bytes": 4914
+    }
+  },
+  "interpretation": "Conferência de totais presidenciais e integridade local. Assinaturas criptográficas, cadeia de confiança, eventos dos logs e papel independente não verificados. Concordância não explica escolhas individuais nem constitui auditoria integral.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/amostra/manifesto.json": "027b8f49772872ef264d9a3119ef957fbea9f0bbbd3b88a6d954d69fd6fb70f8",
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "auditoria/documentos/manifesto.json": "271bb43e5aba8fe356ae04108d47ddd91c50dd48f91db72b8572f9e2d11d1bd6",
+    "conferencia_bu.parquet": "9e03ff58835ae285eed6f677484431171a9c9292aeac664af39bdf7b5c9eb27b",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_count.py": "96dc5d353430036fac32eda1399249ee18bffec92bec57a038ee5d5269097e2c"
+  }
+}

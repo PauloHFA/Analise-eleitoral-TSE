@@ -44,7 +44,12 @@ outputs/2026/**/*.parquet
 !outputs/2026/nacional/mapas/prioridades.csv
 !outputs/2026/auditoria/amostra/secoes.csv
 !outputs/2026/auditoria/amostra/turnos.csv
+!outputs/2026/auditoria/documentos/inventario.csv
+!outputs/2026/auditoria/conferencia/documentos.csv
+!outputs/2026/auditoria/conferencia/votacao.csv
+!outputs/2026/auditoria/conferencia/unidades.csv
 outputs/2026/nacional/mapas/mapa_dados.json
+outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
 !outputs/logs/README.md
 !outputs/logs/preservacao-documentacao.json
