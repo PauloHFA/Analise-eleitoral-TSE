@@ -276,7 +276,7 @@ def main():
     audit = sub.add_parser("auditoria", help="Amostra dirigida e conferência adicional dos arquivos das urnas")
     audit.add_argument("--output",default="outputs/2026")
     audit.add_argument("--dest")
-    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia","relatorio","assinaturas","ed521"],default="amostra")
+    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia","relatorio","assinaturas","ed521","cadeia"],default="amostra")
     audit.add_argument("--data",default="data")
     audit.add_argument("--schema")
     args = parser.parse_args()
@@ -326,6 +326,9 @@ def main():
         elif args.etapa=="relatorio":
             from .audit_report import run_report
             result=run_report(args.output,args.dest)
+        elif args.etapa=="cadeia":
+            from .audit_chain import run_chain
+            result=run_chain(args.output,args.data,args.dest)
         else:
             from .audit_signature_run import run_signatures
             result=run_signatures(args.output,args.data,args.dest,enable_ed521=args.etapa=="ed521")
