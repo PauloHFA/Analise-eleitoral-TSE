@@ -1,27 +1,27 @@
-{
-  "interface": {
-    "checks": 900,
-    "filters": "UF e grupo; todas as combinações"
-  },
-  "pdf": {
-    "pages": 9,
-    "bookmarks": 10,
-    "geometry": "conteúdo dentro das margens"
-  },
-  "status": "válido",
-  "csv_parquet_pairs": 6,
-  "files": [
-    "auditoria\\amostra\\secoes.parquet",
-    "auditoria\\amostra\\turnos.parquet",
-    "auditoria\\documentos\\inventario.parquet",
-    "auditoria\\conferencia\\documentos.parquet",
-    "auditoria\\conferencia\\unidades.parquet",
-    "auditoria\\conferencia\\votacao.parquet"
-  ],
-  "raw_files_verified": 240,
-  "sections": 24,
-  "section_turns": 48,
-  "vote_rows": 265,
-  "signature_status": "não verificada; leitura limitada",
-  "reference": "hashes das entradas preservados"
-}
+{
+  "interface": {
+    "checks": 900,
+    "filters": "UF e grupo; todas as combinações"
+  },
+  "pdf": {
+    "pages": 9,
+    "bookmarks": 10,
+    "geometry": "conteúdo dentro das margens"
+  },
+  "status": "válido",
+  "csv_parquet_pairs": 6,
+  "files": [
+    "auditoria\\amostra\\secoes.parquet",
+    "auditoria\\amostra\\turnos.parquet",
+    "auditoria\\documentos\\inventario.parquet",
+    "auditoria\\conferencia\\documentos.parquet",
+    "auditoria\\conferencia\\unidades.parquet",
+    "auditoria\\conferencia\\votacao.parquet"
+  ],
+  "raw_files_verified": 240,
+  "sections": 24,
+  "section_turns": 48,
+  "vote_rows": 265,
+  "signature_status": "não verificada; leitura limitada",
+  "reference": "hashes das entradas preservados"
+}

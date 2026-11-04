@@ -3,8 +3,8 @@
   "scope": "Resultados agregados e metadados; originais brutos e esquemas não incluídos",
   "asset": {
     "name": "auditoria-amostral-2026.zip",
-    "bytes": 244657,
-    "sha256": "7bfa074c2f9c58cb1cf4f9b2e730f98f49b839b159cc413477ca7e955869d164",
+    "bytes": 244629,
+    "sha256": "e53daae4a58c8c94ab785c7485ee54571155395130b093df2b55ccf872fe520d",
     "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/auditoria-amostral-v1/auditoria-amostral-2026.zip"
   },
   "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/auditoria-amostral-v1/manifesto-auditoria.json"
