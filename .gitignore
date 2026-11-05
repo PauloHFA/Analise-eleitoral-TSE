@@ -72,6 +72,12 @@ outputs/2026/**/*.parquet
 !outputs/2026/auditoria/logs/comparacao_turnos.csv
 !outputs/2026/auditoria/logs/pendencias.csv
 !outputs/2026/auditoria/logs/regras.csv
+!outputs/2026/auditoria/atas/casos.csv
+!outputs/2026/auditoria/atas/confronto.csv
+!outputs/2026/auditoria/atas/buscas.csv
+!outputs/2026/auditoria/atas/resultados_busca.csv
+!outputs/2026/auditoria/atas/fontes.csv
+!outputs/2026/auditoria/atas/documentos_necessarios.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
@@ -139,6 +145,11 @@ outputs/logs/*
 !outputs/logs/testes-logs.log
 !outputs/logs/validacao-logs.log
 !outputs/logs/preservacao-logs.log
+!outputs/logs/fontes-atas.log
+!outputs/logs/auditoria-atas.log
+!outputs/logs/testes-atas.log
+!outputs/logs/validacao-atas.log
+!outputs/logs/preservacao-atas.log
 .env
 .env.*
 !.env.example

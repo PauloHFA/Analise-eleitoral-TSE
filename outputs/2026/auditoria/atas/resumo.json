@@ -1,0 +1,74 @@
+{
+  "sections": 24,
+  "section_turns": 28,
+  "issue_rows": 33,
+  "initial_units": 6,
+  "individual_searches": 6,
+  "units_with_individual_search": 6,
+  "units_without_individual_search": 22,
+  "search_results": 18,
+  "reviewed_context_sources": 12,
+  "specific_evidence_entries": 0,
+  "issues_corrobated": 0,
+  "documentary_differences_for_review": 0,
+  "causes_confirmed": null,
+  "cause_interpretation": "A confirmação causal não é automatizada; zero registros específicos não prova ausência de ocorrência",
+  "document_requirements": 56,
+  "cards": 28,
+  "local_request_drafts": 28,
+  "requests_sent": 0,
+  "capture_manifest_sha256": "6ceded168f3776028ed2bb9adc4a03d2bc508eaeade637703a791ba783ca0cab",
+  "capture_hashes": {
+    "atas-ind-ac2.json": "b7d7ad194629a8965e8c4d6c1382192d2ed3eb947f3a843cb8f5939a1ae74214",
+    "atas-ind-ba1.json": "ffbe1a631bb2ffc8d323a613c01511a749b49f5ac3bb1e8034ce3b7bfc091fe5",
+    "atas-ind-ba2.json": "cb1a9640af62f64600f66c060dd570be80cfdb4ec2f82c9e2179352c93060d3b",
+    "atas-ind-mt1.json": "862c4bfae6fa11bc47ba80f5d139333510a089beddb08745fa5f1ea998268fcd",
+    "atas-ind-pr1.json": "aa4d7f7484d34e338be6b807fcef0f021e1ba103a1508212d9bf1e16cb3f42f6",
+    "atas-ind-zz1.json": "dc4aa91a657d0b9d7c201e193ce3fcf0cae79a3f77f49f8fdb4956f28cd478eb",
+    "evidencias.json": "3d650c02159df223868d3a1e60d43ef227b7339d558cbe48956d0d8a7ac8b5c9",
+    "pesquisa.json": "112ced311ddae60ac532e93cc4441bb5db874ec2869676713b99299e2166f259",
+    "S01.md": "ca143d62b802c82ae047e9d4e2de2e0f008c23141cca35f1f3e415b5d9e89466",
+    "S02.md": "3daa3069f6868b0c0a7bfba3f7a7179d788b83f9544531e2781aecb4a4c38f29",
+    "S03.md": "7f0eda8a689d275325d0a52bd63912e46ef3e32f5ae26b0a2cbe62c02e8fcf39",
+    "S04.md": "eabc90b160dbb6ec9eb00136ac55972d18d406edd4c89441612d0d7f23d99589",
+    "S05.md": "b6c6c3fd0b9ef7b8332146b1a344675625802cec89e4547a4a12e289090a0dff",
+    "S06.md": "f9bcef6c043f3c232679026cc46bca45f32a8c443dfd70b419c33816c35a0b2a",
+    "S07.md": "e53833868b9053eb09325458e2775368aaf02247c36193770fe4b7fcd236d0ee",
+    "S08.md": "50a14dd6a2ef15dfa92dbe4d129a656b7aeaa796df77883762285d626b40c297",
+    "S09.md": "d4bcea85290f92e653edf79bc8a80be93ead390a21cd4a1ed6ffb98ca673678f",
+    "S10.md": "4c4b7394f270bd334af40c74d92d3e11857e2016298e875d9042bfce4193a7cb",
+    "S11.md": "9b6d7f1380d8b3f0108fccc1330911b50cbd0e07a21baee802b72939674467b2",
+    "S12.md": "9baa82be6ac448b4dda8588ad9ca6a7005228e988239f8dfb9fe3e28af25e070"
+  },
+  "status_counts": [
+    {
+      "priority": "acompanhamento",
+      "research_status": "busca_individual_nao_realizada",
+      "document_status": "sem_confronto_especifico_concluido",
+      "units": 22
+    },
+    {
+      "priority": "inicial",
+      "research_status": "busca_individual_registrada",
+      "document_status": "sem_confronto_especifico_concluido",
+      "units": 6
+    }
+  ],
+  "interpretation": "Pesquisa e dossiê executados; confronto de casos permanece dependente de atas e registros específicos. Fontes gerais não explicam ocorrências individuais.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/logs/unidades.parquet": "b622f99912738471b040b81ed575975b894d243125fdadbae9b940800b88eaa2",
+    "auditoria/logs/pendencias.parquet": "37a8103bb36e0cdffc5952dd916c1544df1a0cf66b883a3d4c750ad622969de0",
+    "auditoria/logs/manifesto.json": "f99d9fce74c4224888c8c16dc1aa774bf4ee14367ff66cc811ecfc35a24fe8de",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_atas.py": "3ba8eed79c0403ad8aa847c92a53e348d6f5def0eb810b17a88a1f3d0895157b",
+    "audit_atas_report.py": "0bd9d026757392960d689002f216d46c1afea21d27df436dddc65890b5dc6dc5"
+  }
+}

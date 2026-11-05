@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; backend de caminho completo/LCR implementado e testado sinteticamente, execução real inconclusiva sem âncora, 14 pendências de vigência; logs analisados com contexto limitado; CEPESC, layout oficial e BU independente abertos |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; backend de caminho completo/LCR implementado e testado sinteticamente, execução real inconclusiva sem âncora, 14 pendências de vigência; logs analisados; dossiê de atas com 28 fichas e seis buscas, sem documento específico obtido; CEPESC, layout oficial e BU independente abertos |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -159,3 +159,14 @@ Os 33 registros ERRO das datas-alvo (31 desmontagem de MR, um OpenSession e um d
 Validação: 211 testes aprovados; sete pares CSV/Parquet integrais; 48 originais reconferidos; 5.292 condições dos filtros, 12 referências locais e PDF de sete páginas/sete marcadores conferidos. Nove manifestos amostrais e 578 artefatos originais preservados. As saídas estão em `auditoria/logs/`; não há mensagens ou dados individuais publicados.
 
 **Próxima etapa documental:** levantar atas e registros de atendimento/substituição para os casos selecionados, começando por conteúdo aninhado/múltiplos identificadores, OpenSession e cronologia. A causa desses apontamentos continua pendente; nenhum contato externo foi enviado. CEPESC, perfil/layout oficial, fontes de confiança/LCR, BU independente e ato individual dos nulos técnicos permanecem nas suas frentes. A presença dos três marcos nas 48 unidades não encerra a auditoria.
+
+
+### Atas e atendimento — pesquisa inicial, sem confronto encerrado
+
+Implementação em `e74665d`; [método e cobertura](ATAS.md). Os 33 apontamentos dos logs foram preservados em 28 unidades seção/turno. Foram feitas seis consultas individuais para os casos com eventos adicionais ao nível ERRO; as outras 22 unidades continuam sem busca individual nesta rodada. Há 18 resultados de busca, 12 fontes de contexto revisadas, 28 fichas e 28 minutas locais não enviadas. As 56 necessidades documentais são dois tipos a procurar por unidade, não arquivos obtidos ou pedidos enviados.
+
+Nenhuma ata de mesa receptora ou registro específico de atendimento/substituição dos casos foi obtido. O boletim estadual de 60 substituições encontrado em uma consulta do segundo turno refere-se ao primeiro; não identifica a seção de Campo Formoso. Atas de julgamento, normas, diretórios e notícias agregadas não confirmam ocorrências individuais. O confronto exige identidade exata, escopo do apontamento e revisão com localização documental. Confirmação causal não é automatizada, com `causes_confirmed: null` nesta síntese.
+
+Validação: 228 testes aprovados; seis pares CSV/Parquet integrais; 28 fichas/28 minutas, 123 links locais, 3.132 condições dos filtros e PDF de cinco páginas/seis marcadores conferidos. Dez manifestos amostrais e 578 artefatos originais preservados. Os textos integrais das capturas e os logs brutos não são redistribuídos.
+
+**Próximas ações:** ampliar a pesquisa pública às 22 unidades de acompanhamento e obter documentos específicos para as seis iniciais; revisar originais/proveniência e confrontar cada apontamento. As minutas estão prontas, mas contatos e protocolos dependem de instrução expressa. Não foi concluída a causa de nenhum caso. As demais pendências PKIX, CEPESC, layout oficial, BU independente e ato individual continuam separadas.

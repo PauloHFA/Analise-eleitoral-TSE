@@ -1,0 +1,10 @@
+{
+  "tag": "atas-dossie-amostral-v1",
+  "asset": {
+    "name": "atas-dossie-amostra-2026.zip",
+    "bytes": 186752,
+    "sha256": "0097c9877ae4ca2d74d6e33a8802ddaa47eb70693cf3e5b20809f0e75db9cc0e",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/atas-dossie-amostral-v1/atas-dossie-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/atas-dossie-amostral-v1/manifesto-atas.json"
+}

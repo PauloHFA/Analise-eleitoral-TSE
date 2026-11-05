@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros do dossiê de atas e atendimento
+
+`fontes-atas.log` resume seis buscas individuais, 18 resultados, 12 fontes de contexto e zero documento específico obtido. `auditoria-atas.log` registra a geração do dossiê. `testes-atas.log` contém 228 testes aprovados, incluindo 17 novos, com 543 avisos de depreciação ASN.1. `validacao-atas.log` confere seis pares CSV/Parquet, preservação dos 33 apontamentos, 28 fichas/28 minutas, dez manifestos anteriores, 123 links, 3.132 condições dos filtros e PDF de cinco páginas/seis marcadores. `preservacao-atas.log` confirma os 578 artefatos originais. Vinte e duas unidades ainda não receberam busca individual; nenhuma minuta foi enviada e nenhuma causa foi confirmada.
+
 ## Registros da análise dos logs das urnas
 
 `auditoria-logs.log` registra a execução descritiva dos 48 ZIPs/49 membros. `testes-logs.log` contém 211 testes aprovados, incluindo 17 novos, com 543 avisos de depreciação ASN.1. `validacao-logs.log` confere sete pares CSV/Parquet completos, 48 originais, datas-alvo, nove manifestos anteriores, 12 referências locais, 5.292 condições dos filtros e PDF de sete páginas/sete marcadores. `preservacao-logs.log` confirma os 578 artefatos originais. Os 33 registros ERRO e os 33 apontamentos em 28 unidades são contagens distintas; nenhum impacto nos votos foi inferido.

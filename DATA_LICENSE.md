@@ -34,6 +34,8 @@ O backend pyhanko-certvalidator 0.33.0 e suas dependências preservam suas licen
 
 A análise de logs publica somente contagens agregadas, regras locais e metadados de origem. Mensagens brutas, nomes, identificações pessoais e sequências/horários individuais de votação não integram os pacotes. As capturas das páginas oficiais são preservadas separadamente com URL e hash; seus textos integrais não são redistribuídos.
 
+O dossiê de atas/atendimento distribui metadados, resumos próprios, fichas e minutas locais não enviadas. Textos integrais das capturas de portais não integram o pacote; não se anuncia distribuição de atas específicas que não foram obtidas. Notícias, normas e diretórios mantêm seus direitos e fontes originais.
+
 Bibliotecas, fontes tipográficas incorporadas e eventuais conteúdos de terceiros mantêm suas respectivas licenças e avisos de copyright. A licença MIT do projeto não os relicencia. Links e registros de afirmações de notícias identificam as fontes consultadas; não concedem direitos sobre o conteúdo integral dos veículos.
 
 ## Pacotes de resultados
