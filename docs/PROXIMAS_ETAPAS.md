@@ -11,7 +11,7 @@ Roteiro iniciado em **3 de novembro de 2026**. Cada incremento deve produzir có
 | 2 | Cobertura e exclusões | Perfis incluídos/excluídos, cobertura municipal/UF e diferenças descritivas | Implementado, executado nacionalmente e validado |
 | 3 | Categorias e versões | Dossiê verificável dos nulos técnicos e das diferenças de geração | Dossiê e pesquisa de norma/cadastro concluídos; ato individual e eficácia temporal pendentes |
 | 4 | Investigação nacional e mapas | Viradas nos dois sentidos, inventário nacional e taxas de triagem com cobertura | Implementado, executado nacionalmente e validado; referência preservada |
-| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; backend de caminho completo/LCR implementado e testado sinteticamente, execução real inconclusiva sem âncora, 14 pendências de vigência; logs, CEPESC, layout oficial e BU independente abertos |
+| 5 | Conferência documental ampliada | Amostra prioritária e de comparação, RDV, assinaturas e BU impresso/imagem | Recontagem, hashes, ECDSA/Ed521 e vínculo até candidatos intermediários executados; backend de caminho completo/LCR implementado e testado sinteticamente, execução real inconclusiva sem âncora, 14 pendências de vigência; logs analisados com contexto limitado; CEPESC, layout oficial e BU independente abertos |
 
 **Primeira rodada de implementação:** frentes 1 e 2, com execução sobre os arquivos locais e commits separados. Documentar uma frente não significa que ela foi executada. As frentes 3–5 não serão apresentadas como concluídas por existir uma rotina preparatória.
 
@@ -148,3 +148,14 @@ O [backend PKIX e adaptador Ed521](CAMINHO_PKIX.md) passou a construir e validar
 A execução real tem 48 unidades/144 hipóteses de horário inconclusivas, zero âncoras selecionadas e zero LCR fornecidas. Foram realizadas 11 novas consultas com HTTP 403, separadas das 21 anteriores. Três pares CSV/Parquet, oito links locais e PDF de cinco páginas/cinco marcadores foram verificados; oito manifestos amostrais e 578 artefatos originais preservados. Saída isolada em `auditoria/caminho_pkix/`; nenhum resultado anterior substituído.
 
 **O item 1 permanece parcialmente aberto por falta de evidência:** obter emissores/raízes e LCR aplicáveis às datas, documentar a confiança e confirmar o perfil oficial. Os 14 apontamentos de vigência continuam sem causa confirmada. Não foram enviados contatos externos. Eventos dos logs constituem uma frente distinta e não foram executados neste incremento.
+
+
+### Eventos dos logs — execução e próximo confronto documental
+
+Implementação em `958cdd3`; [método e resultados](LOGS.md). Foram lidos 48 ZIPs/49 membros textuais, incluindo um aninhado. Há 287.649 registros físicos, sendo 158.103 nas datas-alvo; as 129.546 linhas anteriores não são misturadas aos eventos do dia. Nenhuma linha ficou sem interpretação no layout observado. O token final é apenas validado na sintaxe, sem algoritmo de integridade encadeada verificado ou homologação do parser.
+
+Os 33 registros ERRO das datas-alvo (31 desmontagem de MR, um OpenSession e um da impressora) têm contexto temporal separado. Há um retrocesso do relógio na data-alvo, uma unidade com múltiplos identificadores de hardware e três unidades com ligações entre marcos avaliáveis. As 33 linhas de apontamento abrangem 28 unidades seção/turno, com sobreposição. Não foram atribuídas causas, duração de interrupções, votos afetados ou frequência nacional de irregularidade.
+
+Validação: 211 testes aprovados; sete pares CSV/Parquet integrais; 48 originais reconferidos; 5.292 condições dos filtros, 12 referências locais e PDF de sete páginas/sete marcadores conferidos. Nove manifestos amostrais e 578 artefatos originais preservados. As saídas estão em `auditoria/logs/`; não há mensagens ou dados individuais publicados.
+
+**Próxima etapa documental:** levantar atas e registros de atendimento/substituição para os casos selecionados, começando por conteúdo aninhado/múltiplos identificadores, OpenSession e cronologia. A causa desses apontamentos continua pendente; nenhum contato externo foi enviado. CEPESC, perfil/layout oficial, fontes de confiança/LCR, BU independente e ato individual dos nulos técnicos permanecem nas suas frentes. A presença dos três marcos nas 48 unidades não encerra a auditoria.

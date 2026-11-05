@@ -1,0 +1,24 @@
+{
+  "captured_at": "2026-11-05T01:24:53.201996+00:00",
+  "scope": "Contexto oficial sobre alcance de logs e auditoria; não especificação ou dicionário de eventos de 2026",
+  "captures": [
+    {
+      "url": "https://www.justicaeleitoral.jus.br/fato-ou-boato/checagens/2022/logs-das-urnas-eletronicas-sao-dados-publicos-e-nao-revelam-votos-de-eleitores",
+      "file": "explicacao-2022.md",
+      "sha256": "a684084eaf0d58b22fdac190c0ba922ebc5318336534d84fe0eb288f60298b5b",
+      "method": "Extração textual Firecrawl search --scrape; hash da captura, não dos bytes HTTP originais",
+      "published": "2022-11-18",
+      "updated": "2022-11-30"
+    },
+    {
+      "url": "https://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/como-realizar-auditoria",
+      "file": "auditoria.md",
+      "sha256": "9baa82be6ac448b4dda8588ad9ca6a7005228e988239f8dfb9fe3e28af25e070",
+      "method": "Extração textual Firecrawl scrape; hash da captura"
+    }
+  ],
+  "mirror_format_reference": {
+    "archive_sha256": "1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235",
+    "scope": "README atribuído ao TSE obtido antes em espelho: classifica log.jez como texto compactado. Não fornece homologação do parser ou dicionário de eventos. Nenhum código do espelho executado."
+  }
+}

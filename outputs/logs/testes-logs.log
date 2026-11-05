@@ -1,0 +1,1092 @@
+........................................................................ [ 34%]
+........................................................................ [ 68%]
+...................................................................      [100%]
+============================== warnings summary ===============================
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:857: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    SEQUENCE = Keyword('SEQUENCE').setName('SEQUENCE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:858: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    CHOICE = Keyword('CHOICE').setName('CHOICE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:859: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ENUMERATED = Keyword('ENUMERATED').setName('ENUMERATED')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:860: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    DEFINITIONS = Keyword('DEFINITIONS').setName('DEFINITIONS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:861: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    BEGIN = Keyword('BEGIN').setName('BEGIN')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:862: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    END = Keyword('END').setName('END')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:863: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    AUTOMATIC = Keyword('AUTOMATIC').setName('AUTOMATIC')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:864: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    TAGS = Keyword('TAGS').setName('TAGS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:865: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    OPTIONAL = Keyword('OPTIONAL').setName('OPTIONAL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:866: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    OF = Keyword('OF').setName('OF')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:867: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    SIZE = Keyword('SIZE').setName('SIZE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:868: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    INTEGER = Keyword('INTEGER').setName('INTEGER')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:869: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    REAL = Keyword('REAL').setName('REAL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:870: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    BIT_STRING = Keyword('BIT STRING').setName('BIT STRING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:871: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    OCTET_STRING = Keyword('OCTET STRING').setName('OCTET STRING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:872: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    DEFAULT = Keyword('DEFAULT').setName('DEFAULT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:873: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    IMPORTS = Keyword('IMPORTS').setName('IMPORTS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:874: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    EXPORTS = Keyword('EXPORTS').setName('EXPORTS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:875: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    FROM = Keyword('FROM').setName('FROM')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:876: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    CONTAINING = Keyword('CONTAINING').setName('CONTAINING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:877: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ENCODED_BY = Keyword('ENCODED_BY').setName('ENCODED_BY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:878: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    IMPLICIT = Keyword('IMPLICIT').setName('IMPLICIT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:879: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    EXPLICIT = Keyword('EXPLICIT').setName('EXPLICIT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:880: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    OBJECT_IDENTIFIER = Keyword('OBJECT IDENTIFIER').setName('OBJECT IDENTIFIER')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:881: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UNIVERSAL = Keyword('UNIVERSAL').setName('UNIVERSAL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:882: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    APPLICATION = Keyword('APPLICATION').setName('APPLICATION')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:883: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    PRIVATE = Keyword('PRIVATE').setName('PRIVATE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:884: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    SET = Keyword('SET').setName('SET')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:885: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ANY_DEFINED_BY = Keyword('ANY DEFINED BY').setName('ANY DEFINED BY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:886: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    EXTENSIBILITY_IMPLIED = Keyword('EXTENSIBILITY IMPLIED').setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:888: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    BOOLEAN = Keyword('BOOLEAN').setName('BOOLEAN')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:889: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    TRUE = Keyword('TRUE').setName('TRUE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:890: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    FALSE = Keyword('FALSE').setName('FALSE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:891: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    CLASS = Keyword('CLASS').setName('CLASS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:892: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    WITH_SYNTAX = Keyword('WITH SYNTAX').setName('WITH SYNTAX')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:893: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UNIQUE = Keyword('UNIQUE').setName('UNIQUE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:894: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    NULL = Keyword('NULL').setName('NULL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:895: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    WITH_COMPONENT = Keyword('WITH COMPONENT').setName('WITH COMPONENT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:896: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    WITH_COMPONENTS = Keyword('WITH COMPONENTS').setName('WITH COMPONENTS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:897: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    WITH_SUCCESSORS = Keyword('WITH SUCCESSORS').setName('WITH SUCCESSORS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:898: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    WITH_DESCENDANTS = Keyword('WITH DESCENDANTS').setName('WITH DESCENDANTS')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:899: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    COMPONENTS_OF = Keyword('COMPONENTS OF').setName('COMPONENTS OF')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:900: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    PRESENT = Keyword('PRESENT').setName('PRESENT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:901: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ABSENT = Keyword('ABSENT').setName('ABSENT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:902: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ALL = Keyword('ALL').setName('ALL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:903: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    EXCEPT = Keyword('EXCEPT').setName('EXCEPT')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:904: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    MIN = Keyword('MIN').setName('MIN')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:905: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    MAX = Keyword('MAX').setName('MAX')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:906: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    INCLUDES = Keyword('INCLUDES').setName('INCLUDES')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:907: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    PATTERN = Keyword('PATTERN').setName('PATTERN')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:908: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    CONSTRAINED_BY = Keyword('CONSTRAINED BY').setName('CONSTRAINED BY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:909: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UNION = Keyword('UNION').setName('UNION')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:910: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    INTERSECTION = Keyword('INTERSECTION').setName('INTERSECTION')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:911: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    PLUS_INFINITY = Keyword('PLUS-INFINITY').setName('PLUS-INFINITY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:912: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    MINUS_INFINITY = Keyword('MINUS-INFINITY').setName('MINUS-INFINITY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:913: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    BMPString = Keyword('BMPString').setName('BMPString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:914: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    GeneralString = Keyword('GeneralString').setName('GeneralString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:915: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    GraphicString = Keyword('GraphicString').setName('GraphicString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:916: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    IA5String = Keyword('IA5String').setName('IA5String')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:917: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    ISO646String = Keyword('ISO646String').setName('ISO646String')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:918: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    NumericString = Keyword('NumericString').setName('NumericString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:919: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    PrintableString = Keyword('PrintableString').setName('PrintableString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:920: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    TeletexString = Keyword('TeletexString').setName('TeletexString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:921: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UTCTime = Keyword('UTCTime').setName('UTCTime')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:922: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    GeneralizedTime = Keyword('GeneralizedTime').setName('GeneralizedTime')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:923: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    T61String = Keyword('T61String').setName('T61String')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:924: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UniversalString = Keyword('UniversalString').setName('UniversalString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:925: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    UTF8String = Keyword('UTF8String').setName('UTF8String')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:926: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    VideotexString = Keyword('VideotexString').setName('VideotexString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:927: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    VisibleString = Keyword('VisibleString').setName('VisibleString')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:928: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    CHARACTER_STRING = Keyword('CHARACTER STRING').setName('CHARACTER STRING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:931: PyparsingDeprecationWarning: 'excludeChars' argument is deprecated, use 'exclude_chars'
+    word = Word(printables, excludeChars=',(){}[].:=;"|').setName('word')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:931: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    word = Word(printables, excludeChars=',(){}[].:=;"|').setName('word')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:932: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    identifier = Regex(r'[a-z][a-zA-Z0-9-]*').setName('identifier')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:933: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    assign = Literal('::=').setName('::=')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:957: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    number = (Word(nums).setName('number') + ~dot)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:972: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    value_reference = Forward().setName('valuereference')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:973: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    type_reference = Forward().setName('typereference')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:974: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    value_set = Forward().setName('"valueSet" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:981: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    defined_value = Forward().setName('DefinedValue')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1000: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    number_form = Forward().setName('numberForm')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1001: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    definitive_number_form = Forward().setName('definitiveNumberForm')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1016: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    class_number = (number | defined_value).setName('ClassNumber')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1026: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    any_defined_by_type.setName('ANY DEFINED BY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1028: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    identifier_list = delimitedList(identifier)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1037: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + delimitedList(parameter)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1048: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + delimitedList(actual_parameter)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1080: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    - Group(delimitedList(at_notation))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1082: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    component_relation_constraint.setName('"{"')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1098: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    - Optional(delimitedList(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1101: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    user_defined_constraint.setName('CONSTRAINED_BY')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1110: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    value_set_field_reference = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1112: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_field_reference = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1114: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_set_field_reference = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1121: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    external_object_set_reference = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1125: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    defined_object <<= NoMatch().setName('"definedObject" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1135: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_set_field_spec = NoMatch().setName('"objectSetFieldSpec" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1136: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_field_spec = NoMatch().setName('"objectFieldSpec" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1137: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    variable_type_value_set_field_spec = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1139: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    fixed_type_value_set_field_spec = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1141: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    variable_type_value_field_spec = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1161: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    - Group(delimitedList(field_spec))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1187: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + delimitedList(field_setting)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1214: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_set.setName('"{"')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1231: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_class_field_type.setName('ObjectClassFieldType')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1234: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_set_from_objects <<= NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1236: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_from_object <<= NoMatch().setName('"objectFromObject" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1241: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    + NoMatch().setName('"exceptionSpec" not implemented'))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1250: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    type_constraints = delimitedList(named_constraint)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1289: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    unions = delimitedList(elements, delim=(union_mark | intersection_mark))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1303: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    constraint_spec.setName('one or more constraints')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1310: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    unrestricted_character_string_value = NoMatch().setName(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1332: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    charsyms = delimitedList(chars_defn)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1399: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + delimitedList(word, delim='|')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1401: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    object_identifier_type.setName('OBJECT IDENTIFIER')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1409: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    alternative_type_list = delimitedList(named_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1416: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    extension_addition_alternatives_list = delimitedList(extension_addition_alternative)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1429: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    choice_type.setName('CHOICE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1440: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    set_of_type.setName('SET OF')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1450: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    set_type.setName('SET')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1460: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    sequence_of_type.setName('SEQUENCE OF')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1463: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    component_value_list = delimitedList(named_value)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1474: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + Group(delimitedList(component_type))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1478: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    extension_addition_list = delimitedList(extension_addition)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1482: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    component_type_list = delimitedList(component_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1504: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    sequence_type.setName('SEQUENCE')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1515: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    octet_string_type.setName('OCTET STRING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1521: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    + delimitedList(Group(word
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1526: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    bit_string_type.setName('BIT STRING')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1544: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    real_type.setName('REAL')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1549: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    enumeration = delimitedList(enumeration_item)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1562: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    enumerated_type.setName('ENUMERATED')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1571: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    named_number_list = delimitedList(named_number)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1576: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    integer_type.setName('INTEGER')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1584: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    referenced_value <<= NoMatch().setName('"referencedValue" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1611: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    referenced_type.setName('ReferencedType')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1629: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    | referenced_type).setName('Type')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1636: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    value_set <<= NoMatch().setName('"valueSet" not implemented')
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1667: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    + Regex(r'[A-Z][a-zA-Z0-9-]*').setName('modulereference'))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1678: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    symbol_list = Group(delimitedList(symbol))
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1727: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    integer.setParseAction(convert_integer)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1728: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    signed_number.setParseAction(convert_integer)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1729: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    real_number.setParseAction(convert_real_number)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1730: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    bstring.setParseAction(convert_bstring)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1731: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    hstring.setParseAction(convert_hstring)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1732: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    value_range.setParseAction(convert_value_range)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1733: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    with_component.setParseAction(convert_inner_type_constraints)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1734: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    with_components.setParseAction(convert_inner_type_constraints)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1735: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    size_constraint.setParseAction(convert_size_constraint)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1736: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    permitted_alphabet.setParseAction(convert_permitted_alphabet)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1737: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    constraint.setParseAction(convert_constraint)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1738: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    module_body.setParseAction(convert_module_body)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1739: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    specification.setParseAction(convert_specification)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1740: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    module_definition.setParseAction(convert_module_definition)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1741: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    assignment_list.setParseAction(convert_assignment_list)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1742: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    imports.setParseAction(convert_imports)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1743: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameterized_object_set_assignment.setParseAction(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1745: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameterized_object_assignment.setParseAction(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1747: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameterized_object_class_assignment.setParseAction(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1749: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameterized_type_assignment.setParseAction(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1751: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameterized_value_assignment.setParseAction(
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1753: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    sequence_type.setParseAction(convert_sequence_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1754: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    sequence_of_type.setParseAction(convert_sequence_of_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1755: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    set_type.setParseAction(convert_set_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1756: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    set_of_type.setParseAction(convert_set_of_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1757: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    integer_type.setParseAction(convert_integer_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1758: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    real_type.setParseAction(convert_real_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1759: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    boolean_type.setParseAction(convert_boolean_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1760: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    bit_string_type.setParseAction(convert_bit_string_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1761: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    octet_string_type.setParseAction(convert_octet_string_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1762: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    null_type.setParseAction(convert_null_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1763: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    object_identifier_type.setParseAction(convert_object_identifier_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1764: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    enumerated_type.setParseAction(convert_enumerated_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1765: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    choice_type.setParseAction(convert_choice_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1766: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    defined_type.setParseAction(convert_defined_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1767: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    character_string_type.setParseAction(convert_keyword_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1768: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    object_class_field_type.setParseAction(convert_keyword_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1769: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    any_defined_by_type.setParseAction(convert_any_defined_by_type)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1770: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    actual_parameter_list.setParseAction(convert_actual_parameter_list)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1771: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    parameter_list.setParseAction(convert_parameter_list)
+
+tests/test_audit_count.py::test_strict_asn1_rejects_truncation_and_trailing_bytes
+tests/test_audit_signature.py::test_observed_layout_roundtrips_and_trailing_unknown_fields_are_rejected
+tests/test_pkix_path.py::test_complete_synthetic_ed521_path_and_ed521_crl_use_the_adapter
+  C:\Projetos\Eleições2026\.venv\Lib\site-packages\asn1tools\parser.py:1857: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    tokens = grammar.parseString(string).asList()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+211 passed, 543 warnings in 23.12s

@@ -1,0 +1,23 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 7,
+  "section_turns": 48,
+  "text_payloads": 49,
+  "raw_logs_rechecked": 48,
+  "records": 287649,
+  "target_records": 158103,
+  "target_error_records": 33,
+  "review_rows": 33,
+  "previous_stage_manifests_preserved": 9,
+  "local_links_and_images": 12,
+  "filters": {
+    "units": 48,
+    "filter_conditions": 5292,
+    "status": "válido"
+  },
+  "pdf": {
+    "pages": 7,
+    "bookmarks": 7,
+    "geometry": "dentro das margens"
+  }
+}

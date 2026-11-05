@@ -65,6 +65,13 @@ outputs/2026/**/*.parquet
 !outputs/2026/auditoria/caminho_pkix/validacoes.csv
 !outputs/2026/auditoria/caminho_pkix/unidades.csv
 !outputs/2026/auditoria/caminho_pkix/novas_tentativas.csv
+!outputs/2026/auditoria/logs/unidades.csv
+!outputs/2026/auditoria/logs/membros.csv
+!outputs/2026/auditoria/logs/contagens.csv
+!outputs/2026/auditoria/logs/erros_contexto.csv
+!outputs/2026/auditoria/logs/comparacao_turnos.csv
+!outputs/2026/auditoria/logs/pendencias.csv
+!outputs/2026/auditoria/logs/regras.csv
 outputs/2026/nacional/mapas/mapa_dados.json
 outputs/2026/auditoria/documentos/progresso.json
 outputs/logs/*
@@ -128,6 +135,10 @@ outputs/logs/*
 !outputs/logs/testes-pkix.log
 !outputs/logs/validacao-pkix.log
 !outputs/logs/preservacao-pkix.log
+!outputs/logs/auditoria-logs.log
+!outputs/logs/testes-logs.log
+!outputs/logs/validacao-logs.log
+!outputs/logs/preservacao-logs.log
 .env
 .env.*
 !.env.example

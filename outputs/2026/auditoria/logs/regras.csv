@@ -1,0 +1,22 @@
+event,module,fullmatch_regex,meaning
+logd_inicio,LOGD,Início das operações do logd,Início declarado do serviço de log
+urna_ligada,LOGD,Urna ligada em .*,"Registro de ligação, não contagem automática de reinícios"
+vota_inicio,VOTA,Iniciando aplicação - .*,Inicialização do aplicativo VOTA
+urna_pronta,VOTA,Urna pronta para receber votos,Marco de disponibilidade declarado
+zeresima_gerada,VOTA,Gerando relatório \[ZERÉSIMA\] \[TÉRMINO\],Término declarado da geração da zerésima
+encerramento_inicio,VOTA,Inicio do Encerramento,Início declarado do procedimento de encerramento
+encerramento_abortado,VOTA,Procedimento de encerramento abortado|Operador cancelou o encerramento da votação,Cancelamento/aborto do procedimento
+bu_gerado,VOTA,Gerando relatório \[BU\] \[TÉRMINO\],Término declarado da geração do relatório BU
+votacao_encerrada,VOTA,Votação encerrada,Mensagem explícita de votação encerrada; pode faltar no recorte
+suspensao_votacao,VOTA,Votação suspensa,"Registro agregado de suspensão, sem vincular a eleitor ou voto"
+reinicio_solicitado,GAP,Reiniciando a urna,"Solicitação de reinício, não comprovação da causa"
+reinicio_registrado,GAP,Urna reiniciada a pedido do aplicativo,Registro distinto da solicitação; não somar como dois reinícios
+desligamento,*,Desligando a urna|Urna desligada pela chave|Urna desligada a pedido do aplicativo,Mensagens de desligamento; várias podem se referir ao mesmo ciclo
+energia_rede,*,Urna operando (?:com rede elétrica|na rede elétrica),Mensagem de operação em rede elétrica
+energia_bateria,*,Urna operando na bateria interna,"Mensagem de operação em bateria; não é, por si, falha"
+impressora_falha,*,Impressora com falha.*,Mensagem explícita de falha da impressora
+mr_desmontagem_erro,GAP,Problema ao desmontar a MR,Mensagem de problema na desmontagem de MR; causa não confirmada
+impressora_erro_desconhecido,GAP,Impressora com erro desconhecido,Mensagem de erro desconhecido da impressora
+opensession_erro,VOTA,Não é possível continuar a execução \| Erro inesperado .*ERROR OpenSession command .*,Mensagem de impossibilidade de continuar a execução/OpenSession
+relogio_ajustado,*,Data e hora da urna alterada de .*,Mensagem explícita de ajuste do relógio
+outro_evento,*,.*,"Demais mensagens, sem exportar seu conteúdo"

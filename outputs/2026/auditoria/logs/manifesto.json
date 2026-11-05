@@ -1,0 +1,21 @@
+{
+  "comparacao_turnos.csv": "b8443e0a09dd27893a21ce0073639e1f3e6852916b921395e7f472dbee80ec68",
+  "comparacao_turnos.parquet": "16f59c8e5fe70746155a233eb1466622190970d668f473e310e85d612d8b044d",
+  "contagens.csv": "8a3ca46c2285698f5002d183cf7112cf10f258a8ceeda7ad06961dd560c2c1d0",
+  "contagens.parquet": "e7d7a35ab9a775a609e5c51d222ea1c0d31df5530bf70478343cd9f14c90d728",
+  "erros_contexto.csv": "f968421e0b02b0b89878e6d0ff9a9a25620b936452fd31cef90851712aa7e0ff",
+  "erros_contexto.parquet": "6f47e813671285b633578e9aa488f7305b64246240fc0359a9f45656a98b60ef",
+  "erros_por_janela.png": "97ce517805b7fd32dc71f0b0cf0c7b2f28cf103e8d0ce40f826cb162317a0126",
+  "membros.csv": "612ee6edb265d5ea6f005cbe1ab79c10ce1f929bb3d04f54680b318564c9bd87",
+  "membros.parquet": "c53db82491c3e00a5dcfd8fd9c1346005faa7b53e1efed1695e215a452f7137d",
+  "pendencias.csv": "5df292e1972c2234dbaad0d0c4b825e078c69636f9a0b6de91e2b60fbb5c904a",
+  "pendencias.parquet": "37a8103bb36e0cdffc5952dd916c1544df1a0cf66b883a3d4c750ad622969de0",
+  "protocolo.json": "a172dacbeda70b1ae6b3274f78a1dcff1db5ea8c07dd200b0dcec95dea50a456",
+  "regras.csv": "b201736a0d6c54466a906ceb245987581dd4027c5dd9f9486811be1d5064035b",
+  "regras.parquet": "7eeaaf39cd9c9b236f2364bceffddf9cf91e463df74638a0365ac5c50c3f8dfa",
+  "relatorio.html": "8c8f90ae929ad3ea73b88ae6603952e67c186daff55d623732778981ae24c6ca",
+  "relatorio.pdf": "cfecfd67a41572e74ae55d61d7a2b5351c41f8cfa275ba59bb8349bc8eb2c1f1",
+  "resumo.json": "7938810a99fa0f2c80ea869b94a2bd169e714f7460e9326e5dee357d03377afa",
+  "unidades.csv": "582c15730de37737f56ab84fd6818cd1885ffeb3afa8a9dc5ab79d3b7e9c77f3",
+  "unidades.parquet": "b622f99912738471b040b81ed575975b894d243125fdadbae9b940800b88eaa2"
+}

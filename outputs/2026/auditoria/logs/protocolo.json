@@ -1,0 +1,18 @@
+{
+  "layout": "logd-observado-tab6-latin1-v1",
+  "target_dates": {
+    "1": "2026-10-04",
+    "2": "2026-10-25"
+  },
+  "dates_scope": "Datas-alvo explícitas da análise; timestamps locais declarados, sem conversão de fuso ou autenticação do relógio",
+  "classification": "Regras locais após inspeção do formato; não dicionário oficial ou análise pré-registrada",
+  "preservation": "Sem deduplicação, reordenação de linhas ou união cronológica de membros distintos",
+  "final_token": "16 dígitos hexadecimais conferidos somente na sintaxe; algoritmo/integridade deste campo não validados",
+  "privacy": "Nenhuma mensagem, identificação pessoal, tecla, biometria ou sequência/horário individual de votação é exportada",
+  "figures": "Contagens de registros, não pessoas, votos afetados ou interrupções físicas medidas",
+  "archive_limits": {
+    "bytes": 33554432,
+    "depth": 2,
+    "members_per_zip": 16
+  }
+}

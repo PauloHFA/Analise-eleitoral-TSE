@@ -23,6 +23,10 @@ Resultados finais:
 - `testes-incrementos.log`: suíte após estabilidade, cobertura e leitores CSV estritos.
 - `validacao-incrementos.log`: entradas por hash, conteúdo tipado das tabelas novas, pares, rankings, grupos e cobertura.
 
+## Registros da análise dos logs das urnas
+
+`auditoria-logs.log` registra a execução descritiva dos 48 ZIPs/49 membros. `testes-logs.log` contém 211 testes aprovados, incluindo 17 novos, com 543 avisos de depreciação ASN.1. `validacao-logs.log` confere sete pares CSV/Parquet completos, 48 originais, datas-alvo, nove manifestos anteriores, 12 referências locais, 5.292 condições dos filtros e PDF de sete páginas/sete marcadores. `preservacao-logs.log` confirma os 578 artefatos originais. Os 33 registros ERRO e os 33 apontamentos em 28 unidades são contagens distintas; nenhum impacto nos votos foi inferido.
+
 ## Registros do backend PKIX
 
 `fontes-pkix.log` registra 11 consultas complementares sem objeto obtido. `auditoria-pkix.log` é a execução do backend; `testes-pkix.log` registra 194 testes aprovados e 543 avisos de depreciação ASN.1. `validacao-pkix.log` confere três pares CSV/Parquet completos, 48 unidades/144 hipóteses inconclusivas, 14 pendências preservadas, oito manifestos anteriores, oito links locais e PDF de cinco páginas/cinco marcadores. `preservacao-pkix.log` confere os 578 artefatos originais. O sucesso sintético não é atribuído à amostra; a revogação real não foi avaliada sem caminho.

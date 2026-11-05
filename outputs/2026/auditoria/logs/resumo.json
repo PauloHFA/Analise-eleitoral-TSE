@@ -1,0 +1,194 @@
+{
+  "sections": 24,
+  "section_turns": 48,
+  "payloads": 49,
+  "nested_payloads": 1,
+  "records": 287649,
+  "target_records": 158103,
+  "earlier_records": 129546,
+  "later_records": 0,
+  "invalid_rows": 0,
+  "repeated_rows": 0,
+  "overlap_previous_members": 0,
+  "target_error_records": 33,
+  "units_with_target_errors": 24,
+  "target_alert_records": 596,
+  "clock_regressions": 49,
+  "target_clock_regressions": 1,
+  "units_multiple_target_hardware": 1,
+  "units_with_incomplete_markers": 0,
+  "units_with_boots_between_markers": 3,
+  "review_rows": 33,
+  "review_units": 28,
+  "by_window_level": [
+    {
+      "window": "anterior",
+      "level": "ALERTA",
+      "count": 519
+    },
+    {
+      "window": "anterior",
+      "level": "ERRO",
+      "count": 58
+    },
+    {
+      "window": "anterior",
+      "level": "INFO",
+      "count": 128967
+    },
+    {
+      "window": "anterior",
+      "level": "WHAT",
+      "count": 2
+    },
+    {
+      "window": "data_alvo",
+      "level": "ALERTA",
+      "count": 596
+    },
+    {
+      "window": "data_alvo",
+      "level": "ERRO",
+      "count": 33
+    },
+    {
+      "window": "data_alvo",
+      "level": "EXTERNO",
+      "count": 1
+    },
+    {
+      "window": "data_alvo",
+      "level": "INFO",
+      "count": 157472
+    },
+    {
+      "window": "data_alvo",
+      "level": "WHAT",
+      "count": 1
+    }
+  ],
+  "by_group": [
+    {
+      "territory": "Brasil",
+      "group": "comparacao",
+      "turn": 1,
+      "section_turns": 10,
+      "records": 47601,
+      "error_records": 0,
+      "units_with_errors": 0
+    },
+    {
+      "territory": "Brasil",
+      "group": "comparacao",
+      "turn": 2,
+      "section_turns": 10,
+      "records": 31562,
+      "error_records": 10,
+      "units_with_errors": 10
+    },
+    {
+      "territory": "Brasil",
+      "group": "prioritario",
+      "turn": 1,
+      "section_turns": 10,
+      "records": 43469,
+      "error_records": 0,
+      "units_with_errors": 0
+    },
+    {
+      "territory": "Brasil",
+      "group": "prioritario",
+      "turn": 2,
+      "section_turns": 10,
+      "records": 27520,
+      "error_records": 19,
+      "units_with_errors": 10
+    },
+    {
+      "territory": "Exterior",
+      "group": "comparacao",
+      "turn": 1,
+      "section_turns": 2,
+      "records": 2214,
+      "error_records": 0,
+      "units_with_errors": 0
+    },
+    {
+      "territory": "Exterior",
+      "group": "comparacao",
+      "turn": 2,
+      "section_turns": 2,
+      "records": 2330,
+      "error_records": 2,
+      "units_with_errors": 2
+    },
+    {
+      "territory": "Exterior",
+      "group": "prioritario",
+      "turn": 1,
+      "section_turns": 2,
+      "records": 1575,
+      "error_records": 0,
+      "units_with_errors": 0
+    },
+    {
+      "territory": "Exterior",
+      "group": "prioritario",
+      "turn": 2,
+      "section_turns": 2,
+      "records": 1832,
+      "error_records": 2,
+      "units_with_errors": 2
+    }
+  ],
+  "environment": {
+    "python": "3.12.10"
+  },
+  "target_errors_by_type_context": [
+    {
+      "event": "impressora_erro_desconhecido",
+      "context": "nao_classificavel_por_marcos",
+      "count": 1
+    },
+    {
+      "event": "mr_desmontagem_erro",
+      "context": "antes_da_primeira_prontidao",
+      "count": 25
+    },
+    {
+      "event": "mr_desmontagem_erro",
+      "context": "entre_prontidao_e_inicio_encerramento",
+      "count": 4
+    },
+    {
+      "event": "mr_desmontagem_erro",
+      "context": "nao_classificavel_por_marcos",
+      "count": 2
+    },
+    {
+      "event": "opensession_erro",
+      "context": "entre_prontidao_e_inicio_encerramento",
+      "count": 1
+    }
+  ],
+  "interpretation": "Eventos observados e cobertura do recorte; não medem votos afetados, causas ou frequência nacional de irregularidade. Confiança criptográfica da cadeia permanece pendente na etapa própria.",
+  "status": "concluído",
+  "input_hashes": {
+    "auditoria/documentos/inventario.parquet": "533a205a60d0a7d27f1654e8038cda36bbe81e6464fa98c6e9224e63ecfa8aa9",
+    "auditoria/amostra/turnos.parquet": "a01481c367b32b69c2e0a80500f9be1c3ef5fd8698f8b64ac7af700a34b77a7a",
+    "auditoria/amostra/secoes.parquet": "2e9d4b1d08162ce33d1b604e898346696b39bde383b0f4fb63acd2ddcfae2fdf",
+    "auditoria/ed521/arquivos_assinados.parquet": "a64aebd056b1057854056ca33bafd494be4e21491de3bfd79a2a425f85e6de5e",
+    "auditoria/caminho_pkix/manifesto.json": "18e380398222a5eee254ffd6976d47b25d14b31cc25e1341436cfd9ac0d8997a",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "preservation_verified": true,
+  "code_hashes": {
+    "audit_logs.py": "be2fb98ab05f0a436c4549d9d4c7d462165123fd5a9ac8f38e343bb5e6ea4019",
+    "urn_logs.py": "be0e1134166c0534bb10b1031d358c09670b7bd6d8ed76154daf80f4c65c62e4",
+    "audit_logs_report.py": "7b61bd63b5d4a3f8c5a97e55a857ef60d2673cd806a14ada40e404c0e00fa274"
+  }
+}

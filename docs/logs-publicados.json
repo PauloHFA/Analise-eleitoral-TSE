@@ -1,0 +1,10 @@
+{
+  "tag": "logs-amostrais-v1",
+  "asset": {
+    "name": "logs-amostra-2026.zip",
+    "bytes": 194196,
+    "sha256": "5943c1e014fa27b2b8099eeb72b896cd3592f744f6004f4f18f8f533f85b5002",
+    "url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/logs-amostrais-v1/logs-amostra-2026.zip"
+  },
+  "manifest_url": "https://github.com/PauloHFA/Analise-eleitoral-TSE/releases/download/logs-amostrais-v1/manifesto-logs.json"
+}
