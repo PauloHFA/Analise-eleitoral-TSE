@@ -2,6 +2,8 @@
 
 Foram analisados **48 arquivos `log.jez` das mesmas 24 seções**, nos dois turnos. A seleção anterior aos documentos permanece congelada: 12 prioridades e 12 controles, nas cinco regiões e no exterior. Este incremento analisa registros operacionais; não amplia a amostra nem estima uma frequência nacional de irregularidade.
 
+**Atualização da análise local:** o cruzamento integrado com apontamentos, indicadores, assinaturas e conferências de voto foi executado e validado. Os resultados, inclusive as dez chaves sem linha nacional preservadas como lacunas, estão em [CRUZAMENTO_INTEGRADO.md](CRUZAMENTO_INTEGRADO.md). O cruzamento não confirmou causa ou impacto.
+
 [HTML com filtros](../outputs/2026/auditoria/logs/relatorio.html) · [PDF](../outputs/2026/auditoria/logs/relatorio.pdf) · [síntese](../outputs/2026/auditoria/logs/resumo.json) · [fontes consultadas](logs-fontes.json).
 
 ## O que foi encontrado

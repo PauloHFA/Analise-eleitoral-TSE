@@ -1,0 +1,24 @@
+{
+  "status": "válido",
+  "csv_parquet_pairs": 7,
+  "issue_rows": 33,
+  "section_turns": 28,
+  "individual_searches": 28,
+  "units_without_individual_search": 0,
+  "specific_evidence_entries": 0,
+  "request_drafts": 28,
+  "requests_sent": 0,
+  "cards": 28,
+  "previous_stage_manifests_preserved": 11,
+  "local_links": 124,
+  "filters": {
+    "units": 28,
+    "filter_conditions": 3132,
+    "status": "válido"
+  },
+  "pdf": {
+    "pages": 5,
+    "bookmarks": 6,
+    "geometry": "dentro das margens"
+  }
+}

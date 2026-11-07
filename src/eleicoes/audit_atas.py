@@ -76,10 +76,12 @@ def request_text(case, indicators):
         'A ausência de documento não será interpretada como comprovação de regularidade ou irregularidade. Nenhum pedido foi enviado por esta ferramenta.\n')
 
 
-def run_atas(source,data='data',destination=None):
-    source,data=Path(source).resolve(),Path(data).resolve();raw=data/'auditoria/atas/v1'
-    destination=Path(destination).resolve() if destination else source/'auditoria/atas'
+def run_atas(source,data='data',destination=None,*,capture_version='v1'):
+    if capture_version not in ('v1','v2'):raise ValueError('Versão de captura não suportada')
+    source,data=Path(source).resolve(),Path(data).resolve();raw=data/'auditoria/atas'/capture_version
+    destination=Path(destination).resolve() if destination else source/('auditoria/atas' if capture_version=='v1' else 'auditoria/atas_ampliacao')
     names=['auditoria/logs/unidades.parquet','auditoria/logs/pendencias.parquet','auditoria/logs/manifesto.json']
+    if capture_version=='v2':names+=['auditoria/atas/manifesto.json','auditoria/atas/manifesto_fichas.json']
     source,destination,state=begin(source,destination,names);con=duckdb.connect()
     try:
         raw_manifest=json.loads((raw/'manifesto.json').read_text(encoding='utf8'))
@@ -141,6 +143,7 @@ def run_atas(source,data='data',destination=None):
         case_frame=pd.DataFrame(case_rows);confrontation=pd.DataFrame(confrontation)
         frames=dict(casos=case_frame,confronto=confrontation,buscas=pd.DataFrame(searches),
                     resultados_busca=pd.DataFrame(research['results']),fontes=pd.DataFrame(sources),documentos_necessarios=pd.DataFrame(requests))
+        if capture_version=='v2':frames['tentativas_busca']=pd.DataFrame(json.loads((raw/'novas/tentativas.json').read_text(encoding='utf8')))
         for name,frame in frames.items():export_frame(con,frame,destination/name)
         write_json(destination/'evidencias_registradas.json',registry)
         summary=dict(sections=len(case_frame[[g for g in GEO if g!='turn']].drop_duplicates()),section_turns=len(case_frame),
@@ -155,6 +158,14 @@ def run_atas(source,data='data',destination=None):
             capture_manifest_sha256=sha256(raw/'manifesto.json'),capture_hashes=raw_manifest,
             status_counts=records(case_frame.groupby(['priority','research_status','document_status']).size().reset_index(name='units')),
             interpretation='Pesquisa e dossiê executados; confronto de casos permanece dependente de atas e registros específicos. Fontes gerais não explicam ocorrências individuais.')
+        if capture_version=='v2':
+            summary.update(research_round='ampliacao',new_individual_searches=research['new_individual_searches'],
+                inherited_individual_searches=len(searches)-research['new_individual_searches'],
+                new_executor_attempts=research['new_search_attempts'],failed_executor_attempts=research['failed_executor_attempts'],
+                new_queries_without_results=research['new_queries_without_results'],
+                context_sources_unique_urls=len({r['url'] for r in sources}),
+                previous_capture_manifest_sha256=research['previous_capture_manifest_sha256'],
+                limited_context_captures=sum(r['kind']=='captura_limitada' for r in sources))
         from .audit_atas_report import render
         render(destination,summary,case_frame,confrontation,frames['fontes'],frames['buscas'])
         # Fichas/minutas integram um manifesto próprio; finish cobre arquivos de topo.

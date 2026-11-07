@@ -276,7 +276,7 @@ def main():
     audit = sub.add_parser("auditoria", help="Amostra dirigida e conferência adicional dos arquivos das urnas")
     audit.add_argument("--output",default="outputs/2026")
     audit.add_argument("--dest")
-    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia","relatorio","assinaturas","ed521","cadeia","caminho","logs","atas"],default="amostra")
+    audit.add_argument("--etapa",choices=["amostra","documentos","conferencia","relatorio","assinaturas","ed521","cadeia","caminho","logs","atas","atas-ampliacao","atas-confronto","cruzamento-integrado"],default="amostra")
     audit.add_argument("--data",default="data")
     audit.add_argument("--schema")
     args = parser.parse_args()
@@ -335,9 +335,15 @@ def main():
         elif args.etapa=="logs":
             from .audit_logs import run_logs
             result=run_logs(args.output,args.data,args.dest)
-        elif args.etapa=="atas":
+        elif args.etapa=="atas-confronto":
+            from .audit_atas_v3 import run_atas_confronto
+            result=run_atas_confronto(args.output,args.data,args.dest)
+        elif args.etapa=="cruzamento-integrado":
+            from .audit_crosswalk import run_crosswalk
+            result=run_crosswalk(args.output,args.dest)
+        elif args.etapa in ("atas","atas-ampliacao"):
             from .audit_atas import run_atas
-            result=run_atas(args.output,args.data,args.dest)
+            result=run_atas(args.output,args.data,args.dest,capture_version='v2' if args.etapa=='atas-ampliacao' else 'v1')
         else:
             from .audit_signature_run import run_signatures
             result=run_signatures(args.output,args.data,args.dest,enable_ed521=args.etapa=="ed521")

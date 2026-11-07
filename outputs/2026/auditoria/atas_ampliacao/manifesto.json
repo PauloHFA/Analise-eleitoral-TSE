@@ -1,0 +1,21 @@
+{
+  "buscas.csv": "3a7ee8d5fbe1005091e6a7257a400318284df757ab45973fc3698b734770d813",
+  "buscas.parquet": "9df0d45141d5593164aafae7458b4d4d8b2747449bfdda432cf26657213d5d58",
+  "casos.csv": "c40113bde82267b3e7a0311cbe8fa3f69e8ca3564c55cdd42d5e6fddc6909191",
+  "casos.parquet": "84d13ac6e78b90eea6f6b0f7e241a4f3fdb5019cff6484217998d7c7149f3784",
+  "confronto.csv": "11a3d9dfbab32bdcee4f9e1292cb6db36bedaea89e3516c677f39b0c846ad7ca",
+  "confronto.parquet": "6760070806a3bfde8b437d7948393849666e6b019d5205092e17cacd45ab8c36",
+  "documentos_necessarios.csv": "9af8af6220b545f4f897dc21159c203a94ff3e6cff96146532b32546db0cef60",
+  "documentos_necessarios.parquet": "ee2489fe492beecfab2d98b38772ad3c7890c0ee5cbfd91b26e8e4efbea60899",
+  "evidencias_registradas.json": "3d650c02159df223868d3a1e60d43ef227b7339d558cbe48956d0d8a7ac8b5c9",
+  "fontes.csv": "0c0b3db4a7b9103ed6f025f7ae10e121f88ad076c74ecafc3cbafd17a4b53118",
+  "fontes.parquet": "176386549b59a7d0c3e9f2281b05ee2a85f40f93bd347f9d939750597810df8a",
+  "manifesto_fichas.json": "2f4da48a695760fff1b8a8402f5910894bc4899ae48b3c42059c721b77f6443c",
+  "relatorio.html": "38c1149f885e99b5d3a656191df29a29f2fd6f3a1215a7d0cbdc89defcf80f46",
+  "relatorio.pdf": "6e3eff73e58245a806b5327da6f07ef5b3fa6dcfa16c45a44d560fb67f27929a",
+  "resultados_busca.csv": "eb9afed51f2a5e6c5f9a5a86f476414c4058f6d6428cbc62008e46574b33c1d5",
+  "resultados_busca.parquet": "d5481ae162ffce017e21fd716e12efedcf59c6991a8a866fa0b22a5c2d206157",
+  "resumo.json": "6f14045e3fea5dde2236ae660b9ec531ff4dcbb16ed4dcb69d93f798823cecc3",
+  "tentativas_busca.csv": "405bd20f89a26369e0ec1e920637a36c4124541341a04ee0392de6db31458cca",
+  "tentativas_busca.parquet": "727ee50ca1a1e756f71c18e12981ac032e2deb146774fc7aa4e304ed7f90d3c8"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "concluído",
+  "started": "2026-11-07T17:37:13.724231+00:00",
+  "input_hashes": {
+    "auditoria/logs/resumo.json": "7938810a99fa0f2c80ea869b94a2bd169e714f7460e9326e5dee357d03377afa",
+    "auditoria/logs/manifesto.json": "f99d9fce74c4224888c8c16dc1aa774bf4ee14367ff66cc811ecfc35a24fe8de",
+    "auditoria/logs/unidades.parquet": "b622f99912738471b040b81ed575975b894d243125fdadbae9b940800b88eaa2",
+    "auditoria/logs/pendencias.parquet": "37a8103bb36e0cdffc5952dd916c1544df1a0cf66b883a3d4c750ad622969de0",
+    "auditoria/ed521/resumo.json": "11f91a2ac610a473d1ef3a2fd2c553016eeb484be32466cf65caa4582802d66e",
+    "auditoria/ed521/manifesto.json": "b2c57b59406e595c43a0906de949dcadd684629520f924f3a5ffc11dcbc70aa2",
+    "auditoria/ed521/arquivos_assinados.parquet": "a64aebd056b1057854056ca33bafd494be4e21491de3bfd79a2a425f85e6de5e",
+    "auditoria/conferencia/resumo.json": "477ba0a8ef04e951635b263b68b5c026b1263dfca19904451a59fad1e483d30b",
+    "auditoria/conferencia/manifesto.json": "17d7f43c9478dc10d11d5072132b7d5bdf8a76b4fa41d8b51ae050371d0993a6",
+    "auditoria/conferencia/votacao.parquet": "be7f6bbd4f655073ad2d8c59d80c29c55a0aaa17dba813f23a9466fa9d9a07b6",
+    "indicadores_secoes.parquet": "ccd20d20d95dd6d172ac8e62637ec8e3bc73833c26ab0ab7a3ad87ab1ec488ef",
+    "conferencia_bu.parquet": "9e03ff58835ae285eed6f677484431171a9c9292aeac664af39bdf7b5c9eb27b",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "finished": "2026-11-07T17:37:27.335814+00:00"
+}

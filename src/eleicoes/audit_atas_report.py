@@ -11,6 +11,10 @@ NEXT='Há 28 minutas locais, uma por unidade, e 56 necessidades documentais de d
 
 def render(dest,summary,cases,issues,sources,searches):
     esc=lambda v:html.escape(str(v))
+    expanded=summary.get('research_round')=='ampliacao'
+    method=METHOD if not expanded else ('A segunda rodada acrescentou 22 consultas individuais e preservou as seis iniciais, cobrindo as 28 unidades com apontamentos. '
+        'Das novas consultas, 17 trouxeram resultados e cinco não retornaram resultados. Foram 34 tentativas do executor: 12 falharam e depois foram retomadas; falhas não contam como consultas concluídas. '
+        'A triagem examinou natureza documental e conteúdo disponível, sem exame exaustivo de cada ato listado nos índices. Cobertura de busca não equivale a obtenção de documento ou confirmação de causa.')
     limit=LIMIT if summary['specific_evidence_entries']==0 else 'Há evidências específicas registradas nesta versão. O alcance de cada confronto consta da ficha; causas e persistência não são confirmadas automaticamente.'
     issue_names=dict(target_error_records='Mensagens de nível ERRO',reinicio_solicitado='Solicitação de reinício',
         impressora_erro_desconhecido='Erro desconhecido da impressora',nested_payloads='Log aninhado',
@@ -46,10 +50,17 @@ def render(dest,summary,cases,issues,sources,searches):
         rows.append('<tr class="case" data-uf="'+esc(case['uf'])+'" data-priority="'+esc(case['priority'])+'" data-research="'+('sim' if case['individual_searches'] else 'nao')+'">'+''.join('<td>'+esc(v)+'</td>' for v in values)+'<td><a href="'+case['card']+'">Ficha</a></td></tr>')
     headers=['UF','Município','Zona/seção','Turno','Apontamentos','Busca individual']
     kind_names={'noticia_agregada':'Notícia agregada','contexto_geral':'Contexto geral','orientacao_geral':'Orientação geral','norma_geral':'Norma geral','canal_de_acesso':'Canal de acesso','ata_julgamento':'Ata de julgamento'}
+    kind_names.update(indice_normativo='Índice normativo',indice_administrativo='Índice administrativo',cadastro_eleitoral='Cadastro eleitoral',
+        noticia_geral='Notícia geral',noticia_outro_escopo='Notícia de outro escopo',captura_limitada='Captura limitada')
     source_rows=[[r.source_id,kind_names.get(r.kind,r.kind),r.scope] for r in sources.itertuples(index=False)]
+    source_headers=['Fonte','Tipo','Alcance'];source_widths=[WIDTH*.09,WIDTH*.22,WIDTH*.69]
+    if expanded:
+        source_headers=['Tipo de fonte','Capturas','Limite'];source_widths=[WIDTH*.34,WIDTH*.14,WIDTH*.52]
+        source_rows=[[kind_names.get(kind,kind),len(group),'Conteúdo limitado a navegação/cookies' if kind=='captura_limitada' else 'Não é ata ou atendimento específico dos casos'] for kind,group in sources.groupby('kind')]
     lead=f"Dossiê de {summary['section_turns']} unidades seção/turno, com {summary['issue_rows']} apontamentos preservados. Foram registradas {summary['individual_searches']} buscas individuais e {summary['reviewed_context_sources']} fontes de contexto revisadas; nenhuma evidência específica dos casos foi obtida."
     if summary['specific_evidence_entries']:
         lead=lead.replace('nenhuma evidência específica dos casos foi obtida',f"{summary['specific_evidence_entries']} evidências específicas registradas, com alcance indicado nas fichas")
+    if expanded:lead=('Pesquisa ampliada: 22 consultas novas mais seis preservadas. '+lead).replace('fontes de contexto revisadas','capturas de contexto catalogadas (uma limitada)')
     overview=[['Inventário',summary['section_turns'],'Unidades seção/turno com apontamentos'],['Busca individual realizada',summary['units_with_individual_search'],'Sem ata ou atendimento específico obtido'],['Busca individual ainda não realizada',summary['units_without_individual_search'],'Não tratadas como buscas sem resultado'],['Evidências específicas registradas',summary['specific_evidence_entries'],'Ausência de obtenção, não prova de inexistência']]
     options=''.join('<option>'+esc(uf)+'</option>' for uf in sorted(cases.uf.unique()))
     source_links=''.join('<li>'+esc(r.source_id)+' — <a href="'+esc(r.url)+'">'+esc(r.title)+'</a>: '+esc(r.scope)+'</li>' for r in sources.itertuples(index=False))
@@ -58,13 +69,19 @@ def render(dest,summary,cases,issues,sources,searches):
 <h2>O que foi feito</h2><p>{esc(METHOD)}</p><p>{esc(GATE)}</p><p>Uma busca do segundo turno retornou o boletim do TRE-BA sobre 60 substituições no primeiro turno, sem identificação da seção selecionada. Ele foi mantido como notícia agregada; não confirma substituição em Campo Formoso nem explica a composição dos logs.</p><h2>Seis unidades da pesquisa inicial</h2><div class="scroll">{tbl(headers,initial)}</div>
 <h2>Inventário e fichas</h2><label>UF <select id="uf"><option value="all">Todas</option>{options}</select></label> <label>Prioridade <select id="priority"><option value="all">Todas</option><option value="inicial">Inicial</option><option value="acompanhamento">Acompanhamento</option></select></label> <label>Busca individual <select id="research"><option value="all">Todas</option><option value="sim">Realizada</option><option value="nao">Não realizada</option></select></label><p id="count" aria-live="polite">28 unidades exibidas</p><div class="scroll"><table><thead><tr>{''.join('<th>'+esc(v)+'</th>' for v in headers)}<th>Detalhe</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <h2>Fontes e limites</h2><ul>{source_links}</ul><p>Os hashes identificam capturas textuais, não os bytes HTTP originais nem autenticação independente. Documentos gerais foram consultados, mas não contam como atas/atendimentos de uma unidade.</p><h2>Próximo passo executável</h2><p>{esc(NEXT)}</p><p>Obter os documentos específicos pelos canais públicos ou por solicitações expressamente autorizadas, registrar arquivo original, origem e hash, e revisar o vínculo com cada apontamento. Corroboração de um registro não é explicação automática de sua causa; discordância permanece a revisar, sem classificação de persistência.</p><h2>Tabelas e reprodução</h2><ul>{''.join('<li><a href="'+url+'">'+esc(label)+'</a></li>' for url,label in links)}</ul></main><script>const selects=[document.querySelector('#uf'),document.querySelector('#priority'),document.querySelector('#research')];function filter(){{let total=0;document.querySelectorAll('.case').forEach(e=>{{e.hidden=!selects.every(s=>s.value==='all'||e.dataset[s.id]===s.value);if(!e.hidden)total++}});document.querySelector('#count').textContent=total+' unidades exibidas'}}selects.forEach(s=>s.addEventListener('change',filter));filter();</script></html>'''
-    (dest/'relatorio.html').write_text(page.replace(esc(LIMIT),esc(limit)),encoding='utf8')
+    page=page.replace(esc(LIMIT),esc(limit)).replace(esc(METHOD),esc(method))
+    if expanded:
+        page=page.replace('Seis consultas individuais e hashes','28 consultas individuais e hashes').replace('../../../../docs/ATAS.md','../../../../docs/ATAS_AMPLIACAO.md')
+        page=page.replace('<li><a href="buscas.csv">','<li><a href="tentativas_busca.csv">34 tentativas do executor, incluindo falhas e retomadas</a></li><li><a href="buscas.csv">')
+        page=page.replace('Seis unidades da pesquisa inicial','Seleção inicial preservada (seis unidades)')
+        page=page.replace('<h2>Próximo passo executável</h2>','<h2>Obtenção documental ainda pendente</h2>')
+    (dest/'relatorio.html').write_text(page,encoding='utf8')
     pdf_headers=['UF','Município','Zona/seção','Tº','Apontamentos','Busca individual']
     styles=pdf_styles();story=[heading('Atas e registros operacionais — 2026','inicio',styles),p(lead,styles,'Deck'),p(limit,styles),
         table(['Frente','Unidades / registros','Interpretação'],overview,[WIDTH*.36,WIDTH*.16,WIDTH*.48],styles,small=True),
-        heading('Seis unidades pesquisadas individualmente','prioridades',styles,level=1),table(pdf_headers,initial,[WIDTH*x for x in (.06,.28,.15,.08,.17,.26)],styles,small=True),
-        PageBreak(),heading('Método e fontes de contexto','metodo',styles),p(METHOD,styles),p(GATE,styles),
-        table(['Fonte','Tipo','Alcance'],source_rows,[WIDTH*.09,WIDTH*.22,WIDTH*.69],styles,small=True)]
+        heading('Seleção inicial preservada' if expanded else 'Seis unidades pesquisadas individualmente','prioridades',styles,level=1),table(pdf_headers,initial,[WIDTH*x for x in (.06,.28,.15,.08,.17,.26)],styles,small=True),
+        PageBreak(),heading('Método e fontes de contexto','metodo',styles),p(method,styles),p(GATE,styles),
+        table(source_headers,source_rows,source_widths,styles,small=True)]
     for offset in range(0,len(all_rows),14):
         story.extend([PageBreak(),heading(f'Inventário {offset+1}–{min(offset+14,len(all_rows))}','inventario-'+str(offset),styles),
             p('São unidades seção/turno, com motivos potencialmente sobrepostos. “Não realizada” distingue ausência de busca individual de busca sem documento obtido. Todas possuem ficha e minuta local não enviada.',styles,'Small'),
@@ -73,5 +90,5 @@ def render(dest,summary,cases,issues,sources,searches):
         p('A notícia do TRE-BA sobre 60 substituições refere-se ao primeiro turno e ao estado, sem identificação da seção selecionada. Não foi usada para explicar o caso de Campo Formoso. As atas de julgamento encontradas também não substituem atas da mesa receptora.',styles),
         p('As minutas pedem identificação exata de ano, turno, município, zona/seção e localização da anotação. Questões específicas tratam de log aninhado, identificadores, OpenSession, impressora, ligações e cronologia; nenhum dado pessoal ou escolha individual é solicitado.',styles),
         p('Registre os originais e seus hashes em uma nova versão. Fontes específicas poderão corroborar ou contradizer um registro dentro do escopo revisado; esta rotina não confirma causalidade ou persistência automaticamente. Demais pendências PKIX, CEPESC, layout oficial e BU independente continuam separadas.',styles),
-        p('Comando local: eleicoes auditoria --output outputs/2026 --data data --etapa atas. Tabelas, 28 fichas e 28 minutas no HTML; método e fontes em docs/ATAS.md. Os resultados anteriores permanecem preservados.',styles)])
+        p(('Comando local: eleicoes auditoria --output outputs/2026 --data data --etapa atas-ampliacao. Sete pares de tabelas, 28 fichas e 28 minutas no HTML; método em docs/ATAS_AMPLIACAO.md. Os resultados anteriores permanecem preservados.' if expanded else 'Comando local: eleicoes auditoria --output outputs/2026 --data data --etapa atas. Tabelas, 28 fichas e 28 minutas no HTML; método e fontes em docs/ATAS.md. Os resultados anteriores permanecem preservados.'),styles)])
     AnalysisPDF(dest/'relatorio.pdf',title='Atas e registros operacionais — 2026',styles=styles).build(story)

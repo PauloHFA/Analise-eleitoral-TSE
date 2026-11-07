@@ -1,0 +1,17 @@
+{
+  "status": "concluído",
+  "started": "2026-11-05T02:22:47.197169+00:00",
+  "input_hashes": {
+    "auditoria/logs/unidades.parquet": "b622f99912738471b040b81ed575975b894d243125fdadbae9b940800b88eaa2",
+    "auditoria/logs/pendencias.parquet": "37a8103bb36e0cdffc5952dd916c1544df1a0cf66b883a3d4c750ad622969de0",
+    "auditoria/logs/manifesto.json": "f99d9fce74c4224888c8c16dc1aa774bf4ee14367ff66cc811ecfc35a24fe8de",
+    "auditoria/atas/manifesto.json": "069d95c2f773c2ba5bb620e35292c789ff8f2450103ea227b51a05d18e717f3c",
+    "auditoria/atas/manifesto_fichas.json": "1e1cea669465900d9c8e38ae19f4f42b3a12147f3bc5d9cff8eef8d305f70639",
+    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
+    "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
+    "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
+  },
+  "finished": "2026-11-05T02:22:49.026288+00:00"
+}

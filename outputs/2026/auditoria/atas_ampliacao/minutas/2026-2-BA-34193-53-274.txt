@@ -1,0 +1,13 @@
+MINUTA LOCAL — NÃO ENVIADA
+
+Referência: CAMPO FORMOSO (BA), município TSE 34193, zona 53, seção 274, 2º turno de 2026
+
+Documentos a localizar: ata da mesa receptora de votos e registros de atendimento, contingência ou substituição relacionados à unidade/turno. Se o documento não for localizado, registrar a resposta e a abrangência da consulta, sem inferir inexistência da ocorrência.
+
+1. Qual atendimento foi registrado para o erro da impressora e quais providências foram adotadas?
+2. Qual a origem do log compactado aninhado e como foi incorporado ao arquivo da seção?
+3. Há anotação do reinício solicitado, da providência adotada e da retomada?
+4. Há registro operacional que contextualize as mensagens ERRO, inclusive o problema de desmontagem de MR?
+5. Há registro de troca ou composição de arquivos? Quais documentos identificam os equipamentos de origem e destino?
+
+Priorizar documentos com data, identificação territorial e localização verificável da anotação. Não são solicitados dados pessoais de eleitores, biometria ou escolhas individuais. A ausência de documento não será interpretada como comprovação de regularidade ou irregularidade. Nenhum pedido foi enviado por esta ferramenta.

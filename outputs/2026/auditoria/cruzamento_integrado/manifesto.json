@@ -1,0 +1,15 @@
+{
+  "apontamentos.csv": "cf90187df06b10cea3fd75f700d817fbd984c41c3f9cab9f31db2be712be3195",
+  "apontamentos.parquet": "7f4e6befc6cd8914538f12c635ad605be45817c51b82c7b02ed3f053c7915ad1",
+  "conferencia_candidatos.csv": "a515adc753be34e204eeb70478419d1ba49c59232ef2e34ee2612e2670c007cf",
+  "conferencia_candidatos.parquet": "a126d2ea6059256479fb1b00c0265553593afd16e2591af334b16c8baa9b44d6",
+  "contingencias.csv": "240621f36008c4d52c6b3735af07aae72fbcec186c7ed552b157695b672473ab",
+  "contingencias.parquet": "58b1f101e6fefd4a14a073eabdaebc174ed8c26408bf30c8a2e6c7183aff0a36",
+  "relatorio.html": "db0038c0bfbdbae76070d28fd222c19f624371501086b0befe5f4781338a3c54",
+  "relatorio.pdf": "56e3ba64f9dabf24a4301f00ff663e547e8ebfe37d79e8deabfcf1cf19a54e1e",
+  "resumo.json": "747600224214243d21f8ced70e6e7d590fa926bbffc68894f32a8038ed06d710",
+  "sem_correspondencia.csv": "d6523ca019dc52a201efd630184e38e63b22489d1dfcd8c39f6b1bc32c55a4fe",
+  "sem_correspondencia.parquet": "e9bc6990a868be0eea5a49bfbb18b30e1526df997bc541826ccbcea4a06c23b1",
+  "unidades.csv": "0c7c99d152159bd90af20e551c5796c67f7141c966833370c96e2a46a9e87855",
+  "unidades.parquet": "01b8412feaa11808bac05336208d2b1e783f6d110ea61fc59892bdf15ab7fa0d"
+}
