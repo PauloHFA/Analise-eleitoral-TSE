@@ -13,6 +13,7 @@ import pandas as pd
 from reportlab.platypus import KeepTogether, PageBreak, Spacer
 
 from .pdf_layout import AnalysisPDF, WIDTH, callout, contents, heading, p, pdf_styles, picture, table
+from .report_updates import load_incremental_updates
 from .sources import sha256, write_json
 
 
@@ -75,8 +76,10 @@ def _case_rows(row, finalists, names=None):
 
 def build_pdf_report(output, *, summary, history, priority, finalists, candidate_names=None,
                      manifest=None, synthesis=None, investigation=None, electoral_map=None,
-                     demo=False, **unused):
+                     demo=False, incremental_updates=None, **unused):
     output = Path(output)
+    if incremental_updates is None:
+        incremental_updates = load_incremental_updates(output)
     styles = pdf_styles()
     synth = synthesis or {}
     metrics = {m["id"]: m for m in synth.get("metrics", [])}
@@ -114,6 +117,12 @@ def build_pdf_report(output, *, summary, history, priority, finalists, candidate
          [[count("observed"), count("combined"), count("bu_matching")]], [1,1,1])
     text("As três contagens acima têm unidades distintas: seções observadas, seções selecionadas por critérios exploratórios e linhas de votação comparadas entre arquivos. Não são quantidades de irregularidades.")
     story.append(callout("Como interpretar este relatório", "Mudança observada, alerta estatístico e divergência documental são situações distintas. A confirmação dos valores nos arquivos não explica a escolha dos eleitores. A investigação de todas as incongruências não está encerrada.", styles))
+    if incremental_updates:
+        story.append(callout(
+            "Atualização da investigação local",
+            "Esta edição incorpora um resumo editorial das etapas posteriores de cruzamento e pesquisa documental. "
+            "Elas complementam, sem recalcular, o núcleo estatístico da análise-base; os detalhes, métodos e limites "
+            "estão no capítulo de atualizações posteriores.", styles))
     versions = synth.get("source_versions", {})
     if versions.get("retrieved_utc_min"):
         start = datetime.fromisoformat(versions['retrieved_utc_min']).strftime("%d/%m/%Y às %H:%M")
@@ -315,6 +324,35 @@ def build_pdf_report(output, *, summary, history, priority, finalists, candidate
     text("Referência de auditoria: https://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/como-realizar-auditoria. As possibilidades descritas nessa referência não significam que os procedimentos foram executados neste projeto.", "Small")
     text("Licenciamento: código e documentação próprios sob MIT; dados TSE, geografia IBGE e componentes de terceiros preservam suas condições e atribuições. Consulte LICENSE e DATA_LICENSE.md na raiz do projeto.", "Small")
 
+    if incremental_updates:
+        chapter("Atualizações posteriores da análise local", "atualizacoes")
+        text("Este capítulo registra resultados de etapas executadas depois da análise-base. Os resumos e relatórios temáticos são mantidos como entregas separadas; suas unidades, fontes e limitações não foram incorporadas às métricas nacionais do núcleo estatístico.")
+        crosswalk = incremental_updates["crosswalk"]
+        if crosswalk:
+            sub("Cruzamento integrado de logs, votação, indicadores e assinaturas")
+            grid(["Medida", "Resultado", "Leitura"], [
+                ["Unidades seção/turno", f"{n(crosswalk['section_turns'])} em {n(crosswalk['sections'])} seções", "Amostra dirigida"],
+                ["Apontamentos de log", f"{n(crosswalk['log_issue_rows'])} em {n(crosswalk['log_issue_section_turns'])} unidades", "Contagens podem se sobrepor"],
+                ["Conferência amostral", f"{n(crosswalk['sample_vote_complete_rows'])} linhas completas e concordantes", "RDV, BU binário, imagem e dois arquivos tabulares"],
+                ["Comparação nacional", f"{n(crosswalk['national_vote_candidate_rows'])} linhas; {n(crosswalk['national_vote_nonzero_difference_rows'])} diferenças não nulas", "Somente chaves com correspondência"],
+                ["Chaves sem linha nacional", f"{n(crosswalk['candidate_rows_without_national_match'])}: {n(incremental_updates['unmatched_categories'].get('95', 0))} brancos (95) e {n(incremental_updates['unmatched_categories'].get('96', 0))} nulos (96)", "Valores nacionais ausentes não foram imputados"],
+            ], [1.1, 1.45, 1.8])
+            text("Método: junção territorial por ano, turno, UF, município, zona e seção; indicadores sem turno foram ligados pela chave territorial, preservando as unidades de cada turno. A conferência amostral compara RDV, BU binário, imagem e arquivos de resultado/BU. A linha nacional ausente permanece sem valor; o padrão de zeros locais é compatível com omissão de categorias sem votos, mas a regra de exportação não foi confirmada formalmente.")
+            text("Os hashes e as assinaturas foram conferidos localmente com chaves embutidas. Isso não valida cadeia institucional, revogação, confiança oficial ou independência de fonte. Concordância entre arquivos não confirma causa nem efeito eleitoral.")
+            text(f"Relatório detalhado: {incremental_updates['crosswalk_html']} · {incremental_updates['crosswalk_pdf']}", "Small")
+        ata_search = incremental_updates["ata_search"]
+        if ata_search:
+            sub("Pesquisa documental ampliada")
+            grid(["Medida", "Resultado", "Interpretação"], [
+                ["Unidades com busca individual", f"{n(ata_search['units_with_individual_search'])}/{n(ata_search['section_turns'])}", "Cobertura de busca, não de obtenção documental"],
+                ["Resultados / fontes de contexto", f"{n(ata_search['search_results'])} / {n(ata_search['reviewed_context_sources'])}", "Material contextual revisado"],
+                ["Evidências específicas dos casos", n(ata_search['specific_evidence_entries']), "Nenhuma ata ou atendimento específico obtido"],
+                ["Minutas / contatos enviados", f"{n(ata_search['local_request_drafts'])} / {n(ata_search['requests_sent'])}", "Minutas locais; nenhum contato externo"],
+            ], [1.2, 1.1, 2.05])
+            text("A ausência de documento específico nesta rodada não demonstra que o documento ou a ocorrência inexista. As causas permanecem sem confirmação; buscas individuais completas não substituem o confronto de documentos com identidade, proveniência e localização verificadas.")
+            text(f"Relatório detalhado: {incremental_updates['ata_html']} · {incremental_updates['ata_pdf']}", "Small")
+        story.append(callout("Limite comum", "Os dois incrementos são análises locais descritivas. Não houve contato externo, confirmação causal ou evidência suficiente para inferir impacto nos votos.", styles))
+
     if investigation and not investigation.get("stale"):
         chapter("Anexo A. Todas as unanimidades", "anexo-zeros")
         text("A identificação é UF/município TSE/zona/seção. Zerou informa o candidato sem votos no segundo turno. Válidos admite brancos/nulos; depositados significa exclusividade também no total depositado. Comparação limitada permanece sinalizada. Os dados completos e as provas estão nas fichas dirigidas.")
@@ -368,11 +406,13 @@ def build_pdf_report(output, *, summary, history, priority, finalists, candidate
 
     document = AnalysisPDF(output / "relatorio.pdf", title=f"Análise presidencial {year} — resultados e interpretação", styles=styles)
     document.multiBuild(story)
-    edition = {"edition": 2, "generated": datetime.now(ZoneInfo("America/Sao_Paulo")).isoformat(timespec="seconds"),
+    previous_edition_path = output / "pdf_edicao.json"
+    previous_edition = json.loads(previous_edition_path.read_text(encoding="utf-8")) if previous_edition_path.exists() else {}
+    edition = {"edition": int(previous_edition.get("edition", 0)) + 1, "generated": datetime.now(ZoneInfo("America/Sao_Paulo")).isoformat(timespec="seconds"),
                "pages": document.page, "sections": document.section_pages, "statistical_cases": len(priority),
                "pdf_sha256": sha256(output / "relatorio.pdf"),
                "synthesis_sha256": sha256(output / "sintese_analise.json") if (output / "sintese_analise.json").exists() else None,
-               "note": "Revisão editorial do PDF. Os pacotes da release resultados-2026-v1 preservam a edição anterior."}
+               "note": "Inclui resumo editorial das etapas locais posteriores; os pacotes da release resultados-2026-v1 preservam a edição anterior."}
     write_json(output / "pdf_edicao.json", edition)
     return edition
 

@@ -2,9 +2,15 @@
 
 Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos e consistência dos arquivos abertos do TSE. Brasil e exterior têm contagens separadas. A entrega reúne o processamento nacional, as referências históricas, a investigação de passagens a zero e viradas, as fichas e o mapa municipal.
 
+## Relatórios principais
+
+**Comece pelo [relatório HTML](outputs/2026/relatorio.html)**, com navegação e tabelas; ou abra o [relatório PDF](outputs/2026/relatorio.pdf), adequado para leitura e impressão. O [índice de resultados de 2026](outputs/2026/README.md) reúne também os relatórios temáticos.
+
+Esta edição destaca as análises locais posteriores sem misturá-las às métricas nacionais da análise-base. Os relatórios temáticos detalham método, resultados e limitações; ausência de linha nacional continua sem imputação, causas não foram confirmadas e nenhum contato externo foi feito.
+
 As próximas implementações estão organizadas no [roteiro de etapas e commits](docs/PROXIMAS_ETAPAS.md), com critérios de conclusão, fontes e pendências de cada frente.
 
-Os relatórios temáticos são incrementais e preservam as versões anteriores. O PDF geral em `outputs/2026/relatorio.pdf` não foi regenerado para incorporar as etapas posteriores; os resultados mais recentes estão nos relatórios específicos ligados abaixo, inclusive o cruzamento integrado.
+Os relatórios temáticos são incrementais e preservam suas próprias versões. O relatório principal mantém o núcleo estatístico e inclui um quadro editorial de atualizações posteriores, com links para os resultados completos do cruzamento integrado e da pesquisa documental.
 
 **Primeira rodada implementada:** [estabilidade dos pares e perfil das exclusões](docs/RESULTADOS_INCREMENTAIS.md). A referência de 30 pares foi reproduzida, mas o topo do ranking depende da configuração; esses resultados complementares devem acompanhar a interpretação das prioridades originais.
 

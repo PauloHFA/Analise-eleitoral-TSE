@@ -1,7 +1,7 @@
 {
-  "edition": 2,
-  "generated": "2026-11-03T14:06:30-03:00",
-  "pages": 79,
+  "edition": 3,
+  "generated": "2026-11-07T17:50:30-03:00",
+  "pages": 81,
   "sections": {
     "sumario": 2,
     "achados": 3,
@@ -14,13 +14,14 @@
     "historico": 15,
     "metodologia": 16,
     "fontes": 17,
-    "anexo-zeros": 18,
-    "anexo-municipios": 22,
-    "anexo-indicadores": 26,
-    "anexo-fichas": 29
+    "atualizacoes": 18,
+    "anexo-zeros": 20,
+    "anexo-municipios": 24,
+    "anexo-indicadores": 28,
+    "anexo-fichas": 31
   },
   "statistical_cases": 100,
-  "pdf_sha256": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+  "pdf_sha256": "ed4a358bf968323b6bb6bab1a64862a0426cf3c83fb9e55ce036b68a7e217cb6",
   "synthesis_sha256": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
-  "note": "Revisão editorial do PDF. Os pacotes da release resultados-2026-v1 preservam a edição anterior."
+  "note": "Inclui resumo editorial das etapas locais posteriores; os pacotes da release resultados-2026-v1 preservam a edição anterior."
 }

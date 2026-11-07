@@ -18,6 +18,7 @@ from .investigation_report import load_investigation
 from .map_report import load_map
 from .synthesis import build_synthesis, executive_html
 from .pdf_report import build_pdf_report
+from .report_updates import load_incremental_updates
 
 NOTICE = ("Análise exploratória de dados agregados. Uma mudança observada, um alerta estatístico "
           "e uma divergência documental são categorias distintas. Nenhuma delas, isoladamente, "
@@ -254,12 +255,15 @@ def build_report(output, current, history, summary, finalists, bu_issues, manife
     doc_links = "".join(f"<li><a href='fichas/{html.escape(n)}.json'>{html.escape(n)}</a> — {html.escape(document_status[n])}</li>" for n in documents)
     investigation = load_investigation(output)
     electoral_map = load_map(output)
-    synthesis = build_synthesis(output) if investigation and electoral_map and not demo else None
+    synthesis = build_synthesis(output, write=False) if investigation and electoral_map and not demo else None
+    incremental_updates = load_incremental_updates(output)
+    updates_html = _incremental_updates_html(incremental_updates)
     body = f"""<!doctype html><html lang='pt-BR'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-    <title>{label}</title><style>body{{font:16px/1.6 system-ui;margin:0;background:#f1f5f8;color:#172c3d}}main{{max-width:1200px;margin:auto;padding:32px}}h1,h2{{line-height:1.2}}section,details{{background:white;padding:20px;margin:18px 0;border-radius:8px}}.notice{{border-left:5px solid #b94932;padding:16px;background:#fff4e7}}table{{border-collapse:collapse;font-size:13px;width:100%}}td,th{{text-align:left;border-bottom:1px solid #dce2e8;padding:7px}}.scroll{{overflow:auto}}img{{max-width:100%}}li{{margin-bottom:8px}}a{{color:#165e83}}summary{{cursor:pointer;font-weight:bold}}.sources{{overflow-wrap:anywhere;font-size:12px}}</style>
+    <title>{label}</title><style>body{{font:16px/1.6 system-ui;margin:0;background:#f1f5f8;color:#172c3d}}main{{max-width:1200px;margin:auto;padding:32px}}h1,h2{{line-height:1.2}}section,details{{background:white;padding:20px;margin:18px 0;border-radius:8px}}.notice{{border-left:5px solid #b94932;padding:16px;background:#fff4e7}}.updates{{border:2px solid #165e83;background:#f5fbff}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}}.card{{padding:14px;background:#edf5fa;border-radius:8px}}table{{border-collapse:collapse;font-size:13px;width:100%}}td,th{{text-align:left;border-bottom:1px solid #dce2e8;padding:7px}}.scroll{{overflow:auto}}img{{max-width:100%}}li{{margin-bottom:8px}}a{{color:#165e83}}summary{{cursor:pointer;font-weight:bold}}.sources{{overflow-wrap:anywhere;font-size:12px}}</style>
     <main><h1>{label}</h1><p>Gerado em {stamp} (America/Sao_Paulo).</p><p class='notice'>{NOTICE}</p>
-    <nav>{"<a href='#mapa-eleitoral'>Mapa azul/vermelho</a> · " if electoral_map else ''}{"<a href='#investigacao-dirigida'>Passagens a zero, viradas e fichas</a>" if investigation else ''}</nav>
+    <nav>{"<a href='#atualizacoes-locais'>Atualizações locais</a> · " if incremental_updates else ''}{"<a href='#mapa-eleitoral'>Mapa azul/vermelho</a> · " if electoral_map else ''}{"<a href='#investigacao-dirigida'>Passagens a zero, viradas e fichas</a>" if investigation else ''}</nav>
     {executive_html(synthesis) if synthesis else ''}
+    {updates_html}
     {electoral_map['html'] if electoral_map else ''}
     <section><h2>Cobertura e resultados da triagem</h2><div class='scroll'>{summary_table}</div>
     <p>A triagem combinada reúne limites de variação e desvio robusto. Mudanças de 10 pp podem ser comuns quando os votos passam a se concentrar em dois finalistas. O desvio robusto mede o afastamento em relação aos pares; as frequências históricas ajudam a contextualizar ambos. O universo processado e as exclusões estão nas tabelas, incluindo o exterior separadamente.</p></section>
@@ -276,7 +280,50 @@ def build_report(output, current, history, summary, finalists, bu_issues, manife
     (output / "relatorio.html").write_text(body, encoding="utf-8")
     build_pdf_report(output, summary=summary, history=history, priority=priority, finalists=finalists,
                      candidate_names=candidate_names, manifest=manifest, synthesis=synthesis,
-                     investigation=investigation, electoral_map=electoral_map, demo=demo)
+                     investigation=investigation, electoral_map=electoral_map, demo=demo,
+                     incremental_updates=incremental_updates)
+
+
+def _incremental_updates_html(updates):
+    if updates is None:
+        return ""
+    sections = []
+    crosswalk = updates["crosswalk"]
+    if crosswalk:
+        unmatched = updates["unmatched_categories"]
+        sections.append(f"""<article class='card'><h3>Cruzamento integrado local</h3>
+        <p><strong>{crosswalk['section_turns']}</strong> unidades seção/turno em
+        <strong>{crosswalk['sections']}</strong> seções; {crosswalk['log_issue_rows']} apontamentos
+        em {crosswalk['log_issue_section_turns']} unidades.</p>
+        <p>{crosswalk['sample_vote_complete_rows']} linhas de votação da amostra completas e concordantes.
+        Na comparação nacional, {crosswalk['national_vote_candidate_rows']} linhas correspondentes e
+        {crosswalk['national_vote_nonzero_difference_rows']} diferenças não nulas.
+        Outras {crosswalk['candidate_rows_without_national_match']} chaves não têm linha nacional:
+        {unmatched.get('95', 0)} de brancos e {unmatched.get('96', 0)} de nulos.</p>
+        <p><a href='{updates['crosswalk_html']}'>Relatório HTML do cruzamento</a> ·
+        <a href='{updates['crosswalk_pdf']}'>PDF</a></p></article>""")
+    ata_search = updates["ata_search"]
+    if ata_search:
+        sections.append(f"""<article class='card'><h3>Pesquisa documental ampliada</h3>
+        <p>Busca individual em {ata_search['units_with_individual_search']}/{ata_search['section_turns']}
+        unidades; {ata_search['search_results']} resultados examinados e
+        {ata_search['reviewed_context_sources']} fontes de contexto revisadas.
+        Documentos específicos dos casos obtidos: {ata_search['specific_evidence_entries']}.</p>
+        <p>As {ata_search['local_request_drafts']} minutas locais não foram enviadas
+        ({ata_search['requests_sent']} contatos externos).</p>
+        <p><a href='{updates['ata_html']}'>Relatório HTML da pesquisa</a> ·
+        <a href='{updates['ata_pdf']}'>PDF</a></p></article>""")
+    return f"""<section id='atualizacoes-locais' class='updates'><h2>Atualizações posteriores da análise local</h2>
+    <p>Este quadro complementa a análise-base com etapas locais posteriores; não substitui nem mistura
+    seus universos ou denominadores. Ausência de linha continua sendo ausência, não zero. Os resultados
+    são descritivos: causas não confirmadas e amostra dirigida não representa o país.</p>
+    <p><strong>Método e leitura:</strong> o cruzamento usa ano, turno, UF, município, zona e seção como
+    chave; indicadores sem turno são ligados pela chave territorial, preservando as unidades de cada turno.
+    A conferência compara RDV, BU binário, imagem e dois arquivos tabulares. Hashes e assinaturas foram
+    verificados localmente com chave embutida, sem validar cadeia institucional ou revogação. As dez chaves
+    sem linha nacional são de categorias sem valor nas fontes amostrais; o padrão é compatível com omissão
+    de linhas sem votos, mas não confirma a regra de exportação. Concordância não estabelece causa ou efeito.</p>
+    <div class='cards'>{''.join(sections)}</div></section>"""
 
 
 def _safe(obj):

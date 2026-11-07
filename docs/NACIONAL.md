@@ -70,6 +70,7 @@ Nos limites padrão, **2.397** unidades brasileiras recebem cor de taxa e **3.17
 - O mapa passou por **33.467 verificações** de cores, turnos, UFs, padrões, limites, ausência e teclado; geometrias/códigos/limites foram comparados à referência. Houve inspeção visual em Chrome headless dos modos de margem e taxa.
 - O PDF complementar tem **cinco páginas e dez marcadores**, com conteúdo, margens e orientação conferidos e páginas inspecionadas visualmente.
 - A suíte passou com **135 testes**. Os 578 artefatos do inventário anterior preservaram seus SHA256. HTML/PDF/síntese de referência e a investigação RJ/MG mantiveram seus hashes.
+- Em 07/11/2026, após uma revisão apenas editorial dos relatórios principais, os hashes desses dois arquivos nas três etapas nacionais foram atualizados com histórico do valor anterior. Nenhuma tabela, síntese ou indicador nacional foi recalculado; a validação completa voltou a conferir.
 
 ### Acesso aos resultados
 
@@ -96,6 +97,15 @@ Na análise de margem por seção, reutilizam-se os 30 pares já publicados, sem
 `reference_alert` preserva a triagem combinada original. `margin_robust_flag` é outro diagnóstico e não a substitui. Os IDs dos pares continuam na fonte identificada por hash; a exportação evita duplicá-los em todo o inventário.
 
 Cada etapa registra fontes e hashes, estado de execução e código. RJ/MG serão conferidos contra o resultado dirigido anterior. Mudanças agregadas não identificam transferências individuais nem demonstram fraude.
+
+Se apenas o HTML/PDF principal mudar editorialmente, sem alteração das entradas analíticas, atualize as referências das etapas e os resumos dependentes sem recalcular indicadores:
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 scripts\atualizar_proveniencia_nacional.py --output outputs\2026
+.\.venv\Scripts\python.exe -X utf8 scripts\validar_nacional.py --output outputs\2026
+```
+
+O comando recusa diferenças em qualquer entrada além dos dois relatórios e dos resumos de etapas anteriores alterados por essa mesma atualização. Confere os manifestos de saída antes de escrever e preserva hashes anteriores no campo `provenance_refresh`. Se mudar uma entrada analítica, a etapa correspondente precisa ser regenerada em vez de ter sua proveniência reescrita.
 
 ## Taxas, coortes e somatórios
 

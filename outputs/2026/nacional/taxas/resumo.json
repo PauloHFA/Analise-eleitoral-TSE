@@ -88,11 +88,11 @@
     "nacional/inventario/locais.parquet": "223722437673e8c6d7baa102a708c2b487586185c059cd94a7e119d20ca41e39",
     "nacional/inventario/municipios.parquet": "875639dccd77731588fdb391f447475ca16bb7900332f0fad811df56ca7cdd5d",
     "nacional/inventario/ufs.parquet": "d2dd3bd3f7f3252d1daa9ee113924fbd70ee331d0d788c1783e56d8649b8a6a7",
-    "nacional/inventario/resumo.json": "85fc21d0525cb3036c7c5df86f7a1e310a46c344113187678881961fc66db262",
+    "nacional/inventario/resumo.json": "db0d4a4eb3b87b1f1af8b1efb3a37decf70ec3e1c2d2a74a65c3ad09d326254e",
     "reconciliacao_municipio_zona.parquet": "efdc970e16c1923731a7ef018e377d0c18e0f2498a0dd647f97d5b5ae6a07683",
     "conferencia_bu.parquet": "9e03ff58835ae285eed6f677484431171a9c9292aeac664af39bdf7b5c9eb27b",
-    "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
-    "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c",
+    "relatorio.html": "75e894c6fea142c9be541cb7fdc00c7bd28232760bb0cab8352e6068f467606f",
+    "relatorio.pdf": "ed4a358bf968323b6bb6bab1a64862a0426cf3c83fb9e55ce036b68a7e217cb6",
     "sintese_analise.json": "b02d19438f882064c5fd985e6fad26763b6e451bff74ee11da45070f8a2aad07",
     "investigacao_resumo.json": "a5210180f5aa47b60bf86ec538be90abb9e42b4d1856d3ee08fc1b20bc38624b",
     "mapa_dados.json": "048cc4da00ddf803d40ce1927a07b3e586ee6fdc74389cfe7dc3b92ddf969aaa"
@@ -102,5 +102,24 @@
     "national_rates.py": "6b027154578b0b8506dc5874f8d58f8d09909e84e75fd33f939508efa61aa137",
     "national_common.py": "73189e9ff714c55e0061095b5d294d146460f0b40ebb4baf66c5e8cda6995ce4",
     "investigation.py": "f7ce73943bcf6415d282f138bc3ba3f9d2cd76b2a25089e58afcbe886360737c"
+  },
+  "provenance_refresh": {
+    "refreshed_at": "2026-11-07T21:19:04+00:00",
+    "reason": "Referências atualizadas após revisão editorial dos relatórios principais; indicadores e resultados nacionais não foram recalculados.",
+    "recalculated": false,
+    "previous_report_hashes": {
+      "relatorio.html": "15515849d70188dd123e868967ae059b5248fbc4fe9494b351bcadce3d17a32f",
+      "relatorio.pdf": "b2acbb5b0b8b7af432e3f3d95c37544a9a549d0578c7240515e31f97c3b9b53c"
+    },
+    "current_report_hashes": {
+      "relatorio.html": "75e894c6fea142c9be541cb7fdc00c7bd28232760bb0cab8352e6068f467606f",
+      "relatorio.pdf": "ed4a358bf968323b6bb6bab1a64862a0426cf3c83fb9e55ce036b68a7e217cb6"
+    },
+    "previous_upstream_summary_hashes": {
+      "nacional/inventario/resumo.json": "85fc21d0525cb3036c7c5df86f7a1e310a46c344113187678881961fc66db262"
+    },
+    "current_upstream_summary_hashes": {
+      "nacional/inventario/resumo.json": "db0d4a4eb3b87b1f1af8b1efb3a37decf70ec3e1c2d2a74a65c3ad09d326254e"
+    }
   }
 }
