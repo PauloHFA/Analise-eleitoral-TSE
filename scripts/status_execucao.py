@@ -1,8 +1,8 @@
 """Mostra os últimos eventos de uma execução redirecionada para os logs locais."""
 import json
 import sys
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 sys.stdout.reconfigure(encoding="utf-8")

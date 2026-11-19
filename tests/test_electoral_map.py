@@ -63,7 +63,8 @@ def test_offline_geography_rejects_changed_cache(tmp_path):
 
 def test_static_map_keeps_north_above_south(tmp_path,monkeypatch):
     from matplotlib.figure import Figure
-    from eleicoes.electoral_map import static_maps,project
+
+    from eleicoes.electoral_map import project, static_maps
     observed=[]
     def inspect(figure,*args,**kwargs):
         for ax in figure.axes:

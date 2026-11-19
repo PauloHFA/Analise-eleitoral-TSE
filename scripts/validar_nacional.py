@@ -1,18 +1,17 @@
 """Conferência independente dos três incrementos nacionais e da interface offline."""
 import argparse
-from html.parser import HTMLParser
 import json
-from pathlib import Path
 import subprocess
+from html.parser import HTMLParser
+from pathlib import Path
 from urllib.parse import urlparse
 
 import duckdb
-import numpy as np
 
+from eleicoes.investigation import peer_margin_scores
+from eleicoes.national_map import map_color
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from eleicoes.national_map import map_color
-from eleicoes.investigation import peer_margin_scores
 
 
 class Page(HTMLParser):

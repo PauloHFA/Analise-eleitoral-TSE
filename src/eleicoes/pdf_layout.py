@@ -12,8 +12,14 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
-    BaseDocTemplate, Frame, Image, KeepTogether, LongTable, PageBreak,
-    PageTemplate, Paragraph, Spacer, Table, TableStyle,
+    BaseDocTemplate,
+    Frame,
+    Image,
+    LongTable,
+    PageTemplate,
+    Paragraph,
+    Table,
+    TableStyle,
 )
 from reportlab.platypus.tableofcontents import TableOfContents
 

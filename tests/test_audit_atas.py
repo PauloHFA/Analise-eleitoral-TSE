@@ -1,5 +1,6 @@
 import pytest
-from eleicoes.audit_atas import key,evaluate,case_id,request_text,official_source
+
+from eleicoes.audit_atas import case_id, evaluate, key, official_source, request_text
 
 
 def case(**changes):

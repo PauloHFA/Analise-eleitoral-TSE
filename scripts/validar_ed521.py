@@ -1,12 +1,16 @@
 """Confere produção Ed521, referência independente e preservação das entregas."""
-import argparse,json,sys
+import argparse
+import json
+import sys
 from pathlib import Path
 from urllib.parse import urlparse
+
 import duckdb
+from validar_assinaturas import Page
+
+from eleicoes.ed521_reference import reference_metadata
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from eleicoes.ed521_reference import reference_metadata
-from validar_assinaturas import Page
 
 
 def validate(source,data):

@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from eleicoes.investigation import metrics, zeros, classify, peer_margin_scores, cohort_totals, investigate
+from eleicoes.investigation import classify, cohort_totals, investigate, metrics, peer_margin_scores, zeros
 
 
 def sample(f1=2000, l1=2000, f2=0, l2=4000, third=0, blank2=0, null2=0):
@@ -105,8 +105,8 @@ def test_cohort_is_a_subset_with_explicit_coverage():
 
 
 def test_local_pipeline_exports_case_proofs_without_redownloading(tmp_path):
+    from eleicoes.cli import analyze_year, ingest_files
     from eleicoes.demo import create_demo
-    from eleicoes.cli import ingest_files, analyze_year
     from eleicoes.ingest import connect
     from eleicoes.sources import write_json
     paths = create_demo(tmp_path / "raw")
@@ -124,8 +124,9 @@ def test_local_pipeline_exports_case_proofs_without_redownloading(tmp_path):
     assert case["bu_records"] and len(case["section_metadata"]) == 2
     assert case["indicators"]["investigation_status"] == "mudança confirmada nos arquivos"
     assert (tmp_path / "investigacao_viradas.csv").exists()
-    from eleicoes.investigation_report import load_investigation, pdf_investigation
     from reportlab.lib.styles import getSampleStyleSheet
+
+    from eleicoes.investigation_report import load_investigation, pdf_investigation
     bundle = load_investigation(tmp_path)
     assert not bundle["stale"] and len(bundle["zeros"]) == 1
     assert "DEMONSTRAÇÃO COM DADOS SIMULADOS" in bundle["html"]

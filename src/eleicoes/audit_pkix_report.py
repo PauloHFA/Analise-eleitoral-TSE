@@ -1,7 +1,9 @@
 """Relatório do backend PKIX: implementação testada versus evidência disponível."""
 import html
+
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 LIMIT='Na amostra real, nenhum emissor ou âncora oficial novo foi obtido e nenhuma âncora foi selecionada. Os caminhos continuam inconclusivos e a revogação não é concluída. O sucesso dos testes com cadeias sintéticas não é resultado sobre as urnas.'
 METHOD='O projeto passou a usar pyhanko-certvalidator 0.33.0 para construir e validar caminhos completos: assinaturas, vigência, restrições de CA, tamanho do caminho, nomes e extensões críticas sob o perfil configurado. Um adaptador explícito trata Ed521 e a codificação ECDSA usada nos certificados. Isso não é homologação do perfil TSE nem garantia de suporte a toda extensão ou política existente; casos não suportados falham sem aprovação.'

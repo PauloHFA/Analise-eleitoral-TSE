@@ -1,14 +1,16 @@
 """Análise descritiva de eventos operacionais, preservando a amostra e os originais."""
-from collections import Counter
-from pathlib import Path
 import json
 import platform
-import pandas as pd
+from collections import Counter
+from pathlib import Path
+
 import duckdb
+import pandas as pd
+
 from .analysis import export_frame
-from .national_common import begin, finish, failed, records
+from .national_common import begin, failed, finish, records
 from .sources import sha256, write_json
-from .urn_logs import LAYOUT, TARGET_DATES, RULES, read_payloads, summarize_parts, classify, window
+from .urn_logs import LAYOUT, RULES, TARGET_DATES, classify, read_payloads, summarize_parts, window
 
 GEO = ['year', 'turn', 'uf', 'municipality', 'zone', 'section']
 COUNT_CODES = [row[0] for row in RULES if row[0] != 'outro_evento']

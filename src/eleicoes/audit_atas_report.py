@@ -1,7 +1,9 @@
 """Fichas de pendências e minutas locais; fontes gerais nunca explicam um caso."""
 import html
+
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 METHOD='As 33 linhas de apontamento dos logs foram relacionadas a 28 unidades seção/turno. Seis unidades com eventos adicionais ao nível ERRO receberam busca individual por município, zona, seção, data e ano. As demais 22 permanecem no inventário, sem busca individual nesta rodada. Seleção dirigida, sem estimativa de frequência nacional.'
 GATE='Um confronto específico exige documento de seção ou atendimento, identidade territorial/ano/turno compatíveis, apontamento definido, localização no documento e revisão registrada. Notícia agregada, norma, diretório e ata de julgamento não satisfazem esse critério. Metadados e URL declarados não autenticam sozinhos um documento.'

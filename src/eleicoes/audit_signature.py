@@ -3,15 +3,15 @@
 O esquema abaixo é uma adaptação explícita, não uma especificação oficial do TSE.
 Não utiliza heurísticas por tamanho nem ignora bytes ou campos desconhecidos.
 """
-from datetime import datetime,timedelta,timezone
-from pathlib import Path
 import hashlib
 import re
+from datetime import datetime, timedelta, timezone
+
 import asn1tools
 from cryptography import x509
 from cryptography.exceptions import InvalidSignature
-from cryptography.hazmat.primitives import hashes,serialization
-from cryptography.hazmat.primitives.asymmetric import ec,utils
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import ec, utils
 
 LAYOUT_ID='observado-vsc-2026-sequencia-final-v1'
 SCHEMA='''ObservedVSC DEFINITIONS IMPLICIT TAGS ::= BEGIN
@@ -126,7 +126,7 @@ def canonical_ecdsa(signature):
 def verify_signature(cert,algorithm,digest,signature,*,enable_ed521=False):
     if algorithm==4 and enable_ed521:
         if cert is None:return 'nao_verificado_certificado','Certificado não disponível ou ilegível'
-        from .ed521 import public_key_from_certificate,verify
+        from .ed521 import public_key_from_certificate, verify
         try:key=public_key_from_certificate(cert)
         except ValueError as exc:return 'nao_verificado_chave',str(exc)
         # Ed521 puro sobre SHA512(hash). Não é Ed521ph (phflag permanece zero).

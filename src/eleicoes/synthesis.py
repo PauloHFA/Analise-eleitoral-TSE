@@ -216,7 +216,7 @@ def executive_html(synthesis):
 
 
 def executive_pdf(synthesis, styles):
-    from reportlab.platypus import Paragraph, Spacer, PageBreak
+    from reportlab.platypus import PageBreak, Paragraph, Spacer
     story = [Paragraph("Resumo executivo: achados e cobertura", styles["Heading1"])]
     story.append(Paragraph("Os padrões solicitados foram pesquisados. A investigação de todas as incongruências não está encerrada; confirmação dos valores não explica escolhas individuais.", styles["BodyText"]))
     for m in metric_table(synthesis, EXECUTIVE_IDS):

@@ -1,7 +1,9 @@
 """Apresenta vínculo criptográfico, vigência e confiança sem fundir conclusões."""
 import html
+
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 LIMIT='Nenhum caminho até âncora oficial foi validado e nenhuma LCR foi obtida nesta consulta. Isso deixa confiança e revogação indeterminadas; não demonstra revogação nem ausência dela. A verificação de um vínculo com um intermediário candidato não equivale à validação integral de uma cadeia RFC 5280.'
 TIME='O certificado disponível da AC URNA tem término de validade em 18/07/2026. Ele é o candidato cujo nome, identificadores e chave conferem para 14 unidades seção/turno da amostra; as datas declaradas nesses VSC são posteriores ao término. Esse é um apontamento sobre o certificado intermediário disponível. Não foi obtido documento que explique a situação, nem se pressupõe renovação com a mesma chave. O certificado de ponta permanece com sua própria validade, verificada separadamente.'

@@ -1,8 +1,10 @@
 import io
 import re
 import zipfile
+
 import pytest
-from eleicoes.audit_download import RemoteZIP,identify
+
+from eleicoes.audit_download import RemoteZIP, identify
 
 
 class Response:

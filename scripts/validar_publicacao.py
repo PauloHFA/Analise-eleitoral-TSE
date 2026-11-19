@@ -2,8 +2,8 @@
 import argparse
 import hashlib
 import json
-from pathlib import Path
 import zipfile
+from pathlib import Path
 
 
 def sha256(path):

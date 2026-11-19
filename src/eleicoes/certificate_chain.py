@@ -3,13 +3,14 @@
 Verifica apenas o alcance descrito nas funções; não implementa validação integral
 de caminhos RFC 5280. Ausência de evidência de revogação permanece inconclusiva.
 """
+import asn1tools
 from cryptography import x509
-from cryptography.exceptions import InvalidSignature,UnsupportedAlgorithm
+from cryptography.exceptions import InvalidSignature, UnsupportedAlgorithm
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import ec
-import asn1tools
-from .audit_signature import canonical_ecdsa,temporal_status
-from .ed521 import public_key_from_certificate,verify
+
+from .audit_signature import canonical_ecdsa, temporal_status
+from .ed521 import public_key_from_certificate, verify
 
 
 def extension(cert,kind):

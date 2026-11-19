@@ -1,7 +1,7 @@
 """Valida o dossiê local, seus vínculos e a preservação da referência."""
 import argparse
-from html.parser import HTMLParser
 import json
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
 

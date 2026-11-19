@@ -1,15 +1,15 @@
 import argparse
 import json
 import math
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 import duckdb
+from validar_investigacao import Scripts
 
 from eleicoes.electoral_map import winner_color
 from eleicoes.sources import sha256
-from validar_investigacao import Scripts
 
 
 class MapHTML(Scripts):

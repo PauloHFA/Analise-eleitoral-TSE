@@ -2,13 +2,18 @@
 
 Chaves fixas e públicas são exclusivamente de teste, sem relação com as urnas.
 """
+import hashlib
+import json
+import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
-from datetime import datetime,timezone
-import json,subprocess,hashlib
+
+from asn1crypto import algos, keys
+from asn1crypto import crl as ac
+from asn1crypto import x509 as ax
 from cryptography import x509
-from cryptography.hazmat.primitives import hashes,serialization
+from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import ec
-from asn1crypto import x509 as ax,keys,algos,crl as ac
 
 root=Path(__file__).resolve().parents[1];UTC=timezone.utc;OID='1.3.6.1.4.1.44588.2.1'
 rk=ec.derive_private_key(1,ec.SECP521R1());placeholder=ec.derive_private_key(2,ec.SECP521R1());lk=ec.derive_private_key(3,ec.SECP521R1())

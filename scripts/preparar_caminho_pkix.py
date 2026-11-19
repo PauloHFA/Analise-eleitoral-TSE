@@ -1,10 +1,14 @@
 """Pesquisa complementar de fontes, sem inventar âncoras ou alterar a captura anterior."""
-import argparse,json,hashlib
-from pathlib import Path
-from datetime import datetime,timezone
+import argparse
+import hashlib
+import json
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
+from pathlib import Path
+
 import requests
-from eleicoes.sources import sha256,write_json
+
+from eleicoes.sources import sha256, write_json
 
 
 def run(data):

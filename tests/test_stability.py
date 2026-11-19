@@ -1,4 +1,3 @@
-import json
 
 import duckdb
 import numpy as np

@@ -1,10 +1,11 @@
 """Preserva buscas/capturas já obtidas; não envia pedidos nem acessa cartórios."""
 import argparse
-from datetime import datetime, timezone
 import json
-from pathlib import Path
 import re
+from datetime import datetime, timezone
+from pathlib import Path
 from urllib.parse import urlsplit
+
 from eleicoes.sources import sha256, write_json
 
 QUERIES = [

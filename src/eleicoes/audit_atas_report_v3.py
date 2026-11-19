@@ -2,7 +2,7 @@
 import html
 
 from .audit_atas import GEO, key
-from .pdf_layout import AnalysisPDF, WIDTH, callout, heading, p, pdf_styles, table
+from .pdf_layout import WIDTH, AnalysisPDF, callout, heading, p, pdf_styles, table
 
 STATUS = {
     "sem_documento_especifico": "Documento específico não obtido",

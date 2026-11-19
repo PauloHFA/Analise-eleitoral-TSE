@@ -4,12 +4,13 @@ import json
 import platform
 from importlib.metadata import version
 from pathlib import Path
+
 import duckdb
 import pandas as pd
-from reportlab.platypus import PageBreak,KeepTogether,Spacer
-from .national_common import begin,finish,failed,records
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
-from .sources import write_json
+from reportlab.platypus import KeepTogether, PageBreak, Spacer
+
+from .national_common import begin, failed, finish, records
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 GEO=['year','turn','uf','municipality','zone','section']
 OFFICIAL='https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao'

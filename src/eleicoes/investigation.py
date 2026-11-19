@@ -155,7 +155,7 @@ def document_checks(con, output, target_keys):
         max(result_source) result_source,max(bu_source) bu_source,
         max(result_election) result_election,max(bu_election) bu_election
         FROM investigation_bu GROUP BY {key}""").df()
-    meta = con.execute(f"""SELECT b.* EXCLUDE(vote_local,local_name,local_address),b.local_name,b.local_address
+    meta = con.execute("""SELECT b.* EXCLUDE(vote_local,local_name,local_address),b.local_name,b.local_address
         FROM read_parquet(?) b SEMI JOIN investigation_keys k USING(year,uf,municipality,zone,section)""",
         [str(output / "secoes_por_turno.parquet")]).df()
     checks = meta.merge(counts, on=KEY, how="outer", validate="one_to_one")

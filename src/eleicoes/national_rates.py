@@ -5,8 +5,8 @@ import duckdb
 import pandas as pd
 
 from .analysis import export_frame
-from .investigation import metrics,VALUES
-from .national_common import begin,finish,failed,records
+from .investigation import VALUES, metrics
+from .national_common import begin, failed, finish, records
 
 
 def rates(con,keys):

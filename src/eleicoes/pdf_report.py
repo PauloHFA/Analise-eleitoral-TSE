@@ -1,10 +1,9 @@
 """Relatório PDF narrativo: perguntas, evidências, interpretação e anexos completos."""
 from __future__ import annotations
 
-from datetime import datetime
-import html
 import json
 import math
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -12,7 +11,7 @@ import duckdb
 import pandas as pd
 from reportlab.platypus import KeepTogether, PageBreak, Spacer
 
-from .pdf_layout import AnalysisPDF, WIDTH, callout, contents, heading, p, pdf_styles, picture, table
+from .pdf_layout import WIDTH, AnalysisPDF, callout, contents, heading, p, pdf_styles, picture, table
 from .report_updates import load_incremental_updates
 from .sources import sha256, write_json
 

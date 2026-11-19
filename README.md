@@ -1,4 +1,8 @@
-# Análise presidencial — eleições de 2026
+# Análise presidencial — eleições de 2026 (`Analise-eleitoral-TSE`)
+
+> **Auditoria eleitoral reproduzível, análise estatística nacional e validação criptográfica em Python, DuckDB e Parquet** (ver [PENDENCIAS.md](PENDENCIAS.md) e [docs/PROXIMAS_ETAPAS.md](docs/PROXIMAS_ETAPAS.md))
+
+[![CI Workflow](https://github.com/PauloHFA/Analise-eleitoral-TSE/actions/workflows/ci.yml/badge.svg)](https://github.com/PauloHFA/Analise-eleitoral-TSE/actions/workflows/ci.yml)
 
 Projeto local em Python, DuckDB e Parquet para investigar mudanças entre turnos e consistência dos arquivos abertos do TSE. Brasil e exterior têm contagens separadas. A entrega reúne o processamento nacional, as referências históricas, a investigação de passagens a zero e viradas, as fichas e o mapa municipal.
 

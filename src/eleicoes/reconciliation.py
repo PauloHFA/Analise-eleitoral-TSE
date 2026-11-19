@@ -1,9 +1,10 @@
 """Conferência de totais com cobertura explícita e zeros esparsos documentados."""
-import pandas as pd
 import csv
 import io
 import zipfile
 from pathlib import Path
+
+import pandas as pd
 
 
 def reconcile_totals(con, year):

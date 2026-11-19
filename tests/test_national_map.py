@@ -1,7 +1,6 @@
-import pandas as pd
 import pytest
 
-from eleicoes.national_map import map_color,feature_rows,static_maps
+from eleicoes.national_map import map_color, static_maps
 
 
 def test_change_colors_are_symmetric_and_distinct_from_final_leadership():

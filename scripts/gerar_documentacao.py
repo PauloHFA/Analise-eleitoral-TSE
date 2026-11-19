@@ -4,8 +4,8 @@ import json
 import re
 from pathlib import Path
 
-from eleicoes.synthesis import build_synthesis
 from eleicoes.documentation import write_readme
+from eleicoes.synthesis import build_synthesis
 
 
 def main():

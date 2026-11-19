@@ -1,12 +1,14 @@
 import copy
 import hashlib
-from datetime import datetime,timezone
+from datetime import datetime, timezone
+
 import pytest
 from cryptography import x509
-from cryptography.hazmat.primitives import hashes,serialization
+from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.x509.oid import NameOID
-from eleicoes.audit_signature import codec,parse_vsc,hash_status,certificate,temporal_status,verify_signature
+
+from eleicoes.audit_signature import certificate, codec, hash_status, parse_vsc, temporal_status, verify_signature
 
 
 def example():

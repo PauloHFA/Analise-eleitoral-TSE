@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 
 from eleicoes.investigation import peer_margin_scores
-from eleicoes.national_inventory import add_patterns,margin_scores,run_inventory
+from eleicoes.national_inventory import add_patterns, margin_scores, run_inventory
 
 
 def sample(f1=60,l1=40,f2=45,l2=70):
@@ -78,10 +78,10 @@ def test_zero_pair_denominator_is_not_a_tie_or_a_flip():
 
 
 def test_inventory_runs_offline_and_preserves_reference(tmp_path):
+    from eleicoes.cli import analyze_year, ingest_files
     from eleicoes.demo import create_demo
-    from eleicoes.cli import ingest_files,analyze_year
     from eleicoes.ingest import connect
-    from eleicoes.sources import write_json,sha256
+    from eleicoes.sources import sha256, write_json
     source=tmp_path/'source';source.mkdir()
     paths=create_demo(tmp_path/'raw')
     con=connect(tmp_path/'demo.duckdb')

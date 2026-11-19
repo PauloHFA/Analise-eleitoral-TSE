@@ -1,15 +1,15 @@
-from datetime import datetime,timezone
-from cryptography import x509
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.asymmetric import ec
-from cryptography.x509.oid import NameOID,ObjectIdentifier
-from eleicoes.pkix_path import validate_path
-import json
-from pathlib import Path
 import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
 import pytest
-from cryptography.hazmat.primitives import serialization
-from eleicoes.pkix_path import load_explicit_anchors
+from cryptography import x509
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.x509.oid import NameOID, ObjectIdentifier
+
+from eleicoes.pkix_path import load_explicit_anchors, validate_path
 
 UTC=timezone.utc;MOMENT=datetime(2026,10,4,12,tzinfo=UTC)
 

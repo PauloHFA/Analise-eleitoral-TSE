@@ -2,15 +2,15 @@
 
 O token final é apenas conferido sintaticamente. Não se valida sua cadeia/hash.
 """
-from collections import Counter
-from dataclasses import dataclass
-from datetime import datetime
 import hashlib
 import io
-from pathlib import PurePosixPath
 import re
 import stat
 import zipfile
+from collections import Counter
+from dataclasses import dataclass
+from datetime import datetime
+from pathlib import PurePosixPath
 
 LAYOUT = 'logd-observado-tab6-latin1-v1'
 TARGET_DATES = {1: '2026-10-04', 2: '2026-10-25'}

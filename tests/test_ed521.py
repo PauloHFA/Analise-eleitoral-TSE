@@ -2,7 +2,9 @@ import hashlib
 import json
 from pathlib import Path
 from types import SimpleNamespace
+
 import pytest
+
 from eleicoes import ed521 as ed
 
 VECTORS=json.loads((Path(__file__).parent/'fixtures/ed521_noble_vectors.json').read_text(encoding='utf8'))['vectors']

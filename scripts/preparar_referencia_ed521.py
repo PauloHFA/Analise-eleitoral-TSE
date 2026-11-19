@@ -1,9 +1,12 @@
 """Obtém o PDF técnico do ITI na versão conferida, sem substituir cópias diferentes."""
-import argparse,hashlib
+import argparse
+import hashlib
+from datetime import datetime, timezone
 from pathlib import Path
-from datetime import datetime,timezone
+
 import requests
-from eleicoes.sources import write_json,sha256
+
+from eleicoes.sources import sha256, write_json
 
 URL='https://www.gov.br/iti/pt-br/central-de-conteudo/doc-icp-01-01-v-4-2-padroes-e-algoritmos-criptograficos-da-icp-brasil-copy-pdf'
 DIGEST='000be4d4aee6f7f4a9ac645539f8b0da889a5d93a45ff4b0c427382ca10f7ea9'

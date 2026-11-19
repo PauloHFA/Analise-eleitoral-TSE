@@ -1,12 +1,11 @@
 import json
 import zipfile
 
-import pandas as pd
 import pytest
 
 from eleicoes.cli import cached
 from eleicoes.ingest import csv_chunks
-from eleicoes.sources import resources, sha256, download
+from eleicoes.sources import download, resources, sha256
 
 
 def test_cache_detects_modified_file(tmp_path):

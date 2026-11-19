@@ -9,12 +9,20 @@ from pathlib import Path
 
 import pandas as pd
 
-from .analysis import (export_frame, export_table, create_bu_reconciliation, paired, peers, rank,
-                       reconciliation_totals, section_base)
+from .analysis import (
+    create_bu_reconciliation,
+    export_frame,
+    export_table,
+    paired,
+    peers,
+    rank,
+    reconciliation_totals,
+    section_base,
+)
 from .ingest import KEY, clean, connect, has_table, load, load_bu
+from .reconciliation import reconcile_categories
 from .report import build_report
 from .sources import catalog, download, resources, sha256, write_json
-from .reconciliation import reconcile_categories
 
 LOG = logging.getLogger(__name__)
 

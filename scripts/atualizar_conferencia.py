@@ -1,6 +1,6 @@
 """Reexecuta só a conferência documental e atualiza os checkpoints de uma entrega."""
-import json
 import argparse
+import json
 from pathlib import Path
 
 from eleicoes.analysis import export_frame, paired

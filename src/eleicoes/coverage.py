@@ -1,9 +1,9 @@
 """Cobertura e perfis descritivos; não supõe seleção aleatória nem imputa ausências."""
 from __future__ import annotations
 
-from datetime import datetime
 import html
 import json
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 

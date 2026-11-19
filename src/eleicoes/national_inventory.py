@@ -1,14 +1,14 @@
 """Inventário nacional simétrico, preservando os resultados dirigidos de RJ/MG."""
-from pathlib import Path
 import logging
+from pathlib import Path
 
 import duckdb
 import numpy as np
 import pandas as pd
 
-from .analysis import export_table,export_frame
-from .investigation import metrics,VALUES
-from .national_common import begin,finish,failed,records
+from .analysis import export_frame, export_table
+from .investigation import VALUES, metrics
+from .national_common import begin, failed, finish, records
 
 LOG=logging.getLogger(__name__)
 LEVELS={'secoes':['year','uf','municipality','zone','section'],

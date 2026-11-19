@@ -4,7 +4,6 @@ import json
 
 from eleicoes.atas_evidence import prepare_evidence_revision
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--registro", required=True, help="JSON revisado com documentos e metadados")

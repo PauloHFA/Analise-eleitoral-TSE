@@ -1,12 +1,14 @@
-from copy import deepcopy
 import importlib.util
 import json
+from copy import deepcopy
 from pathlib import Path
 from types import SimpleNamespace
-import pandas as pd
+
 import duckdb
+import pandas as pd
 import pytest
-from eleicoes.atas_expansion import check_coverage,check_payload
+
+from eleicoes.atas_expansion import check_coverage, check_payload
 
 spec=importlib.util.spec_from_file_location('collector',Path(__file__).resolve().parents[1]/'scripts/pesquisar_atas_ampliacao.py')
 collector=importlib.util.module_from_spec(spec);spec.loader.exec_module(collector)

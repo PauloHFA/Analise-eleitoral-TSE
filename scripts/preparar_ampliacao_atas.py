@@ -1,4 +1,5 @@
 import argparse
+
 from eleicoes.atas_expansion import prepare_expansion
 
 if __name__=='__main__':

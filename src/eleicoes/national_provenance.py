@@ -5,7 +5,6 @@ from pathlib import Path
 
 from .sources import sha256, write_json
 
-
 PHASES = ("inventario", "taxas", "mapas")
 REPORT_INPUTS = ("relatorio.html", "relatorio.pdf")
 UPSTREAM_SUMMARIES = {

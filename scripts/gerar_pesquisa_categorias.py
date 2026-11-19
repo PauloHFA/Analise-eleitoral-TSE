@@ -1,6 +1,7 @@
 """Gera relatórios da pesquisa revisada, sem consultas automáticas à rede."""
 import argparse
 import json
+
 from eleicoes.research import run_research
 
 if __name__=='__main__':

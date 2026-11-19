@@ -7,7 +7,7 @@ import zlib
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from eleicoes.synthesis import build_synthesis, number, EXECUTIVE_IDS
+from eleicoes.synthesis import EXECUTIVE_IDS, build_synthesis, number
 
 
 def pdf_text(pdf):

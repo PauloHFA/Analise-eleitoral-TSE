@@ -1,16 +1,16 @@
 """Pesquisa documental revisada: norma, cadastro e aplicação temporal separadas."""
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import html
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
 import duckdb
 
 from .analysis import export_frame
-from .pdf_layout import AnalysisPDF, WIDTH, heading, p, pdf_styles, table
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 from .sources import sha256, write_json
 
 
@@ -57,7 +57,7 @@ def assess(evidence, candidate):
 def sections(summary, evidence, candidate):
     return [
         ('O que a pesquisa estabeleceu',[
-            f"O guia oficial descreve nulos técnicos para candidaturas excluídas que permaneceram na urna por limitações do momento de carga. Esses votos podem constar da urna e do BU sem aparecer como votos nominais na divulgação. Fonte: guia.",
+            "O guia oficial descreve nulos técnicos para candidaturas excluídas que permaneceram na urna por limitações do momento de carga. Esses votos podem constar da urna e do BU sem aparecer como votos nominais na divulgação. Fonte: guia.",
             'A Resolução-TSE 23.677/2021, art. 17, disciplina a totalização majoritária e a exclusão da chapa entre o fechamento do CAND e o dia da eleição. O inciso III trata da irregularidade decorrente da falta de substituição de componente falecido ou renunciante. Foi consultado o texto compilado, incluindo a redação de 2026. O art. 21 trata de eleições proporcionais e não fundamenta esta análise presidencial. Fonte: resolucao.',
             f"A consulta individual identifica {candidate['nomeCompleto']}, nome de urna {candidate['nomeUrna']}, número {candidate['numero']}, cargo Presidente, ano {candidate['eleicao']['ano']}, ID {candidate['id']}, com situação Renúncia. Fonte: cadastro. O painel também contém outro registro de número 28; número e partido isoladamente não identificam uma candidatura."]),
         ('Ligação com os arquivos analisados',[

@@ -1,10 +1,12 @@
 """Ampliação versionada da pesquisa: conclusão de busca não é evidência de caso."""
+import hashlib
+import json
 from copy import deepcopy
-from datetime import datetime,timezone
-import hashlib,json
+from datetime import datetime, timezone
 from pathlib import Path
-from .audit_atas import key,official_source
-from .sources import sha256,write_json
+
+from .audit_atas import key, official_source
+from .sources import sha256, write_json
 
 COMPLETED={'concluida_com_resultados','concluida_sem_resultados'}
 

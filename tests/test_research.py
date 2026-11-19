@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from eleicoes.research import assess,project_candidate
+from eleicoes.research import assess, project_candidate
 
 ROOT=Path(__file__).resolve().parents[1]
 

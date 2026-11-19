@@ -4,10 +4,12 @@ import json
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
+
 import duckdb
+from validar_assinaturas import Page
+
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from validar_assinaturas import Page
 
 
 def validate(source, data):

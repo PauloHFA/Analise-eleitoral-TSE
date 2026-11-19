@@ -1,10 +1,10 @@
 """Aceitação dos casos dirigidos e execução dos filtros JavaScript sem rede."""
 import argparse
 import json
-from html.parser import HTMLParser
-from pathlib import Path
 import shutil
 import subprocess
+from html.parser import HTMLParser
+from pathlib import Path
 
 import duckdb
 

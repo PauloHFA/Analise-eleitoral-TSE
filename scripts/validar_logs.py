@@ -1,17 +1,19 @@
 """Conferência de tabelas tipadas, recorte temporal, preservação, filtros e PDF."""
 import argparse
-from collections import Counter
-from datetime import datetime
 import json
-from pathlib import Path
 import subprocess
 import sys
+from collections import Counter
+from datetime import datetime
+from pathlib import Path
 from urllib.parse import urlparse
+
 import duckdb
-from eleicoes.sources import sha256
-from eleicoes.validation import read_export_csv
-from eleicoes.urn_logs import read_payloads, TARGET_DATES, RULES
 from validar_assinaturas import Page
+
+from eleicoes.sources import sha256
+from eleicoes.urn_logs import RULES, TARGET_DATES, read_payloads
+from eleicoes.validation import read_export_csv
 
 
 def validate(source, data):

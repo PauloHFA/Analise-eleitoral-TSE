@@ -1,6 +1,7 @@
 """Metadados reprodutíveis da referência de teste, sem consulta de rede na análise."""
-from pathlib import Path
 import json
+from pathlib import Path
+
 from .sources import sha256
 
 

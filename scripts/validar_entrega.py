@@ -4,9 +4,10 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse, unquote
+from urllib.parse import unquote, urlparse
 
 import duckdb
+
 from eleicoes.validation import read_export_csv
 
 

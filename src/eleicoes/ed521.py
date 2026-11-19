@@ -3,8 +3,8 @@
 Somente dados públicos. Não contém geração de chaves nem assinatura.
 Política estrita: codificações canônicas, A não neutro e A/R no subgrupo primo.
 """
-from functools import lru_cache
 import hashlib
+from functools import lru_cache
 
 P=2**521-1
 D=-376014 % P

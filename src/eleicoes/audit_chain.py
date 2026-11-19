@@ -1,15 +1,17 @@
 """Conferência documental e criptográfica de vínculos, com caminho incompleto."""
+import json
+from datetime import datetime, timezone
 from pathlib import Path
-from datetime import datetime,timezone
-import json,hashlib
-import duckdb,pandas as pd
+
+import duckdb
+import pandas as pd
 from cryptography import x509
-from cryptography.hazmat.primitives import serialization
+
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
-from .sources import sha256,write_json
-from .audit_signature import parse_vsc,certificate
-from .certificate_chain import issuer_binding,assess_crl,extension
+from .audit_signature import certificate, parse_vsc
+from .certificate_chain import assess_crl, extension, issuer_binding
+from .national_common import begin, failed, finish, records
+from .sources import sha256, write_json
 
 GEO=['year','turn','uf','municipality','zone','section']
 

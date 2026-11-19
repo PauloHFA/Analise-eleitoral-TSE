@@ -1,10 +1,11 @@
 import io
 import zipfile
-from datetime import datetime
+
 import pandas as pd
 import pytest
-from eleicoes.urn_logs import read_payloads, parse_payload, summarize_parts, classify
-from eleicoes.audit_logs import unit_summary, compare_turns, per_thousand
+
+from eleicoes.audit_logs import compare_turns, per_thousand, unit_summary
+from eleicoes.urn_logs import classify, parse_payload, read_payloads, summarize_parts
 
 
 def line(message='Urna pronta para receber votos', stamp='04/10/2026 08:00:00', *, level='INFO', module='VOTA', hardware='12345678'):

@@ -1,13 +1,20 @@
 """Preserva candidatos intermediários e tentativas públicas, sem alterar confiança."""
-from pathlib import Path
-from datetime import datetime,timezone
+import argparse
+import ast
+import base64
+import hashlib
+import json
+import zipfile
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
+from pathlib import Path
 from urllib.parse import urlsplit
-import argparse,ast,base64,hashlib,json,zipfile
+
 import requests
 from cryptography import x509
 from cryptography.hazmat.primitives import serialization
-from eleicoes.sources import sha256,write_json
+
+from eleicoes.sources import sha256, write_json
 
 PACKAGE_SHA='1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235'
 CANDIDATES={'AC URNA':'dc20a4c3b8aef01794b80efe8e143e1fbf719707e00bb0d4ba8865191dc2731d',

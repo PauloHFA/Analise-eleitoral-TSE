@@ -1,15 +1,16 @@
 """Executa a conferência das assinaturas preservando a primeira entrega amostral."""
-from pathlib import Path
-import json
 import hashlib
 import platform
 from importlib.metadata import version
+from pathlib import Path
+
 import duckdb
 import pandas as pd
+
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
-from .sources import sha256,write_json
-from .audit_signature import LAYOUT_ID,SCHEMA,parse_vsc,certificate,temporal_status,hash_status,verify_signature
+from .audit_signature import LAYOUT_ID, SCHEMA, certificate, hash_status, parse_vsc, temporal_status, verify_signature
+from .national_common import begin, failed, finish, records
+from .sources import sha256
 
 GEO=['year','turn','uf','municipality','zone','section']
 

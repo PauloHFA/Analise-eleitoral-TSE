@@ -1,11 +1,13 @@
 """Relatório de contagens operacionais; nunca imprime mensagens dos logs."""
 import html
-from collections import Counter
+
 import matplotlib
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF, pdf_styles, p, heading, table, picture, WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, picture, table
 
 OFFICIAL = 'https://www.justicaeleitoral.jus.br/fato-ou-boato/checagens/2022/logs-das-urnas-eletronicas-sao-dados-publicos-e-nao-revelam-votos-de-eleitores'
 LIMIT = 'São contagens de mensagens, não pessoas, votos afetados ou interrupções físicas medidas. O nível ERRO é atribuído pelo software que gerou o log. A seleção é dirigida e não permite estimar frequências nacionais. Não se atribuem causas ou fraude aos eventos.'

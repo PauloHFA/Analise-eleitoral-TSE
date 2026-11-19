@@ -2,11 +2,10 @@
 from __future__ import annotations
 
 import html
+import itertools
+import logging
 from datetime import datetime
 from importlib.metadata import version
-import itertools
-import json
-import logging
 from pathlib import Path
 from zoneinfo import ZoneInfo
 

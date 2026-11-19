@@ -2,24 +2,25 @@
 import html
 import json
 import math
-from pathlib import Path
 import re
+from pathlib import Path
 
 import duckdb
 import matplotlib
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.collections import PatchCollection
-from matplotlib.path import Path as PlotPath
-from matplotlib.patches import PathPatch
 import pandas as pd
+from matplotlib.collections import PatchCollection
+from matplotlib.patches import PathPatch
+from matplotlib.path import Path as PlotPath
 from reportlab.platypus import PageBreak
 
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
+from .national_common import begin, failed, finish, records
 from .national_rates import mask_rates
-from .pdf_layout import AnalysisPDF,WIDTH,heading,p,pdf_styles,table,picture
-from .sources import sha256,write_json
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, picture, table
+from .sources import sha256, write_json
 
 GRAY='#c5cbd3'
 

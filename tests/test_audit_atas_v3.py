@@ -1,9 +1,10 @@
-import pandas as pd
 import sys
 import types
 
-from eleicoes.audit_atas_v3 import evaluate
+import pandas as pd
+
 from eleicoes.audit_atas_report_v3 import render
+from eleicoes.audit_atas_v3 import evaluate
 from eleicoes.cli import main
 
 

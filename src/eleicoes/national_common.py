@@ -1,9 +1,9 @@
 """Saídas incrementais nacionais separadas e protegidas por hash."""
-from datetime import datetime, timezone
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
-from .sources import sha256,write_json
+from .sources import sha256, write_json
 
 
 def begin(source,destination,names):

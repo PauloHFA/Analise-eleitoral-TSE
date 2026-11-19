@@ -1,10 +1,10 @@
 """Validação independente das tabelas e relatórios do cruzamento integrado."""
 import argparse
+import json
+import sys
 from html.parser import HTMLParser
 from importlib import import_module
-import json
 from pathlib import Path
-import sys
 from urllib.parse import urlparse
 
 import duckdb

@@ -1,9 +1,9 @@
 """Confere conteúdo e geometria do PDF. Requer PyMuPDF para a inspeção visual."""
 import argparse
 import json
-from pathlib import Path
 import re
 import sys
+from pathlib import Path
 
 import duckdb
 

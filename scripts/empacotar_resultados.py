@@ -2,12 +2,12 @@
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
-from pathlib import Path
 import time
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 
 def sha256(path):

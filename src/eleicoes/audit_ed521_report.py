@@ -1,7 +1,9 @@
 """Relatório da extensão Ed521; preserva os relatórios ECDSA anteriores."""
 import html
+
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 LIMIT='ECDSA e Ed521 conferem somente com a chave do certificado embutido. A cadeia até uma âncora oficial, as assinaturas dos emissores e a revogação não foram validadas. CEPESC permanece sem verificador. A data declarada no VSC não é carimbo de tempo autenticado.'
 METHOD='O perfil implementado é Ed521 puro, phflag=0, contexto vazio no VSC, curva E-521 e SHAKE256 de 132 bytes com domínio SigEd521. No VSC, a mensagem é SHA512 do hash declarado; isso não é o modo Ed521ph. O verificador exige codificações canônicas, chave não neutra e chave/ponto R no subgrupo primo. Essa política é mais restritiva que verificar apenas a equação com cofator.'

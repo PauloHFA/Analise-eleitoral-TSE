@@ -1,13 +1,15 @@
 """Conferência agregada, sem exportar votos individuais do RDV."""
+import re
 from collections import Counter
 from pathlib import Path
-import re
+
+import asn1tools
 import duckdb
 import pandas as pd
-import asn1tools
+
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
-from .sources import sha256,write_json
+from .national_common import begin, failed, finish, records
+from .sources import sha256
 
 GEO=['year','turn','uf','municipality','zone','section']
 SCHEMA_HASHES={'bu': 'e53e28e9812bb7e19cc4bcc77b6ce48f25c413f62a60369a91c4f269e19b7ed6', 'rdv': '282dcde0c7ba1f1bb128fe27443ad8d18f7490416c9546d033910a7ec557a465', 'assinatura': '66dfa7bcb79f31b2d6a4d1427dc0e1d1b7134aba83fb62c496713a4ac2c7e083'}

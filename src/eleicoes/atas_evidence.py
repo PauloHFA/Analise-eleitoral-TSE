@@ -1,11 +1,11 @@
 """Registro local, versionado e revisado de documentos de atas e atendimento."""
-from datetime import datetime, timezone
 import json
 import os
-from pathlib import Path
 import re
 import shutil
 import tempfile
+from datetime import datetime, timezone
+from pathlib import Path
 
 import duckdb
 

@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from eleicoes.audit_sample import choose,GEO
+from eleicoes.audit_sample import GEO, choose
 
 
 def population():

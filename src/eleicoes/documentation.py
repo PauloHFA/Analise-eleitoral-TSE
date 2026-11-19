@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .synthesis import number, metric_table
+from .synthesis import metric_table, number
 
 
 def table(headers, rows):

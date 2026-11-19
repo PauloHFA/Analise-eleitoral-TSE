@@ -4,21 +4,24 @@
 O êxito sem revogação nunca é promovido a êxito de revogação.
 """
 import asyncio
-from functools import lru_cache
-import asn1tools
-from datetime import timedelta
-from cryptography.exceptions import InvalidSignature
-from asn1crypto import x509 as ax509,crl as acrl
-from cryptography.hazmat.primitives import serialization
-from urllib.parse import urlsplit
-from pathlib import Path
 import json
-from pyhanko_certvalidator import CertificateValidator,ValidationContext
+from datetime import timedelta
+from functools import lru_cache
+from pathlib import Path
+from urllib.parse import urlsplit
+
+import asn1tools
+from asn1crypto import crl as acrl
+from asn1crypto import x509 as ax509
+from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives import serialization
+from pyhanko_certvalidator import CertificateValidator, ValidationContext
+from pyhanko_certvalidator.errors import AlgorithmNotSupported, PathBuildingError, RevokedError, ValidationError
+from pyhanko_certvalidator.policy_decl import CertRevTrustPolicy, RevocationCheckingPolicy, RevocationCheckingRule
 from pyhanko_certvalidator.sig_validate import DefaultSignatureValidator
-from pyhanko_certvalidator.policy_decl import CertRevTrustPolicy,RevocationCheckingPolicy,RevocationCheckingRule
-from pyhanko_certvalidator.errors import PathBuildingError,ValidationError,RevokedError,AlgorithmNotSupported
-from .ed521 import verify,public_point
+
 from .audit_signature import canonical_ecdsa
+from .ed521 import public_point, verify
 
 ED521_OID='1.3.6.1.4.1.44588.2.1'
 

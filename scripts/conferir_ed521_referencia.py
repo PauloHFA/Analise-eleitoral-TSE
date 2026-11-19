@@ -3,15 +3,19 @@
 Não escreve nas entregas anteriores; não usa rede e não publica dados de votos.
 """
 import argparse
+import hashlib
+import json
+import subprocess
 from pathlib import Path
-import hashlib,json,subprocess
-import duckdb,pandas as pd
-from eleicoes.sources import sha256
-from eleicoes.national_common import begin,finish,failed
-from eleicoes.analysis import export_frame
-from eleicoes.audit_signature import parse_vsc,certificate
-from eleicoes.ed521_reference import reference_metadata
+
+import duckdb
+import pandas as pd
+
 from eleicoes import ed521
+from eleicoes.analysis import export_frame
+from eleicoes.audit_signature import certificate, parse_vsc
+from eleicoes.ed521_reference import reference_metadata
+from eleicoes.national_common import begin, failed, finish
 
 
 def run(source,data,destination=None):

@@ -2,16 +2,17 @@
 import hashlib
 import io
 import re
-import requests
-import json
 import zipfile
-from datetime import datetime,timezone
+from datetime import datetime, timezone
 from pathlib import Path
+
 import duckdb
 import pandas as pd
+import requests
+
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
-from .sources import sha256,write_json
+from .national_common import begin, failed, finish, records
+from .sources import sha256, write_json
 
 
 class RemoteZIP(io.RawIOBase):

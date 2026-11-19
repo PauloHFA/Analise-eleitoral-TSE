@@ -1,6 +1,6 @@
 import pandas as pd
 
-from eleicoes.synthesis import coverage_counts, persistence_status, executive_html, metric_table
+from eleicoes.synthesis import coverage_counts, executive_html, metric_table, persistence_status
 
 
 def nominal_and_attendance():

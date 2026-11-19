@@ -2,14 +2,16 @@
 import argparse
 import hashlib
 import json
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
-import sys
 from urllib.parse import urlparse
+
 import duckdb
+
+from eleicoes.audit_signature import certificate, parse_vsc, verify_signature
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from eleicoes.audit_signature import parse_vsc,certificate,verify_signature
 
 
 class Page(HTMLParser):

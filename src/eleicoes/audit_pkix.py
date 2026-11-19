@@ -1,15 +1,18 @@
 """Executa a validação de caminho com âncoras explícitas e captura de fontes própria."""
-from pathlib import Path
-from datetime import datetime,timezone,timedelta
-from importlib.metadata import version
 import json
-import duckdb,pandas as pd
+from datetime import datetime, timedelta, timezone
+from importlib.metadata import version
+from pathlib import Path
+
+import duckdb
+import pandas as pd
 from cryptography import x509
-from .sources import sha256,write_json
+
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
-from .audit_signature import parse_vsc,certificate
-from .pkix_path import validate_path,load_explicit_anchors
+from .audit_signature import certificate, parse_vsc
+from .national_common import begin, failed, finish, records
+from .pkix_path import load_explicit_anchors, validate_path
+from .sources import sha256, write_json
 
 GEO=['year','turn','uf','municipality','zone','section']
 

@@ -1,13 +1,14 @@
 """Preserva apenas os esquemas ASN.1 de um espelho, com origem e limites explícitos."""
 import argparse
 import hashlib
-import io
 import zipfile
+from datetime import datetime, timezone
 from pathlib import Path
-from datetime import datetime,timezone
+
 import requests
-from eleicoes.sources import write_json,sha256
+
 from eleicoes.audit_count import SCHEMA_HASHES
+from eleicoes.sources import sha256, write_json
 
 URL='https://raw.githubusercontent.com/doccaz/urnas-br/main/docv2/formato-arquivos-bu-rdv-ass-digital-v2.zip'
 DIGEST='1e423054f32b8ba056960c58ada167d702c2618cc4d1dfd5de88f5090c84a235'

@@ -1,7 +1,6 @@
 """Mapa municipal offline: geometria IBGE e resultados TSE, com vínculo auditável."""
 from __future__ import annotations
 
-import html
 import json
 import logging
 import math
@@ -12,13 +11,14 @@ from pathlib import Path
 
 import duckdb
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.collections import PatchCollection
-from matplotlib.path import Path as PlotPath
-from matplotlib.patches import PathPatch, Patch
 import pandas as pd
 import requests
+from matplotlib.collections import PatchCollection
+from matplotlib.patches import Patch, PathPatch
+from matplotlib.path import Path as PlotPath
 
 from .analysis import export_frame
 from .sources import sha256, write_json
@@ -110,6 +110,7 @@ def match_municipalities(votes, localities):
 
 def mt_mesh(folder,offline=False):
     import hashlib
+
     import shapefile
     folder=Path(folder)
     index=folder / "mt_2025.json"

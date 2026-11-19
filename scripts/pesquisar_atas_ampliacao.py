@@ -1,14 +1,16 @@
 """Executa só as buscas públicas das unidades ainda não pesquisadas, via CLI."""
 import argparse
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
 import json
-from pathlib import Path
 import shutil
 import subprocess
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+from pathlib import Path
+
 import duckdb
+
 from eleicoes.audit_atas import GEO, case_id
-from eleicoes.sources import write_json, sha256
+from eleicoes.sources import sha256, write_json
 
 
 def plan(cases):

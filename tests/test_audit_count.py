@@ -1,8 +1,10 @@
-from collections import Counter
 import copy
+from collections import Counter
+
 import asn1tools
 import pytest
-from eleicoes.audit_count import decode_strict,rdv_counts,bu_counts,image_counts,compare_values
+
+from eleicoes.audit_count import bu_counts, compare_values, decode_strict, image_counts, rdv_counts
 
 EXPECTED=dict(municipality='1',zone='2',section='3',election_id='6257')
 IDENT=dict(municipioZona=dict(municipio=1,zona=2),secao=3)

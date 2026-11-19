@@ -1,13 +1,17 @@
 """Valida o alcance da conferência de vínculos e preserva resultados anteriores."""
-import argparse,json,sys
+import argparse
+import json
+import sys
 from pathlib import Path
 from urllib.parse import urlparse
+
 import duckdb
+from validar_assinaturas import Page
+
+from eleicoes.audit_signature import certificate, parse_vsc
+from eleicoes.certificate_chain import issuer_binding
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from eleicoes.audit_signature import certificate,parse_vsc
-from eleicoes.certificate_chain import issuer_binding
-from validar_assinaturas import Page
 
 
 def validate(source,data):

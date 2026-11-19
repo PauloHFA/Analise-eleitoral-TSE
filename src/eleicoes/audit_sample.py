@@ -1,11 +1,12 @@
 """Amostra dirigida registrada antes da obtenção dos documentos das urnas."""
 from pathlib import Path
+
+import duckdb
 import numpy as np
 import pandas as pd
-import duckdb
 
 from .analysis import export_frame
-from .national_common import begin,finish,failed,records
+from .national_common import begin, failed, finish, records
 from .sources import write_json
 
 GEO=['year','uf','municipality','zone','section']

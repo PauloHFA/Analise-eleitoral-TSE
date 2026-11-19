@@ -1,7 +1,9 @@
 """Relatório do alcance efetivo das conferências de assinatura."""
 import html
+
 from reportlab.platypus import PageBreak
-from .pdf_layout import AnalysisPDF,pdf_styles,p,heading,table,WIDTH
+
+from .pdf_layout import WIDTH, AnalysisPDF, heading, p, pdf_styles, table
 
 ALGORITHMS={2:'ECDSA P-521',3:'CEPESC',4:'Ed521'}
 LIMIT='A verificação ECDSA usa a chave do certificado embutido no próprio arquivo. A cadeia até uma âncora oficial e a revogação não foram validadas. Isso comprova a equação criptográfica com essa chave, sem demonstrar por si só a autenticidade institucional do certificado.'

@@ -1,6 +1,6 @@
 """Captura opcional no Edge headless, em perfil isolado desta tarefa."""
-from pathlib import Path
 import subprocess
+from pathlib import Path
 
 root=Path('outputs/2026').resolve()
 browser=Path('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')

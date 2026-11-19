@@ -7,18 +7,19 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from .sources import write_json
 from .documentary import review_exported_issues
 from .investigation_report import load_investigation
 from .map_report import load_map
-from .synthesis import build_synthesis, executive_html
 from .pdf_report import build_pdf_report
 from .report_updates import load_incremental_updates
+from .sources import write_json
+from .synthesis import build_synthesis, executive_html
 
 NOTICE = ("Análise exploratória de dados agregados. Uma mudança observada, um alerta estatístico "
           "e uma divergência documental são categorias distintas. Nenhuma delas, isoladamente, "

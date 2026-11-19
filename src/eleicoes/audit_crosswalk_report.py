@@ -1,7 +1,7 @@
 """Relatórios do cruzamento local entre logs, votação, indicadores e assinaturas."""
 import html
 
-from .pdf_layout import AnalysisPDF, WIDTH, callout, heading, p, pdf_styles, table
+from .pdf_layout import WIDTH, AnalysisPDF, callout, heading, p, pdf_styles, table
 
 
 def render(destination, summary, units, issues, candidates, unmatched, contingency):

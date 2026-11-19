@@ -1,12 +1,14 @@
 """Dossiê de confronto documental, separado da interpretação causal dos logs."""
-from pathlib import Path
 import json
 import re
+from pathlib import Path
 from urllib.parse import urlsplit
+
 import duckdb
 import pandas as pd
+
 from .analysis import export_frame
-from .national_common import begin, finish, failed, records
+from .national_common import begin, failed, finish, records
 from .sources import sha256, write_json
 
 GEO=['year','turn','uf','municipality','zone','section']

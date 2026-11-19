@@ -2,10 +2,19 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from eleicoes.analysis import paired, peers, rank, ratio, section_base, reconcile_bu, reconciliation_totals, export_frame
-from eleicoes.cli import ingest_files, save_analysis_cache, cached_analysis
+from eleicoes.analysis import (
+    export_frame,
+    paired,
+    peers,
+    rank,
+    ratio,
+    reconcile_bu,
+    reconciliation_totals,
+    section_base,
+)
+from eleicoes.cli import cached_analysis, ingest_files, save_analysis_cache
 from eleicoes.demo import create_demo
-from eleicoes.ingest import clean, connect, normalize, has_table
+from eleicoes.ingest import clean, connect, has_table, normalize
 from eleicoes.reconciliation import reconcile_totals
 
 

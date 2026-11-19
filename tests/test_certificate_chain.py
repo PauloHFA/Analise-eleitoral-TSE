@@ -1,12 +1,14 @@
-from datetime import datetime,timezone
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from types import SimpleNamespace
+
 from cryptography import x509
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.x509.oid import NameOID
-from eleicoes.certificate_chain import issuer_binding,assess_crl,verify_signed_object
-from types import SimpleNamespace
-from pathlib import Path
-import json
+
+from eleicoes.certificate_chain import assess_crl, issuer_binding, verify_signed_object
 
 UTC=timezone.utc
 MOMENT=datetime(2026,10,4,12,tzinfo=UTC)

@@ -1,12 +1,17 @@
 """Confere cobertura da pesquisa, fichas, minutas, confronto e preservação."""
-import argparse,json,sys,subprocess
+import argparse
+import json
+import subprocess
+import sys
 from pathlib import Path
 from urllib.parse import urlparse
+
 import duckdb
+from validar_assinaturas import Page
+
+from eleicoes.audit_atas import key
 from eleicoes.sources import sha256
 from eleicoes.validation import read_export_csv
-from eleicoes.audit_atas import key
-from validar_assinaturas import Page
 
 
 def validate(source,data,expanded=False,confrontation=False,destination=None):
@@ -39,7 +44,7 @@ def validate(source,data,expanded=False,confrontation=False,destination=None):
         assert cases.priority.eq('inicial').sum()==6
         assert {key(r) for r in queries.to_dict('records')}=={key(r) for r in cases.loc[cases.individual_searches.gt(0)].to_dict('records')}
         if version in ('v2','v3'):
-            from eleicoes.atas_expansion import check_coverage,check_payload
+            from eleicoes.atas_expansion import check_coverage, check_payload
             pending=con.read_parquet(str(source/'auditoria/atas/casos.parquet')).df().to_dict('records')
             plan=json.loads((raw/'novas/plano.json').read_text(encoding='utf8'))['queries']
             latest=json.loads((raw/'novas/execucoes.json').read_text(encoding='utf8'));history=json.loads((raw/'novas/tentativas.json').read_text(encoding='utf8'))
@@ -59,8 +64,8 @@ def validate(source,data,expanded=False,confrontation=False,destination=None):
             assert summary['registered_evidence_entries']==len(registry['evidence'])>0
             assert research['evidence_revision']['based_on_capture_manifest_sha256']==sha256(data/'auditoria/atas/v2/manifesto.json')
             sources_by_id={item['source_id']:item for item in research['sources']}
-            from eleicoes.audit_atas import SPECIFIC_TYPES
             from eleicoes.atas_evidence import RESPONSE_TYPES
+            from eleicoes.audit_atas import SPECIFIC_TYPES
             from eleicoes.audit_atas_v3 import evaluate
             checked_specific=checked_responses=0
             issue_map={(key(r),r['indicator']):r for r in issues.to_dict('records')}

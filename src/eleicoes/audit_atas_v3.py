@@ -1,13 +1,13 @@
 """Gera o confronto v3 sem modificar a pesquisa ampliada v2."""
-from pathlib import Path
 import json
+from pathlib import Path
 
 import duckdb
 import pandas as pd
 
 from .analysis import export_frame
-from .audit_atas import GEO, SPECIFIC_TYPES, case_id, key, official_source, request_text
 from .atas_evidence import RESPONSE_TYPES
+from .audit_atas import GEO, SPECIFIC_TYPES, case_id, key, official_source, request_text
 from .national_common import begin, failed, finish, records
 from .sources import sha256, write_json
 

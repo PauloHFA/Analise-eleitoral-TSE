@@ -2,13 +2,13 @@
 from __future__ import annotations
 
 import csv
-from datetime import datetime
 import html
 import io
 import json
-from pathlib import Path
 import platform
 import zipfile
+from datetime import datetime
+from pathlib import Path
 
 import duckdb
 import pandas as pd

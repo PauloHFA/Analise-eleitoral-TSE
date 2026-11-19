@@ -1,10 +1,9 @@
 import duckdb
 import pandas as pd
 import pytest
-
-from eleicoes.national_rates import rates,mask_rates,cohort
-from eleicoes.national_inventory import add_patterns
 from test_national_inventory import sample
+
+from eleicoes.national_rates import cohort, mask_rates, rates
 
 
 def test_alert_rate_uses_only_eligible_sections_not_votes_or_municipal_average():
@@ -54,12 +53,12 @@ def test_invalid_display_thresholds_are_rejected(minimum,coverage):
 
 
 def test_rates_pipeline_keeps_totals_and_cohorts_separate(tmp_path):
+    from eleicoes.cli import analyze_year, ingest_files
     from eleicoes.demo import create_demo
-    from eleicoes.cli import ingest_files,analyze_year
     from eleicoes.ingest import connect
-    from eleicoes.sources import write_json
     from eleicoes.national_inventory import run_inventory
     from eleicoes.national_rates import run_rates
+    from eleicoes.sources import write_json
     source=tmp_path/'reference';source.mkdir()
     paths=create_demo(tmp_path/'raw')
     con=connect(tmp_path/'demo.duckdb')
